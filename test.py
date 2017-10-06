@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-#Second edition of test.py
-=======
+
+import numpy as np
+a='this is a test for this class'
 #First edition of test.py 
-Carme
->>>>>>> cdf19ff13a2ea6b57895e6162860d7bae9620662
+

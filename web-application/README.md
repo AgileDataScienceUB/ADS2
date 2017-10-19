@@ -98,25 +98,7 @@ To test the Flask API manually, navigate to http://localhost:8081/api/test
 
 #### Angular2 Frontend
 
-Install frontend dependencies:
+All the dependencies have been added from CDN
 
-If you don't have it already, install Node.js. [nvm](https://github.com/creationix/nvm) is a great solution to manage Node.js installations
+    python -m SimpleHTTPServer
 
-Now install dependencies using NPM:    
-
-    ```bash
-    cd src/client
-
-    # install global dependencies
-    npm install webpack-dev-server rimraf webpack typescript -g
-
-    # install project related dependencies
-    npm install
-    ```
-
-And launch the Angular2 frontend app:
-
-    npm run server:dev:hmr
-
-
-You can now navigate to `http://localhost:3000`. Login with default credentials : `admin:admin`

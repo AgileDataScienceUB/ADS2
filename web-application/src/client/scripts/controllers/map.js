@@ -104,7 +104,7 @@ angular.module('visualMinersApp')
                 });
 
                 neighborhoodPolygons = feature;
-
+                //ASDF
 
                 map.on("viewreset", reset);
                 reset();

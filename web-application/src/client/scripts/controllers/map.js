@@ -81,23 +81,26 @@ angular.module('visualMinersApp')
                     .append("path")
                     .attr("id", function (d) {
 
-                        return "District_" + d.properties["Distri"];
+                        return "District_" + d.properties["C_Distri"];
                     })
                     .attr("class", "polygon")
                     .style("stroke", "black")
-                    .style("stroke-width", "1")
-                    .style("fill", function(d,i) { return "blue"; } )
-                    .style("opacity", 0.8);
+                    .style("stroke-width", "2")
+                    .style("fill", function(d,i) { return "green"; } )
+                    .style("opacity", 0.9);
 
                 feature.call(tip);
 
                 feature.on('mouseover', function(d){
                     tip.show(d);
-                    d.style('opacity', '0.7');
+
+                    console.log("d: ", d);
+                    d3.select("#District_" + d.properties["C_Distri"]).style('fill', 'black');
                 });
                 feature.on('mouseout', function(d){
                     tip.hide(d);
-                    d.style('opacity', '0.1');
+
+                    d3.select("#District_" + d.properties["C_Distri"]).style('fill', 'green');
                 });
 
                 neighborhoodPolygons = feature;
@@ -140,22 +143,25 @@ angular.module('visualMinersApp')
                     .attr("id", function (d) {
 
 
-                        return "Barri_" + d.properties["N_Barri"];
+                        return "Barri_" + d.properties["C_Barri"];
                     })
                     .attr("class", "polygon")
                     .style("stroke", "black")
                     .style("stroke-width", "1")
-                    .style("fill", function(d,i) { return"red"; } )
-                    .style("opacity", 0.8);
+                    .style("fill", function(d,i) { return "yellow"; } )
+                    .style("opacity", 0.9);
+
                 feature.call(tip);
 
                 feature.on('mouseover', function(d){
                     tip.show(d);
-                    d.style('opacity', '0.7');
+                    console.log("d: ", d);
+                    d3.select("#Barri_" + d.properties["C_Barri"]).style('fill', 'black');
                 });
                 feature.on('mouseout', function(d){
                     tip.hide(d);
-                    d.style('opacity', '0.1');
+                    console.log("d: ", d);
+                    d3.select("#Barri_" + d.properties["C_Barri"]).style('fill', 'yellow');
                 });
 
                 neighborhoodPolygons = feature;
@@ -202,8 +208,8 @@ angular.module('visualMinersApp')
             map = new L.Map("map", {center: [41.387034, 2.170020], zoom: 12});
 
             // map.addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
-            // L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-            L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+             //L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+             L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
                 maxZoom: 18, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
             }).addTo(map);
 
@@ -232,66 +238,14 @@ angular.module('visualMinersApp')
 
                     if(d.hasOwnProperty("properties")) {
 
+                        if (d.properties.hasOwnProperty("N_Barri")) {
+                            result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
+                        }
+
                         if (d.properties.hasOwnProperty("N_Distri")) {
                             console.log("D: ", d);
                             result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
                         }
-                        if (d.properties.hasOwnProperty("N_Barri")) {
-                            result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
-                        }
-                        if (d.properties.hasOwnProperty("C_AEB")) {
-                            result += "<p></p><strong>AEB: </strong>" + d.properties['C_AEB'] + "</p>";
-                        }
-                    }
-                    if(d.hasOwnProperty("airbnb_data")){
-                        result += "<p></p><strong>Neighborhood: </strong>" + d.airbnb_data['neighbourhood_group_cleansed'] + "</p>";
-
-
-                        if( $scope.granularitySelected == USE_NEIGHBORHOODS_GRANULARITY) {
-
-                            result += "<p></p><strong>District: </strong>"+d.airbnb_data['neighbourhood_cleansed']+"</p>";
-
-
-                        }
-
-                        // result += "<p></p><strong>Price: </strong>"+d.airbnb_data['price']+"</p>";
-                        var totalListings = 0;
-                        var sumPrice = 0;
-
-
-                        console.log("granularitySelected: ", $scope.granularitySelected);
-                        if( $scope.granularitySelected == USE_NEIGHBORHOODS_GRANULARITY) {
-
-
-                            d3.selectAll(".point")[0].forEach(function (tmp, i) {
-
-
-                                if (tmp.__data__.airbnb_data.neighbourhood == d.airbnb_data.neighbourhood_cleansed) {
-                                    // tmp = d3.select(tmp)[0]
-                                    // console.log("tmp: ", tmp[0].__data__);
-                                    sumPrice += parseInt(tmp.__data__.airbnb_data.price);
-                                    totalListings++;
-
-                                }
-                            });
-                        }
-                        else if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY) {
-                            d3.selectAll(".point")[0].forEach(function (tmp, i) {
-
-
-                                if (tmp.__data__.airbnb_data.neighbourhood_group_cleansed == d.airbnb_data.neighbourhood_group_cleansed) {
-                                    // tmp = d3.select(tmp)[0]
-                                    // console.log("tmp: ", tmp[0].__data__);
-                                    sumPrice += parseInt(tmp.__data__.airbnb_data.price.replace("$", ""));
-                                    totalListings++;
-
-                                }
-                            });
-                        }
-
-                        result += "<p></p><strong>Zone avg price: </strong>"+(sumPrice/totalListings).toFixed(2)+"</p>";
-                        result += "<p></p><strong>Zone total listings: </strong>"+totalListings+"</p>";
-
                     }
 
 

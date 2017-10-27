@@ -100,5 +100,7 @@ To test the Flask API manually, navigate to http://localhost:8081/api/test
 
 All the dependencies have been added from CDN
 
+
     python -m SimpleHTTPServer
+
 

@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('visualMinersApp'));
+  beforeEach(module('ADS_Group2_Application'));
 
   var AboutCtrl,
     scope;

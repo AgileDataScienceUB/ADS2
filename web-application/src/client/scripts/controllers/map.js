@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name visualMinersApp.controller:AboutCtrl
+ * @name ADS_Group2_Application.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the visualMinersApp
+ * Controller of the ADS_Group2_Application
  */
-angular.module('visualMinersApp')
+angular.module('ADS_Group2_Application')
     .controller('MapCtrl', function ($scope) {
         this.awesomeThings = [
             'HTML5 Boilerplate',

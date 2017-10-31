@@ -578,7 +578,7 @@ path {
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
-  right: 0;
+  left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
@@ -604,7 +604,7 @@ path {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  left: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -622,7 +622,7 @@ path {
 }
 
 .sidenav {
-  right: 0;
+  left: 0;
 }
 
 body{

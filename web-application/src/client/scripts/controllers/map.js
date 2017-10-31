@@ -193,7 +193,7 @@ angular.module('ADS_Group2_Application')
 
 
             var width = screen.width * 0.98;
-            var height = screen.height * 0.83;
+            var height = screen.height * 0.82;
             // var height = screen.height * 1;
 
 
@@ -205,13 +205,20 @@ angular.module('ADS_Group2_Application')
 
             var legendHeight = screen.height * 0.35;
 
-            map = new L.Map("map", {center: [41.387034, 2.170020], zoom: 12});
+            map = new L.Map("map", {center: [41.387034, 2.170020], zoom: 12, zoomControl: false});
 
             // map.addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
              //L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
              L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
                 maxZoom: 18, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
             }).addTo(map);
+
+
+
+            L.control.zoom({
+                position:'topright'
+            }).addTo(map);
+
 
             map.options.maxZoom = 16;
             map.options.minZoom = 12;

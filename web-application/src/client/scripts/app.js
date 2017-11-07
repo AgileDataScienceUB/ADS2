@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name visualMinersApp
+ * @name ADS_Group2_Application
  * @description
- * # visualMinersApp
+ * # ADS_Group2_Application
  *
  * Main module of the application.
  */
-angular
-  .module('visualMinersApp', [
+ var app = angular
+  .module('ADS_Group2_Application', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

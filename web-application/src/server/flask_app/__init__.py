@@ -1,15 +1,13 @@
 from flask import Flask
-from flask_security import utils, Security, SQLAlchemyUserDatastore
 from flask_cors import CORS
 from .config import CONFIG, setup_logger
-from .extensions import db
-from .models import Role, User
-from .routes import auth, test
+from .models import District, Neighborhood
+from .routes import polygons, incomes, flats_rental, test
 import os
 
 __version__ = '0.0.1'
 
-BLUEPRINTS = (auth, test)
+BLUEPRINTS = (polygons, incomes, flats_rental, test)
 
 def create_app():
     """Create app and configure Flask-security, databases, loggers."""
@@ -20,7 +18,7 @@ def create_app():
     app.config.from_object(CONFIG[config_name])
 
     setup_logger()
-    db.init_app(app)
+    #db.init_app(app)
 
     # set this running app as global context. This will tell SQLAlchemy which
     # 'app' to use, since flask can have multiple apps
@@ -30,8 +28,8 @@ def create_app():
 
     # set up cross origin handling
     CORS(app, headers=['Content-Type'])
-    user_datastore = SQLAlchemyUserDatastore(db, User, Role)
-    security = Security(app, user_datastore)
+    #user_datastore = SQLAlchemyUserDatastore(db, User, Role)
+    #security = Security(app, user_datastore)
 
     return app
 

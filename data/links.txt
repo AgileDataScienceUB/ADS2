@@ -1,0 +1,8 @@
+Domicilis segons nacionalitat. 2017 --> domicilis_nacionalitat.csv
+	http://www.bcn.cat/estadistica/catala/dades/tpob/llars/padro/a2017/nacion/t13.htm
+
+Edat quinquenal de la poblacio--> poblacio-anys.csv
+	http://www.bcn.cat/estadistica/catala/dades/barris/tpob/pad/ine/a2016/ine05.htm
+
+Seguretat i protecció per districtes 2015 --> seguretat_districtes.csv
+	http://www.bcn.cat/estadistica/catala/dades/anuari/cap08/C0803020.htm

@@ -98,11 +98,15 @@ To test the Flask API manually, navigate to http://localhost:8081/api/test
 
 Also, you can check the data is correctly served by accesing: http://localhost:8081/api/flats_rental/neighborhoods
 
-#### Angular2 Frontend
+#### AngularJS Frontend
 
 All the dependencies have been added from CDN
 
+```bash
+cd src/client
+sudo pip install -r requirements.txt
+```
 
-    python -m SimpleHTTPServer
+cd .
 
 

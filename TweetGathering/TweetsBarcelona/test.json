@@ -1,0 +1,37 @@
+{
+	"tweet1": {
+		"id": 450389948961943553,
+		"userId": 246452645,
+		"createdAt": "30-mar-2014 23:51:46",
+		"inReplyToUserId": 728530951,
+		"text": "@Weedshine Aquesta pinta millor. O pots fer una primer i despr?s l\u0027altre.",
+		"userLang": "ca",
+		"userLocation": "Raval, Pa?sos Catalans"
+	},
+	"tweet2": {
+		"id": 450389949700141056,
+		"userId": 595619618,
+		"createdAt": "30-mar-2014 23:51:46",
+		"inReplyToUserId": -1,
+		"text": "Jaja \u003d ?",
+		"geoLocation": {
+			"latitude": 41.5292058,
+			"longitude": 1.8507183
+		},
+		"userLang": "ca",
+		"userLocation": "Catalunya."
+	},
+	"tweet3": {
+		"id": 450389916661592064,
+		"userId": 248747003,
+		"createdAt": "30-mar-2014 23:51:38",
+		"inReplyToUserId": -1,
+		"text": "CADA UNO DA LO QUE TIENE http://t.co/xjSJw7CJf7",
+		"geoLocation": {
+			"latitude": 41.37657536,
+			"longitude": 2.16752598
+		},
+		"userLang": "es",
+		"userLocation": "Estepa (Sevilla) Espa?a"
+	}
+}

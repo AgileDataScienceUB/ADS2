@@ -2,12 +2,12 @@ from flask import Flask
 from flask_cors import CORS
 from .config import CONFIG, setup_logger
 from .models import District, Neighborhood
-from .routes import polygons, incomes, flats_rental, test
+from .routes import polygons, incomes, flats_rental, transport, test
 import os
 
 __version__ = '0.0.1'
 
-BLUEPRINTS = (polygons, incomes, flats_rental, test)
+BLUEPRINTS = (polygons, incomes, flats_rental, transport, test)
 
 def create_app():
     """Create app and configure Flask-security, databases, loggers."""
@@ -20,11 +20,16 @@ def create_app():
     setup_logger()
     #db.init_app(app)
 
+
+
+
     # set this running app as global context. This will tell SQLAlchemy which
     # 'app' to use, since flask can have multiple apps
     app.app_context().push()
 
     configure_blueprints(app, BLUEPRINTS)
+
+    #transport_graph = TransportGraph().construct_graph()
 
     # set up cross origin handling
     CORS(app, headers=['Content-Type'])

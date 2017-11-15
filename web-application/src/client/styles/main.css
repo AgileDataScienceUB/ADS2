@@ -604,7 +604,7 @@ path {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  left: 25px;
+  right: 0px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -634,3 +634,4 @@ body{
   height: 180px;
 }
 
+.nav-tabs li a {font-size:18px;}

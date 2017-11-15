@@ -1,0 +1,54 @@
+<div ng-if="tab==0">
+        <form class="form-horizontal row">
+          <fieldset>
+            <div class="form-group">
+              <br>
+              <br>
+              <div class="col-lg-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation1" value="0", ng-value="transportDensity" ng-model="displayInformation" ng-checked="false" ng-click="changeDisplayInformation(0)">
+                    Transport density
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation2" value="1", ng-value="rentalPrice">
+                    Rental price
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation3" value="1", ng-value="tweetsDensity">
+                    Tweets density
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation4" value="1", ng-value="nightLive">
+                    Night live
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation5" value="1", ng-value="agePopulation">
+                    Age population
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation6" value="1", ng-value="studiesLevel">
+                    Studies Level
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="displayInformation" id="displayInformation7" value="1", ng-value="incomeIndex">
+                    Income Index
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>

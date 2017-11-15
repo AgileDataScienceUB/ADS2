@@ -15,6 +15,7 @@ angular.module('ADS_Group2_Application')
             'Karma'
         ];
 
+
         $scope.tab = 0
 
         $scope.currentDate = -1;
@@ -290,7 +291,7 @@ angular.module('ADS_Group2_Application')
 
       /* Set the width of the side navigation to 250px */
         $scope.openNav = function() {
-            document.getElementById("mySidenav").style.width = "400px";
+            document.getElementById("mySidenav").style.width = "25%";
         }
 
       /* Set the width of the side navigation to 0 */

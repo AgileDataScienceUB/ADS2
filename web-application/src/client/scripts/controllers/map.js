@@ -337,6 +337,7 @@ angular.module('ADS_Group2_Application')
         }
 
 
+        /*
         // var socket = io.connect('http://' + document.domain + ':' + 8081);
         var socket = io.connect('http://localhost:8081');
         socket.on('connect', function() {
@@ -346,5 +347,6 @@ angular.module('ADS_Group2_Application')
         socket.on('event', function(data){
             console.log("Received: ", data)
         });
+        */
 
     });

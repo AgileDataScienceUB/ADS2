@@ -1,129 +1,151 @@
 <div class="row col-md-12">
-  <!-- <div id="map-container"  style="background-color:#000000;height:100%"></div>-->
+    <!-- <div id="map-container"  style="background-color:#000000;height:100%"></div>-->
 
 
-  <div class="row" >
+    <div class="row" >
 
 
-  <div id="map" class="col-md-12"/>
-  <div class="row col-md-1" style="position:absolute;top: 50%;">
-    <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <div id="map" class="col-md-12"/>
+        <div class="row col-md-1" style="position:absolute;top: 50%;">
+            <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
 </div>
 
 
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
-  <!--<a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>-->
-  <div class="row col-md-10 col-md-offset-1">
-    <form class="form-horizontal row">
-      <fieldset>
-        <legend>Options</legend>
-        <div class="form-group">
-          <label class="col-lg-2 control-label">Polygon granularity</label>
-          <br>
-          <br>
-          <div class="col-lg-10">
-            <div class="radio">
-              <label>
-                <input type="radio" name="granularityRadio" id="granularityRadio1" value="0" ng-model="granularitySelected" ng-checked="true" ng-click="changeShownPolygons(0)">
-                Districts
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="granularityRadio" id="granularityRadio2" value="1" ng-model="granularitySelected" ng-click="changeShownPolygons(1)">
-                Neighborhood
-              </label>
-            </div>
-          </div>
+    <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+    <!--<a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>-->
+    <div class="row col-md-10 col-md-offset-1">
+
+
+        <ul class="nav nav-tabs row">
+            <li class="nav-item col-md-4" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">
+                <a class="nav-link active" ng-click="tab=0" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
+            </li>
+            <li class="nav-item col-md-4" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">
+                <a class="nav-link" ng-click="tab=1" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
+            </li>
+            <li class="nav-item col-md-4" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">
+                <a class="nav-link disabled" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>
+            </li>
+        </ul>
+
+        <div ng-if="tab==0">
+            Carme, pon aqui tu HTML para formulario de explore
+        </div>
+        <div ng-if="tab==1">
+
+            Carme, pon aqui tu HTML para formulario de find
+
+        </div>
+        <div ng-if="tab==2">
+            <form class="form-horizontal row">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Polygon granularity</label>
+                        <br>
+                        <br>
+                        <div class="col-lg-10">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="granularityRadio" id="granularityRadio1" value="0" ng-model="granularitySelected" ng-click="changeShownPolygons(0)">
+                                    Districts
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="granularityRadio" id="granularityRadio2" value="1" ng-model="granularitySelected" ng-click="changeShownPolygons(1)">
+                                    Neighborhood
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="form-group">
+                      <label class="col-lg-2 control-label">Data shown</label>
+                      <br>
+                      <br>
+                      <div class="col-lg-10">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="selectedDataset" id="dataShown1" value="airbnb" ng-model="selectedDataset" ng-checked="true" >
+                            Airbnb listings
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label">Data type</label>
+                      <br>
+                      <br>
+                      <div class="col-lg-10">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="selectedDataType" id="dataType1" value="point" ng-model="selectedDatasetType" ng-checked="true" >
+                            Point
+                          </label>
+                          <br>
+
+                          <label>
+                            <input type="radio" name="selectedDataType" id="dataType2" value="choropleth" ng-model="selectedDatasetType">
+                            Choropleth
+                          </label>
+
+                        </div>
+                      </div>
+                    </div>-->
+
+                </fieldset>
+            </form>
+
         </div>
 
-        <!--CARME ESCRIBE AQUI TU CODIGO!-->
-        Hola, soy Carme
-
-        <!--<div class="form-group">
-          <label class="col-lg-2 control-label">Data shown</label>
-          <br>
-          <br>
-          <div class="col-lg-10">
-            <div class="radio">
-              <label>
-                <input type="radio" name="selectedDataset" id="dataShown1" value="airbnb" ng-model="selectedDataset" ng-checked="true" >
-                Airbnb listings
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="col-lg-2 control-label">Data type</label>
-          <br>
-          <br>
-          <div class="col-lg-10">
-            <div class="radio">
-              <label>
-                <input type="radio" name="selectedDataType" id="dataType1" value="point" ng-model="selectedDatasetType" ng-checked="true" >
-                Point
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" name="selectedDataType" id="dataType2" value="choropleth" ng-model="selectedDatasetType">
-                Choropleth
-              </label>
-
-            </div>
-          </div>
-        </div>-->
-
-      </fieldset>
-    </form>
-  </div>
+    </div>
 
 </div>
 
 
 <div class="row col-md-12 align-bottom" style="float:right;position:absolute;bottom:10%;" ng-if="selectedDataset == dataShown1" style="z-index: 9999">
 
-  <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
-    <h2>{{currentDate | date:'EEEE dd-MM-yyyy'}}</h2>
-  </div>
+    <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
+        <h2>{{currentDate | date:'EEEE dd-MM-yyyy'}}</h2>
+    </div>
 
-  <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
-    <h4>Total listings: {{totalListings}}</h4>
-  </div>
+    <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
+        <h4>Total listings: {{totalListings}}</h4>
+    </div>
 
-  <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
+    <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
 
-    <!-- <button id="button_back" type="button" class="btn btn-default btn-sm" ng-click="buttonBackPressed()">
-               <span class="glyphicon glyphicon-step-backward">
-               </span>
-     </button>-->
-    <button id="button_play" type="button" class="btn btn-default btn-sm" ng-click="buttonPlayPressed()" ng-class="{'glyphicon glyphicon-pause':(time_slider_state == STATE_PLAY || time_slider_state == STATE_RESUME)}">
+        <!-- <button id="button_back" type="button" class="btn btn-default btn-sm" ng-click="buttonBackPressed()">
+                   <span class="glyphicon glyphicon-step-backward">
+                   </span>
+         </button>-->
+        <button id="button_play" type="button" class="btn btn-default btn-sm" ng-click="buttonPlayPressed()" ng-class="{'glyphicon glyphicon-pause':(time_slider_state == STATE_PLAY || time_slider_state == STATE_RESUME)}">
                   <span aria-hidden="true" ng-class="{'glyphicon glyphicon-play':(time_slider_state == STATE_PAUSE || time_slider_state == STATE_STOP)}">
 
                   </span>
-    </button>
+        </button>
 
 
-    <!--<button id="button_stop" type="button" class="btn btn-default btn-sm" ng-click="buttonStopPressed()">
-              <span class="glyphicon glyphicon-stop">
-              </span>
-    </button>-->
+        <!--<button id="button_stop" type="button" class="btn btn-default btn-sm" ng-click="buttonStopPressed()">
+                  <span class="glyphicon glyphicon-stop">
+                  </span>
+        </button>-->
 
-    <button id="button_next" type="button" class="btn btn-default btn-sm" ng-click="buttonNextPressed()">
+        <button id="button_next" type="button" class="btn btn-default btn-sm" ng-click="buttonNextPressed()">
                 <span class="glyphicon glyphicon-step-forward">
                 </span>
-    </button>
-  </div>
+        </button>
+    </div>
 
 </div>
 

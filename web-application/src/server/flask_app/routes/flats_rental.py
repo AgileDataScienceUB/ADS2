@@ -23,10 +23,10 @@ def get_neeighborhood_polygons_data():
     resources_folder = "./data/"
 
 
-    with open(resources_folder+'plloguer2017.csv', 'rb') as f:
+    with open(resources_folder+'plloguer2017.csv', 'r') as f:
 
 
-        reader = csv.reader(f)
+        reader = csv.reader(f, delimiter=',')
         """
         header = reader.next()
 
@@ -36,7 +36,7 @@ def get_neeighborhood_polygons_data():
         print("Data from file: ", csv_lines)
 
         """
-        header = reader.next()
+
         csv_lines = list(reader)
 
         print("CSV LINES: ", csv_lines)
@@ -44,17 +44,22 @@ def get_neeighborhood_polygons_data():
         json_object = []
 
         tmp = {}
+        c = 0
         for row in csv_lines:
-            tmp = {}
-            for item_idx, item in enumerate(row):
+            if(c == 0):
+                header = row
+                c=1
+            else:
+                tmp = {}
+                for item_idx, item in enumerate(row):
 
+                    if(item_idx < len(header)):
+                        tmp[header[item_idx]] = item
+                json_object.append(tmp)
+                #data = json.dumps( [ row for row in csv_lines ] )
 
-                tmp[header[item_idx]] = item
-            json_object.append(tmp)
-            #data = json.dumps( [ row for row in csv_lines ] )
-
-            #print("DATA: {}".join(data))
-            #print out
+                #print("DATA: {}".join(data))
+                #print out
 
         json_response = json.dumps(json_object)
         return Response(json_response,

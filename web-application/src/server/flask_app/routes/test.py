@@ -5,6 +5,13 @@ import json
 
 test = Blueprint('test', __name__, url_prefix='/api')
 
+
+#auth()
+#Stream()
+
+
+#start():
+#Stream.listen()
 @test.route('/getdata', methods=['POST', 'GET'])
 @auth_token_required
 def get_data():

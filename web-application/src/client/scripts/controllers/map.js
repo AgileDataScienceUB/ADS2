@@ -271,6 +271,44 @@ angular.module('ADS_Group2_Application')
             // d3.polygonContains(polygon, point)
         };
 
+        function calculateAndPaintPointsOnMap (){
+            var mapBounds = leafletMap.getBounds();
+
+            var tmpGeoData= {
+                features : geoData.features.filter(function(airbnb_listing){
+                    return true; //It will return everything
+
+                    //return ((new Date(airbnb_listing.airbnb_data.host_until).getTime() >= $scope.currentDate.getTime()) && (new Date(airbnb_listing.airbnb_data.first_review).getTime() <= $scope.currentDate.getTime()))
+                })
+            };
+
+            $scope.totalListings = tmpGeoData.features.length;
+            if (!$scope.$$phase) $scope.$apply();
+
+            console.log("Filtered data: ", tmpGeoData.features.length);
+
+            qtree = d3.geom.quadtree(tmpGeoData.features.map(function (data, i) {
+                    return {
+                        x: data.geometry.coordinates[0],
+                        y: data.geometry.coordinates[1],
+                        all: data
+                    };
+                }
+                )
+            );
+
+            var subset = search(qtree, mapBounds.getWest(), mapBounds.getSouth(), mapBounds.getEast(), mapBounds.getNorth());
+            console.log("subset: " + subset.length);
+
+            redrawSubset(subset);
+        }
+
+        function mapmove(e) {
+            calculateAndPaintPointsOnMap();
+
+        }
+
+
 
 
         createMap();
@@ -298,4 +336,18 @@ angular.module('ADS_Group2_Application')
         $scope.closeNav = function () {
             document.getElementById("mySidenav").style.width = "0";
         }
+
+
+        /*
+        // var socket = io.connect('http://' + document.domain + ':' + 8081);
+        var socket = io.connect('http://localhost:8081');
+        socket.on('connect', function() {
+            socket.emit('my event', {data: 'I\'m connected!'});
+        });
+
+        socket.on('event', function(data){
+            console.log("Received: ", data)
+        });
+        */
+
     });

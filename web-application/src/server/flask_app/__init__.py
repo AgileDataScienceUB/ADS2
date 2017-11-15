@@ -2,16 +2,21 @@ from flask import Flask
 from flask_cors import CORS
 from .config import CONFIG, setup_logger
 from .models import District, Neighborhood
-from .routes import polygons, incomes, flats_rental, transport, test
+from .routes import polygons, incomes, flats_rental, transport, twitter, test
 import os
+
+
+
+
 
 __version__ = '0.0.1'
 
-BLUEPRINTS = (polygons, incomes, flats_rental, transport, test)
+BLUEPRINTS = (polygons, incomes, flats_rental, transport, twitter, test)
 
 def create_app():
     """Create app and configure Flask-security, databases, loggers."""
     app = Flask(__name__)
+
 
     config_name = os.getenv('FLASK_CONFIGURATION', 'default')
     print("Configuring flask app for: {}".format(config_name))
@@ -35,6 +40,8 @@ def create_app():
     CORS(app, headers=['Content-Type'])
     #user_datastore = SQLAlchemyUserDatastore(db, User, Role)
     #security = Security(app, user_datastore)
+
+
 
     return app
 

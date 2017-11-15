@@ -4,3 +4,6 @@ Flask-Cors==2.1.2
 Flask-Security==1.7.5
 Flask-SQLAlchemy==2.1
 Flask-Script
+flask-socketio==2.9.2
+gevent-websocket==0.10.1
+

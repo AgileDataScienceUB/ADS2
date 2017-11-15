@@ -1,3 +1,3 @@
 """Module level init for database Models"""
-from user import User
-from role import Role
+from district import District
+from neighborhood import Neighborhood

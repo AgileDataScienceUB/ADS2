@@ -96,9 +96,13 @@ Or start the app through your IDE, using the same manage.py command or by invoki
 
 To test the Flask API manually, navigate to http://localhost:8081/api/test
 
+Also, you can check the data is correctly served by accesing: http://localhost:8081/api/flats_rental/neighborhoods
+
 #### Angular2 Frontend
 
 All the dependencies have been added from CDN
 
+
     python -m SimpleHTTPServer
+
 

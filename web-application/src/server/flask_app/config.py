@@ -80,6 +80,8 @@ class TestingConfig(BaseConfig):
 
 def setup_logger():
     """Setup the logger with predefined formatting of time and rollup."""
+
+    """
     generated_files = 'logs'
     ALL_LOG_FILENAME = '{0}/all.log'.format(generated_files)
     ERROR_LOG_FILENAME = '{0}/error.log'.format(generated_files)
@@ -115,3 +117,4 @@ def setup_logger():
     logger.addHandler(handler)
 
     print('Logging into directory {}\n'.format(generated_files))
+    """

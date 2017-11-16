@@ -3,9 +3,9 @@ from flask_security import auth_token_required
 from ..app_utils import html_codes, token_login
 import json
 
-incomes = Blueprint('transport', __name__, url_prefix='/api')
+transport = Blueprint('transport', __name__, url_prefix='/api')
 
-@incomes.route('/transport/give/route', methods=['GET'])
+@transport.route('/transport/give/route', methods=['GET'])
 def get_district_polygons_data():
     """Get dummy data returned from the server."""
     data = {'Route': 'This is our route'}

@@ -38,6 +38,7 @@ def get_flats_rental_data():
         for row in csv_lines:
             if(c == 0):
                 header = row
+                print("Header: ", header)
                 c=1
             else:
                 tmp = {}
@@ -45,8 +46,12 @@ def get_flats_rental_data():
 
                     if(item_idx < len(header)):
                         tmp[header[item_idx]] = item
-                tmp['value'] =  float(tmp['rental price per month'])
-                json_object.append(tmp)
+                try:
+                    tmp['value'] =  float(tmp['price'])
+                    json_object.append(tmp)
+                except:
+                    print("Failed for: ", row)
+                    pass
                 #data = json.dumps( [ row for row in csv_lines ] )
 
                 #print("DATA: {}".join(data))

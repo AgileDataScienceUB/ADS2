@@ -8,7 +8,7 @@
  * Controller of the ADS_Group2_Application
  */
 angular.module('ADS_Group2_Application')
-    .controller('MapCtrl', function ($scope) {
+    .controller('MapCtrl', function ($scope, DataExtractorService) {
         this.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
@@ -26,6 +26,13 @@ angular.module('ADS_Group2_Application')
 
         $scope.time_slider_state = $scope.STATE_STOP;
         $scope.time_interval;
+
+
+        var gatheringTweetsOn = false;
+
+        $scope.tweets_array = [];
+
+        var tweetsGatheringInterval;
 
         var map, svg, g, tip;
         var districtPolygons, choosenPolygon, colorToAssign, neighborhoodPolygons;
@@ -348,5 +355,65 @@ angular.module('ADS_Group2_Application')
             console.log("Received: ", data)
         });
         */
+
+
+
+
+
+        var paintTweet = function(tweet){
+
+            var mapBounds = map.getBounds();
+            console.log("Map bounds: ", mapBounds)
+
+            console.log("Adding tweet to map: ", tweet);
+
+
+
+            var marker1 = L.marker(tweet.coordinates);//[41.387034, 2.170020]);
+            marker1.addTo(map);
+
+            setTimeout(function() { map.removeLayer(marker1); }, 2000);
+        }
+
+        $scope.toggleTweetsGathering = function(){
+            if(gatheringTweetsOn){ //Its on, should turn gathering off
+                //Stop gathering on the backend
+                clearInterval(tweetsGatheringInterval);
+                DataExtractorService.stopTweetsGathering().then(function(d){
+                    //Remove all the tweets on the map
+                    $scope.tweets_array = []
+
+
+                });
+            }else{//Its off, should turn gathering on
+                //Start gathering on the backend
+                DataExtractorService.startTweetsGathering().then(function(d){
+                    //Start timer every 2 secs
+                    tweetsGatheringInterval = setInterval(function(){
+                        //code goes here that will be run every 5 seconds.
+
+                        DataExtractorService.getTweetsData().then(function(d){
+                            //Process tweets
+                        })
+                    }, 5000);
+
+                })
+
+
+            }
+
+            gatheringTweetsOn = !gatheringTweetsOn
+        }
+        setTimeout(function(){
+
+            generated_tweets.forEach(function(d){
+                paintTweet({"coordinates":d.coordinates});
+
+                // /paintTweet({"coordinates":[41.387034, 2.170020]})
+            })
+
+
+        }, 2000)
+
 
     });

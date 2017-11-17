@@ -10,7 +10,7 @@ pandas_id,district,id,neighborhood,rental price per month
 8,2,9, la Nova Esquerra de l'Eixample,909.1
 9,2,10, Sant Antoni,877.0
 10,3,11, el Poble Sec - AEI Parc Montjuc,715.7
-11,3,12, la Marina del Prat Vermell - AEI Zona Franca,
+11,3,12, la Marina del Prat Vermell - AEI Zona Franca,685.4
 12,3,13, la Marina de Port,689.2
 13,3,14, la Font de la Guatlla,806.3
 14,3,15, Hostafrancs,680.2
@@ -40,12 +40,12 @@ pandas_id,district,id,neighborhood,rental price per month
 38,7,39, Sant Gens dels Agudells,622.3
 39,7,40, Montbau,716.4
 40,7,41, la Vall d'Hebron,816.1
-41,7,42, la Clota,
+41,7,42, la Clota,685.4
 42,7,43, Horta,669.9
 43,8,44, Vilapicina i la Torre Llobeta,687.4
 44,8,45, Porta,654.6
 45,8,46, el Tur de la Peira,587.0
-46,8,47, Can Peguera,
+46,8,47, Can Peguera,685.4
 47,8,48, la Guineueta,634.5
 48,8,49, Canyelles,689.6
 49,8,50, les Roquetes,504.3
@@ -54,9 +54,9 @@ pandas_id,district,id,neighborhood,rental price per month
 52,8,53, la Trinitat Nova,540.7
 53,8,54, Torre Bar,418.1
 54,8,55, Ciutat Meridiana,459.2
-55,8,56, Vallbona,
+55,8,56, Vallbona,685.4
 56,9,57, la Trinitat Vella,497.8
-57,9,58, Bar de Viver,
+57,9,58, Bar de Viver,685.4
 58,9,59, el Bon Pastor,622.8
 59,9,60, Sant Andreu,708.6
 60,9,61, la Sagrera,575.2

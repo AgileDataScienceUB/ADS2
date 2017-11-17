@@ -6,16 +6,20 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
     var dataExtractionService = {};
 
 
+    /*
+    Twitter related endpoints
+     */
+
     dataExtractionService.startTweetsGathering = function() {
 
-        return $http.get(API_BASE_URL+'/twitter/gather/start/').then(function (d) {
+        return $http.get(API_BASE_URL+'twitter/gather/start/').then(function (d) {
             return d;
         });
     };
 
     dataExtractionService.stopTweetsGathering = function() {
 
-        return $http.get(API_BASE_URL+'/twitter/tweets/get/').then(function (d) {
+        return $http.get(API_BASE_URL+'twitter/tweets/get/').then(function (d) {
             return d;
         });
     };
@@ -23,7 +27,19 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
 
     dataExtractionService.getTweetsData = function() {
 
-        return $http.get(API_BASE_URL+'/twitter/gather/stop/').then(function (d) {
+        return $http.get(API_BASE_URL+'twitter/gather/stop/').then(function (d) {
+            return d;
+        });
+    };
+
+
+    /*
+    Flats renting price related
+     */
+
+    dataExtractionService.getRentalPrice = function() {
+
+        return $http.get(API_BASE_URL+'flats_rental/').then(function (d) {
             return d;
         });
     };

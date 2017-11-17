@@ -6,4 +6,6 @@ Flask-SQLAlchemy==2.1
 Flask-Script
 flask-socketio==2.9.2
 gevent-websocket==0.10.1
+pymongo==3.5.1
+tweepy==3.5.0
 

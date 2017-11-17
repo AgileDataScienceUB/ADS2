@@ -230,7 +230,7 @@ angular.module('ADS_Group2_Application')
 
 
             map.options.maxZoom = 16;
-            map.options.minZoom = 12;
+            map.options.minZoom = 10;
 
 
             svg = d3.select(map.getPanes().overlayPane)
@@ -336,28 +336,12 @@ angular.module('ADS_Group2_Application')
       /* Set the width of the side navigation to 250px */
         $scope.openNav = function() {
             document.getElementById("mySidenav").style.width = "400px";
-        }
+        };
 
       /* Set the width of the side navigation to 0 */
         $scope.closeNav = function () {
             document.getElementById("mySidenav").style.width = "0";
-        }
-
-
-        /*
-        // var socket = io.connect('http://' + document.domain + ':' + 8081);
-        var socket = io.connect('http://localhost:8081');
-        socket.on('connect', function() {
-            socket.emit('my event', {data: 'I\'m connected!'});
-        });
-
-        socket.on('event', function(data){
-            console.log("Received: ", data)
-        });
-        */
-
-
-
+        };
 
 
         var paintTweet = function(tweet){
@@ -369,11 +353,13 @@ angular.module('ADS_Group2_Application')
 
 
 
-            var marker1 = L.marker(tweet.coordinates);//[41.387034, 2.170020]);
+            //var marker1 = L.circle([tweet.coordinates[0]+0.15, tweet.coordinates[1]], 50);//[41.387034, 2.170020]);
+            var marker1 = L.marker([tweet.coordinates[0],tweet.coordinates[1]]);//[41.387034, 2.170020]);
+
             marker1.addTo(map);
 
-            setTimeout(function() { map.removeLayer(marker1); }, 2000);
-        }
+            setTimeout(function() { map.removeLayer(marker1); }, 2500);
+        };
 
         $scope.toggleTweetsGathering = function(){
             if(gatheringTweetsOn){ //Its on, should turn gathering off
@@ -404,16 +390,66 @@ angular.module('ADS_Group2_Application')
 
             gatheringTweetsOn = !gatheringTweetsOn
         }
-        setTimeout(function(){
+        setInterval(function(){
 
-            generated_tweets.forEach(function(d){
+
+             var generateRandomTweets = function(){
+                 //[[[2.0966720581,41.3507835316],[2.2281646729,41.3507835316],[2.2281646729,41.4496747477],[2.0966720581,41.4496747477],[2.0966720581,41.3507835316]]]
+                var bbox = [2.0504377635,41.2787636541,2.3045074059,41.4725622346];
+
+                var minLng = 2.0966720581;
+                var maxLng = 2.2281646729;
+
+                var minLat = 41.3507835316;
+                var maxLat = 41.4496747477;
+
+                var maxTweets= 20;
+                var minTweets= 2;
+
+                var numTweetsToGenerate =   Math.floor(Math.random() * (maxTweets - minTweets)) + minTweets;
+
+                var genatedTweets = [];
+                var lat, lng;
+
+                for(var i=0; i<numTweetsToGenerate; i++){
+
+
+
+                    lng = Math.random() * (maxLng - minLng) + minLng;
+                    lat = Math.random() * (maxLat - minLat) + minLat;
+                    if((lng-2)/(lat-41) <0.56){ // Filter tweets not on water
+                        genatedTweets.push({"coordinates":[lat, lng]})
+                    }
+
+                }
+
+                return genatedTweets;
+            };
+
+
+            var generatedTweets = generateRandomTweets();
+
+            generatedTweets.forEach(function(d){
+                console.log("D: ", d);
                 paintTweet({"coordinates":d.coordinates});
 
                 // /paintTweet({"coordinates":[41.387034, 2.170020]})
             })
 
+            //paintTweet({"coordinates":[41.2787636541, 2.0504377635]});
 
-        }, 2000)
+
+        }, 750);
+
+
+
+        $scope.getFlatsRentalPrice = function(){
+            DataExtractorService.getRentalPrice().then(function(d){
+                //Process tweets
+            })
+        }
+
+        $scope.getFlatsRentalPrice()
 
 
     });

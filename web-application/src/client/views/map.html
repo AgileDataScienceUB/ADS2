@@ -1,333 +1,340 @@
 <div class="row col-md-12">
-  <!-- <div id="map-container"  style="background-color:#000000;height:100%"></div>-->
+    <!-- <div id="map-container"  style="background-color:#000000;height:100%"></div>-->
 
 
-  <div class="row" >
+    <div class="row" >
 
 
-  <div id="map" class="col-md-12"/>
-  <div class="row col-md-1" style="position:absolute;top: 0%;">
-    <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <div id="map" class="col-md-12"/>
+        <div class="row col-md-1" style="position:absolute;top: 0%;">
+            <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
 </div>
 
 
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
-  <!--<a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>-->
-  <div class="row col-md-10 col-md-offset-1">
+    <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+    <!--<a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>-->
+    <div class="row col-md-10 col-md-offset-1">
 
 
-      <ul class="nav nav-tabs row ">
-        <li class="nav-item " ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">
-          <a class="nav-link active " data-toggle="tab"  ng-click="tab=0" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
-        </li>
-        <li class="nav-item " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">
-          <a class="nav-link" data-toggle="tab" ng-click="tab=1" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
-        </li>
-        <li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">
-          <a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>
-        </li>
-      </ul>
+        <ul class="nav nav-tabs row ">
+            <li class="nav-item " ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">
+                <a class="nav-link active " data-toggle="tab"  ng-click="tab=0" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
+            </li>
+            <li class="nav-item " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">
+                <a class="nav-link" data-toggle="tab" ng-click="tab=1" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
+            </li>
+            <li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">
+                <a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>
+            </li>
+        </ul>
 
-      <div ng-if="tab==0">
-        <form class="form-horizontal row">
-          <fieldset class="form-group">
-              <h5>Visualise</h5> 
-                <div class="col-lg-12">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation1" value="Option1"  ng-model="displayInformation" >
-                      Transport density
-                  </label>
-                </div>
+        <div ng-if="tab==0">
+            <form class="form-horizontal row">
+                <fieldset class="form-group">
+                    <h5>Visualise</h5>
+                    <div class="col-lg-12">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation1" ng-value="0"  ng-model="displayInformation" ng-change="displayInformationChanged(0)" >
+                                Transport density
+                            </label>
+                        </div>
 
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation2" value="Option2"  ng-model="displayInformation">
-                      Rental price
-                  </label>
-                </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation2" ng-value="1"  ng-model="displayInformation" ng-change="displayInformationChanged(1)">
+                                Rental price
+                            </label>
+                        </div>
 
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation3" value="Option3"   ng-model="displayInformation">
-                      Tweets density
-                  </label>
-                </div>
-                <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation4"
-                    value="Option4"  disabled="" ng-model="displayInformation">
-                      Night live
-                  </label>
-                </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation3" ng-value="2"   ng-model="displayInformation" ng-change="displayInformationChanged(2)" >
+                                Tweets density
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation4" ng-value="3"  disabled="" ng-model="displayInformation" ng-change="displayInformationChanged(3)">
+                                Night live
+                            </label>
+                        </div>
 
-                <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation5" value="Option5"  disabled="" ng-model="displayInformation">
-                      Age population
-                  </label>
-                </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation5" ng-value="4"  disabled="" ng-model="displayInformation" ng-change="displayInformationChanged(4)">
+                                Age population
+                            </label>
+                        </div>
 
-                <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation6" value="Option6"  disabled="" ng-model="displayInformation">
-                      Studies Level
-                  </label>
-                </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation6" ng-value="5"  disabled="" ng-model="displayInformation" ng-change="displayInformationChanged(5)">
+                                Studies Level
+                            </label>
+                        </div>
 
-                <div class="form-check disabled">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation7" value="Option7"  disabled="" ng-model="displayInformation">
-                      Income Index
-                  </label>
-                </div>
-              </div> 
-          </fieldset>
-        </form>
-      </div>
-
-
-
-      <div ng-if="tab==1">
-
-        <form class="form-horizontal row">
-          <fieldset>
-            <div class="form-group">
-              <h5>Transport</h5> 
-                <div class="col-lg-12">
-                  <h6>Type</h6> 
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary btn-sm"  >
-                      <input type="checkbox" ng-model="metroOption"> Metro
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="checkbox" ng-model="busOption"> Bus
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="checkbox" ng-model="tramOption"> Tram
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="checkbox" ng-model="trainOption"> Train
-                    </label>
-                  </div>
-                  <br>
-                  <label class="col-form-label" for="inputDefault"> <h6>Frequently visited place<h6></label>
-                  <input type="text" class="form-control" id="inputDefault" ng-value="denstinationAddress">
-
-                    <label class="col-form-label" for="maxTravellingTime"><h6>Maximum travelling time</h6></label>
-                    <select class="form-control"  id="maxTravellingTime" ng-value="maxTimeTravelling">
-                      <option>5 min</option>
-                      <option>10 min</option>
-                      <option>20 min</option>
-                      <option>30 min</option>
-                      <option>40 min</option>
-                      <option>50 min</option>
-                      <option>1 h</option>
-                      <option>1:30 h</option>
-                      <option>2 h</option>
-                    </select>
-
-
-                  <!--<div id="slidecontainer">
-
-                    <input type="range" id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-
-                    <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>
-                  </div>-->
-                  
-                </div>
-              <br>
-              <h5>Rental price</h5> 
-                <div class="col-lg-6">
-                  <label class="col-form-label" for="minRentalPrice"><h6>Minimum</h6></label>
-                    <select class="form-control"  id="minRentalPrice" ng-value="minRentalPrice">
-                      <option>400 €</option>
-                      <option>500 €</option>
-                      <option>600 €</option>
-                      <option>700 €</option>
-                      <option>800 €</option>
-                      <option>900 €</option>
-                      <option>1000 €</option>
-                      <option>1500 €</option>
-                      <option>2000 €</option>
-                      <option>2500 €</option>
-                      <option>3000 €</option>
-                      <option>3500 €</option>
-                      <option>4000 €</option>
-                    </select>
-                </div>
-                <div class="col-lg-6">
-                  <label class="col-form-label" for="maxRentalPrice"><h6>Maximum</h6></label>
-                    <select class="form-control"  id="maxRentalPrice" ng-value="maxRentalPrice">
-                      <option>400 €</option>
-                      <option>500 €</option>
-                      <option>600 €</option>
-                      <option>700 €</option>
-                      <option>800 €</option>
-                      <option>900 €</option>
-                      <option>1000 €</option>
-                      <option>1500 €</option>
-                      <option>2000 €</option>
-                      <option>2500 €</option>
-                      <option>3000 €</option>
-                      <option>3500 €</option>
-                      <option>4000 €</option>
-                    </select>
-                </div>
-                  <!--<input type="range" id="ex6" min="-10" max="10", value ="0">
-                  <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/&t
-                  <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span>-->
-                
-              <br>
-              <br>
-              <br>
-              <br>
-              <h5>Night live</h5> 
-                <div class="col-lg-12">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary btn-sm">
-                      <input type="radio" name="nightLive" id="nightLive-Op1" ng-model="nightLiveOption"> Low
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="radio" name="nightLive" id="nightLive-Op2" ng-model="nightLiveOption"> Medium
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="radio" name="nightLive" id="nightLive-Op3" ng-model="nightLiveOption"> High
-                    </label>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation7" ng-value="6"  disabled="" ng-model="displayInformation" ng-change="displayInformationChanged(6)">
+                                Income Index
+                            </label>
+                        </div>
                     </div>
-                </div>
-              <br>
-              <br>
-              <h5>Type of housing</h5> 
-                <div class="col-lg-12">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary btn-sm">
-                      <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Familiar
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Shariny
-                    </label>
-                    <label class="btn btn-primary btn-sm">
-                      <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Individual
-                    </label>
+                </fieldset>
+            </form>
+        </div>
+
+
+
+        <div ng-if="tab==1">
+
+            <form class="form-horizontal row">
+                <fieldset>
+                    <div class="form-group">
+                        <h5>Transport</h5>
+                        <div class="col-lg-12">
+                            <h6>Type</h6>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm"  >
+                                    <input type="checkbox" ng-model="metroOption"> Metro
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="checkbox" ng-model="busOption"> Bus
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="checkbox" ng-model="tramOption"> Tram
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="checkbox" ng-model="trainOption"> Train
+                                </label>
+                            </div>
+                            <br>
+                            <label class="col-form-label" for="inputDefault"> <h6>Frequently visited place<h6></label>
+                            <input type="text" class="form-control" id="inputDefault" ng-value="denstinationAddress">
+
+                            <label class="col-form-label" for="maxTravellingTime"><h6>Maximum travelling time</h6></label>
+                            <select class="form-control"  id="maxTravellingTime" ng-value="maxTimeTravelling">
+                                <option>5 min</option>
+                                <option>10 min</option>
+                                <option>20 min</option>
+                                <option>30 min</option>
+                                <option>40 min</option>
+                                <option>50 min</option>
+                                <option>1 h</option>
+                                <option>1:30 h</option>
+                                <option>2 h</option>
+                            </select>
+
+
+                            <!--<div id="slidecontainer">
+
+                              <input type="range" id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+
+                              <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>
+                            </div>-->
+
+                        </div>
+                        <br>
+                        <h5>Rental price</h5>
+                        <div class="col-lg-6">
+                            <label class="col-form-label" for="minRentalPrice"><h6>Minimum</h6></label>
+                            <select class="form-control"  id="minRentalPrice" ng-value="minRentalPrice">
+                                <option>400 €</option>
+                                <option>500 €</option>
+                                <option>600 €</option>
+                                <option>700 €</option>
+                                <option>800 €</option>
+                                <option>900 €</option>
+                                <option>1000 €</option>
+                                <option>1500 €</option>
+                                <option>2000 €</option>
+                                <option>2500 €</option>
+                                <option>3000 €</option>
+                                <option>3500 €</option>
+                                <option>4000 €</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="col-form-label" for="maxRentalPrice"><h6>Maximum</h6></label>
+                            <select class="form-control"  id="maxRentalPrice" ng-value="maxRentalPrice">
+                                <option>400 €</option>
+                                <option>500 €</option>
+                                <option>600 €</option>
+                                <option>700 €</option>
+                                <option>800 €</option>
+                                <option>900 €</option>
+                                <option>1000 €</option>
+                                <option>1500 €</option>
+                                <option>2000 €</option>
+                                <option>2500 €</option>
+                                <option>3000 €</option>
+                                <option>3500 €</option>
+                                <option>4000 €</option>
+                            </select>
+                        </div>
+                        <!--<input type="range" id="ex6" min="-10" max="10", value ="0">
+                        <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/&t
+                        <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span>-->
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h5>Night live</h5>
+                        <div class="col-lg-12">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="nightLive" id="nightLive-Op1" ng-model="nightLiveOption"> Low
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="nightLive" id="nightLive-Op2" ng-model="nightLiveOption"> Medium
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="nightLive" id="nightLive-Op3" ng-model="nightLiveOption"> High
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <h5>Type of housing</h5>
+                        <div class="col-lg-12">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Familiar
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Shariny
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Individual
+                                </label>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-md-12 row text-right">
+                            <div class="btn btn-success" ng-click="showRecomendation()">Search</div>
+                        </div>
                     </div>
-                </div>
-            </div>
-          </fieldset>
-        </form>
+                </fieldset>
+            </form>
 
-      </div>
-      <div ng-if="tab==2">
-        <form class="form-horizontal row">
-          <fieldset>
-            <div class="form-group">
-            <br>
-              <label class="col-lg-2 control-label">Polygon granularity</label>
-              <br>
-              <br>
-              <div class="col-lg-10">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="granularityRadio" id="granularityRadio1" value="0" ng-model="granularitySelected" ng-click="changeShownPolygons(0)">
-                    Districts
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="granularityRadio" id="granularityRadio2" value="1" ng-model="granularitySelected" ng-click="changeShownPolygons(1)">
-                    Neighborhood
-                  </label>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div ng-if="tab==2">
+            <form class="form-horizontal row">
+                <fieldset>
+                    <div class="form-group">
+                        <br>
+                        <label class="col-lg-2 control-label">Polygon granularity</label>
+                        <br>
+                        <br>
+                        <div class="col-lg-10">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">
+                                    Districts
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="granularityRadio" id="granularityRadio2" ng-value="polygons2" ng-model="granularitySelected" ng-change="changeShownPolygons(1)">
+                                    Neighborhood
+                                </label>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--<div class="form-group">
-              <label class="col-lg-2 control-label">Data shown</label>
-              <br>
-              <br>
-              <div class="col-lg-10">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="selectedDataset" id="dataShown1" value="airbnb" ng-model="selectedDataset" ng-checked="true" >
-                    Airbnb listings
-                  </label>
-                </div>
-              </div>
-            </div>
+                    <!--<div class="form-group">
+                      <label class="col-lg-2 control-label">Data shown</label>
+                      <br>
+                      <br>
+                      <div class="col-lg-10">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="selectedDataset" id="dataShown1" value="airbnb" ng-model="selectedDataset" ng-checked="true" >
+                            Airbnb listings
+                          </label>
+                        </div>
+                      </div>
+                    </div>
 
-            <div class="form-group">
-              <label class="col-lg-2 control-label">Data type</label>
-              <br>
-              <br>
-              <div class="col-lg-10">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="selectedDataType" id="dataType1" value="point" ng-model="selectedDatasetType" ng-checked="true" >
-                    Point
-                  </label>
-                  <br>
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label">Data type</label>
+                      <br>
+                      <br>
+                      <div class="col-lg-10">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="selectedDataType" id="dataType1" value="point" ng-model="selectedDatasetType" ng-checked="true" >
+                            Point
+                          </label>
+                          <br>
 
-                  <label>
-                    <input type="radio" name="selectedDataType" id="dataType2" value="choropleth" ng-model="selectedDatasetType">
-                    Choropleth
-                  </label>
+                          <label>
+                            <input type="radio" name="selectedDataType" id="dataType2" value="choropleth" ng-model="selectedDatasetType">
+                            Choropleth
+                          </label>
 
-                </div>
-              </div>
-            </div>-->
+                        </div>
+                      </div>
+                    </div>-->
 
-          </fieldset>
-        </form>
+                </fieldset>
+            </form>
 
-      </div>
+        </div>
 
-  </div>
+    </div>
 
 </div>
 
 
 <div class="row col-md-12 align-bottom" style="float:right;position:absolute;bottom:10%;" ng-if="selectedDataset == dataShown1" style="z-index: 9999">
 
-  <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
-    <h2>{{currentDate | date:'EEEE dd-MM-yyyy'}}</h2>
-  </div>
+    <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
+        <h2>{{currentDate | date:'EEEE dd-MM-yyyy'}}</h2>
+    </div>
 
-  <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
-    <h4>Total listings: {{totalListings}}</h4>
-  </div>
+    <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
+        <h4>Total listings: {{totalListings}}</h4>
+    </div>
 
-  <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
+    <div class="col-md-8 col-md-offset-4 text-right" ng-if="currentDate != -1">
 
-    <!-- <button id="button_back" type="button" class="btn btn-default btn-sm" ng-click="buttonBackPressed()">
-               <span class="glyphicon glyphicon-step-backward">
-               </span>
-     </button>-->
-    <button id="button_play" type="button" class="btn btn-default btn-sm" ng-click="buttonPlayPressed()" ng-class="{'glyphicon glyphicon-pause':(time_slider_state == STATE_PLAY || time_slider_state == STATE_RESUME)}">
+        <!-- <button id="button_back" type="button" class="btn btn-default btn-sm" ng-click="buttonBackPressed()">
+                   <span class="glyphicon glyphicon-step-backward">
+                   </span>
+         </button>-->
+        <button id="button_play" type="button" class="btn btn-default btn-sm" ng-click="buttonPlayPressed()" ng-class="{'glyphicon glyphicon-pause':(time_slider_state == STATE_PLAY || time_slider_state == STATE_RESUME)}">
                   <span aria-hidden="true" ng-class="{'glyphicon glyphicon-play':(time_slider_state == STATE_PAUSE || time_slider_state == STATE_STOP)}">
 
                   </span>
-    </button>
+        </button>
 
 
-    <!--<button id="button_stop" type="button" class="btn btn-default btn-sm" ng-click="buttonStopPressed()">
-              <span class="glyphicon glyphicon-stop">
-              </span>
-    </button>-->
+        <!--<button id="button_stop" type="button" class="btn btn-default btn-sm" ng-click="buttonStopPressed()">
+                  <span class="glyphicon glyphicon-stop">
+                  </span>
+        </button>-->
 
-    <button id="button_next" type="button" class="btn btn-default btn-sm" ng-click="buttonNextPressed()">
+        <button id="button_next" type="button" class="btn btn-default btn-sm" ng-click="buttonNextPressed()">
                 <span class="glyphicon glyphicon-step-forward">
                 </span>
-    </button>
-  </div>
+        </button>
+    </div>
 
 </div>
 

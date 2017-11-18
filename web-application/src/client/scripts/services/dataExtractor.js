@@ -2,18 +2,45 @@
  * Created by dsolans on 24/05/2017.
  */
 
-angular.module('ADS_Group2_Application').factory('DataExtractorService', function(RestService, $http, CA_API_BASE_URL) {
+angular.module('ADS_Group2_Application').factory('DataExtractorService', function(RestService, $http, API_BASE_URL) {
     var dataExtractionService = {};
 
-    dataExtractionService.getGraphData = function() {
 
-        return $http.get(CA_API_BASE_URL+'graph/software_stream_01/ts/4').then(function (d) {
-            angular.copy(d.data, dataExtractionService.graph_data);
+    /*
+    Twitter related endpoints
+     */
 
-            angular.copy(true, dataExtractionService.dataHasBeenExtracted);
+    dataExtractionService.startTweetsGathering = function() {
 
-            console.log("SUBGRAPHS DATA ON SERVICE --> ", d.data);
-            return d.data;
+        return $http.get(API_BASE_URL+'twitter/gather/start/').then(function (d) {
+            return d;
+        });
+    };
+
+    dataExtractionService.stopTweetsGathering = function() {
+
+        return $http.get(API_BASE_URL+'twitter/tweets/get/').then(function (d) {
+            return d;
+        });
+    };
+
+
+    dataExtractionService.getTweetsData = function() {
+
+        return $http.get(API_BASE_URL+'twitter/gather/stop/').then(function (d) {
+            return d;
+        });
+    };
+
+
+    /*
+    Flats renting price related
+     */
+
+    dataExtractionService.getRentalPrice = function() {
+
+        return $http.get(API_BASE_URL+'flats_rental/').then(function (d) {
+            return d;
         });
     };
 

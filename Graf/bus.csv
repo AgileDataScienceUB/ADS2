@@ -1,0 +1,2431 @@
+ID,Street name,City,Lat/Lon,Furniture,Buses
+1,Almogàvers-Àvila,BARCELONA,41.3985182 / 2.1917991,Pal,06 40 42 141 B25 N11 
+2,Av Icària-Bogatell,BARCELONA,41.3931462 / 2.1990183,Pal,14 41 92 
+3,València-Muntaner,BARCELONA,41.3885874 / 2.1579250,Marquesina,20 43 44 63 N7 
+4,Mallorca-Aribau,BARCELONA,41.3904986 / 2.1580012,Marquesina,20 43 44 
+5,Universitat Central,BARCELONA,41.3871068 / 2.1648890,Pal,54 
+6,Pl Universitat-Balmes,BARCELONA,41.3869842 / 2.1647311,Pal,63 
+7,Pl Universitat-Aribau,BARCELONA,41.3859484 / 2.1633435,Marquesina (x2),09 50 56 N1 N12 N13 N14 N15 N16 N17 N2 N7 
+8,Pl de Carles Buïgas,BARCELONA,41.3712776 / 2.1510007,Pal,13 50 61 
+10,Josep Soldevila - Doctor Santponç,BARCELONA,41.4329641 / 2.1946478,Marquesina,11 35 40 B20 B22 N9 
+11,Josep Soldevila - Sant Adrià,BARCELONA,41.4343254 / 2.1935467,Marquesina,11 35 40 B20 B22 N9 
+12,Llinars-Santander,BARCELONA,41.4347961 / 2.2073378,Pal,42 B22 B23 N8 
+13,Sas-Claramunt,BARCELONA,41.4376433 / 2.2041804,Marquesina,42 N8 
+15,Via Favència-Almagro,BARCELONA,41.4439513 / 2.1720874,Pal,11 32 60 127 N6 
+16,Via Favència-Castor,BARCELONA,41.4427316 / 2.1702312,Pal,60 127 
+17,Les Torres-Mina de la Ciutat,BARCELONA,41.4466927 / 2.1716426,Pal,27 
+18,Antonio Machado - E  M de Natació,BARCELONA,41.4443360 / 2.1705377,Marquesina,47 
+19,Antonio Machado-Ronda Guineueta Vella,BARCELONA,41.4442360 / 2.1701865,Marquesina,31 N6 
+20,Antonio Machado - Artesania,BARCELONA,41.4444263 / 2.1708544,Marquesina,27 
+21,Av Diagonal-Palau Reial,BARCELONA,41.3856356 / 2.1161664,Marquesina,07 33 67 74 75 113 L14 N12 L79 
+22,Av República Argentina-Baixada Blanes,BARCELONA,41.4113925 / 2.1440094,Marquesina,22 28 92 N4 
+24,Ronda Guineueta Vella-Barri Canyelles,BARCELONA,41.4443047 / 2.1651998,Marquesina,27 31 47 71 N6 
+25,Ronda Guineueta Vella-Col·legi Eugeni d'Ors,BARCELONA,41.4448174 / 2.1678042,Marquesina,27 31 47 71 N6 
+26,Ronda Guineueta Vella-Ctra Alta de Roquetes,BARCELONA,41.4437913 / 2.1637408,Marquesina,27 31 47 71 N6 
+27,Pont de Marina-Av Meridiana,BARCELONA,41.3954121 / 2.1863350,Pal,06 10 
+28,Ciutat Sanitària de la Vall d'Hebron,BARCELONA,41.4269336 / 2.1430259,Marquesina (x2),17 112 119 185 
+29,Sant Genís dels Agudells-Natzaret,BARCELONA,41.4292380 / 2.1380833,Pal,76 
+30,Sant Genís dels Agudells,BARCELONA,41.4277994 / 2.1300278,Pal,19 
+31,Llull-Àlaba,BARCELONA,41.3960621 / 2.1955527,Pal,71 
+32,Pl de les Glòries,BARCELONA,41.4028956 / 2.1877830,Pal,N0 N7 
+33,Salvador Espriu-Jaume Vicens Vives,BARCELONA,41.3928213 / 2.2022913,Marquesina,36 N6 N8 
+34,Av Icària-Frederic Mompou,BARCELONA,41.3931086 / 2.1993987,Pal,14 41 92 
+35,Pg. Lluís Companys (Buenavenura Muñoz-Almogàvers),BARCELONA,41.3879170 / 2.1699187,Pal,39 41 51 
+36,Pont de Marina-Almogàvers,BARCELONA,41.3952422 / 2.1862163,Pal,06 10 
+38,Marina-Ctra de Ribes,BARCELONA,41.3977509 / 2.1829650,Pal,06 
+39,Pg de Sant Joan-Alí-Bei,BARCELONA,41.3925383 / 2.1789688,Marquesina,19 51 55 N4 
+40,Nàpols-Ausiàs Marc,BARCELONA,41.3951947 / 2.1796409,Pal,54 
+41,Av Diagonal-Doctor Fleming,BARCELONA,41.3907517 / 2.1363559,Marquesina,07 33 34 63 67 78 N12 
+42,Av Diagonal-L'Illa Diagonal,BARCELONA,41.3896260 / 2.1334840,Marquesina (x2),06 07 33 34 63 67 N12 
+43,Pg de la Zona Franca-Grup d' Habitatges SEAT,BARCELONA,41.3598375 / 2.1390510,Marquesina (x2),09 37 72 109 N1 
+44,Pg de la Zona Franca-Llobregat,BARCELONA,41.3581041 / 2.1407242,Marquesina,09 37 72 109 N1 
+47,Av de Vallcarca-Gustavo Adolfo Bécquer,BARCELONA,41.4162330 / 2.1420101,Pal,27 
+48,Palau d'Esports de la Vall d'Hebron,BARCELONA,41.4279612 / 2.1441987,Marquesina,10 27 60 73 76 B16 B19 N4 
+49,Pg de la Vall d'Hebron-Arquitectura,BARCELONA,41.4296037 / 2.1442357,Marquesina,27 60 73 76 B16 B19 N4 
+50,Urbanització Parc Vall d'Hebron,BARCELONA,41.4292937 / 2.1447866,Marquesina,10 27 60 73 76 B16 B19 N4 
+51,Sant Genís dels Agudells-Arquitectura,BARCELONA,41.4294248 / 2.1382998,Pal,19 76 
+52,Pg de la Vall d'Hebron-Metro Montbau,BARCELONA,41.4301865 / 2.1445301,Pal,10 
+54,Comte d'Urgell-Aragó,BARCELONA,41.3846161 / 2.1555008,Marquesina,20 37 N12 
+55,Pg de Gràcia-Aragó,BARCELONA,41.3919198 / 2.1654298,Marquesina,07 16 17 22 24 28 N4 N5 N6 N7 
+56,Casanova-Consell de Cent,BARCELONA,41.3860808 / 2.1580507,Pal,14 59 
+57,Pg de Sant Joan-València,BARCELONA,41.3980479 / 2.1711382,Marquesina,19 50 51 55 N1 N4 
+58,Aribau-Aragó,BARCELONA,41.3879438 / 2.1600097,Marquesina,54 58 63 64 66 67 68 N3 N7 N8 
+59,Entença-Consell de Cent,BARCELONA,41.3801252 / 2.1501222,Marquesina,27 N0 
+60,Roger de Llúria-Aragó,BARCELONA,41.3939000 / 2.1679410,Marquesina,39 45 47 B20 B24 
+61,Independència-Consell de Cent,BARCELONA,41.4063585 / 2.1854460,Pal,92 
+62,Dos de Maig-València,BARCELONA,41.4065187 / 2.1818286,Pal,92 
+63,Pg de Sant Joan-Aragó,BARCELONA,41.3973544 / 2.1725968,Pal,06 19 50 51 55 N1 N4 
+65,Josep Tarradellas-Pl Francesc Macià,BARCELONA,41.3918718 / 2.1438544,Pal,15 27 32 
+69,Pg de Sant Gervasi-Roman Macaya,BARCELONA,41.4121254 / 2.1382168,Pal,17 22 73 124 N4 N5 
+70,Terré-Pl de Benet XV,BARCELONA,41.4060431 / 2.1206296,Pal,60 
+71,Ronda de Dalt-Bellesguard,BARCELONA,41.4105200 / 2.1265470,Pal,60 123 196 
+73,Josep Garí-Collserola,BARCELONA,41.4157668 / 2.1356200,Pal,60 73 
+74,Benedetti-Ronda de Dalt,BARCELONA,41.4088858 / 2.1242902,Pal,60 
+76,Av Borbó-Pl Virrei Amat,BARCELONA,41.4292117 / 2.1743073,Pal,34 
+82,Platja d'Aro-Palamós,BARCELONA,41.4488750 / 2.1864760,Pal,50 51 76 
+83,Via Favència-Aiguablava,BARCELONA,41.4465022 / 2.1805930,Pal,60 
+93,Ronda Universitat-Pl de Catalunya,BARCELONA,41.3872567 / 2.1678480,Marquesina,42 N17 
+94,Av Diagonal-Balmes,BARCELONA,41.3951796 / 2.1543527,Pal,06 15 33 34 
+95,Gran Via-Balmes,BARCELONA,41.3878959 / 2.1658374,Pal,50 54 56 58 
+96,Ronda General Mitre-Muntaner,BARCELONA,41.4031165 / 2.1385250,Pal,16 74 N0 
+97,Pg de Sant Gervasi-Folgueroles,BARCELONA,41.4094213 / 2.1352441,Pal,22 58 75 123 
+98,València-Balmes,BARCELONA,41.3901794 / 2.1600768,Marquesina,20 43 44 63 N7 
+100,París-Enric Granados,BARCELONA,41.3939154 / 2.1536823,Pal,67 68 
+102,Pl de Pedralbes,BARCELONA,41.3958124 / 2.1144510,Pal,64 N7 
+103,Bisbe Català-Bosch i Gimpera,BARCELONA,41.3960999 / 2.1145426,Pal,22 68 75 
+105,Rambla de Guipúscoa-Espronceda,BARCELONA,41.4139539 / 2.1941556,Pal,33 43 44 B24 
+106,Rambla de Guipúscoa-Bac de Roda,BARCELONA,41.4150890 / 2.1950902,Pal,33 43 44 B24 N8 
+108,Pl Espanya-Ctra de la Bordeta,BARCELONA,41.3745189 / 2.1481510,Marquesina,09 37 46 65 79 91 109 165 L70 L72 L94 L95 N1 N13 N15 N16 N17 CJ 
+109,Numància-Marquès de Sentmenat,BARCELONA,41.3846483 / 2.1374901,Marquesina,15 30 43 59 66 78 N0 
+110,Equador-Josep Tarradellas,BARCELONA,41.3846365 / 2.1418944,Pal,30 43 78 
+118,Bolívar-Ballester,BARCELONA,41.4093027 / 2.1477366,Pal,22 28 92 N4 
+119,Av de Vallcarca-Pl Lesseps,BARCELONA,41.4085459 / 2.1491321,Pal,27 87 
+120,Av Príncep d'Astúries-Rambla del Prat,BARCELONA,41.4015672 / 2.1512632,Pal,27 31 32 92 
+121,Còrsega-Bailèn,BARCELONA,41.4013539 / 2.1656233,Pal,20 45 47 N6 
+122,Pl Mossèn Jacint Verdaguer,BARCELONA,41.3989229 / 2.1686439,Pal,06 15 33 34 
+123,Arc de Triomf,BARCELONA,41.3924565 / 2.1813072,Marquesina,19 39 40 41 42 55 141 B25 N11 N4 
+125,Gran Via-Girona,BARCELONA,41.3937792 / 2.1742228,Marquesina,07 50 54 56 62 B21 N1 N11 N2 N3 N9 
+126,Mercat de la Concepció,BARCELONA,41.3970328 / 2.1691400,Marquesina,43 44 B20 B24 N7 
+127,Segre-Pl de Can Fabra,BARCELONA,41.4346142 / 2.1921215,Pal,73 
+128,Segre-Pl Orfila,BARCELONA,41.4357914 / 2.1915007,Marquesina,73 126 
+129,Av de Vallcarca-Ballester,BARCELONA,41.4096670 / 2.1476548,Pal,27 
+130,Pg de Lluís Companys-Parc de la Ciutadella,BARCELONA,41.3895433 / 2.1835618,Pal,39 41 51 
+131,Ganduxer-Jardins del Doctor Roig,BARCELONA,41.4043200 / 2.1304423,Pal,14 70 72 
+133,Via Augusta-Pau Alcover,BARCELONA,41.3984728 / 2.1259674,Pal,30 66 68 N7 
+134,Via Augusta-Hort de la Vila,BARCELONA,41.3999847 / 2.1240716,Pal,30 66 68 N7 
+135,Via Augusta-Pg de la Bonanova,BARCELONA,41.4009798 / 2.1223244,Marquesina,30 66 130 N8 
+136,Josep Tarradellas-Av de Sarrià,BARCELONA,41.3909999 / 2.1440865,Pal,27 32 59 
+137,Floridablanca-Viladomat,BARCELONA,41.3790555 / 2.1593167,Pal,13 41 55 91 141 
+138,València-Av Roma,BARCELONA,41.3851407 / 2.1533612,Marquesina,43 44 
+139,Mallorca-Comte d'Urgell,BARCELONA,41.3861330 / 2.1522202,Marquesina,43 44 
+140,Av Paral·lel-Ronda Sant Pau,BARCELONA,41.3750632 / 2.1671261,Marquesina,57 121 157 N0 
+141,Tamarit-Viladomat,BARCELONA,41.3783807 / 2.1604838000000655,Pal,24 41 55 91 141 
+142,Av J V Foix,BARCELONA,41.3964407 / 2.1200891,Pal,34 130 
+143,Pujades-Lope de Vega,BARCELONA,41.4038800 / 2.2034754,Marquesina,36 71 141 N6 
+146,Rosselló-Av Diagonal,BARCELONA,41.3981167 / 2.1637780,Marquesina,20 39 45 47 N6 
+147,Av Diagonal-Bruc,BARCELONA,41.3982382 / 2.1658798,Pal,06 15 33 34 
+148,Ronda Sant Pere-Girona,BARCELONA,41.3902906 / 2.1759958,Marquesina,19 39 40 41 42 55 141 N4 
+149,Gran Via-Roger de Llúria,BARCELONA,41.3919120 / 2.1717090,Marquesina,07 50 54 56 62 B21 N1 N11 N2 N3 N9 
+150,Ortigosa-Trafalgar,BARCELONA,41.3889429 / 2.1759362,Pal,19 40 
+154,Pg de Valldaura-Pont del Dragó,BARCELONA,41.4394427 / 2.1837668,Marquesina,73 B16 B19 
+156,Espronceda-Pl Islàndia,BARCELONA,41.4176473 / 2.1882772,Pal,71 
+158,Caracas-Tucumán,BARCELONA,41.4460008 / 2.2021882,Marquesina,73 N8 
+159,Caracas-Potosí,BARCELONA,41.4436187 / 2.2028413,Pal,11 42 60 73 N8 
+160,Badal (Casteràs-Canalejas),BARCELONA,41.37509 / 2.13049,Pal,70 
+161,Badal (Sants-Casteras),BARCELONA,41.3741711 / 2.1298821,Pal,70 
+162,Sagrera-Múrcia,BARCELONA,41.4176933 / 2.1915211,Pal,34 35 B20 N9 
+164,Santa Rosalia-Besòs,BARCELONA,41.4217311 / 2.1467124,Pal,19 119 N4 
+165,València-Villarroel,BARCELONA,41.3868731 / 2.1556418,Marquesina,20 37 43 44 63 N7 
+166,Mallorca-Mercat del Ninot,BARCELONA,41.3886433 / 2.1555483,Marquesina,20 43 44 N7 
+167,Gran Via-Casanova,BARCELONA,41.3845188 / 2.1613296,Pal,09 14 50 56 59 N1 N12 N13 N14 N15 N16 N17 N2 
+168,Av Diagonal-Villarroel,BARCELONA,41.3931840 / 2.1464831,Pal,06 07 15 33 34 
+169,Provença-Casanova,BARCELONA,41.3894183 / 2.1543234,Pal,31 37 
+171,París-Casanova,BARCELONA,41.3910829 / 2.1499622,Marquesina,54 66 67 68 N3 
+172,Av de Pedralbes-Bosch i Gimpera,BARCELONA,41.3922421 / 2.1163705,Pal,63 78 
+173,Villarroel-Aragó,BARCELONA,41.3853333 / 2.1565852,Marquesina,14 20 37 59 N12 
+174,Pau Claris-Aragó,BARCELONA,41.392954 / 2.1668051000000332,Marquesina,39 45 B20 B24 N7 
+175,Balmes-Aragó,BARCELONA,41.3894016 / 2.1624577,Pal,07 16 17 63 67 68 N5 N7 
+176,Rocafort-Aragó,BARCELONA,41.3810878 / 2.1509209,Pal,41 
+177,Muntaner-Aragó,BARCELONA,41.3867947 / 2.1590629,Marquesina,54 58 64 66 N3 N8 
+178,Bruc-Aragó,BARCELONA,41.3946814 / 2.1690397,Pal,47 
+179,Sants-Gayarre,BARCELONA,41.3752988 / 2.1396961,Marquesina,56 57 157 N14 N2 
+180,Creu Coberta-Pl Espanya,BARCELONA,41.3752642 / 2.1475710,Marquesina,30 56 57 157 N14 N2 
+181,Creu Coberta-Torre Damians,BARCELONA,41.3753232 / 2.1445972,Marquesina,30 56 57 157 N14 N2 
+182,Pg de Gràcia-Consell de Cent,BARCELONA,41.3916566 / 2.1654636,Marquesina,22 24 28 N4 N6 
+183,Gran Via-Ronda del Mig,BARCELONA,41.3658234 / 2.1364796,Marquesina,09 46 65 79 109 L70 L72 L80 L81 L86 L87 L94 L95 N1 N15 N16 N17 
+187,Escorial-Clínica Nostra Senyora del Remei,BARCELONA,41.4098457 / 2.1590645,Marquesina,39 116 N6 
+189,Via Favència-Trinitat Nova,BARCELONA,41.4468661 / 2.184246900000062,Pal,60 
+191,Bac de Roda-Cristòbal de Moura,BARCELONA,41.4081942 / 2.2033022,Pal,71 
+193,Rambla de Prim-Marroc,BARCELONA,41.4164371 / 2.2120915,Pal,36 43 B23 
+195,Can Caralleu,BARCELONA,41.4019682 / 2.1117246,Marquesina,66 N8 
+196,General Vives-Pg de Santa Eulàlia,BARCELONA,41.4034277 / 2.1162824,Pal,60 
+198,Camí de Can Caralleu-Ronda de Dalt,BARCELONA,41.4018782 / 2.1143969,Pal,60 66 130 N8 
+199,Pg. Zona Franca (Foc-Cisell),BARCELONA,41.3544218 / 2.1429643,Pal,09 
+200,Pg de la Zona Franca-Motors,BARCELONA,41.3517368 / 2.1453735,Marquesina (x2),37 109 N1 
+202,Via Augusta-Calvet,BARCELONA,41.3977618 / 2.1391284,Pal,14 68 N7 
+204,Floridablanca-Rocafort,BARCELONA,41.3772572 / 2.1569350,Pal,13 41 55 91 141 
+205,Calàbria-Floridablanca,BARCELONA,41.3782508 / 2.1571166,Pal,41 
+206,Gran Via-Calàbria,BARCELONA,41.3803242 / 2.1557761,Pal,09 50 56 N1 N13 N14 N15 N16 N17 N2 
+207,Mallorca-Viladomat,BARCELONA,41.3845387 / 2.1500922,Marquesina,43 44 
+208,París-Calàbria,BARCELONA,41.3870269 / 2.1445330,Marquesina,54 66 N3 
+209,Av Paral·lel-Viladomat,BARCELONA,41.3751034 / 2.1625753,Marquesina,57 61 121 157 N0 
+210,Manso-Viladomat,BARCELONA,41.3766391 / 2.1604279,Marquesina,37 121 
+211,Vía Laietana-Metro Urquinaona,BARCELONA,41.3876113 / 2.1738715,Pal,17 19 40 45 N8 
+212,Indústria-IES Sant Josep de Calasanç,BARCELONA,41.4141511 / 2.1804187,Pal,19 20 45 47 50 51 117 192 B22 N1 N4 
+213,Pg de Sant Joan-Còrsega,BARCELONA,41.4015457 / 2.1671954,Pal,15 20 39 45 47 55 N4 N6 
+214,Casanova-Hospital Clínic,BARCELONA,41.3904811 / 2.1526051,Pal,14 59 63 N7 
+215,Viladomat (París-Còrcega),BARCELONA,41.3879170 / 2.1699187,Pal,41 
+216,Padilla-Rosselló,BARCELONA,41.4073256 / 2.1751186,Marquesina,10 19 N1 
+217,Josep Tarradellas-Rosselló,BARCELONA,41.3829300 / 2.1427352,Pal,27 30 32 43 78 
+218,Torrent de l'Olla-Penedès,BARCELONA,41.4009567 / 2.1587609,Pal,39 
+219,Torrent de l'Olla-Còrsega,BARCELONA,41.3987297 / 2.1610290,Pal,39 
+220,Independència-Freser,BARCELONA,41.4108505 / 2.1795364,Pal,35 50 51 92 
+221,Balmes-París,BARCELONA,41.3945647 / 2.1556569,Marquesina,07 16 17 31 N5 
+222,Aribau-Còrsega,BARCELONA,41.3922345 / 2.1544265,Marquesina,31 58 64 N8 
+224,Dos de Maig-Indústria,BARCELONA,41.4108719 / 2.1769721,Marquesina,117 
+226,Pau Claris-Gran Via,BARCELONA,41.3901935 / 2.1703872,Marquesina,22 28 39 45 66 N1 N2 N3 N7 
+227,Marina-Ausiàs Marc,BARCELONA,41.3976936 / 2.1833578,Pal,06 10 
+228,Bruc-Gran Via,BARCELONA,41.3918517 / 2.1727956,Marquesina,47 62 B21 
+229,Pg de Sant Joan-Pl Tetuan,BARCELONA,41.3942863 / 2.1759152,Marquesina,19 51 55 N4 
+230,Roger de Llúria-Pl Urquinaona,BARCELONA,41.3902286 / 2.1728708,Marquesina,39 45 B21 
+231,Ronda Guineueta Vella-Antonio Machado,BARCELONA,41.4415780 / 2.1620892,Pal,27 31 47 71 N6 82 
+232,Pl Karl Marx-Pg de la Vall d'Hebron,BARCELONA,41.4406997 / 2.1617344,Marquesina,27 60 73 76 185 B16 B19 N4 
+233,Sant Antoni Maria Claret-Sant Quintí,BARCELONA,41.4132983 / 2.1770154,Marquesina,15 19 20 45 47 50 51 117 B22 N1 N4 
+234,Mallorca-Dos de Maig,BARCELONA,41.4073530 / 2.1804501,Marquesina,33 34 43 44 50 51 B20 B24 N9 
+235,Consell de Cent-Cartagena,BARCELONA,41.4046701 / 2.1838760,Pal,62 N3 
+236,Aragó-Enamorats,BARCELONA,41.4059116 / 2.1830212,Pal,62 N3 
+237,Av Diagonal-Pl Reina Maria Cristina,BARCELONA,41.3884859 / 2.1274197,Marquesina (x2),07 33 63 67 75 78 L14 N12 L79 
+238,Sinaí,BARCELONA,41.4249010 / 2.1383476,Pal,112 
+239,Pg de Manuel Girona-Gran Via Carles III,BARCELONA,41.3921686 / 2.1281568,Pal,06 16 34 66 70 72 74 N7 
+241,Arquitectura-Àngel Marquès,BARCELONA,41.4292715 / 2.1415465,Pal,10 
+242,Indústria-Av Gaudí,BARCELONA,41.4091620 / 2.1739581,Marquesina,15 19 20 45 47 92 N1 N4 
+243,Sant Antoni Maria Claret-Castillejos,BARCELONA,41.4106616 / 2.1735130,Marquesina (x2),15 19 20 45 47 92 N1 N4 
+244,València-Padilla,BARCELONA,41.4046871 / 2.1793942,Marquesina,33 34 43 44 50 51 B20 B24 N9 
+245,Pl de la Font Castellana,BARCELONA,41.4148026 / 2.1663279,Marquesina,31 32 39 55 74 N6 
+246,Camèlies-Abd el-Kader,BARCELONA,41.4138758 / 2.1643476,Pal,55 114 
+247,Gran Via-Castillejos,BARCELONA,41.4019623 / 2.1846169,Pal,07 56 B21 N2 
+248,Cardenal Reig-Pintor Ribalta,BARCELONA,41.3779418 / 2.1158244,Pal,54 
+249,Pg Maragall-Av Borbó,BARCELONA,41.4257384 / 2.1754754,Marquesina,19 45 N4 
+250,Av Diagonal-Manuel Ballbé,BARCELONA,41.3840853 / 2.1100509,Marquesina,67 L97 
+251,Av Diagonal-Parc de Cervantes,BARCELONA,41.3836721 / 2.1084201,Pal,67 L79 
+252,Pg de Colom-Rambla de Mar,BARCELONA,41.3766758 / 2.1785358,Marquesina,14 36 57 59 64 120 157 N0 N6 
+253,Pg de Colom-Moll de la Fusta,BARCELONA,41.3789034 / 2.1803262,Marquesina,14 36 57 59 64 120 157 N0 N6 
+254,Pg de Colom-Moll d'Espanya,BARCELONA,41.3804913 / 2.1816069,Marquesina,14 36 57 59 64 120 157 N0 N6 
+255,Pg de Colom-Correus,BARCELONA,41.3804736 / 2.1814835,Marquesina,14 36 57 59 64 157 N0 N6 
+256,Pg de Colom-Capitania General,BARCELONA,41.3791400 / 2.1804122,Marquesina,14 36 57 59 64 157 N0 N6 
+257,Pg de Colom-La Rambla,BARCELONA,41.3767416 / 2.1784758,Marquesina,14 36 57 59 64 157 N6 
+258,Pg de Santa Coloma-Pg de Torras i Bages,BARCELONA,41.4447274 / 2.1891935,Pal,11 40 60 
+259,Ctra Nacional 152-Av l'Alzinar,BARCELONA,41.4609321 / 2.183172000000013,Marquesina,62 76 96 104 N3 
+261,Pg de Sant Gervasi-Balmes,BARCELONA,41.4103945 / 2.1376931,Pal,17 22 131 N5 
+262,Av República Argentina-Baixada Gomis,BARCELONA,41.4116417 / 2.1425545,Marquesina,22 N4 N5 
+263,Av de Madrid-Portbou,BARCELONA,41.3773315 / 2.1256441,Pal,15 54 75 N3 
+264,Av Ferrer i Guàrdia-Mèxic,BARCELONA,41.3712103 / 2.1499093,Pal,13 50 61 193 
+265,Av Ferrer i Guàrdia-Dàlia,BARCELONA,41.3694554 / 2.1463172,Pal,13 50 61 193 
+266,Gran Vista-Doctor Bové,BARCELONA,41.4191891 / 2.1582312,Marquesina,28 119 86 N4 N5 
+267,Doctor Bové-Penyal,BARCELONA,41.4211041 / 2.1627377,Pal,24 
+268,Doctor Bové-Gran Vista,BARCELONA,41.4193940 / 2.1584158,Pal,24 
+269,Doctor Bové-Ptge de la Cadernera,BARCELONA,41.4206932 / 2.1604522,Pal,24 
+270,Doctor Bové-Baixada Passarell,BARCELONA,41.4206808 / 2.1602110,Pal,24 
+271,Doctor Bové-Conca de Tremp,BARCELONA,41.4190622 / 2.157866600000034,Pal,24 
+272,Doctor Bové-Pg de la Font de la Mulassa,BARCELONA,41.4209526 / 2.1631257,Pal,24 
+273,Pg Marítim-Don Carles,BARCELONA,41.3836221 / 2.1950539,Marquesina,36 45 57 59 157 N8 
+274,Pg Marítim-Trelawny,BARCELONA,41.3845874 / 2.1954927,Marquesina,36 45 57 59 157 N8 
+277,Pg de Manuel Girona-Capità Arenas,BARCELONA,41.3913937 / 2.1250388,Pal,06 16 74 
+278,Poble Sec,BARCELONA,41.3735699 / 2.1635404,Pal,55 
+279,França Xica-Concòrdia,BARCELONA,41.3722054 / 2.1595307,Pal,55 121 
+280,França Xica-Grases,BARCELONA,41.3721232 / 2.1563762,Pal,55 121 
+281,Pg de Gràcia-Av Diagonal,BARCELONA,41.3959974 / 2.1603823,Marquesina,22 24 28 N4 
+282,Casanova-Av Diagonal,BARCELONA,41.3927825 / 2.1491968,Pal,14 68 N7 
+283,Pg de Sant Joan-Av Diagonal,BARCELONA,41.3996348 / 2.1689555,Pal,15 55 N4 
+284,Lepant-Av Diagonal,BARCELONA,41.4024622 / 2.1792941999999584,Marquesina,10 62 N0 N3 N7 
+285,Muntaner-Travessera de Gràcia,BARCELONA,41.3945129 / 2.1488806,Marquesina,58 64 N8 
+286,Via Augusta-Av Diagonal,BARCELONA,41.3964510 / 2.1550748,Pal,22 24 28 N4 
+287,Calvet-Av Diagonal,BARCELONA,41.3938814 / 2.1444932,Pal,14 68 N7 
+288,Pl de les Glòries Catalanes-Encants Vells,BARCELONA,41.4040052 / 2.1860729,Marquesina,07 56 92 B21 
+289,Balmes-Travessera de Gràcia,BARCELONA,41.3971380 / 2.1523262,Pal,16 17 27 31 32 N5 
+291,Gran Via Carles III-Europa,BARCELONA,41.3860921 / 2.1274527,Pal,59 70 72 75 
+293,Av Joan XXIII-Pl Pius XII,BARCELONA,41.3863774 / 2.1226417,Marquesina,113 L12 
+294,González Tablas-Manuel Ballbé,BARCELONA,41.3865311 / 2.1073016,Marquesina,60 75 113 EP1 JM N12 
+295,González Tablas-Av de l'Exèrcit,BARCELONA,41.3854970 / 2.1095207,Marquesina,54 75 113 N12 
+296,Av Doctor Marañón-Baldiri i Reixac,BARCELONA,41.3820969 / 2.1139995,Pal,54 
+297,Av de Pedralbes-Pg de Manuel Girona,BARCELONA,41.3891812 / 2.1200920,Pal,63 78 
+298,Doctor Ferran-Av Diagonal,BARCELONA,41.3887461 / 2.1248752,Marquesina,74 
+299,Fctat de Ciències Jurídiques Econòmiques i Socials,BARCELONA,41.3866544 / 2.1163750,Pal,33 
+300,Pujades-Ciutat de Granada,BARCELONA,41.3988221 / 2.1968001,Pal,71 192 
+301,Pl dels Campions,BARCELONA,41.3904001 / 2.2001584,Marquesina,36 N6 N8 
+302,Pg. Marítim de la Nova Icària - Pl. Nova Icària,BARCELONA,41.3916725 / 2.2031316,,N6 N8 
+303,Pg de Calvell-Ferrocarril,BARCELONA,41.3982356 / 2.2070350,Pal,41 
+304,Pg. Taulat - Ciutat de Granada,BARCELONA,41.3952712 / 2.2008839,Pal,N6 N8 
+306,Pg de Verdum-Doctor Pi i Molist,BARCELONA,41.4358356 / 2.1723479,Marquesina (x2),11 31 32 47 50 51 N1 N6 82 
+307,Indústria-Hospital Dos de Maig,BARCELONA,41.4107706 / 2.1761475,Marquesina,15 19 20 45 47 92 N1 N4 
+308,València-Dos de Maig,BARCELONA,41.4065187 / 2.1818286,Marquesina,33 34 43 44 50 51 B20 B24 N9 
+309,Av Diagonal-Complex Esportiu Universitari,BARCELONA,41.3833098 / 2.1079083,Marquesina,67 L97 L79 
+310,Av Diagonal-Av Doctor Marañón,BARCELONA,41.3842507 / 2.1116361,Pal,07 67 74 75 L97 N12 L79 
+312,Comte d'Urgell-Gran Via,BARCELONA,41.3827099 / 2.1580313,Pal,20 37 
+313,Pg de Gràcia-Gran Via,BARCELONA,41.3901024 / 2.1676902,Marquesina,07 16 17 22 24 28 N4 N5 N6 N7 
+314,Calàbria-Gran Via,BARCELONA,41.3800227 / 2.1547729,Pal,41 
+315,Pg de Sant Joan-Consell de Cent,BARCELONA,41.3961582 / 2.1737279,Marquesina,06 19 50 51 55 N1 N4 
+316,Aribau-Gran Via,BARCELONA,41.3860837 / 2.1625671,Marquesina,54 58 63 64 66 67 68 N3 N7 N8 
+317,Pl Tetuan-Pg de Sant Joan,BARCELONA,41.3954916 / 2.1752983,Marquesina,06 19 50 51 55 N1 N4 
+318,Padilla-Gran Via,BARCELONA,41.4013797 / 2.1829547,Marquesina,62 N3 N7 
+319,Entença-Gran Via,BARCELONA,41.3784164 / 2.1523843,Marquesina,27 N0 
+320,Tarragona-Parc de Joan Miró,BARCELONA,41.3767455 / 2.1474534,Marquesina,27 30 109 N0 
+321,Roger de Llúria-Gran Via,BARCELONA,41.3920246 / 2.1704167,Marquesina (x2),39 45 47 B20 B24 
+322,Marina-Plaça de Toros Monumental,BARCELONA,41.4005894 / 2.1795169,Pal,10 N9 
+327,Pare Manyanet-Virgili,BARCELONA,41.4281702 / 2.1937593,Marquesina,11 26 34 35 36 40 126 B20 B22 N9 
+328,Av. Meridiana - Pegaso,BARCELONA,41.4254427 / 2.1865235,Marquesina,62 96 B22 N3 
+330,Pg de Santa Eulàlia-Can Caralleu,BARCELONA,41.4039564 / 2.1146190,Pal,66 130 
+332,Entença - Deu i Mata,BARCELONA,41.3895151 / 2.1387075,Pal,30 66 N0 
+335,Caserna del Bruc-UPC,BARCELONA,41.3870230 / 2.1116227,Marquesina,54 60 75 113 EP1 JM 
+336,Balmes-Sant Eusebi,BARCELONA,41.4008759 / 2.1479603,Pal,16 17 27 31 32 92 N5 
+337,València-Muntanya,BARCELONA,41.4112535 / 2.1881840,Marquesina,33 43 44 B24 
+338,València-Av Meridiana,BARCELONA,41.4109359 / 2.1876764,Pal,34 35 B20 N9 
+339,Espronceda-El Clot,BARCELONA,41.4159078 / 2.1905889,Pal,71 
+341,Aragó-Metro Clot,BARCELONA,41.4092212 / 2.1879117,,192 
+342,Carmen Amaya-Cementíri de l'Est,BARCELONA,41.3943171 / 2.2024212,Pal,41 
+343,Pl de Sant Jordi,BARCELONA,41.3663701 / 2.1447863,Pal,50 61 193 
+344,Piscines Bernat Picornell,BARCELONA,41.3665143 / 2.1513924,Pal,50 61 125 
+345,Estadi Olímpic de Montjuïc-MNAC,BARCELONA,41.3660439 / 2.1545780,Pal,50 61 125 
+346,Anella Olímpica-MNAC,BARCELONA,41.3662064 / 2.1553511,Pal,50 61 
+347,Av de l'Estadi-Pl Europa,BARCELONA,41.3665816 / 2.1517520,Pal,50 61 
+348,Av de l'Estadi-INEFC,BARCELONA,41.3655192 / 2.1474070,Pal,50 61 125 
+349,Av de l'Estadi-Jocs del 92,BARCELONA,41.3655720 / 2.1468411,Pal,50 61 
+350,Av de Vallcarca-Baixada de la Glòria,BARCELONA,41.4104263 / 2.1470437,Pal,27 87 
+359,Carreras-Ctra d'Esplugues,BARCELONA,41.3881944 / 2.1077268,Pal,60 
+360,Sant Adrià-Formiga,BARCELONA,41.4358344 / 2.2016605,Marquesina,11 73 B22 B23 
+362,Av Meridiana-Escòcia,BARCELONA,41.4291573 / 2.1836373,Marquesina,62 96 B22 N3 
+363,Felip II-Pl del Congrés Eucarístic,BARCELONA,41.4259284 / 2.1798805,Pal,71 
+364,Felip II-Arnau d'Oms,BARCELONA,41.4272889 / 2.1780974,Pal,71 
+365,Lletres-Dante Alighieri,BARCELONA,41.4279776 / 2.1579480,Marquesina,10 39 87 N4 
+366,Av Estatut de Catalunya-Marcel·lí,BARCELONA,41.4305087 / 2.1552300,Pal,10 N4 
+367,Av Estatut de Catalunya-Av Card Vidal i Barraquer,BARCELONA,41.4330236 / 2.1525184,Pal,10 
+368,Travessera de Dalt-Torrent de les Flors,BARCELONA,41.4104214 / 2.1565481,Pal,24 31 32 74 N0 
+369,Pi i Margall-Escorial,BARCELONA,41.4066954 / 2.1631985,Pal,55 N6 
+370,Pg Maragall-Greco,BARCELONA,41.4268098 / 2.1717243,Marquesina,19 45 N4 
+371,Pg Maragall-Sabastida,BARCELONA,41.4275207 / 2.1684967,Marquesina,19 45 N4 
+373,Av Diagonal-Entença,BARCELONA,41.3903812 / 2.1364389,Marquesina (x2),06 07 33 34 63 67 N12 
+374,Ctra d'Horta-Pg de Valldaura,BARCELONA,41.4373155 / 2.1535923,Pal,45 102 
+375,Josep Tarradellas-Gelabert,BARCELONA,41.3882979 / 2.1428659,Pal,27 32 
+376,Travessera de Les Corts-Pl Dr Ignasi Barraquer,BARCELONA,41.3901562 / 2.1406688,Pal,15 59 
+377,Av Paral·lel-Rocafort,BARCELONA,41.3751254 / 2.1578901,Marquesina,37 57 61 157 N0 
+378,Mallorca-Av de Roma,BARCELONA,41.3827520 / 2.1478941,Marquesina,43 44 
+379,Floridablanca-Av Paral·lel,BARCELONA,41.3756093 / 2.1547407,Pal,13 91 141 
+380,València-Entença,BARCELONA,41.3810902 / 2.1479819,Pal,43 44 
+381,Clot-Biscaia,BARCELONA,41.4140293 / 2.1906639,Marquesina,34 35 B20 N9 
+382,Pujades-Espronceda,BARCELONA,41.4052739 / 2.2052730,Pal,36 141 N6 
+383,Gran Via-Espronceda,BARCELONA,41.4117190 / 2.1976765,Marquesina,56 60 B21 N2 
+385,Gran Via-Bilbao,BARCELONA,41.4090872 / 2.1947946,Marquesina,56 60 B21 N2 
+387,Clot-Pont de Bac de Roda,BARCELONA,41.4163032 / 2.1912479,Marquesina,33 34 35 43 44 B20 N9 
+388,Carrer de Saldes,BARCELONA,41.42898 / 2.13451,Pal,112 
+389,Pl Espanya-FGC,BARCELONA,41.3743325 / 2.1485624,Marquesina,09 37 46 65 79 91 109 165 A1 L70 L72 L94 L95 N1 N13 N15 N16 N17  
+390,Tarragona-Pl. Espanya,BARCELONA,41.3757545 / 2.1487637,Marquesina,27 
+391,Creu Coberta-Mercat d'Hostafrancs,BARCELONA,41.3751947 / 2.1449287,Marquesina,56 57 157 N14 N2 
+392,Creu Coberta-Gran Via,BARCELONA,41.3750948 / 2.1474825,Marquesina,56 57 157 N14 N2 
+393,Av Reina Maria Cristina-Pl Espanya,BARCELONA,41.3738985 / 2.1501163,Pal,13 23 50 61 
+394,Tarragona - Diputació,BARCELONA,41.3760268 / 2.1483918,Marquesina,30 
+395,Marquès de Sentmenat-Equador,BARCELONA,41.3854629 / 2.1415951,Marquesina,54 N3 
+396,Berlín-Numància,BARCELONA,41.3835485 / 2.1397803,Marquesina,54 66 N3 
+397,Josep Tarradellas-Berlín,BARCELONA,41.3849055 / 2.1423724,Pal,27 32 
+398,Rambla de Guipúscoa-Julián Besteiro,BARCELONA,41.4165232 / 2.1976030,Marquesina,33 43 44 B24 N8 
+399,Llull-Provençals,BARCELONA,41.4070663 / 2.2102404,Pal,26 36 141 N6 
+400,Centre Mèdic Delfos,BARCELONA,41.4134640 / 2.1429367,Pal,27 123 
+402,Dante Alighieri-Santa Joana d'Arc,BARCELONA,41.4279668 / 2.1589995,Pal,19 86 87 
+406,Pg de Valldaura-Rambla Caçador,BARCELONA,41.4386718 / 2.1735123,Marquesina,31 47 73 76 B16 B19 N6 82 
+409,Sagrera-Parc de la Pegaso,BARCELONA,41.4263589 / 2.1909487,Marquesina,26 34 35 36 40 126 B20 N9 
+410,Pl Eivissa-Horta,BARCELONA,41.4305580 / 2.1610985,Pal,45 102 185 N4 
+411,Tajo-Metro Horta,BARCELONA,41.4295820 / 2.1608981,Pal,102 
+412,Gran Via Carles III-Urbanització Los Cármenes,BARCELONA,41.3879170 / 2.1699187,Pal,43 70 72 
+413,Av Litoral-Ramon Trias Fargas,BARCELONA,41.3862671 / 2.1948275,Marquesina,36 N0 N6 N8 
+414,Pl. Voluntaris Olímpics,BARCELONA,41.3875574 / 2.1952593,Marquesina,N0 N6 N8 
+420,Can Clos,BARCELONA,41.3607541 / 2.1473282,Pal,13 
+421,Gran Via-Moianès,BARCELONA,41.3702738 / 2.1426511,Marquesina (x2),09 37 46 65 79 109 165 L70 L72 L80 L81 L86 L87 L94 L95 N1 N15 N16  
+422,Via Sant Antoni Abat,BARCELONA,41.3566026 / 2.1509791,Pal,107 
+423,Gran Vista-Pl de la Mitja Lluna,BARCELONA,41.4202535 / 2.1640411,Pal,28 119 86 
+424,Garriga i Roca-Camil Oliveras,BARCELONA,41.4212779 / 2.1697476,Pal,39 117 
+425,Montserrat de Casanovas-Parc del Guinardó,BARCELONA,41.4231094 / 2.1696197,Pal,39 117 
+426,Montserrat de Casanovas-Ptge Pedrell,BARCELONA,41.4240415 / 2.1680143,Pal,39 117 
+427,Pedrell-Canonge Almera,BARCELONA,41.4239258 / 2.1620626,Pal,39 
+428,Pg de Valldaura-Pg de Fabra i Puig,BARCELONA,41.4392428 / 2.1657939,Marquesina,31 47 71 73 76 122 B16 B19 N6 82 
+430,Pg de Fabra i Puig-Canigó,BARCELONA,41.4336172 / 2.1632257,Pal,71 
+431,Av Meridiana-Dublín,BARCELONA,41.4274559 / 2.1851635,Pal,62 96 B22 N3 
+432,Av Meridiana-Parc de Can Dragó,BARCELONA,41.4356711 / 2.1838305,Marquesina,62 96 97 104 N3 
+433,Pg de Fabra i Puig-Pl Sant Francesc Xavier,BARCELONA,41.4341375 / 2.1635872,Pal,71 
+435,Arenys-Rossell,BARCELONA,41.4228010 / 2.1455106,Pal,19 
+436,Arenys-Fastenrath,BARCELONA,41.4220893 / 2.1430396,Pal,19 
+437,Pl del Nen de la Rutlla,BARCELONA,41.4186384 / 2.1719910,Marquesina,31 32 39 55 74 N6 
+439,Pg de Valldaura-Av Río de Janeiro,BARCELONA,41.4392935 / 2.1806799,Marquesina,73 132 B16 B19 
+440,Via Júlia-Sant Francesc Xavier,BARCELONA,41.4416080 / 2.1775651,Marquesina,50 51 76 N1 80 81 
+441,Gran Vista-Font d'En Fargas,BARCELONA,41.4202234 / 2.1645009,Pal,28 119 86 
+442,Comte d'Urgell-Tamarit,BARCELONA,41.3879170 / 2.1699187,Pal,20 37 
+443,Rda. Sant Antoni - Muntaner,BARCELONA,41.3829228 / 2.1636146,Marquesina,24 41 55 64 120 141 N6 
+444,Entença-Floridablanca,BARCELONA,41.3756923 / 2.1559899,Pal,55 N0 
+445,Pedrell-Ptge Gabarnet,BARCELONA,41.4231701 / 2.1587980,Pal,39 
+446,Montserrat de Casanovas-Pg Font d'En Fargas,BARCELONA,41.4237527 / 2.1649878,Pal,39 117 
+447,Av Mare de Déu de Montserrat-França,BARCELONA,41.4148715 / 2.1649239,Pal,31 32 39 55 74 N0 N6 
+449,Pg de la Zona Franca-Ctra del Prat,BARCELONA,41.3620608 / 2.1375426,Pal,09 37 72 109 N1 
+450,Pg de la Zona Franca-Foneria,BARCELONA,41.3596148 / 2.1396558,Marquesina (x2),09 37 72 109 N1 
+453,Via Barcino-Foradada,BARCELONA,41.4528525 / 2.1938116,Marquesina,11 40 
+454,Sagrera-Ciutat d'Elx,BARCELONA,41.4220442 / 2.1911401,Marquesina,34 35 126 B20 N9 
+455,Av Meridiana-Felip II,BARCELONA,41.4219783 / 2.1867930,Marquesina (x2),62 96 B22 N3 
+458,Av Diagonal-Av de Pedralbes,BARCELONA,41.3870056 / 2.1215867,Marquesina,07 33 74 L97 
+459,Av Mare de Déu de Montserrat-Gènova,BARCELONA,41.4165406 / 2.1701628,Marquesina,31 32 39 55 74 N6 
+460,Av Mare de Déu de Montserrat-Francesc Alegre,BARCELONA,41.4157671 / 2.1677637,Marquesina,31 32 39 55 74 N0 N6 
+464,Gran Via-Bac de Roda,BARCELONA,41.4110774 / 2.1974426,Marquesina,56 60 B21 N2 
+466,Gran Via-Pl dels Porxos,BARCELONA,41.4139218 / 2.2005969,Marquesina,40 42 56 60 B21 N2 
+469,Rambla de Prim-Ferrer Bassa,BARCELONA,41.4151533 / 2.2147268,Pal,36 43 B23 N6 
+471,Aiguablava-Via Favència,BARCELONA,41.4471393 / 2.1805273,Marquesina,50 51 N1 80 81 
+475,Pg Maragall-Dante Alighieri,BARCELONA,41.4288164 / 2.1627349,Pal,19 39 45 N4 
+476,Ciències-Llobregós,BARCELONA,41.4260785 / 2.1583468,"Marquesina, Platafor",10 39 87 
+477,Rambla del Carmel-Dante Alighieri,BARCELONA,41.4272416 / 2.1572742,Marquesina,10 86 87 N4 
+478,Av de Vallcarca-Centre Mèdic Delfos,BARCELONA,41.4140518 / 2.1431521,Pal,27 129 
+479,Av de Madrid-Gran Via Carles III,BARCELONA,41.3789461 / 2.1285275,Pal,54 N3 
+480,Manila-Capità Arenas,BARCELONA,41.3900330 / 2.1267930,Pal,16 
+481,Pl Reina Maria Cristina,BARCELONA,41.3894146 / 2.1280677,Pal,16 34 N7 
+482,Travessera de Les Corts-Maternitat,BARCELONA,41.3812570 / 2.1266826,Pal,15 
+483,Av Diagonal-Numància,BARCELONA,41.3895542 / 2.1316514,Marquesina,07 33 34 63 67 78 L14 N12 L79 
+484,Travessera de Les Corts-Galileu,BARCELONA,41.3855572 / 2.1327593,Pal,15 43 59 
+485,Mercat de Les Corts,BARCELONA,41.3837331 / 2.1299421,Pal,15 43 59 
+487,Ronda General Mitre-Gironella,BARCELONA,41.3933159 / 2.1313348,Pal,16 30 70 72 74 N0 N7 
+488,Av de Madrid-Vallespir,BARCELONA,41.3817472 / 2.1350778,Pal,54 N3 
+490,Travessera de Les Corts-Comandant Benítez,BARCELONA,41.3810049 / 2.1262705,Pal,43 
+491,Av Diagonal-Joan Güell,BARCELONA,41.3880675 / 2.1281556,Marquesina,70 72 74 
+492,Av Diagonal-Av Joan XXIII,BARCELONA,41.3869737 / 2.1230190,Marquesina,07 33 63 67 74 75 78 L14 L97 N12 L79 
+493,Av Diagonal-Gran Via Carles III,BARCELONA,41.3876470 / 2.1256891,Marquesina,07 33 63 67 78 N12 
+494,Av Diagonal-Gandesa,BARCELONA,41.3884842 / 2.1289679,Marquesina (x2),06 07 33 34 63 66 67 78 N12 
+495,Av Mare de Déu de Montserrat-Cartagena,BARCELONA,41.4161593 / 2.1699842,Marquesina,31 32 39 55 74 N6 
+496,Pg deTorras i Bages-Guardiola i Feliu,BARCELONA,41.4394566 / 2.1909417,Pal,35 40 73 B20 N9 
+497,Alcántara-Garigliano,BARCELONA,41.4455624 / 2.1724629,Pal,11 27 32 N6 
+498,Gran Via-Escultors Claperós,BARCELONA,41.4048270 / 2.1883634,Marquesina,56 B21 N2 
+499,Pl de les Glòries Catalanes,BARCELONA,41.4032180 / 2.1876658,Marquesina,07 56 B21 N2 
+500,Pl de les Glòries Catalanes-Gran Via,BARCELONA,41.4051950 / 2.1888414,Pal,60 
+501,Colònia Tibidabo,BARCELONA,41.4225000 / 2.1186111,Pal,111 
+502,Av Diagonal-Girona,BARCELONA,41.3982058 / 2.1663791,Marquesina,06 15 33 34 
+503,Gran Via-Pl Tetuán,BARCELONA,41.3938834 / 2.1737751,Pal,07 50 54 56 62 B21 N1 N2 N3 
+504,Mallorca-Girona,BARCELONA,41.3980630 / 2.1680752,Marquesina,43 44 B20 B24 N7 
+505,Travessera de Dalt-La Granja,BARCELONA,41.4090929 / 2.1541581,Marquesina,24 31 32 74 116 N0 
+507,Rambla de Prim-Concili de Trento,BARCELONA,41.4220295 / 2.2056554,Marquesina,36 B21 
+508,Felip II-Matanzas,BARCELONA,41.4236017 / 2.1826559,Pal,20 71 
+509,Felip II-Garcilaso,BARCELONA,41.4231037 / 2.1835795,Pal,20 71 
+510,Av Meridiana-Hondures,BARCELONA,41.4213177 / 2.1870974,Marquesina,62 B22 N3 
+511,Av. Meridiana - Cardenal Tedeschini,BARCELONA,41.4250611 / 2.1863736,Marquesina,62 96 B22 N3 
+512,Av de Sarrià-Mestre Villa,BARCELONA,41.3922837 / 2.1327880,Pal,06 66 
+515,Balmes-Pàdua,BARCELONA,41.4030588 / 2.1441013,Pal,16 17 N5 
+516,Gran Via Carles III-Numància,BARCELONA,41.3917276 / 2.1292777,Pal,16 34 70 72 74 N7 
+517,Balmes-Pg de Sant Gervasi,BARCELONA,41.4092778 / 2.1372972,Pal,17 N5 
+518,Balmes-Pl Narcisa Freixas,BARCELONA,41.4079037 / 2.1380042,Pal,17 N5 
+519,Balmes - Pl Joaquim Folguera,BARCELONA,41.4057446 / 2.1391193,Pal,17 N5 
+520,Av de Sarrià-Av Diagonal,BARCELONA,41.3916340 / 2.1370286,Pal,06 
+522,Via Augusta-Pl Orient,BARCELONA,41.3977257 / 2.1283971,Pal,30 68 
+523,Via Augusta-Tres Torres,BARCELONA,41.3977329 / 2.1307869,Pal,30 68 
+524,Av Diagonal-Ganduxer,BARCELONA,41.3916913 / 2.1400564,Pal,06 07 33 34 63 67 N12 
+525,Via Augusta-Ganduxer,BARCELONA,41.3977470 / 2.1358886,Pal,14 68 
+526,Ganduxer-Clínica Sagrada Família,BARCELONA,41.4002277 / 2.1336081,Pal,14 70 72 
+527,Ganduxer-Pl Ferran Casablancas,BARCELONA,41.4013933 / 2.1327030,Pal,14 70 72 
+528,Via Augusta-Ronda General Mitre,BARCELONA,41.3977409 / 2.1337162,Marquesina,68 N7 
+529,Rda. General Mitre - Ganduxer,BARCELONA,41.4006914 / 2.1354012,Marquesina (x2),14 16 70 72 
+530,Pg de la Bonanova-Horaci,BARCELONA,41.4046082 / 2.1296744,Pal,22 64 75 123 N8 
+531,Pg de la Bonanova-Anglí,BARCELONA,41.4013646 / 2.1240996000000223,Marquesina,22 64 75 N8 
+532,Pg de la Bonanova-Vilana,BARCELONA,41.4033584 / 2.1277133,Marquesina,22 64 75 N8 
+533,Av de Vallcarca-Gomis,BARCELONA,41.4119231 / 2.1444336,Pal,27 
+534,Pl Alfonso Comín-Av República Argentina,BARCELONA,41.4145371 / 2.1382956,Pal,17 60 73 123 124 N4 
+540,Gran Via-Cantàbria,BARCELONA,41.4159936 / 2.2033703,Marquesina,26 40 42 56 60 B21 N2 
+541,Rambla de Guipúscoa-Treball,BARCELONA,41.4182017 / 2.1998365,Marquesina,33 43 44 B24 N8 
+542,Rambla de Guipúscoa-Metro Sant Martí,BARCELONA,41.4193967 / 2.2008393,Pal,33 43 44 B24 N8 
+543,Almogàvers - Ciutat de Granada,BARCELONA,41.4012817 / 2.1955160,Pal,06 40 42 141 B25 N11 
+544,Gran Vista-Conca de Tremp,BARCELONA,41.4190458 / 2.1580720,Pal,28 119 86 N4 N5 
+545,Gran Vista-IES Ferran Tallada,BARCELONA,41.4208189 / 2.1617022,"Marquesina, Platafor",119 N4 N5 
+546,Gran Vista-Turó de la Rovira,BARCELONA,41.4207336 / 2.1618741,Pal,28 119 86 N4 N5 
+547,Metro Zona Universitària,BARCELONA,41.3844345 / 2.1116696000000275,Pal,07 
+548,Zona Universitària-Escola A E Empresarials,BARCELONA,41.3847340 / 2.1109790,Marquesina,33 54 60 75 N12 
+549,Av d'Esplugues-Abadessa Olzet,BARCELONA,41.3933510 / 2.1119012,Pal,22 63 68 75 78 
+550,Av d'Esplugues-Doctor Joaquim Albarrán,BARCELONA,41.3899811 / 2.1090629,Pal,22 63 68 75 78 
+552,Av d'Esplugues-Eduard Toldrà,BARCELONA,41.3879470 / 2.1065960,Pal,22 60 63 68 75 78 113 
+553,Av d'Esplugues-Parc de Cervantes,BARCELONA,41.3859388 / 2.1052978,Marquesina,22 63 68 78 EP1 JM N12 
+554,Sor Eulàlia d'Anzizu - Gran Capità,BARCELONA,41.3881552 / 2.1099826,Pal,54 75 EP1 JM 
+555,Sor Eulàlia d'Anzizu-Carreras,BARCELONA,41.3883940 / 2.1100984,Marquesina,54 
+556,Zona Universitària-Fctat C Econòmiques,BARCELONA,41.3847617 / 2.1114423,Pal,74 
+557,Av Príncep d'Astúries 59,BARCELONA,41.4052848 / 2.1499641,Pal,22 24 28 92 87 N4 
+558,Av Príncep d'Astúries 61,BARCELONA,41.4054883 / 2.1499055,Pal,27 31 32 
+559,Pl Molina,BARCELONA,41.4016938 / 2.1467547,Pal,16 17 N5 
+560,Villarroel-Gran Via,BARCELONA,41.3833324 / 2.1592347,Pal,14 20 37 59 N12 
+561,Pg de Gràcia-Casp,BARCELONA,41.3889539 / 2.1692846,Marquesina,16 17 22 24 28 N4 N5 N6 N7 
+562,Balmes-Gran Via,BARCELONA,41.3875242 / 2.1648417,Pal,16 17 N5 N7 
+563,Muntaner-Gran Via,BARCELONA,41.3852884 / 2.1610652,Pal,54 58 64 66 N3 N8 
+565,Rambla de Prim-Gran Via,BARCELONA,41.4189896 / 2.2097027,Pal,36 
+566,Concili de Trento-Pl de la Pau,BARCELONA,41.4224272 / 2.2085733,Pal,56 
+567,Bilbao-Andrade,BARCELONA,41.4101149 / 2.1937243,,192 
+569,Extremadura-Empordà,BARCELONA,41.4238806 / 2.2102808,Marquesina,42 43 60 B25 N11 N2 
+570,Lepant-Plaça de Toros Monumental,BARCELONA,41.4005721 / 2.1817432,Pal,10 62 N3 
+571,Sant Pere d'Abanto-Moianès,BARCELONA,41.3717644 / 2.1430092,Pal,91 
+572,Barri de La Pau-Gran Via,BARCELONA,41.4223353 / 2.2104233,Pal,56 
+573,Pl Espanya-Gran Via,BARCELONA,41.3927819 / 2.1727173,Marquesina,37 46 65 79 165 
+574,Rambla de Prim-Andrade,BARCELONA,41.4200513 / 2.2072894,Pal,36 B21 
+576,Roger de Flor-Gran Via,BARCELONA,41.3952819 / 2.1774681,Pal,54 
+577,Metro Pg de Gràcia,BARCELONA,41.3919701 / 2.1650495,Pal,22 24 28 N4 N6 
+578,Bac de Roda-Perú,BARCELONA,41.4107530 / 2.1999182,Marquesina,40 42 71 N8 
+580,Llançà-Av Mistral,BARCELONA,41.3758343 / 2.1513379,Marquesina,141 
+584,Sants-Olzinelles,BARCELONA,41.3753539 / 2.1368441,Marquesina,56 57 157 N14 N2 
+586,Pg de Valldaura-Mercat de la Guineueta,BARCELONA,41.4390530 / 2.1697612,Marquesina,31 47 73 76 B16 B19 N6 82 
+588,Sant Adrià-Bon Pastor,BARCELONA,41.4365133 / 2.2082922,Marquesina,11 42 73 N8 
+589,Lima-Sas,BARCELONA,41.4392493 / 2.2048517,Pal,11 73 
+591,Av d'Esplugues-Hospital Sant Joan de Déu,BARCELONA,41.3849651 / 2.1040072,Marquesina,63 68 78 N12 
+601,Sant Adrià - Poligon Industrial,BARCELONA,41.43542 / 2.19811,Marquesina,B22 
+602,San Adrià - Ferran Junoy,BARCELONA,41.4406083 / 2.1961151,Marquesina,11 73 B22 
+603,Líma-Ciutat d' Asunción,BARCELONA,41.4392419 / 2.2008571,Pal,11 42 73 N8 
+604,Pi i Margall-Pl Joanic,BARCELONA,41.4064193 / 2.1633763,Pal,55 
+605,Pg de la Vall d'Hebron-Av de Vallcarca,BARCELONA,41.4193839 / 2.1398545,Marquesina,17 60 73 N4 
+607,Pg de la Vall d'Hebron-Velòdrom,BARCELONA,41.4372556 / 2.1497976,Marquesina,27 60 73 76 B16 B19 N4 
+610,Santaló-Plató,BARCELONA,41.3998330 / 2.1407503,Pal,58 64 N8 
+611,Pl d'Adrià,BARCELONA,41.4012021 / 2.1389486,Pal,58 64 N8 
+612,Muntaner-Pl Bonanova,BARCELONA,41.4058490 / 2.1341828,Pal,58 64 N8 
+613,Muntaner - Arimón,BARCELONA,41.4037369 / 2.1368383,Pal,58 64 N8 
+614,Pg de la Vall d'Hebron-Av Can Marcet,BARCELONA,41.4356660 / 2.1483783,Pal,27 60 73 76 B16 B19 N4 
+615,Campoamor-Av Estatut de Catalunya,BARCELONA,41.4352216 / 2.1543743,Marquesina,45 102 N4 
+616,Campoamor-Rectoria,BARCELONA,41.4329463 / 2.1581264,Marquesina,45 102 185 N4 
+618,Cantàbria-Pl del Ram de l'Aigua,BARCELONA,41.4200521 / 2.2011946,Pal,26 40 
+619,Cantàbria-Menorca,BARCELONA,41.4210769 / 2.1994046,Pal,26 40 
+621,Bac de Roda-Rambla de Guipúscoa,BARCELONA,41.4150327 / 2.1942453,Pal,71 
+622,Via Augusta-Salvador Mundi,BARCELONA,41.3996367 / 2.1237387,Pal,30 66 68 N7 
+624,Palamós-Sa Tuna,BARCELONA,41.4514921 / 2.1876259,Pal,50 51 127 80 81 
+626,Av Mare de Déu de Montserrat-La Bisbal,BARCELONA,41.4180817 / 2.1717408,Pal,31 32 39 55 74 N6 
+627,Londres-Calàbria,BARCELONA,41.3885052 / 2.1441096,Marquesina,54 66 N3 
+628,Berlín-Josep Tarradellas,BARCELONA,41.3850937 / 2.1420664,Marquesina,54 66 N3 
+629,Numància-Berlín,BARCELONA,41.3828007 / 2.1394853,Marquesina,30 43 78 N0 
+630,Av de Sarrià-Josep Tarradellas,BARCELONA,41.3904451 / 2.1448412,Pal,59 N12 
+633,Pg de Sant Joan-Indústria,BARCELONA,41.4027936 / 2.1647931,Pal,15 20 45 47 N4 N6 
+634,Lepant-Indústria,BARCELONA,41.4082469 / 2.1716029,Marquesina,10 19 N0 N1 
+635,Dos de Maig-St Antoni M Claret,BARCELONA,41.4116116 / 2.1760118,Pal,35 50 51 117 
+641,Gran de Sant Andreu-Pg de Fabra i Puig,BARCELONA,41.4293306 / 2.1900439,Marquesina,35 40 126 B20 N9 
+646,Av. Tibidabo (Teodor Roviralta-Adrià Margarit),BARCELONA,41.3879170 / 2.1699187,Pal,", "
+649,Pg Maragall-Mossèn Josep Bundó,BARCELONA,41.4273920 / 2.1681680,Marquesina,19 45 N4 
+650,Pl Catalana-Mascaró,BARCELONA,41.4218887 / 2.1731844,Pal,55 
+651,Pg de Fabra i Puig-Teide,BARCELONA,41.4303418 / 2.1703452,Pal,71 
+652,Pg Maragall-Amílcar,BARCELONA,41.4265118 / 2.1722315,Marquesina,19 45 N4 
+654,Av Miramar-Fundació Joan Miró,BARCELONA,41.3678116 / 2.1598079,Pal,50 55 61 193 
+655,Av Miramar-Estació del Funicular,BARCELONA,41.3689179 / 2.1629764,Pal,50 55 61 193 
+656,Av Miramar-Escoles del Bosc,BARCELONA,41.3689795 / 2.1619779,Pal,50 55 61 193 
+657,Fundació Joan Miró-Pl Neptú,BARCELONA,41.3679032 / 2.1596650,Pal,50 55 61 193 
+661,Aragó-Independència,BARCELONA,41.4072653 / 2.1848711,Marquesina,62 B24 N3 
+662,Marina-Pl dels Voluntaris,BARCELONA,41.3883826 / 2.1956433,Marquesina,10 71 92 N0 
+667,Via Laietana-Correus,BARCELONA,41.3824912 / 2.1806436,Pal,17 19 40 45 120 N8 
+681,Av Jordà-Idumea,BARCELONA,41.4266883 / 2.1389529,Pal,19 76 
+682,Bisbe Josep Climent-Cementiri de l'Est,BARCELONA,41.3944301 / 2.2016726,Marquesina (x2),36 41 N6 N8 
+683,Natzaret-Lledoner,BARCELONA,41.4259086 / 2.1362670,Pal,112 
+684,Pl Sant Agustí,BARCELONA,41.3578819 / 2.1559481,Pal,107 
+685,Via Santa Eulàlia-Rda Litoral,BARCELONA,41.3531685 / 2.1545608,Pal,107 
+686,Pl de l'Esperança,BARCELONA,41.3542343 / 2.1557361,Pal,107 
+687,Pl de la Caritat,BARCELONA,41.3549954 / 2.1559938,Pal,107 
+688,Pl Sant Rafael,BARCELONA,41.3551101 / 2.1538823,Pal,107 
+689,Pl Sant Francesc,BARCELONA,41.3564701 / 2.1577342,Pal,107 
+690,Via Sant Jordi-Via Sant Sever,BARCELONA,41.3553714 / 2.1580327,Pal,107 
+691,Via Sant Jaume-Via Santíssima Trinitat,BARCELONA,41.3563105 / 2.1547739,Pal,107 
+692,Via Santíssima Trinitat,BARCELONA,41.3562471 / 2.1520677,Pal,107 
+693,Via Santíssima Trinitat-Pl Sant Agustí,BARCELONA,41.3569230 / 2.1544081,Pal,107 
+694,Via Sant Antoni Abat-Via Santíssima Trinitat,BARCELONA,41.3555992 / 2.1514127,Pal,107 
+695,Via Sant Jaume,BARCELONA,41.4621940 / 2.1903081,Pal,107 
+696,Via Sant Francesc,BARCELONA,41.3547667 / 2.1535720,Pal,107 
+697,Pallars-Marina,BARCELONA,41.3944065 / 2.1887053,Pal,06 40 42 141 B25 N11 
+698,Av Icària-Marina,BARCELONA,41.3893907 / 2.1951172,Pal,14 41 71 92 
+699,Benet i Mateu-Manuel de Falla,BARCELONA,41.3938949 / 2.1262743,Pal,34 66 N7 
+700,Pg Calvell-Parc del Poblenou,BARCELONA,41.3974619 / 2.2065235,Pal,41 
+701,Els Vergós-Pl de Rafael Benet,BARCELONA,41.3971165 / 2.1270375,Pal,66 N7 
+702,Pl Artós,BARCELONA,41.3955882 / 2.1256526,Pal,66 130 
+703,Ronda Sant Antoni-Pl Goya,BARCELONA,41.3830846 / 2.1637946,Marquesina,24 41 55 64 91 141 N6 
+704,Parc de la Vall d'Hebron,BARCELONA,41.4313535 / 2.1457618,Marquesina,10 27 60 73 76 B16 B19 N4 
+705,Av Meridiana-Josep Estivill,BARCELONA,41.4213640 / 2.1871187,Marquesina,62 B22 N3 
+706,Pl del General Moragues,BARCELONA,41.41743 / 2.19096,Pal,71 
+707,Sants-Badal,BARCELONA,41.3744680 / 2.1266951,Pal,56 57 157 N14 N2 
+708,Sants-Jocs Florals,BARCELONA,41.3753796 / 2.1343772,Pal,56 57 157 N14 N2 
+709,Travessera de Les Corts-Gran Via Carles III,BARCELONA,41.3830142 / 2.1292326,Pal,15 43 59 
+711,Av de Pedralbes-Pg dels Til·lers,BARCELONA,41.3914471 / 2.1171624,Pal,63 78 
+712,Av de l'Exèrcit-Trias i Giró,BARCELONA,41.3856476 / 2.1111882,Marquesina,33 EP1 JM 
+713,CAP Vallcarca,BARCELONA,41.4155261 / 2.1422882,Pal,27 123 124 129 
+716,Gran Via-Monturiol,BARCELONA,41.4096465 / 2.1949018,Marquesina,56 60 B21 N2 
+717,Gran Via-Selva de Mar,BARCELONA,41.4137105 / 2.2009171,Marquesina,40 42 56 60 B21 N2 
+718,Av Paral·lel-Vila i Vilà,BARCELONA,41.3748925 / 2.1693778,Pal,36 
+719,Pg de Josep Carner-Jardins de Walter Benjamin,BARCELONA,41.3731143 / 2.1753963,Pal,21 
+721,Pg de Josep Carner-Pg de Montjuïc,BARCELONA,41.371495 / 2.1743521999999302,Pal,21 
+722,Av Paral·lel-Cabanes,BARCELONA,41.3748361 / 2.1706684,Marquesina,20 21 36 57 64 157 N0 N6 
+723,Av Paral·lel-Carrera,BARCELONA,41.3745551 / 2.1748324,Marquesina,20 21 36 57 64 157 N0 N6 
+724,Av Cardenal Vidal i Barraquer-Berruguete,BARCELONA,41.4322944 / 2.1511778,Pal,10 
+725,Mina de la Ciutat-Les Torres,BARCELONA,41.4469418 / 2.1734386,Pal,11 32 127 N6 
+727,Lisboa-Porto,BARCELONA,41.4291800 / 2.1576324,Marquesina,45 102 112 185 N4 
+731,Pg de Torras i Bages-Els Segadors,BARCELONA,41.4370174 / 2.1913109,Marquesina,35 40 73 B20 N9 
+732,Av Jordà-Judea,BARCELONA,41.4252009 / 2.1407375,Pal,19 76 112 
+733,Av Jordà-Nínive,BARCELONA,41.4266582 / 2.1385765,Pal,19 76 112 
+734,Av Jordà-Natzaret,BARCELONA,41.4271189 / 2.1368805,Pal,19 76 112 
+744,Felip II-Av Meridiana,BARCELONA,41.4211584 / 2.1861103,Pal,71 126 
+749,Santa Rosalia-Castellbisbal,BARCELONA,41.4208036 / 2.1437616,Pal,19 119 N4 
+752,Aiguablava-Pedrosa,BARCELONA,41.448964 / 2.1821760999999924,Marquesina,11 32 50 51 76 127 N1 N6 80 81 
+753,Aiguablava-La Fosca,BARCELONA,41.4484375 / 2.1817959,Marquesina,50 51 N1 80 81 
+754,Pg de la Vall d'Hebron-L'Arrabassada,BARCELONA,41.4186643 / 2.1390953,Marquesina,17 60 73 N4 
+755,Pg de Valldaura-Guineueta,BARCELONA,41.4394229 / 2.1656799,Marquesina,31 47 71 73 76 122 B16 B19 N6 82 
+756,Pg de Valldaura-Pl Karl Marx,BARCELONA,41.4395817 / 2.1639727,Marquesina,31 47 71 73 76 122 B16 B19 N6 82 
+760,Badal-Quetzal,BARCELONA,41.3666586 / 2.1346419,Pal,72 
+761,Av d'Esplugues-González Tablas,BARCELONA,41.3875255 / 2.1066950,Pal,22 63 68 75 78 
+762,Av d'Esplugues,BARCELONA,41.3883517 / 2.1072642,Pal,22 63 68 75 78 
+763,Av d'Esplugues-Av Pearson,BARCELONA,41.3932341 / 2.1120036,Pal,22 63 68 75 78 
+764,Bisbe Català-Pl de Pedralbes,BARCELONA,41.3960540 / 2.1143147,Pal,22 68 75 
+765,Pl Pius XII,BARCELONA,41.3881579 / 2.1216517,Pal,63 78 
+766,Av Diagonal-Pl Pius XII,BARCELONA,41.3872791 / 2.1226492,,67 75 L14 N12 L79 
+768,Grècia-Pl del Nen de la Rutlla,BARCELONA,41.4191542 / 2.1714805,Pal,39 117 
+769,Via Favència-Rambla Caçador,BARCELONA,41.4415181 / 2.1671270,Marquesina,60 127 N4 
+770,Av Paral·lel-Margarit,BARCELONA,41.3749371 / 2.1638935,Marquesina,20 24 57 64 157 N0 N6 
+772,Doctor Pi i Molist-Pl Virrei Amat,BARCELONA,41.4308823 / 2.1746527,Marquesina (x2),11 31 32 47 50 51 N1 N6 
+773,Doctor Pi i Molist-Ptge Ricard Canals,BARCELONA,41.4327396 / 2.1734990,Marquesina,11 31 32 47 50 51 N1 N6 82 
+774,Gran Via-Vilamarí,BARCELONA,41.3774588 / 2.1519527,Pal,09 50 56 N1 N13 N14 N15 N16 N17 N2 
+776,Sepúlveda-Vilamarí,BARCELONA,41.3757254 / 2.1524424,Marquesina,13 50 91 L94 L95 
+777,Av de Roma-Tarragona,BARCELONA,41.3805139 / 2.1436483,Pal,30 32 43 44 78 115 
+778,Av Sant Ramon Nonat-Cardenal Reig,BARCELONA,41.3776418 / 2.1163434,Marquesina,57 157 158 N3 
+780,Trafalgar - Girona,BARCELONA,41.3903028 / 2.1779792,Pal,19 39 40 41 42 55 141 N4 
+783,Sant Antoni M. Claret - Padilla,BARCELONA,41.4091472 / 2.1714978,Marquesina,15 20 45 47 92 N4 
+784,València-Marina,BARCELONA,41.4032025 / 2.1774200,Marquesina,19 33 34 43 44 50 51 B20 B24 N1 N7 N9 
+785,Gran Via-Padilla,BARCELONA,41.4005912 / 2.1829280,Marquesina,07 56 B21 N2 
+787,Escorial-Legalitat,BARCELONA,41.4079854 / 2.1608246,Marquesina,39 114 116 N6 
+788,Pl Espanya-Av Paral·lel,BARCELONA,41.3749468 / 2.1506314,Marquesina,37 57 61 157 N0 
+789,Pg de l'Exposició-Santa Madrona,BARCELONA,41.3705602 / 2.1586244,Pal,55 
+793,Rambla del Carmel-Llobregós,BARCELONA,41.4257909 / 2.1575957,Marquesina,10 86 87 N4 
+794,Pere IV-Bilbao,BARCELONA,41.4040314 / 2.1985923,Pal,40 42 B25 N11 N8 
+795,Gran Via-Ciutat de Granada,BARCELONA,41.4054334 / 2.1899776,Marquesina,56 60 192 B21 N2 
+796,Gran Via-Parc del Clot,BARCELONA,41.4075144 / 2.1920369,Marquesina,56 60 192 B21 N2 
+797,Costa Pacheco-Font del Roure,BARCELONA,41.4284390 / 2.1297601,Pal,112 
+800,Natzaret-Cànoves,BARCELONA,41.4270542 / 2.1354844,Pal,112 
+802,Marina-Pujades,BARCELONA,41.3926954 / 2.1895684,Marquesina,10 N0 
+803,Pg de Verdum-Pl Jardins de l'Alfàbia,BARCELONA,41.4375156 / 2.1740618,Marquesina,11 31 32 47 50 51 N1 N6 82 
+804,Vía Júlia-Pl Llucmajor,BARCELONA,41.4393125 / 2.1752404,Pal,11 32 50 51 76 N1 80 
+805,Pg de Valldaura-Font d'En Canyelles,BARCELONA,41.4388820 / 2.1774855,Marquesina,73 B16 B19 
+806,Mercat de la Guineueta,BARCELONA,41.4388335 / 2.1700341,Marquesina,31 47 73 76 B16 B19 N6 82 
+807,Pg de Valldaura - Pg de Verdum,BARCELONA,41.4384744 / 2.1735324,Marquesina,31 47 73 76 B16 B19 N6 82 
+808,Via Júlia-Batllori,BARCELONA,41.4436720 / 2.1783580,Marquesina,50 51 76 N1 80 
+809,Via Júlia-Font d'en Canyelles,BARCELONA,41.4411581 / 2.1769452,Marquesina,11 32 50 51 76 N1 80 
+810,Via Júlia-Ptge Quintana,BARCELONA,41.4450412 / 2.1789738,Pal,50 51 76 N1 80 
+811,Góngora-Artesania,BARCELONA,41.4421423 / 2.1733055,Pal,11 32 
+812,Góngora-Almansa,BARCELONA,41.4430480 / 2.1746488,Pal,11 32 
+813,Via Favència-Almansa,BARCELONA,41.4449244 / 2.1746590,Marquesina,11 32 60 N6 
+814,Villarroel-Buenos Aires,BARCELONA,41.3920945 / 2.1476312,Pal,14 59 63 67 68 N7 
+815,Comte d'Urgell - (Pl. Francesc Macià),BARCELONA,41.3919315 / 2.1455216,Marquesina,N12 
+816,Calàbria-París,BARCELONA,41.3879767 / 2.1442271,Pal,41 
+817,Via Favència-Centre Cívic,BARCELONA,41.4458944 / 2.1775146,Pal,11 32 60 127 N6 
+818,Pg de Valldaura-Pl Llucmajor,BARCELONA,41.4386166 / 2.1770766,Marquesina,73 B16 B19 
+819,Pg de Verdum-Pl Llucmajor,BARCELONA,41.4377950 / 2.1740908,Marquesina,11 31 32 47 50 51 N1 N6 
+820,Av Mare de Déu de Montserrat-Pg Maragall,BARCELONA,41.4245357 / 2.1761379,Marquesina,31 32 74 N6 
+822,Av Diagonal-Av de Sarrià,BARCELONA,41.3913740 / 2.1403435,Marquesina,06 07 33 34 63 67 N12 
+823,Av Mare de Déu de Montserrat-Periodistes,BARCELONA,41.4217230 / 2.1741533,Marquesina,31 32 74 N6 
+824,Alt de Pedrell-Aguilar,BARCELONA,41.4256861 / 2.1688098,Pal,39 117 
+825,Alt de Pedrell-Palautordera,BARCELONA,41.4260535 / 2.1696108,Pal,39 
+826,Arc de Sant Martí-Camil Oliveras,BARCELONA,41.4237653 / 2.1718336,Pal,39 
+827,Llull-Bilbao,BARCELONA,41.4019728 / 2.2035055,Marquesina,26 36 71 141 N6 
+828,Rambla de Guipúscoa-Bilbao,BARCELONA,41.4123932 / 2.1920774,Marquesina,33 43 44 
+829,Pere IV-Roc Boronat,BARCELONA,41.4006896 / 2.1960962,Pal,40 42 B25 N11 
+830,Llull-Ciutat de Granada,BARCELONA,41.3985265 / 2.1989466,Marquesina,26 71 141 
+833,Dr. Trueta - Ciutat de Granada,BARCELONA,41.3966255 / 2.2009891,Pal,N6 N8 
+835,Pujades (Àlaba-Pamplona),BARCELONA,41.3879170 / 2.1699187,Pal,71 
+836,Av. Litoral ('Pl. Voluntaris Olímpics'-Arquitecte Sert),BARCELONA,41.3879170 / 2.1699187,,99 
+837,Av Icària-Rosa Sensat,BARCELONA,41.3911813 / 2.1971687,Pal,14 41 71 92 
+839,Bruc - Provença,BARCELONA,41.3972312 / 2.1656596,Marquesina,20 45 47 N6 
+840,Marina-Sagrada Família,BARCELONA,41.3746572 / 2.1392303,Marquesina,10 N0 N7 
+841,Roger de Llúria-Mallorca,BARCELONA,41.3956174 / 2.1657398,Marquesina,20 45 47 N6 
+842,Aribau-Mallorca,BARCELONA,41.3897016 / 2.1576856,Marquesina,54 58 64 66 67 68 N3 N7 N8 
+843,Mercabarna,BARCELONA,41.3312160 / 2.1155797,Pal,109 N1 
+844,Carrer número 6-Carrer F,BARCELONA,41.3250329 / 2.1181582,Marquesina,109 N1 PR4 
+845,Dante Alighieri-Pg Mare de Déu del Coll,BARCELONA,41.4248026 / 2.1522010,Pal,19 87 N4 
+846,Travessera de Dalt-Mercat de Lesseps,BARCELONA,41.4085573 / 2.1519516,Pal,24 31 32 
+847,Pl Mons-Mare de Déu dels Reis,BARCELONA,41.4133082 / 2.1448158,Pal,28 92 129 N5 
+848,Pg Mare de Déu del Coll-Cartago,BARCELONA,41.4155928 / 2.1466654,Pal,28 92 129 N5 
+849,Pg. Mare de Déu del Coll  - Baixada Sant Marià,BARCELONA,41.4178734 / 2.1477724,Pal,28 92 129 N5 
+850,Pg Mare de Déu del Coll-Santuari,BARCELONA,41.4201899 / 2.1491496,Pal,28 92 129 N5 
+851,Pg Mare de Déu del Coll-Funosas Llussà,BARCELONA,41.4200938 / 2.1489456,Pal,28 92 N4 N5 
+852,Pg. Mare de Déu del Coll  - Baixada Solanell,BARCELONA,41.4176445 / 2.1475863,Pal,28 92 N4 N5 
+853,Pg Mare de Déu del Coll-Pl Flandes,BARCELONA,41.4154786 / 2.1462309,Pal,28 92 N4 N5 
+854,Riera Blanca-Onze de Setembre,BARCELONA,41.3775293 / 2.1214519,Marquesina,15 75 
+855,Vallespir-Jardí de les Infantes,BARCELONA,41.3839484 / 2.1340242,Pal,54 N3 
+856,Arizala-Av Madrid,BARCELONA,41.3764654 / 2.1251383,Marquesina,56 57 157 N14 N2 
+857,Brasil (Miquel Àngel-Roses),BARCELONA,41.3879170 / 2.1699187,Pal,70 
+858,Gran Via Carles III - Rbla. del Brasil,BARCELONA,41.3798625 / 2.1287175,Marquesina,72 
+859,Sant Antoni Maria Claret-Rambla Volart,BARCELONA,41.4152866 / 2.1796784,Marquesina,19 20 45 47 50 51 117 192 B22 N1 N4 
+861,Pl Maragall-Navas de Tolosa,BARCELONA,41.4198352 / 2.1814102,Pal,20 
+863,Jaume Puigvert-Josep Millan Gonzalez,BARCELONA,41.4161599 / 2.1601635,Pal,114 
+864,Doctor Ferran-Pg Manuel Girona,BARCELONA,41.3903384 / 2.1241190,Pal,06 
+865,Doctor Ferran-Doctor August Pi i Sunyer,BARCELONA,41.3905659 / 2.1238058,Pal,16 
+866,Capità Arenas-Pg Manuel Girona,BARCELONA,41.3908761 / 2.1258106,Pal,66 70 72 N7 
+867,Pg de la Zona Franca-Mineria,BARCELONA,41.3623451 / 2.1376745,Marquesina,09 37 72 109 125 N1 
+868,Gran Via-Edifici 'La Campana',BARCELONA,41.3675981 / 2.1393978,Marquesina (x2),09 37 46 65 79 109 165 L70 L72 L80 L81 L86 L87 L94 L95 N1 N13 N15  
+871,Mallorca-Av Meridiana,BARCELONA,41.4125654 / 2.1873925,Pal,33 34 35 43 44 192 B20 N9 
+872,Estació d'Autobusos Fabra i Puig,BARCELONA,41.4316698 / 2.1832865,Pal,97 
+873,Pg de Fabra i Puig-Neopàtria,BARCELONA,41.4302549 / 2.1883920,Pal,11 26 34 36 126 B22 
+874,Pg de Fabra i Puig-Llenguadoc,BARCELONA,41.4302922 / 2.1855159,Pal,11 26 34 36 126 B22 
+875,Escòcia-Santapau,BARCELONA,41.4286643 / 2.1786177,Pal,11 26 34 74 122 
+876,Escòcia-Pl Garrigó,BARCELONA,41.4286522 / 2.1814523,Pal,11 26 34 36 74 122 
+877,Ctra de Ribes-Av Meridiana,BARCELONA,41.4494998 / 2.1897769,Pal,11 40 62 76 126 127 
+878,Av Rasos de Peguera-Av Meridiana,BARCELONA,41.4622382 / 2.1798433,Pal,62 104 N3 
+879,Ctra Nacional 152-Estació de Torre Baró,BARCELONA,41.4607667 / 2.1814779,Marquesina,62 96 97 104 
+880,Felip II-Josep Estivill,BARCELONA,41.4191768 / 2.1887689,Pal,71 126 
+882,Consell de Cent-Av Meridiana,BARCELONA,41.4066119 / 2.1865113,Pal,62 92 N3 
+883,Av Meridiana-Pl de Mossèn Clapés,BARCELONA,41.4423780 / 2.1864711,Pal,97 104 
+884,Av Sivate-Crta Nacional 152,BARCELONA,41.3879170 / 2.1699187,Pal,97 80 83 81 
+885,Av Meridiana-Garbí,BARCELONA,41.4528110 / 2.1887255,Pal,62 96 97 104 N3 
+887,Llull-Maresme,BARCELONA,41.4122225 / 2.2167177,Marquesina,36 141 
+888,Gran Via-Josep Pla,BARCELONA,41.4176148 / 2.2061732,Marquesina,42 56 60 B21 N2 
+889,Gran Via-Maresme,BARCELONA,41.4186889 / 2.2069672,Marquesina,42 56 60 B21 N2 
+894,Pl Can Baró,BARCELONA,41.4162368 / 2.1623214,Pal,114 
+895,Gran Via-Mossèn Amadeu Oller,BARCELONA,41.3680108 / 2.1396392,Marquesina (x2),09 37 46 65 79 109 165 L70 L72 L80 L81 L86 L87 L94 L95 N1 N15 N16  
+897,Pl Sanllehy,BARCELONA,41.4133538 / 2.1607210,Pal,24 
+898,Pl Catalana-Amílcar,BARCELONA,41.4212640 / 2.1729425,Pal,39 55 
+907,Gran Via-Magòria,BARCELONA,41.3702405 / 2.1425724,Marquesina (x2),09 37 46 65 79 109 165 L70 L72 L80 L81 L86 L87 L94 L95 N1 N15 N16  
+908,Ctra de la Bordeta-Àliga,BARCELONA,41.3732264 / 2.1439503,,91 
+909,Gavà-Ptge Solsona,BARCELONA,41.3711707 / 2.1400281,Pal,91 
+910,Providència-Alzina,BARCELONA,41.4064964 / 2.1566466,Pal,39 
+911,Biada-Torrent de l'Olla,BARCELONA,41.4049789 / 2.154350499999964,Pal,39 
+912,Pg Maragall-Els Quinze,BARCELONA,41.4256315 / 2.1754037,Marquesina,19 45 N4 
+913,Indústria-Sardenya,BARCELONA,41.4063620 / 2.1702692,Marquesina,15 20 45 47 N4 
+914,Gran Via-Marina,BARCELONA,41.3985875 / 2.1806385,Marquesina,06 07 56 62 B21 N2 N3 
+915,Av Icària-Joan Miró,BARCELONA,41.3897020 / 2.1950325,Pal,14 41 71 92 
+921,Pl de Sarrià,BARCELONA,41.4000448 / 2.1217182,Pal,22 64 68 75 N7 
+922,Ronda de Dalt-Ràfols,BARCELONA,41.4016249 / 2.1148698,Pal,60 66 130 
+923,Travessera de Les Corts-Mejía Lequerica,BARCELONA,41.3819337 / 2.1273284,Marquesina,15 75 L12 
+925,Mini-Estadi-Palau Blaugrana,BARCELONA,41.3809385 / 2.1191704,Marquesina,113 L12 
+927,Gran Via-Muntaner,BARCELONA,41.3844193 / 2.1617191,Marquesina,09 14 50 56 59 L94 L95 N1 N12 N13 N14 N15 N16 N17 N2 
+928,Av Diagonal-Muntaner,BARCELONA,41.3942201 / 2.1499438,Pal,06 07 15 27 32 33 34 
+929,Av Diagonal-Buenos Aires,BARCELONA,41.39389 / 2.14926,Pal,06 07 15 33 34 
+930,Còrsega-Aribau,BARCELONA,41.3922188 / 2.1535065,Marquesina,54 66 67 68 N3 
+931,Via Augusta-Muntaner,BARCELONA,41.3992695 / 2.1435653,Marquesina,58 64 N8 
+932,Trav. de Gràcia (Muntaner-Aribau),BARCELONA,41.3879170 / 2.1699187,Pal,27 32 
+933,Ronda General Mitre-Balmes,BARCELONA,41.4042281 / 2.1399399,Pal,16 74 N0 
+934,Rda. General Mitre - Copernic,BARCELONA,41.4010617 / 2.1362215,Marquesina,16 74 N0 
+935,Pg de Sant Gervasi-Císter,BARCELONA,41.4100156 / 2.1357045,Pal,22 123 
+936,Pg de Sant Gervasi-Jesús i Maria,BARCELONA,41.4071592 / 2.1339135,Pal,22 58 75 123 
+938,Provença-Aribau,BARCELONA,41.3903437 / 2.1555424,Pal,31 37 63 
+939,Pg. Sant Gervasi ('Av. Tibidabo'-Císter),BARCELONA,41.3879170 / 2.1699187,Pal,75 
+940,Ronda General Mitre-Av de Sarrià,BARCELONA,41.3932161 / 2.1314812,Pal,16 70 72 74 N7 
+941,Gran Via de les Corts Catalanes - Mandoni,BARCELONA,41.36961 / 2.14208,Marquesina (x2),09 37 46 65 79 109 165 L70 L72 L80 L81 L86 L87 L94 L95 N1 N13 N15  
+942,Secretari Coloma-Providència,BARCELONA,41.4102188 / 2.1623290,Pal,92 
+943,Pl Espanya-Av Reina Maria Cristina,BARCELONA,41.3741660 / 2.1496040,Pal,13 23 50 61 
+945,Av Ferrer i Guàrdia-Poble Espanyol,BARCELONA,41.3694629 / 2.1470340,Pal,13 50 61 
+946,Berenguer de Palou-Pont del Treball,BARCELONA,41.4232414 / 2.1918320,Pal,26 34 35 36 40 126 B20 N9 
+947,Berenguer de Palou-Pare Manyanet,BARCELONA,41.4275154 / 2.1917161,Marquesina,26 34 35 36 40 126 B20 N9 
+948,Via Augusta-Princep d'Astúries,BARCELONA,41.4009572 / 2.1505474,Pal,16 17 N5 
+949,Indústria-Roger de Flor,BARCELONA,41.4039151 / 2.1669914,Marquesina,15 20 45 47 N4 
+950,Almogàvers-Marina,BARCELONA,41.3943204 / 2.1861783,Marquesina,40 42 141 B25 N11 
+951,Ausiàs Marc-Nàpols,BARCELONA,41.3953948 / 2.1809028,Pal,54 
+954,Pg Joan de Borbó-Almirall Cervera,BARCELONA,41.3787523 / 2.1879952,Marquesina,17 36 39 45 57 59 64 157 N8 
+955,Pg Joan de Borbó-Ginebra,BARCELONA,41.3810172 / 2.1870768,Marquesina,17 36 39 45 57 59 157 N8 
+956,Pg Joan de Borbó-Maquinista,BARCELONA,41.3798759 / 2.1872881,Pal,17 36 39 45 57 59 64 157 N8 
+957,Pg Joan de Borbó-Almirall Aixada,BARCELONA,41.3772302 / 2.1883360,Pal,17 39 64 
+959,Pg Joan de Borbó-Judici,BARCELONA,41.3761051 / 2.1889874,Pal,17 39 64 
+960,Pg Joan de Borbó-Pl del Mar,BARCELONA,41.3743740 / 2.1886008,Pal,17 39 64 
+962,Rambla de Prim-Metro Besòs,BARCELONA,41.4205223 / 2.2077366,Pal,36 56 B21 
+963,Cantàbria-Gran Via,BARCELONA,41.4178113 / 2.2042126,Pal,26 40 
+965,Pont del Treball-Santander,BARCELONA,41.4221347 / 2.1974795,Pal,26 40 
+966,Pont del Treball-Berenguer de Palou,BARCELONA,41.4227274 / 2.1922545,Pal,26 36 40 
+969,Pg Enric Sanchís-Sant Adrià,BARCELONA,41.4355330 / 2.2048228,Marquesina,42 B22 B23 N8 
+970,Pg Enric Sanchís-Santander,BARCELONA,41.4335388 / 2.2060042,Pal,42 B22 B23 N8 
+971,Rambla de Prim-Binéfar,BARCELONA,41.4243466 / 2.2024664,Pal,33 36 B24 N8 
+972,Av Estatut de Catalunya-Pl de Botticelli,BARCELONA,41.4339399 / 2.1526851,Pal,10 
+973,Artesania-Pl Llucmajor,BARCELONA,41.4396474 / 2.1746180,Pal,11 32 
+974,Artesania-Parc de la Guineueta,BARCELONA,41.4406412 / 2.1734264,Pal,11 32 
+975,Almansa-Via Favència,BARCELONA,41.4440158 / 2.1743701,Pal,11 32 
+976,Av de Roma-Vilamarí,BARCELONA,41.3815506 / 2.1451540,Marquesina,43 44 
+977,Via Barcino-Ausona,BARCELONA,41.4498870 / 2.1924594,Pal,11 40 
+988,Santaló-Travessera de Gràcia,BARCELONA,41.3948792 / 2.1469479,Pal,14 68 N7 
+989,Santaló-Mercat Galvany,BARCELONA,41.3970150 / 2.1442149,Pal,14 68 N7 
+990,Numància-Travessera de Les Corts,BARCELONA,41.3863986 / 2.1356788,Marquesina,15 30 43 59 66 78 N0 
+991,Travessera de Les Corts-Numància,BARCELONA,41.3873523 / 2.1358290,Pal,15 43 59 
+992,Mandri ('Pg. Bonanova'-Mao).,BARCELONA,41.3879170 / 2.1699187,Pal,14 
+993,Mandri-Artesa de Segre,BARCELONA,41.4030099 / 2.1340592,Pal,14 70 72 
+994,Ronda General Mitre-Camp,BARCELONA,41.4026643 / 2.1375704,Pal,16 74 N0 
+995,Pg de la Bonanova-Pl de la Bonanova,BARCELONA,41.4059366 / 2.1320407,Pal,22 75 123 
+996,Pg de la Bonanova-Ganduxer,BARCELONA,41.4048502 / 2.1303727,Marquesina,22 64 75 N8 
+997,Mandri-Maó,BARCELONA,41.4042346 / 2.1327162,Pal,70 72 
+998,Santuari-Pl Gibraltar,BARCELONA,41.4201674 / 2.1513901,Pal,28 92 129 87 N4 N5 
+999,Santuari-Font Rúbia,BARCELONA,41.4198928 / 2.1550632,Pal,28 92 N4 N5 
+1000,Santuari-La Murtra,BARCELONA,41.4199860 / 2.1551180,Pal,28 92 N4 N5 
+1001,Pl de Salvador Allende,BARCELONA,41.4202762 / 2.1510370,Marquesina,28 92 87 N4 N5 
+1002,Av de Vallcarca-Metro Penitents,BARCELONA,41.4181235 / 2.1409537,Pal,27 
+1003,Pl Alfonso Comín-Pg de la Vall d'Hebron,BARCELONA,41.4167839 / 2.1386987,Marquesina,17 60 73 123 124 N4 
+1004,Av Paral·lel-Nou de la Rambla,BARCELONA,41.3750441 / 2.1704205,Marquesina,20 21 36 57 64 91 157 N0 N6 
+1005,Ronda Sant Pau-Av Paral·lel,BARCELONA,41.3757258 / 2.1672416,Marquesina,20 24 64 91 N6 
+1006,Ronda Sant Pau-Parlament,BARCELONA,41.3778854 / 2.1643656,Marquesina (x2),20 24 64 91 N6 
+1007,Av Meridiana-Biscaia,BARCELONA,41.4176489 / 2.1867834,Pal,62 N3 
+1008,Pg Maragall-Trinxan,BARCELONA,41.4190681 / 2.1807713,Marquesina,19 45 47 50 51 N1 N4 
+1009,Mallorca-Navas de Tolosa,BARCELONA,41.4140062 / 2.1893182,Pal,33 34 35 43 44 192 B20 N9 
+1010,Carrer de Olvan,BARCELONA,41.42967 / 2.13328,Pal,112 
+1011,Pl del Nou,BARCELONA,41.3529680 / 2.1415669,Pal,09 
+1019,Pg. Vall d´Hebron -  Av. Jordà,BARCELONA,41.4243276 / 2.1417546,Marquesina (x2),17 19 27 60 73 119 N4 
+1020,Pg de la Vall d'Hebron-Natzaret,BARCELONA,41.4216174 / 2.1405343,Pal,17 19 27 60 73 119 N4 
+1021,Ardena-Ronda de Dalt,BARCELONA,41.3906584 / 2.1073662,Pal,60 
+1022,Pg Calvell-Rambla del Poblenou,BARCELONA,41.3970688 / 2.2057777,Pal,41 
+1023,Sant Adrià-Pg Enric Sanchís,BARCELONA,41.4360679 / 2.2040354,Marquesina,11 73 B22 B23 
+1024,Sant Adrià-Arbeca,BARCELONA,41.4366754 / 2.2080760,Pal,11 73 
+1025,Ronda de Dalt-Moneders,BARCELONA,41.3900192 / 2.1081280,Pal,60 
+1028,Pg de Torras i Bages-Joan Torras,BARCELONA,41.4372754 / 2.1910563,Marquesina,35 40 73 B20 N9 
+1029,Av Tibidabo-Bosch i Alsina,BARCELONA,41.4145863 / 2.1337814,Pal,73 
+1030,Av Ferrer i Guàrdia-Av Montanyans,BARCELONA,41.3678461 / 2.1451716,Pal,50 61 
+1031,Pg de Fabra i Puig-Vilapicina,BARCELONA,41.4304497 / 2.1729021,Pal,71 122 
+1033,Rambla de Guipúscoa-Verneda,BARCELONA,41.4248197 / 2.2080694,Pal,43 44 
+1035,Via Favència-Molí,BARCELONA,41.4459870 / 2.1801791,Pal,60 127 
+1036,Aribau-Laforja,BARCELONA,41.3979679 / 2.1473566,Marquesina,58 64 N8 
+1037,Pg Maragall-Manigua,BARCELONA,41.4225940 / 2.1789259,Marquesina,19 45 47 50 51 N1 N4 
+1039,Via Laietana-Palau de la Música,BARCELONA,41.3873537 / 2.1745906,Marquesina,17 19 40 45 N8 
+1040,Trafalgar-Pl Urquinaona,BARCELONA,41.3889317 / 2.1744961,Pal,39 41 42 55 141 N4 
+1041,Josep Soldevila - Rbla.. Onze de Stembre,BARCELONA,41.4304081 / 2.1960157,Pal,11 35 40 B20 B22 N9 
+1045,Pg de la Zona Franca-Ulldecona,BARCELONA,41.3522735 / 2.1445227,Marquesina,37 109 N1 
+1046,Pg de la Zona Franca-Grup d'Habitatges E. Aunós,BARCELONA,41.3537933 / 2.1435254,Marquesina,23 37 109 N1 
+1047,Felip II-Ramon Albó,BARCELONA,41.4273027 / 2.1778140,Pal,71 
+1048,Felip II-Pl del Doctor Modrego,BARCELONA,41.4256612 / 2.1799559,Pal,71 
+1051,Jerez-Pl de la Ciutadella,BARCELONA,41.4316111 / 2.1556253,Pal,45 102 
+1057,Constitució-Mossèn Amadeu Oller,BARCELONA,41.3699694 / 2.1377839,Pal,91 
+1058,Viladomat-Manso,BARCELONA,41.3765226 / 2.1614740,Marquesina,20 24 64 120 N6 
+1059,Vilamarí-Av Mistral,BARCELONA,41.3757732 / 2.1534501,Marquesina,55 
+1060,Sant Pau-Ronda Sant Pau,BARCELONA,41.3754928 / 2.1679963,Pal,21 
+1061,El Molino-Av Paral·lel,BARCELONA,41.3749029 / 2.1668678,Marquesina,20 57 61 64 157 N0 N6 
+1062,Av Paral·lel-Lleida,BARCELONA,41.3748666 / 2.1530909,Pal,65 165 
+1063,Av Paral·lel-Pl Espanya,BARCELONA,41.3748743 / 2.1522630,Marquesina,79 
+1064,Av Paral·lel-Llançà,BARCELONA,41.3748748 / 2.1525954,,46 
+1065,Pl de la Font Castellana-Tenerife,BARCELONA,41.4152479 / 2.1663791,Pal,114 
+1066,Mallorca-Roger de Llúria,BARCELONA,41.3953796 / 2.1644878,Marquesina,20 43 44 N6 N7 
+1067,Pl Urquinaona-Pau Claris,BARCELONA,41.3893705 / 2.1728679,Marquesina,17 47 62 N8 N9 
+1068,Av Diagonal-Roger de Llúria,BARCELONA,41.3972827 / 2.1620353,Pal,06 15 33 34 
+1069,Metro Urquinaona,BARCELONA,41.3895549 / 2.1742304,Marquesina,41 42 55 141 N4 
+1070,Gran Via-Pg de Gràcia,BARCELONA,41.3901850 / 2.1694105,Marquesina (x2),07 50 54 56 62 N1 N11 N2 N3 N9 
+1071,Pl Urquinaona,BARCELONA,41.3889539 / 2.1733879,Pal,16 
+1072,Mercat de la Sagrada Família,BARCELONA,41.4056156 / 2.1781334,Marquesina,33 34 43 44 50 51 B20 B24 N9 
+1073,Gran Via-Lepant,BARCELONA,41.4004598 / 2.1832119,Pal,07 56 B21 N2 
+1074,Ctra de Ribes-Lepant,BARCELONA,41.3994952 / 2.1840690,Pal,62 N3 
+1075,Pl Universitat,BARCELONA,41.3861472 / 2.1640359,Marquesina (x2),09 14 50 54 56 58 59 66 A1 L94 L95 N1 N12 N13 N14 N15 N16 N17 N2 
+1076,Pl Universitat-Pelai,BARCELONA,41.3856684 / 2.1644740,Marquesina,24 41 55 91 141 N6 
+1078,València-Pg de Gràcia,BARCELONA,41.3923875 / 2.1629814,Marquesina,20 43 44 
+1079,Ronda Sant Pere-Pl Urquinaona,BARCELONA,41.3886229 / 2.1714812,Pal,22 
+1080,Av Diagonal-Pg de Gràcia,BARCELONA,41.3962437 / 2.1585722,Marquesina,06 15 22 24 28 33 34 N4 
+1081,Gran Via-Pau Claris,BARCELONA,41.3903470 / 2.1691059,Pal,07 50 54 56 
+1082,Ronda Sant Pere-Pl de Catalunya,BARCELONA,41.3882848 / 2.1706434,Marquesina,28 N11 N7 N9 
+1084,Ronda Sant Pere-Pau Claris,BARCELONA,41.3879170 / 2.1699187,Pal,62 
+1086,Camèlies-Praga,BARCELONA,41.4131190 / 2.1629850,Pal,31 32 39 74 N6 
+1087,Muntaner-Londres,BARCELONA,41.3929462 / 2.1510323,Marquesina,58 64 N8 
+1088,Casanova-París,BARCELONA,41.3913276 / 2.1511117,Pal,63 67 68 N7 
+1089,Rosselló-Bailèn,BARCELONA,41.3998071 / 2.1660240,Marquesina,20 39 45 47 N6 
+1090,Metro Maresme/Forum,BARCELONA,41.4122779 / 2.2172002,Marquesina,36 
+1091,Llull-Alfons el Magnànim,BARCELONA,41.4131014 / 2.2180865,Marquesina,141 
+1092,Rambla de Guipúscoa-Rambla de Prim,BARCELONA,41.4229073 / 2.2055178,Pal,43 44 B21 
+1094,Rambla de Guipúscoa-Maresme,BARCELONA,41.4216355 / 2.2043413,Marquesina,33 43 44 B24 N8 
+1095,Av Borbó-Pg Maragall,BARCELONA,41.4264414 / 2.1759070,Pal,31 32 47 50 51 74 122 N1 N6 
+1098,Av Diagonal-Pl Francesc Macià,BARCELONA,41.3932070 / 2.1459363,Pal,06 07 15 27 32 33 34 63 67 
+1099,Josep Tarradellas-Comte Borrell,BARCELONA,41.3915658 / 2.1442953,Pal,15 41 N12 
+1103,Pl de Catalunya-Portal de l'Àngel,BARCELONA,41.3866342 / 2.1711028,Marquesina (x2),16 17 41 42 55 141 N4 N8 
+1104,Sardenya-Camèlies,BARCELONA,41.4131556 / 2.1615659,Pal,114 N6 
+1105,Pla del Palau,BARCELONA,41.3828069 / 2.1843665,Pal,14 
+1106,Av Marquès de l'Argentera-Pla del Palau,BARCELONA,41.3838420 / 2.1841326,Pal,14 
+1107,Pla del Palau-Govern Civil,BARCELONA,41.3829414 / 2.1838896,Pal,51 
+1108,Av Marquès de l'Argentera-Pg Picasso,BARCELONA,41.3851335 / 2.1852222,Pal,14 39 51 
+1109,Pallars-Pere IV,BARCELONA,41.3977031 / 2.1932360,Marquesina,06 40 42 141 B25 N11 
+1111,Rambla de Prim-Pere IV,BARCELONA,41.4188091 / 2.2088467,Pal,36 
+1113,Rambla de Prim-Jaume Huguet,BARCELONA,41.4173290 / 2.2118237,Pal,36 43 B23 
+1114,Dr. Aiguader - Mediterrània,BARCELONA,41.3825958 / 2.1876207,Marquesina,N0 N6 
+1116,Pl Lesseps-Gran de Gràcia,BARCELONA,41.4061769 / 2.1501044,Marquesina,22 24 28 116 87 N4 
+1117,Gran de Gràcia-Santa Àgata,BARCELONA,41.4035155 / 2.1522149,Pal,22 24 28 87 N4 
+1118,Av Príncep d'Astúries-Pl Lesseps,BARCELONA,41.4057016 / 2.1501543,Pal,27 31 32 92 
+1119,Av República Argentina-Pàdua,BARCELONA,41.4079296 / 2.1477299,Pal,22 27 28 92 N4 
+1120,Ronda General Mitre-Septimània,BARCELONA,41.4056638 / 2.1466708,Pal,74 N0 
+1122,Pl Lesseps-Riera de Vallcarca,BARCELONA,41.4067861 / 2.1495441,Marquesina,24 31 32 87 
+1123,Av Príncep d'Astúries-Carolines,BARCELONA,41.4036795 / 2.1501147,Pal,27 31 32 92 
+1124,Ronda Universitat-Pl Universitat,BARCELONA,41.3862228 / 2.1650957,Marquesina (x2),14 24 41 55 59 66 67 68 141 N1 N2 N3 N6 N7 N8 
+1125,Ciutat de Granada-Pallars,BARCELONA,41.3996314 / 2.1963790,Pal,06 141 N8 
+1126,Roc Boronat-Llull,BARCELONA,41.3995872 / 2.1988728,Marquesina,06 N8 
+1127,Pg de Lluís Companys-Arc de Triomf,BARCELONA,41.3907318 / 2.1802850,Marquesina,39 40 41 42 51 141 B25 N11 
+1128,Pg de Lluís Companys-Jutjats,BARCELONA,41.3888801 / 2.1827304,Marquesina,40 41 42 141 B25 N11 
+1129,Parc de la Ciutadella-Pg Picasso,BARCELONA,41.3878462 / 2.1830873,Pal,14 39 51 
+1130,Pg Picasso-Jutjats,BARCELONA,41.3883893 / 2.1821407,Pal,39 51 
+1131,Bac de Roda-Llull,BARCELONA,41.4056099 / 2.2067449,Marquesina,71 
+1133,Rambla de Prim-Llull,BARCELONA,41.4131080 / 2.2174399,Pal,36 B23 N6 
+1134,Marina-Av Bogatell,BARCELONA,41.3927666 / 2.1898526,Marquesina,10 N0 
+1135,Pau Claris-Rosselló,BARCELONA,41.3965088 / 2.1621080,Pal,39 
+1136,Pg de Gràcia-Mallorca,BARCELONA,41.3944432 / 2.1622467,Marquesina,07 16 17 22 24 28 N4 N5 
+1137,Casanova-Mercat del Ninot,BARCELONA,41.3886391 / 2.1546597,Pal,14 59 
+1138,Pg de Sant Joan-Provença,BARCELONA,41.3998186 / 2.1694503,Pal,15 55 N4 
+1139,Balmes-Provença,BARCELONA,41.3928590 / 2.1578895,Pal,07 16 17 31 67 68 N5 
+1140,Padilla - Mallorca,BARCELONA,41.4056863 / 2.1773849,Pal,19 N1 
+1141,Lepant-Av Gaudí,BARCELONA,41.4058140 / 2.1748503,Marquesina,10 19 N0 N1 
+1142,Independència-Mallorca,BARCELONA,41.4090192 / 2.1819377,Pal,35 50 51 92 
+1143,Dos de Maig-Rosselló,BARCELONA,41.4089522 / 2.1795241,Pal,35 50 51 92 
+1144,Pg de Gràcia-Rosselló,BARCELONA,41.3954529 / 2.1607522,Marquesina,22 24 28 N4 
+1146,Montbau-Vayreda,BARCELONA,41.4330746 / 2.1415379,Pal,10 
+1147,Pg de la Vall d'Hebron-Poesia,BARCELONA,41.4323473 / 2.1455586,Marquesina,10 27 60 76 B16 B19 N4 
+1148,Fundació Albà-Llars Mundet,BARCELONA,41.4350746 / 2.1470729,Marquesina,27 60 73 76 B16 B19 N4 
+1149,Vayreda-Arquitectura,BARCELONA,41.4299915 / 2.1396534,Pal,10 
+1150,Vayreda-Escultura,BARCELONA,41.4313427 / 2.1406845,Pal,10 
+1158,Pg de Torras i Bages-Residència,BARCELONA,41.4393183 / 2.1911207,Marquesina,35 40 73 B20 N9 
+1159,Pg de Torras i Bages-Almirall Proixida,BARCELONA,41.4417995 / 2.1909370,Marquesina,35 40 73 B20 N9 
+1160,Pg de Torras i Bages-Pg de Santa Coloma,BARCELONA,41.4446029 / 2.1905908,Marquesina,35 40 B20 N9 
+1161,Pg de Torras i Bages-Palomar,BARCELONA,41.4423392 / 2.1907393,Marquesina,35 40 B20 N9 
+1162,Pla del Palau (Marquesa-Gral. Castaños),BARCELONA,41.3879170 / 2.1699187,Pal,39 
+1163,Pg Picasso-Princesa,BARCELONA,41.3873100 / 2.1835198,Pal,14 39 51 
+1164,Pla del Palau-Marquesa,BARCELONA,41.3825606 / 2.1850401,Marquesina (x2),36 57 59 64 157 N0 N6 
+1166,Av Meridiana-Estació d'Autobusos Fabra i Puig,BARCELONA,41.4306028 / 2.1830495,Marquesina,62 96 126 N3 
+1167,C A P Sant Andreu,BARCELONA,41.43181 / 2.18320,Pal,62 96 126 N3 
+1168,S'Agaró-Llosa,BARCELONA,41.4492787 / 2.1875738,Pal,50 51 76 
+1170,Riera d'Horta-Vèlia,BARCELONA,41.4278892 / 2.1803365000000667,Pal,26 
+1171,Mina de la ciutat Jaume Pinent,BARCELONA,41.4479086 / 2.1751890,Pal,11 32 127 
+1172,Via Favència-I E S Guineueta,BARCELONA,41.4434908 / 2.1722901,Pal,11 32 60 127 
+1173,Gran Via-Pl Ildefons Cerdà,BARCELONA,41.3659035 / 2.1373494,Marquesina,09 37 46 65 79 109 L70 L72 L80 L81 L86 L87 L94 L95 N1 N15 N16 N17 
+1174,Artesania-Antonio Machado,BARCELONA,41.4452183 / 2.1710430,Pal,27 127 81 
+1175,Almagro-Quarter de Simancas,BARCELONA,41.4443500 / 2.1723283,Pal,11 32 
+1176,Via Favència-Palamós,BARCELONA,41.4465374 / 2.1842707,Pal,60 76 127 132 
+1178,Pont del Treball-Cantàbria,BARCELONA,41.4219896 / 2.1971017,Pal,26 40 
+1179,Rambla de Prim-Ronda Sant Martí,BARCELONA,41.4273714 / 2.1977199,Pal,33 
+1180,Rambla de Prim-Cantàbria,BARCELONA,41.4249962 / 2.2008658,Marquesina,36 B24 N8 
+1181,Rambla de Prim-Menorca,BARCELONA,41.4235609 / 2.2027598,Marquesina,33 36 B24 N8 
+1185,Av Paral·lel-Av Mistral,BARCELONA,41.3751354 / 2.152429600000005,Pal,37 46 57 61 65 79 157 165 
+1186,Tenerife-Torre Dulac,BARCELONA,41.4164091 / 2.1637990,Pal,114 
+1187,Camí de Sant Genís-Natzaret,BARCELONA,41.4281291 / 2.1372240,Pal,19 76 
+1188,Natzaret-Av Jordà,BARCELONA,41.4276276 / 2.1369972,Pal,112 
+1189,Cantàbria-Rambla de Guipúscoa,BARCELONA,41.4194066 / 2.2017395,Pal,26 40 
+1190,Bac de Roda-Pl de la Infància,BARCELONA,41.4132698 / 2.1966427,Marquesina,71 N8 
+1191,Bilbao-Concili de Trento,BARCELONA,41.4113773 / 2.1920582,,192 
+1192,Rambla de Prim-Rambla de Guipúscoa,BARCELONA,41.4217834 / 2.2051176,Pal,36 B21 
+1193,Jorge Manrique-Can Travi,BARCELONA,41.4316019 / 2.1495236,Pal,10 
+1194,Badal-Constitució,BARCELONA,41.3686384 / 2.1328097,Pal,72 
+1195,Viaducte de Vallcarca-Pl Mons,BARCELONA,41.4131030 / 2.1442691,Pal,28 92 N5 
+1196,Doctor Ribas i Perdigó-Lleó XIII,BARCELONA,41.4149359 / 2.1358701,Pal,60 123 
+1204,Pg de Santa Coloma-Pl de la Modernitat,BARCELONA,41.4462207 / 2.1934830,Marquesina,11 35 60 B16 B19 B20 N9 
+1205,Pg de Santa Coloma-Tiana,BARCELONA,41.4483543 / 2.1995766,Marquesina,11 35 60 B16 B19 B20 N9 
+1207,Mallorca-Pg de Gràcia,BARCELONA,41.3933778 / 2.1618328,Marquesina,20 43 44 
+1208,Pl de Catalunya-Rambla Catalunya,BARCELONA,41.4210193 / 2.1808423,Marquesina (x2),67 68 N1 N2 N3 N6 N8 
+1209,Gran Via-Rambla Catalunya,BARCELONA,41.3879730 / 2.1664645,Pal,07 50 54 56 62 66 67 68 
+1210,Pl de Catalunya-Pg de Gràcia,BARCELONA,41.3878279 / 2.1694294,Marquesina,24 41 42 55 141 
+1214,Pl. Sanllehy (Pablo Saez Bares-Ramiro de Maeztu),BARCELONA,41.3879170 / 2.1699187,Pal,24 92 
+1215,Ramiro de Maeztu-Miquel Sants Oliver,BARCELONA,41.4152485 / 2.1584458,Pal,24 92 
+1216,Ctra del Carmel-Parc Güell,BARCELONA,41.4157487 / 2.1554598,Pal,24 92 
+1217,Ctra del Carmel-Albert Llanas,BARCELONA,41.4165030 / 2.1565022,Pal,24 92 
+1218,Ctra del Carmel-Pl Raimon Casellas,BARCELONA,41.4168762 / 2.1588662,Pal,24 92 
+1219,Ctra del Carmel-Can Xirot,BARCELONA,41.4170135 / 2.1564914,Pal,24 92 
+1220,Parc Güell,BARCELONA,41.4143183 / 2.1517774,Pal,24 92 
+1221,Ctra del Carmel-Ramiro de Maeztu,BARCELONA,41.4156871 / 2.1568370,Pal,24 92 
+1222,Ramiro de Maeztu-Av Pompeu Fabra,BARCELONA,41.4149251 / 2.1586376,Pal,24 92 
+1223,Ramiro de Maeztu-C N Catalunya,BARCELONA,41.4158232 / 2.1568267,Pal,24 92 
+1224,Mallorca-Rogent,BARCELONA,41.4103715 / 2.1844916,Marquesina,33 34 35 43 44 B20 N9 
+1225,Sant Antoni Maria Claret-Roger de Flor,BARCELONA,41.4049418 / 2.1659091,Pal,15 20 45 47 N4 
+1226,Pg Pujades-Nàpols,BARCELONA,41.3905030 / 2.1853986,Pal,14 41 
+1227,Mallorca-Roger de Flor,BARCELONA,41.4005051 / 2.1712927,Marquesina,19 33 34 43 44 50 51 B20 B24 N1 N7 
+1228,València-Pg de Sant Joan,BARCELONA,41.3989462 / 2.1717350,Marquesina,19 43 44 50 51 B20 B24 N1 N7 
+1229,Pl Tetuan-Gran Via,BARCELONA,41.3951348 / 2.1763450,Marquesina (x2),54 B21 N2 N3 N9 
+1230,Gran Via-Roger de Flor,BARCELONA,41.3963987 / 2.1771514,Pal,06 07 56 62 B21 N2 N3 
+1231,Almogàvers-Roger de Flor,BARCELONA,41.3918224 / 2.1828246,Marquesina,40 42 141 B25 N11 
+1232,Pg Maragall-Ronda Guinardó,BARCELONA,41.4242687 / 2.1770632,Pal,19 45 47 50 51 N1 N4 
+1233,Padilla-Travessera de Gràcia,BARCELONA,41.4103943 / 2.1711769,Pal,10 
+1234,Padilla-Mas Casanovas,BARCELONA,41.4116854 / 2.1695074,Pal,10 
+1235,Pg Maragall-Av Frederic Rahola,BARCELONA,41.4278235 / 2.1647109,Marquesina,19 45 N4 
+1236,Pedrell-Font d'en Fargas,BARCELONA,41.4245068 / 2.1662029,Pal,39 117 
+1237,Pedrell-Av Frederic Rahola,BARCELONA,41.4242878 / 2.1684148,Pal,39 117 
+1238,Estadi del Futbol Club Barcelona,BARCELONA,41.3804850 / 2.1215900,Marquesina,15 75 L12 
+1240,Av Meridiana-Av Rio de Janeiro,BARCELONA,41.4430819 / 2.1862428,Marquesina (x2),62 96 97 104 N3 
+1242,Pg de Valldaura-Pg Andreu Nin,BARCELONA,41.4395169 / 2.1829353,Marquesina,73 B16 B19 
+1243,Montserrat de Casanovas-Marí,BARCELONA,41.4224556 / 2.1619477,Pal,39 
+1244,Montserrat de Casanovas-Passerell,BARCELONA,41.4219956 / 2.1596071,Pal,39 
+1245,Av Diagonal-Rosselló,BARCELONA,41.3971760 / 2.1622458,Pal,06 15 33 34 
+1246,Gran Via-Bruc,BARCELONA,41.3922098 / 2.1715746,Pal,07 50 54 56 N1 N2 N3 
+1247,València-Pau Claris,BARCELONA,41.3946788 / 2.1660634,Marquesina,43 44 N7 
+1248,Rocafort-Provença,BARCELONA,41.3834688 / 2.1477589,Pal,41 
+1252,Pg de la Vall d'Hebron-Basses d'Horta,BARCELONA,41.4252407 / 2.1429416,Marquesina,27 60 73 76 112 119 B16 B19 N4 
+1253,Josep Tarradellas-Paris,BARCELONA,41.3864518 / 2.1430099,Pal,15 27 32 59 
+1254,Gran Via-Entença,BARCELONA,41.3784269 / 2.1537532,Marquesina,09 50 56 L94 L95 N1 N13 N14 N15 N16 N17 N2 
+1255,Sepúlveda-Rocafort,BARCELONA,41.3784174 / 2.1560122,Marquesina,13 55 91 141 L94 L95 
+1256,Pl de Catalunya,BARCELONA,41.38768 / 2.17043,Marquesina (x2),58 N2 N3 
+1257,Pl de Catalunya-Ronda Sant Pere,BARCELONA,41.3879140 / 2.1704009,Marquesina,24 
+1258,Pl. Catalunya -  Andana Central,BARCELONA,41.3879170 / 2.1699187,,14 59 
+1259,Collblanc-Camí de Can Roca,BARCELONA,41.3759607 / 2.1146733,Pal,15 54 N3 
+1260,Gran de Gràcia-Travessera de Gràcia,BARCELONA,41.4002721 / 2.1551364,Pal,22 24 28 87 N4 
+1261,Gran de Gràcia-Metro Fontana,BARCELONA,41.4018504 / 2.1533077,Pal,22 24 28 114 87 N4 
+1262,Via Augusta-Travessera de Gràcia,BARCELONA,41.3990109 / 2.1529189,Marquesina,16 17 27 31 32 N5 
+1263,Bruc-Còrsega,BARCELONA,41.3988436 / 2.1634108,Marquesina,20 45 47 N6 
+1264,Villarroel-Hospital Clínic,BARCELONA,41.3893886 / 2.1511102,Marquesina,14 59 63 N12 N7 
+1265,Pg de Sant Joan-Rosselló,BARCELONA,41.4013179 / 2.1667679,Pal,15 55 N4 
+1266,Rocafort-Jardins de Montserrat,BARCELONA,41.3850950 / 2.1456099,Pal,41 
+1267,Calàbria-Provença,BARCELONA,41.3851415 / 2.1479899,Pal,41 
+1268,Muntaner-Còrsega,BARCELONA,41.3912031 / 2.1533380,Marquesina,54 58 64 66 N3 N8 
+1269,Marina-Av Gaudí,BARCELONA,41.4049677 / 2.1739914,Marquesina,10 N0 
+1270,Rda. Sant Antoni - ' Mercat de Sant Antoni ',BARCELONA,41.3792479 / 2.1632767,Marquesina,24 64 120 N6 
+1271,Pl de Catalunya-Bergara,BARCELONA,41.3865938 / 2.1695587,Marquesina (x2),09 N11 N9 
+1272,Pl. Catalunya - (FNAC),BARCELONA,41.3868370 / 2.1692312,Marquesina (x2),N1 N12 N15 
+1273,Llull-Rambla del Poblenou,BARCELONA,41.4001078 / 2.2010529,Marquesina,26 36 71 141 N6 
+1274,Pujades-Rambla del Poblenou,BARCELONA,41.4021359 / 2.2011437,Marquesina,36 71 141 192 N6 
+1277,Roc Boronat-Doctor Trueta,BARCELONA,41.3977068 / 2.2013586,Pal,36 
+1278,Marina-Doctor Trueta,BARCELONA,41.3909550 / 2.1922549,Pal,10 14 41 N0 
+1279,Av Elies Pagès,BARCELONA,41.4284048 / 2.1329037,Pal,112 
+1281,Ramon Trias Fargas-Ronda Litoral,BARCELONA,41.3863153 / 2.1958862,,45 
+1282,Pg Marítim-Andrea Dòria,BARCELONA,41.3803500 / 2.1928742,Marquesina,36 45 57 59 157 N8 
+1283,Pg Marítim-Platja de la Barceloneta,BARCELONA,41.3805547 / 2.1931634,Pal,36 45 57 59 157 N8 
+1284,Pg Marítim-Hospital del Mar,BARCELONA,41.3831945 / 2.1946102,Marquesina,36 45 57 59 157 N8 
+1285,Ramon Trias Fargas-Pg Marítim,BARCELONA,41.3860034 / 2.1962933,,59 
+1286,Ramon Trias Fargas-Torrevieja,BARCELONA,41.3862013 / 2.1960322,Marquesina,36 N8 
+1289,La Rambla-Pl del Teatre,BARCELONA,41.3787686 / 2.1756524,Pal,14 59 N12 N15 N9 
+1290,La Rambla-Liceu,BARCELONA,41.3816534 / 2.1731118,Pal,14 59 N12 N15 N9 
+1291,La Rambla-Palau Moja,BARCELONA,41.3837391 / 2.1715004,Marquesina,14 59 N12 N15 N9 
+1292,La Rambla-Palau de la Virreina,BARCELONA,41.3748960 / 2.1700320,Pal,14 59 91 N12 N15 N9 
+1294,Pg. Colom - ' Cap. General ',BARCELONA,41.3764242 / 2.1775407,Marquesina,N0 N12 N15 N9 
+1296,La Rambla-Font de Canaletes,BARCELONA,41.3850945 / 2.1701590,Pal,14 59 91 N12 N15 N9 
+1297,Temple Expiatori de La Sagrada Família,BARCELONA,41.4029359 / 2.1746573,Marquesina,19 33 34 43 44 50 51 B20 B24 N1 N7 
+1298,Gran Via-Sardenya,BARCELONA,41.3988067 / 2.1803893,Marquesina,06 07 56 62 B21 N2 N3 
+1299,Av Mare de Déu de Montserrat-Pl Sanllehy,BARCELONA,41.4132333 / 2.1607925,Pal,24 92 
+1300,Pi i Margall-Pl Alfons el Savi,BARCELONA,41.4113267 / 2.1644896,Pal,92 114 
+1301,Pi i Margall-Sardenya,BARCELONA,41.4098293 / 2.1643158,Pal,55 114 
+1302,Av Meridiana-Sardenya,BARCELONA,41.3923420 / 2.1870423,Marquesina,14 40 41 42 141 B25 N11 
+1304,Conca-Sant Antoni Maria Claret,BARCELONA,41.4144458 / 2.1791633,Pal,15 
+1305,Pg Maragall-Indústria,BARCELONA,41.4151246 / 2.1807861,Marquesina,19 20 45 47 50 51 N1 N4 
+1306,Padilla-Indústria,BARCELONA,41.4090911 / 2.1728839,Pal,10 
+1307,Pg de Sant Joan-Travessera de Gràcia,BARCELONA,41.4039187 / 2.1632592,Pal,55 N6 
+1308,Independència-St Antoni M Claret,BARCELONA,41.4127919 / 2.1769886,Pal,35 
+1309,Espronceda-Sant Antoni Maria Claret,BARCELONA,41.4201440 / 2.1849554,Pal,71 
+1310,Gran Via-Santa Dorotea,BARCELONA,41.3718002 / 2.1449802,Marquesina (x2),09 37 46 65 79 91 109 165 L70 L72 L80 L81 L86 L87 L94 L95 N13 N15  
+1311,Rocafort-Gran Via,BARCELONA,41.3784019 / 2.1544609,Pal,41 
+1313,Via Augusta-Tres Reis,BARCELONA,41.4041571 / 2.1180278,Pal,30 66 130 N8 
+1314,Josep Sangenís-Dante Alighieri,BARCELONA,41.4252591 / 2.1520725,Pal,19 
+1315,Josep Sangenís-Santa Gemma,BARCELONA,41.4240217 / 2.1488255,Pal,19 
+1316,Av Mare de Déu de Montserrat-Praga,BARCELONA,41.4142211 / 2.1623367,Pal,31 32 39 55 74 114 N0 N6 
+1317,Sant Antoni Maria Claret-Sardenya,BARCELONA,41.4066630 / 2.1681884,Marquesina,15 20 45 47 N4 
+1318,València-Av Diagonal,BARCELONA,41.4007301 / 2.1740912,Marquesina,19 33 34 43 44 50 51 B20 B24 N1 N7 
+1319,Gran Via-Nàpols,BARCELONA,41.3961088 / 2.1772885,Marquesina,06 07 56 62 B21 N2 N3 N9 
+1321,Mare de Déu de la Salut-Hospital de l'Esperança,BARCELONA,41.4103879 / 2.1549152,,116 
+1323,Pg de la Zona Franca-Sant Eloi,BARCELONA,41.3548096 / 2.1432029,Marquesina (x2),09 23 37 109 N1 
+1324,Santa Rosalia-Sant Dalmir,BARCELONA,41.4233026 / 2.1488286,Pal,19 119 N4 
+1325,La Rambla-Centre d'Art Santa Mònica,BARCELONA,41.3778266 / 2.1758565,Marquesina,14 59 91 N12 N15 N9 
+1326,Av Paral·lel-Drassanes,BARCELONA,41.3747832 / 2.1750649,Pal,20 21 36 57 64 91 157 N0 N6 
+1327,Pi i Margall-Secretari Coloma,BARCELONA,41.4096179 / 2.1639895,Marquesina,55 92 114 N6 
+1328,Camèlies-Secretari Coloma,BARCELONA,41.4112479 / 2.1595692,Pal,31 32 39 74 N0 N6 
+1329,Providència-Pi i Margall,BARCELONA,41.4103662 / 2.1635462,Pal,39 
+1330,Camèlies-Ca L'alegre de Dalt,BARCELONA,41.4108042 / 2.1587212,Marquesina,24 N0 N6 
+1331,Fontrodona-El Molino,BARCELONA,41.3749002 / 2.1673250,Pal,24 
+1332,Parlament-Comte Borrell,BARCELONA,41.3771705 / 2.1635913,Pal,37 120 121 
+1333,Indústria-Independència,BARCELONA,41.4124461 / 2.1782546,Pal,15 50 51 117 
+1335,Escorial-Pl Joanic,BARCELONA,41.4061552 / 2.1625502,Marquesina,39 114 116 N6 
+1338,Segre-Sant Adrià,BARCELONA,41.4336227 / 2.1924456,Marquesina,11 35 40 B20 B22 N9 
+1339,Dublín-Av Meridiana,BARCELONA,41.4286541 / 2.1851733,Marquesina,11 26 34 36 B22 
+1340,Av Meridiana-Riera de Sant Andreu,BARCELONA,41.4355360 / 2.1844576,Marquesina,62 96 126 N3 
+1341,Bartrina-Pont del Dragó,BARCELONA,41.4395740 / 2.1861713,Pal,62 96 126 N3 
+1342,Pl de Mossèn Clapés,BARCELONA,41.4420408 / 2.1874903,Marquesina,62 73 96 B16 B19 N3 
+1344,Rambla de l'Onze de Setembre-Santa Coloma,BARCELONA,41.4302040 / 2.1931581,Pal,11 26 34 36 126 
+1345,Pg Maragall-Segle XX,BARCELONA,41.4228395 / 2.1784498,Marquesina,19 45 47 50 51 117 N1 N4 
+1347,Les Agudes 27,BARCELONA,41.4636810 / 2.1783711,Pal,104 
+1348,Les Agudes-Fusters,BARCELONA,41.4638913 / 2.1751894,Pal,104 
+1351,Rovira i Virgili-Parc de la Pegaso,BARCELONA,41.4279768 / 2.1891940,Marquesina,11 26 34 36 B22 
+1352,Balmes-Bertran,BARCELONA,41.4048495 / 2.1402605,Pal,17 131 N5 
+1353,Balmes-El Putget,BARCELONA,41.4061991 / 2.1390456,Marquesina,17 N5 
+1354,Balmes-Castanyer,BARCELONA,41.4075248 / 2.1383724,Marquesina,17 N5 
+1358,Av Tibidabo-Josep Maria Florensa,BARCELONA,41.4130477 / 2.1349130,Pal,73 196 
+1359,Av Tibidabo-Pg Sant Gervasi,BARCELONA,41.4105732 / 2.1367298,Pal,73 
+1360,Pl Bonanova,BARCELONA,41.4066441 / 2.1337955,Pal,22 58 75 
+1362,Badal (Càceres-Sants),BARCELONA,41.3748250 / 2.1325118,Pal,70 
+1363,Rambla de Brasil (Av. Madrid-Violant d´ Hungria),BARCELONA,41.37894 / 2.12902,Pal,70 
+1364,Sants-Pg Sant Antoni,BARCELONA,41.3754801 / 2.1366378,Pal,30 56 57 157 N14 N2 
+1365,Sants-Premià,BARCELONA,41.3754264 / 2.1393459,Marquesina,30 56 57 157 N14 N2 
+1366,Villarroel-Floridablanca,BARCELONA,41.3807500 / 2.1626560,Pal,20 37 
+1367,Av Paral·lel-Tamarit,BARCELONA,41.3749324 / 2.1552325,Marquesina,37 57 61 157 N0 
+1368,Lleida-Tamarit,BARCELONA,41.3737764 / 2.1548308,Pal,55 
+1369,Lleida-Av Paral·lel,BARCELONA,41.3743128 / 2.1543640,Pal,55 
+1370,Calàbria-Av Mistral,BARCELONA,41.3772786 / 2.1584055,Marquesina,13 
+1372,Pg de la Vall d'Hebron-Patronat Ribes,BARCELONA,41.4223819 / 2.1413261,Marquesina,17 19 27 60 73 119 N4 
+1373,Arizala-Travessera de Les Corts,BARCELONA,41.3785626 / 2.1237020,Marquesina,54 56 57 157 N14 N2 N3 
+1374,Comandant Benítez-Av Madrid,BARCELONA,41.3792029 / 2.1278329,Pal,15 
+1375,Gran Via Carles III (Av. Diagonal-Sabino Arana),BARCELONA,41.3879170 / 2.1699187,Pal,70 72 75 
+1376,Gran Via Carles III-Av Diagonal,BARCELONA,41.3875855 / 2.1269938,Marquesina,L12 
+1377,Equador-Taquigraf Serra,BARCELONA,41.3866240 / 2.1394958,Pal,30 43 78 
+1378,Gran Via Carles III-Mejía Lequerica,BARCELONA,41.3842559 / 2.1272672,Pal,59 70 72 75 L12 
+1379,Gran Via Carles III-Av Madrid,BARCELONA,41.3800216 / 2.1292617,Pal,70 75 
+1380,Numància-Av Diagonal,BARCELONA,41.3891192 / 2.1328944,Marquesina,30 66 78 N0 
+1381,Entença-Montnegre,BARCELONA,41.3884941 / 2.1395785,Pal,30 66 78 N0 
+1382,Estació de França,BARCELONA,41.3844566 / 2.1851474,Pal,14 39 51 
+1385,Providència-Torrent de les Flors,BARCELONA,41.4079427 / 2.1589614,Pal,39 
+1386,Aribau-Av Diagonal,BARCELONA,41.3951869 / 2.1505104,Marquesina,31 58 64 N8 
+1387,Via Augusta-Pl Gal·la Placídia,BARCELONA,41.3988698 / 2.1527034,Marquesina,22 24 28 N4 
+1388,Pg de Sant Joan-Sant Antoni Maria Claret,BARCELONA,41.4044979 / 2.1633079,Pal,39 55 N6 
+1389,Via Augusta-Sèneca,BARCELONA,41.3965862 / 2.1553099,Pal,16 17 N5 
+1390,Balmes-Laforja,BARCELONA,41.3992161 / 2.1504265,Pal,16 17 27 31 32 N5 
+1391,Gran de Gràcia-Jesús,BARCELONA,41.3983981 / 2.1573409,Pal,22 24 28 N4 
+1392,Muntaner-Via Augusta,BARCELONA,41.3986075 / 2.1435351,Pal,58 64 N8 
+1393,Muntaner-Madrazo,BARCELONA,41.3969343 / 2.1457613,Marquesina,58 64 N8 
+1394,Torrent de l'Olla-Astúries,BARCELONA,41.4034994 / 2.1557119,Pal,39 114 
+1395,Lepant-Travessera de Gràcia,BARCELONA,41.4095465 / 2.1699554,Marquesina,10 92 N0 
+1396,Lepant-Ronda Guinardó,BARCELONA,41.4117395 / 2.1670441,Marquesina,10 92 N0 
+1397,Av Tibidabo-Carrer número 15,BARCELONA,41.4154552 / 2.1294548,Pal,196 
+1399,Mare de Déu del Port (Cementiri Can Tunis),BARCELONA,41.3879170 / 2.1699187,Pal,21 
+1400,Cantunis,BARCELONA,41.3458440 / 2.1327780,Pal,107 
+1402,Pg de Fabra i Puig-Torrent Can Mariner,BARCELONA,41.4321553 / 2.1631170,,185 
+1403,Pg de Fabra i Puig-Canfranc,BARCELONA,41.4306084 / 2.1659878,Pal,71 
+1404,Pg de Fabra i Puig-Petrarca,BARCELONA,41.4304308 / 2.1662943,Pal,71 
+1405,Rambla de Guipúscoa-Agricultura,BARCELONA,41.4184585 / 2.1995679000000337,Marquesina,33 43 44 B24 N8 
+1407,Dante Alighieri-Pantà de Tremp,BARCELONA,41.4261086 / 2.1546253,Pal,19 86 87 N4 
+1408,Pare Pérez del Pulgar-Pare Manjon,BARCELONA,41.4543938 / 2.1908651,Pal,11 40 
+1409,Pare Pérez del Pulgar-Peníscola,BARCELONA,41.4534821 / 2.1895579,Pal,11 40 
+1410,Dante Alighieri-Tolrà,BARCELONA,41.4272601 / 2.1563216,Pal,19 86 87 N4 
+1412,Av Mare de Déu de Montserrat-Torre Pardals,BARCELONA,41.4217309 / 2.1743122,Marquesina,31 32 74 N6 
+1413,Av de Pedralbes-Tòquio,BARCELONA,41.3901208 / 2.1191128,Pal,63 78 
+1414,Josep Tarradellas-Numància,BARCELONA,41.3812055 / 2.1421225,Pal,27 32 
+1418,Pg de Santa Coloma-Baró de Viver,BARCELONA,41.4486095 / 2.1997747,Marquesina,11 35 60 B16 B19 B20 N9 
+1419,Pg de Santa Coloma-Nus de la Trinitat,BARCELONA,41.4464474 / 2.1936104,Marquesina,11 35 60 B16 B19 B20 N9 
+1420,Pg de Torras i Bages-'Casa Bloc',BARCELONA,41.4414215 / 2.1908040,Marquesina,73 B20 N9 
+1424,Costa Pacheco 26,BARCELONA,41.4281436 / 2.1312825,Pal,112 
+1425,Av Diagonal-Tuset,BARCELONA,41.3952412 / 2.1539744,Pal,06 07 15 27 32 33 34 
+1426,Calvet-Tenor Viñas,BARCELONA,41.3960478 / 2.1418374,Pal,14 68 N7 
+1427,Pg de la Vall d'Hebron-Ctra d'Horta,BARCELONA,41.4380150 / 2.1532025,Marquesina,27 60 76 B16 B19 
+1428,Ctra d'Horta-Av Estatut de Catalunya,BARCELONA,41.4374692 / 2.1535238,Pal,45 102 185 
+1429,Pg de la Vall d'Hebron-Col·legi Sant Joan Bosco,BARCELONA,41.4365404 / 2.1496371,Marquesina,27 60 73 76 B16 B19 N4 
+1430,Av Estatut de Catalunya-Porto,BARCELONA,41.3879170 / 2.1699187,Pal,10 
+1431,Av Cardenal Vidal i Barraquer-Jorge Manrique,BARCELONA,41.4316216 / 2.1510956,Pal,10 
+1432,Av Meridiana-Mallorca,BARCELONA,41.4128536 / 2.1870732,Pal,62 N3 
+1435,Sant Adrià-Sas,BARCELONA,41.4361636 / 2.2037327,Pal,11 73 B22 B23 
+1436,Sant Adrià-Ciutat d'Asunción,BARCELONA,41.4359050 / 2.2016162,Marquesina,11 73 B22 B23 
+1437,Via Júlia-Turó Blau,BARCELONA,41.4393242 / 2.1755362,Marquesina,50 51 76 N1 80 81 
+1438,Collblanc - Torre Melina,BARCELONA,41.3760202 / 2.1116138,Pal,57 157 158 N14 
+1440,Pg de la Vall d'Hebron-Scala Dei,BARCELONA,41.4391291 / 2.1578009,Marquesina,27 60 73 76 B16 B19 N4 
+1441,Pg de la Vall d'Hebron-Cementiri d'Horta,BARCELONA,41.4397601 / 2.1583664,Marquesina,27 60 73 76 185 B16 B19 N4 
+1443,Pl del Doctor Andreu-Funicular del Tibidabo,BARCELONA,41.4164850 / 2.1308075,Pal,196 
+1444,Parc Municipal Font del Racó,BARCELONA,41.4155495 / 2.1296918,Pal,196 
+1445,Av. Tibidabo (Parc Municipal-Font Racó),BARCELONA,41.3879170 / 2.1699187,, 
+1446,Pg Guayaquil-Lima,BARCELONA,41.4392965 / 2.2080711,Pal,11 73 
+1447,Ctra del Carmel-Pasteur,BARCELONA,41.4171677 / 2.1585803,Pal,24 92 
+1448,Ctra del Carmel-Mühlberg,BARCELONA,41.4179472 / 2.1577441,Pal,24 92 
+1449,Ctra del Carmel-Gran Vista,BARCELONA,41.4181762 / 2.1574039,Pal,24 92 
+1450,Rambla de Guipúscoa-Puigcerdà,BARCELONA,41.4210377 / 2.2030250,Marquesina,33 43 44 B24 N8 
+1451,Rambla de Guipúscoa-Cantàbria,BARCELONA,41.4199058 / 2.2021111,Pal,33 43 44 B24 N8 
+1453,Pg Guayaquil-Arbeca,BARCELONA,41.4395342 / 2.2081300,Pal,11 42 73 
+1454,Caracas-Pl Fra Juníper Serra,BARCELONA,41.4393554 / 2.2036549,Marquesina,42 N8 
+1455,Ciutat d'Asunción-Potosí,BARCELONA,41.4423910 / 2.1997320,Pal,11 42 60 73 N8 
+1463,Rda. Sant Pere - Pl. Urquinaona,BARCELONA,41.3886229 / 2.1714812,Marquesina,B25 N11 
+1464,Rda. Sant Antoni - ' Mercat de Sant Antoni ',BARCELONA,41.3792479 / 2.1632767,Marquesina,20 37 64 120 N6 
+1466,Còrsega-Hospital Clínic,BARCELONA,41.3896376 / 2.1500786,Marquesina,54 59 66 N3 
+1467,París-Comte d'Urgell,BARCELONA,41.3895055 / 2.1478481,Marquesina,54 66 N3 
+1468,Gran Via-Villarroel,BARCELONA,41.3828680 / 2.1591564,Pal,09 50 56 N1 N12 N13 N14 N15 N16 N17 N2 
+1469,Gran Via-Comte d'Urgell,BARCELONA,41.3817937 / 2.1582478,Marquesina,09 50 56 L94 L95 N1 N13 N14 N15 N16 N17 N2 A2 
+1470,Sant Adrià - Tte. Estadella,BARCELONA,41.3879170 / 2.1699187,Marquesina,B22 
+1471,Sant Adrià - Fra. J. Serra,BARCELONA,41.4332788 / 2.2033118,Pal,B22 
+1472,Av Tibidabo-Josep Garí,BARCELONA,41.4151392 / 2.1335198,Pal,196 
+1473,Av Tibidabo-Lluís Muntadas,BARCELONA,41.4154309 / 2.1313309,Pal,196 
+1474,Arquitecte Moragas-Jorge Manrique,BARCELONA,41.4327169 / 2.1474991,Pal,10 
+1476,Pla del Palau-Pas de Sota Muralla,BARCELONA,41.3821234 / 2.1841617,Pal,36 39 57 59 64 120 157 N0 N6 
+1477,Pas de Sota Muralla-Pl Pau Vila,BARCELONA,41.3812064 / 2.1844683,Pal,17 45 N8 
+1478,Dr. Aiguader - Carbonell,BARCELONA,41.3829288 / 2.1871752,Marquesina,N0 N6 
+1479,Port Vell-R C Nàutic,BARCELONA,41.3772658 / 2.1834668,Pal,19 40 
+1480,Port Vell,BARCELONA,41.3756089 / 2.1821445,Pal,19 
+1481,Port Vell-R C Marítim,BARCELONA,41.3763859 / 2.1744740,Pal,19 40 
+1482,Maremagnum,BARCELONA,41.3754049 / 2.1819846,,40 
+1483,Port Vell-Imax,BARCELONA,41.3773697 / 2.1836277,Pal,19 40 
+1484,Jordi Girona-Tinent Coronel Valenzuela,BARCELONA,41.3876216 / 2.1143688,Marquesina,33 60 
+1487,Via Favència-Lucena,BARCELONA,41.4448701 / 2.1759088,Pal,60 127 
+1488,Villarroel-Mercat del Ninot,BARCELONA,41.3868903 / 2.1545030,Marquesina,14 20 37 59 N12 
+1489,Av Meridiana-Aragó,BARCELONA,41.4095368 / 2.1871715,Pal,62 N3 
+1490,Pau Claris-Mallorca,BARCELONA,41.3945895 / 2.1646430,Marquesina,39 45 B20 B24 
+1491,Calàbria-Aragó,BARCELONA,41.3825723 / 2.1514000,Pal,41 
+1492,Pg de Sant Joan-Pl Mossèn Jacint Verdaguer,BARCELONA,41.3987213 / 2.1703310,Pal,06 
+1493,Balmes-València,BARCELONA,41.3911734 / 2.1601180,Pal,07 16 17 67 68 N5 
+1494,Av Meridiana-Pl del Doctor Serrat,BARCELONA,41.4114166 / 2.1867567,Marquesina,62 N3 
+1495,Muntaner-Mallorca,BARCELONA,41.3884710 / 2.1568474,Marquesina,54 58 64 66 N3 N8 
+1496,Dos de Maig-Mallorca,BARCELONA,41.4074374 / 2.1815259999999626,Pal,35 
+1497,Pg de Gràcia-València,BARCELONA,41.3933748 / 2.1632257,Marquesina,22 24 28 N4 N6 
+1498,Lepant-Mallorca,BARCELONA,41.4041145 / 2.1771007,Marquesina,10 N0 
+1499,Tarragona-València,BARCELONA,41.3791292 / 2.1442923,Marquesina,27 30 109 115 N0 
+1501,Av Alzinar-Castelladral,BARCELONA,41.4625345 / 2.1832670,Pal,97 80 81 
+1503,Castelladrall-Oristà,BARCELONA,41.4639231 / 2.1852203,,80 83 81 
+1504,CEIP Ciutat Comtal,BARCELONA,41.4628340 / 2.1825988,Marquesina,97 80 83 81 
+1508,Av de Vallcarca-Viaducte de Vallcarca,BARCELONA,41.4120961 / 2.1443664,Pal,27 
+1509,Av República Argentina-Mare de Déu del Carmel,BARCELONA,41.4120283 / 2.1403613,Pal,22 N4 N5 
+1510,Doctor Pi i Molist-Andratx,BARCELONA,41.4328501 / 2.1735633,Pal,11 31 32 47 50 51 N1 N6 
+1511,Pla de las Madres de la Plaza de Mayo,BARCELONA,41.4352364 / 2.1721602,Marquesina,11 31 32 47 50 51 N1 N6 82 
+1512,Travessera de Dalt-Verdi,BARCELONA,41.4084212 / 2.1522486,Marquesina,24 31 32 74 N0 
+1513,Travessera de Dalt-Sant Josep de la Muntanya,BARCELONA,41.4092776 / 2.1539933999999903,Marquesina,24 31 32 74 N0 
+1515,Pg deTorras i Bages-Via Favència,BARCELONA,41.4459056 / 2.1906863,Pal,11 40 62 126 127 
+1517,Via Júlia-Mas Duran,BARCELONA,41.4435521 / 2.1787685,Marquesina,50 51 76 132 N1 80 81 
+1518,Via Júlia-Via Favència,BARCELONA,41.4454500 / 2.1795891,Marquesina,50 51 76 132 N1 80 81 
+1519,Pl Karl Marx-Pg de Valldaura,BARCELONA,41.4397744 / 2.1632441,Pal,60 127 
+1520,Av Diagonal-Pl Joan Carles I,BARCELONA,41.3963011 / 2.1581687,Marquesina (x2),06 07 15 16 17 33 34 N5 
+1521,Aribau-Via Augusta,BARCELONA,41.3994538 / 2.1455675,Marquesina,58 64 N8 
+1522,Av Príncep d'Astúries-Via Augusta,BARCELONA,41.4012829 / 2.1511367,Pal,22 24 28 114 87 N4 
+1524,Pl Gal·la Placídia,BARCELONA,41.3992475 / 2.1531789,Pal,92 
+1525,Travessera de Gràcia-Balmes,BARCELONA,41.3978521 / 2.1523991,Pal,27 31 32 
+1527,Via Augusta-Amigó,BARCELONA,41.3981013 / 2.1407996,Pal,14 68 N7 
+1528,Via Augusta-Modolell,BARCELONA,41.3978966 / 2.1367086999999856,Pal,14 68 N7 
+1529,Balmes-Ronda General Mitre,BARCELONA,41.4040367 / 2.1416326,Pal,16 17 N5 
+1530,Balmes-Copèrnic,BARCELONA,41.4025396 / 2.1450484,Pal,16 17 N5 
+1531,Pg de la Bonanova-Escoles Pies,BARCELONA,41.4034369 / 2.1275660,Pal,22 64 75 N8 
+1532,Pg de la Bonanova-Carrasco i Formiguera,BARCELONA,41.4013077 / 2.1237539,Marquesina,22 64 75 N8 
+1533,Av Príncep d'Astúries-Guillem Tell,BARCELONA,41.4028483 / 2.1500635,Pal,22 24 28 87 N4 
+1534,Pl Borràs,BARCELONA,41.4048913 / 2.1175579,,30 
+1535,Pl d'Adrià-Jardins del Turó de Monterols,BARCELONA,41.4012519 / 2.1399120,Marquesina,58 64 N8 
+1536,Muntaner-Plató,BARCELONA,41.3999027 / 2.1418139,Marquesina,58 64 N8 
+1538,General Vives-Isaac Albéniz,BARCELONA,41.4039999 / 2.1172174,Marquesina,60 66 130 N8 
+1539,Adrià Margarit-Teodor Roviralta,BARCELONA,41.4141989 / 2.1312395,Pal,60 
+1540,Rotonda de Bellesguard,BARCELONA,41.4105466 / 2.126196899999968,Pal,60 
+1541,Pl de Benet XV,BARCELONA,41.40625 / 2.12044,Pal,60 
+1542,Av de Vallcarca-Capellades,BARCELONA,41.4191522 / 2.1409542,Pal,27 119 
+1543,Av República Argentina-Craywinkel,BARCELONA,41.4134993 / 2.1385467,Pal,17 22 123 124 N4 N5 
+1544,Poesia-Llars Sant Jordi,BARCELONA,41.4319959 / 2.1440926,Pal,10 
+1545,Floridablanca-Comte d'Urgell,BARCELONA,41.3806889 / 2.1614885,Pal,41 55 91 141 
+1546,Buenos Aires-Comte d' Urgell,BARCELONA,41.3920656 / 2.1466546,Pal,27 32 
+1547,Torre de Collserola,BARCELONA,41.4172970 / 2.1140410,Pal,111 
+1548,Aiguablava-Nou Barris,BARCELONA,41.4474122 / 2.1805687,Marquesina,11 32 50 51 76 127 N1 N6 80 81 
+1549,Almansa-Jaume Martí,BARCELONA,41.4427437 / 2.1753319,Pal,11 32 
+1554,Josep Tarradellas-Londres,BARCELONA,41.3892370 / 2.1435943,Pal,15 27 32 41 59 
+1555,Londres-Hospital del Sagrat Cor,BARCELONA,41.3898678 / 2.1458992,Pal,41 54 66 N3 
+1556,Gran Via-Viladomat,BARCELONA,41.3801358 / 2.1559884000000693,Marquesina,09 50 56 L94 L95 N1 N13 N14 N15 N16 N17 N2 
+1557,Comte Borrell-Tamarit,BARCELONA,41.3788545 / 2.1606413,Pal,13 
+1558,Parlament-Av Paral·lel,BARCELONA,41.3755409 / 2.1614117,Pal,37 121 
+1559,Gran Via-Llançà,BARCELONA,41.37630 / 2.15118,Pal,09 13 50 56 91 L94 L95 N1 N13 N14 N15 N16 N17 N2 
+1560,Av de Roma-Entença,BARCELONA,41.3820932 / 2.1468346,Pal,27 
+1563,Camí del Polvorí-Estadi Serrahima,BARCELONA,41.3662363 / 2.1441374,Pal,13 
+1564,Segura-Estadi Serrahima,BARCELONA,41.3643820 / 2.1435445,Pal,13 
+1565,Segura-Barri del Polvorí,BARCELONA,41.3654989 / 2.1415229,Pal,13 
+1566,Segura-Fortuna,BARCELONA,41.3653539 / 2.1416957,Pal,13 125 
+1567,Segura-Polvorí,BARCELONA,41.3644173 / 2.1433684,Pal,13 125 
+1568,Polvorí-Camí de la Fuxarda,BARCELONA,41.3653869 / 2.1449920,Pal,13 
+1569,Polvorí-Av Ferrer i Guàrdia,BARCELONA,41.3681155 / 2.1446625,Pal,13 
+1570,Av J V Foix-Cardenal Vives i Tutó,BARCELONA,41.39468350000001 / 2.1205505000000358,,130 
+1571,Eduard Conde-Santa Amèlia,BARCELONA,41.3925065 / 2.1214811,Pal,34 
+1572,Via Augusta-Anglí,BARCELONA,41.3978745 / 2.1292337,Pal,30 68 
+1573,Via Augusta-Els Vergós,BARCELONA,41.3982986 / 2.1257867,Pal,30 66 68 N7 
+1575,Marquès de Sentmenat-Numància,BARCELONA,41.3850107 / 2.1367472,Marquesina,54 N3 
+1576,Av de Madrid-Joan Güell,BARCELONA,41.3808470 / 2.1329079,Pal,54 N3 
+1577,Travessera de Les Corts-Vallespir,BARCELONA,41.3853254 / 2.1327032,Pal,15 43 59 
+1578,Av de Madrid-Pl del Centre,BARCELONA,41.3815396 / 2.1350329,Pal,54 N3 
+1579,Pg Garcia i Faria-Bac de Roda,BARCELONA,41.4015192 / 2.2110111,Pal,41 
+1580,Guillem Tell - Av Príncep d'Astúries,BARCELONA,41.4028374 / 2.1490295,Pal,27 31 32 92 
+1581,Ronda General Mitre-Saragossa,BARCELONA,41.4053263 / 2.1441065,Marquesina,74 N0 
+1582,Ronda General Mitre-Pàdua,BARCELONA,41.4058660 / 2.1461862,Pal,74 N0 
+1583,Major de Sarrià-Dolors Monserdà,BARCELONA,41.4009126 / 2.1205461,Pal,66 N8 
+1584,Major de Sarrià-Nou de Santa Eulàlia,BARCELONA,41.4023130 / 2.1192809,Pal,66 130 N8 
+1585,Major de Sarrià-General Vives,BARCELONA,41.4034794 / 2.1172573,Pal,66 130 N8 
+1586,Via Augusta-Dolors Monserdà,BARCELONA,41.4011503 / 2.1228128,Pal,30 
+1587,Escola Jesuites de Sarrià,BARCELONA,41.4028456 / 2.1198424,Pal,30 
+1589,Doctor Pi i Molist-Pg de Fabra i Puig,BARCELONA,41.4308120 / 2.1745241,Marquesina,11 31 32 47 50 51 132 N1 N6 82 
+1590,Pg de Fabra i Puig-Av Meridiana,BARCELONA,41.4303021 / 2.1820303,Pal,11 26 34 36 74 122 
+1591,Pg de Fabra i Puig-Arnau d'Oms,BARCELONA,41.4303653 / 2.1777547,Pal,11 34 36 74 122 
+1593,Pg de Fabra i Puig-Pl Virrei Amat,BARCELONA,41.4303099 / 2.1737177,Pal,71 
+1594,Pl. Karl Marx,BARCELONA,41.4394362 / 2.1625190,Marquesina,31 47 71 73 76 122 B16 B19 N4 N6 82 
+1595,Centre Esportiu Ciutat Meridiana,BARCELONA,41.4595021 / 2.1761543,Marquesina,62 76 104 N3 83 
+1597,Jorge Manrique-C E Hispano Francès,BARCELONA,41.4314739 / 2.1493194,Pal,10 
+1598,Pla del Palau-Consolat del Mar,BARCELONA,41.3827842 / 2.1831850,Marquesina,17 40 45 N0 N6 
+1599,Via Laietana  - Agullers,BARCELONA,41.3822526 / 2.1811375,Pal,17 19 40 45 120 N8 
+1600,Via Laietana-Argenteria,BARCELONA,41.3836714 / 2.1792734,Pal,17 19 40 45 120 N8 
+1601,Via Laietana-Pl Antonio Maura,BARCELONA,41.3859640 / 2.1762918,Pal,17 19 40 45 N8 
+1602,Via Laietana-Pl Ramon Berenguer,BARCELONA,41.3850053 / 2.1773116,Pal,17 19 40 45 N8 
+1603,Via Laietana-Pl de l'Àngel,BARCELONA,41.3835911 / 2.1792078,Pal,17 19 40 45 120 N8 
+1604,Pg Marítim-Almirall Cervera,BARCELONA,41.3791416 / 2.1921321,Pal,36 45 57 59 157 N8 
+1605,Almirall Cervera-Almirall Churruca,BARCELONA,41.3784335 / 2.1901048,Pal,36 45 57 59 157 N8 
+1606,Pg Marítim,BARCELONA,41.3791354 / 2.1922946,Pal,36 45 57 59 157 N8 
+1607,Pg. Zona Franca - Motors,BARCELONA,41.3505953 / 2.1458344,Marquesina,37 109 N1 
+1610,Zona Franca-ENASA,BARCELONA,41.3298481 / 2.1319243,Marquesina,21 109 N1 
+1614,Carrer número 4-Carrer B,BARCELONA,41.3295782 / 2.1333459,Pal,21 109 N1 
+1615,Carrer número 4-Carrer D,BARCELONA,41.3311299 / 2.1283208,Pal,21 109 110 N1 
+1616,Pg Pujades-Parc de la Ciutadella,BARCELONA,41.3899526 / 2.1849888,Marquesina,14 40 41 42 141 B25 N11 
+1617,Carrer núm 4-Mercabarna,BARCELONA,41.3343872 / 2.1190712,,21 109 N1 
+1618,Carrer número 4-Carrer F,BARCELONA,41.3329941 / 2.1228746,Pal,21 109 110 N1 
+1619,Carrer número 4-Carrer E,BARCELONA,41.3321771 / 2.1253726,Pal,21 109 N1 
+1620,Av Paral·lel-Radas,BARCELONA,41.3749186 / 2.1609250,Marquesina,57 61 157 N0 
+1621,Palamós-Tamariu,BARCELONA,41.4493294 / 2.1861090,Pal,50 51 127 80 81 
+1622,S'Agaró-Sa Tuna,BARCELONA,41.4512361 / 2.1879587,Pal,50 51 76 
+1624,Parc del Turó de la Peira,BARCELONA,41.4327316 / 2.1632349,Pal,71 
+1625,Mercat Mare de Déu de Núria,BARCELONA,41.4599653 / 2.1725558,Pal,62 76 N3 83 
+1626,Perafita-Av Rasos de Peguera,BARCELONA,41.4597108 / 2.1704509,Pal,62 76 N3 83 
+1628,Ciutat de Granada-Ptge Mas de Roda,BARCELONA,41.3968564 / 2.1998812,Pal,06 36 N6 N8 
+1629,Pamplona-Av Bogatell,BARCELONA,41.3934409 / 2.1957058,Pal,71 
+1630,Badajoz-Doctor Trueta,BARCELONA,41.3949800 / 2.2004326,Pal,26 36 92 N6 N8 
+1631,Marina-Ramon Turró,BARCELONA,41.3909340 / 2.1918690,Marquesina,10 N0 
+1632,Àlaba-Bogatell,BARCELONA,41.3931668 / 2.1985222,Pal,71 
+1636,Tamarit-Mercat de Sant Antoni,BARCELONA,41.3800106 / 2.1626881,Pal,24 41 55 141 
+1637,Pg Reina Elisenda-Major de Sarrià,BARCELONA,41.3998476 / 2.1208294,Pal,22 64 68 75 N7 
+1638,Zona Franca-Carrer A,BARCELONA,41.3349911 / 2.1403459,Pal,21 37 109 N1 
+1639,Zona Franca-SEAT,BARCELONA,41.3380549 / 2.1421986,Marquesina,21 37 109 N1 
+1640,Carrer A-SEAT,BARCELONA,41.3374585 / 2.1412837,Pal,21 37 109 N1 
+1641,Carrer A-Carrer número 3,BARCELONA,41.3310935 / 2.1373802,Pal,21 109 N1 
+1642,Carrer A-Carrer número 4,BARCELONA,41.3292066 / 2.1362253,Pal,21 109 N1 
+1643,Mercabarna-Mercat del Peix,BARCELONA,41.3340938 / 2.1173689,Pal,109 N1 
+1644,Palamós-La Fosca,BARCELONA,41.4478599 / 2.1852800,Pal,50 51 127 80 81 
+1645,Carrer D-Carrer número 4,BARCELONA,41.3301943 / 2.1288296,Pal,109 N1 
+1646,Carrer D-Carrer número 5,BARCELONA,41.3276348 / 2.1272378,Pal,109 N1 
+1647,Carrer D-Carrer número 6,BARCELONA,41.3288993 / 2.1119528,Pal,109 110 N1 
+1649,Collblanc - Torre Melina,BARCELONA,41.37602 / 2.11161,Pal,N3 
+1650,Av Doctor Marañón-Av de Xile,BARCELONA,41.3814806 / 2.1143847,Pal,54 113 
+1659,Ciutat d'Asunción-Tucumán,BARCELONA,41.4447004 / 2.1993106,Marquesina,11 42 60 73 N8 
+1660,Pl Maragall-Xiprer,BARCELONA,41.4189219 / 2.1805093,Marquesina,19 45 47 50 51 N1 N4 
+1661,Rambla de Prim-Pallars,BARCELONA,41.4143781 / 2.2148989,Pal,36 43 B23 N6 
+1662,Roc Boronat-Pallars,BARCELONA,41.4004358 / 2.1977121,Pal,141 N8 
+1663,Av Meridiana-Pl dels Jardins d'Elx,BARCELONA,41.4235419 / 2.1871124,Marquesina,62 96 B22 N3 
+1664,Gran Via-Metro Besòs,BARCELONA,41.4202481 / 2.2097052,,42 60 N2 
+1665,Rambla de Guipúscoa-Extremadura,BARCELONA,41.4247335 / 2.2085555,Pal,43 44 B21 
+1666,Bernat Metge - Escola General Prim,BARCELONA,41.4201763 / 2.2117455,Marquesina,43 B23 B25 N11 
+1667,Rambla de Guipúscoa-Ca N'Oliva,BARCELONA,41.4234047 / 2.2067840,Marquesina,43 44 B21 
+1668,Carrer número 1-Carrer número 61,BARCELONA,41.3455355 / 2.1428024,Pal,23 
+1669,Carrer número 1-Carrer número 60,BARCELONA,41.3454637 / 2.1429080,Marquesina,21 37 109 N1 
+1670,Transports Metropolitans de Barcelona,BARCELONA,41.3468091 / 2.1423654,Marquesina,21 23 37 109 
+1671,Entitat Metropolitana del Transport,BARCELONA,41.3879170 / 2.1699187,Pal,21 37 
+1672,Pla del Palau (Av. Marquès de l'Argentera-Pg. Isabel II),BARCELONA,41.38278 / 2.18318,,100 
+1673,Pl. Catalunya ('Fontanella'-Rda. Sant Pere),BARCELONA,41.3878185 / 2.1721857,,101 
+1674,Pg. de Gràcia ('Provença'-Rosselló),BARCELONA,41.3879170 / 2.1699187,,100 101 
+1676,Pg. Sant Gervasi ('Av. Tibidabo'-Císter),BARCELONA,41.3879170 / 2.1699187,,101 
+1678,Av. Francesc Ferrer i Guàrdia (Davant Poble Espanyol),BARCELONA,41.3879170 / 2.1699187,,100 
+1679,Av. Estadi (Abans Estadi Olímpic),BARCELONA,41.3879170 / 2.1699187,,100 
+1680,Av. Miramar (Tarongers-'Pl. Dante'),BARCELONA,41.3686820 / 2.1652455,,100 
+1681,Pl. Portal de la Pau (Abans Pg. Colom),BARCELONA,41.3786945 / 2.1799307,,100 
+1683,Pl. Espanya (Abans Av. Reina Maria Cristina),BARCELONA,41.3739767 / 2.1497311,,100 
+1684,Pl. Antoni Moura (Abans Av. Francesc Cambó),BARCELONA,41.3863651 / 2.1779476,,100 
+1685,Av. Marquès Argentera (Passat Pg. Picasso),BARCELONA,41.3870326 / 2.1840362,,100 
+1687,Maremàgnum (Davant Reial Club Marítim),BARCELONA,41.3879170 / 2.1699187,,100 
+1693,Av. Tibidabo (Pl. Jonh Kenedy-Mas Yebra),BARCELONA,41.3879170 / 2.1699187,Pal,", "
+1694,Cª. d´Horta a Cerdanyola (Font Baliarda),BARCELONA,41.3879170 / 2.1699187,Pal,102 
+1695,Ctra d'Horta,BARCELONA,41.4390122 / 2.1542514,Pal,45 102 
+1699,Bernat Metge-Col·legi Sant Gabriel,BARCELONA,41.4204830 / 2.2119065,Marquesina,43 B23 B25 N11 
+1700,Cristòfol de Moura - ' Mercat del Besòs ',BARCELONA,41.4182242 / 2.2158372,Pal,N6 
+1702,General Mendoza-Santa Rosalia,BARCELONA,41.4215071 / 2.1416661,Pal,19 119 
+1703,Les Agudes (a Torre Baró-Vallbona),BARCELONA,41.4615878 / 2.1759344,Pal,62 76 N3 83 
+1704,Les Agudes-Costabona (a Torre Baró-Vallbona),BARCELONA,41.4627486 / 2.1773800,Pal,62 76 N3 83 
+1705,Vallcivera-Pl Roja,BARCELONA,41.4611673 / 2.1793860,Marquesina,51 62 76 N3 
+1706,Av Rasos de Peguera-Pedraforca,BARCELONA,41.4605340 / 2.1738360,Marquesina,62 76 N3 83 
+1707,Les Agudes-Costabona (a Can Cuiàs),BARCELONA,41.4627216 / 2.1772978,Pal,62 104 N3 83 
+1708,Les Agudes-Av Rasos de Peguera (a Can Cuiàs),BARCELONA,41.4615759 / 2.1759210,Pal,62 104 N3 83 
+1709,Av Meridiana-Ctra de Ribes,BARCELONA,41.4499359 / 2.1888802,Marquesina,96 97 104 N3 
+1710,Pg de Santa Coloma-Ctra de Ribes,BARCELONA,41.4451717 / 2.1898233,Pal,96 B16 B19 N3 
+1711,Via Favència-Ctra de Ribes,BARCELONA,41.4471583 / 2.1899558,Pal,60 127 
+1712,Pl de Josep Andreu i Abelló,BARCELONA,41.4475550 / 2.1905688,Pal,11 40 62 76 126 
+1713,Travessera de les Corts-Riera Blanca,BARCELONA,41.3770965 / 2.1198515,Pal,15 54 57 157 158 N14 N3 
+1714,Pare Manyanet-Sant Sebastià,BARCELONA,41.4277422 / 2.1913787,Marquesina,11 B22 
+1730,Mercat Ciutat Meridiana,BARCELONA,41.4623449 / 2.1782337,Pal,62 76 104 N3 83 
+1731,Les Agudes-Can Cuiàs,BARCELONA,41.4637699 / 2.1755611,Pal,62 76 104 N3 83 
+1732,Les Agudes 31,BARCELONA,41.4635963 / 2.1781575,Pal,62 76 104 N3 83 
+1733,Les Agudes 118-124,BARCELONA,41.4612515 / 2.1741048,Marquesina,62 76 N3 83 
+1735,Les Agudes (Davant Circumval.lació),BARCELONA,41.3879170 / 2.1699187,,83 
+1736,Estació TIR-Pg de la Zona Franca,BARCELONA,41.3469671 / 2.1487536,Pal,21 37 
+1741,Cotxeres TB Zona Franca,BARCELONA,41.3300410 / 2.1372607,Marquesina,21 109 110 N1 
+1742,Ronda General Mitre-Ríos Rosas,BARCELONA,41.4045927 / 2.1414318,Pal,74 N0 
+1745,Via Augusta-Margenat,BARCELONA,41.4020496 / 2.1204741,Pal,30 66 130 N8 
+1752,Av Madrid-Església de Santa Tecla,BARCELONA,41.3787206 / 2.1276998,Pal,54 N3 
+1753,Av Madrid-Benavent,BARCELONA,41.3774164 / 2.1254307,Pal,54 N3 
+1754,Av Madrid-Arizala,BARCELONA,41.3761753 / 2.1236934,Pal,15 54 75 N3 
+1755,Sants-Munné,BARCELONA,41.3756473 / 2.1229069,Pal,56 57 157 N14 N2 
+1756,Sants-Portbou,BARCELONA,41.3755985 / 2.1289139,Marquesina,56 57 157 N14 N2 
+1757,Cª. d´Horta a Cerdanyola (Font Baliarda),BARCELONA,41.3879170 / 2.1699187,Pal,102 
+1758,Coll de La Ventosa,BARCELONA,41.4501928 / 2.1591648,Pal,102 
+1761,Av Alzinar-Transversal,BARCELONA,41.4616715 / 2.1828007,Pal,97 
+1763,Salvador Espriu-Arquitecte Sert,BARCELONA,41.3903799 / 2.1990264,Marquesina,36 N6 N8 
+1764,Av Icària-Arquitecte Sert,BARCELONA,41.3916377 / 2.1972700,Pal,14 41 71 92 
+1765,Av Meridiana-Peníscola,BARCELONA,41.4528692 / 2.1892485,Marquesina,62 76 96 97 104 N3 
+1766,Sants - Sugrañes,BARCELONA,41.3755106 / 2.1278949,Pal,56 57 157 N14 N2 
+1767,Sants-Pl de Sants,BARCELONA,41.3755305 / 2.1343037,Marquesina,56 57 157 N14 N2 
+1768,Sants-Rambla del Brasil,BARCELONA,41.3755965 / 2.1310630,Marquesina,56 57 157 N14 N2 
+1769,Badal-Súria,BARCELONA,41.3694182 / 2.1330808,Pal,72 
+1771,Sant Antoni - Pl de Sants,BARCELONA,41.3754708 / 2.1354487,Pal,30 115 
+1775,Av Tibidabo-Roman Macaya,BARCELONA,41.4136449 / 2.1346800,Pal,123 196 
+1776,Pl Alfonso Comín-Doctor Ribas i Perdigó,BARCELONA,41.4151914 / 2.1361747,Marquesina,17 123 124 N4 
+1777,Major de Can Caralleu-Ronda de Dalt,BARCELONA,41.4013226 / 2.1134761,Pal,66 130 N8 
+1778,Av Meridiana-S'Agaró,BARCELONA,41.4483292 / 2.1879559,Marquesina,62 96 97 104 N3 
+1779,Ctra d'Horta-Ronda de Dalt,BARCELONA,41.4396402 / 2.1543934,Marquesina,102 185 
+1780,Lima-Caracas,BARCELONA,41.4392636 / 2.2045127,Pal,11 42 73 N8 
+1781,Estació TIR-Ronda Litoral,BARCELONA,41.3470569 / 2.1488097,Pal,21 37 
+1783,Pl Pau Vila,BARCELONA,41.3822064 / 2.1861157,Marquesina,17 40 45 N8 
+1784,Trelawny (Torrevieja-Dr. Aiguader),BARCELONA,41.3879170 / 2.1699187,Pal,36 
+1785,Costa Pacheco 21,BARCELONA,41.4280778 / 2.1313277,Pal,112 
+1786,Ramon Trias Fargas-Av Icària,BARCELONA,41.3877731 / 2.1939566,Pal,10 71 92 
+1787,Hospital del Mar,BARCELONA,41.3837998 / 2.1938526,Pal,92 
+1788,Trelawny-Ronda Litoral,BARCELONA,41.3857139 / 2.1946319,Marquesina,57 157 
+1791,Berenguer de Palou-Baixada de La Sagrera,BARCELONA,41.4206640 / 2.1915554,Marquesina,35 B20 N9 
+1792,Sagrera-Pl del General Moragues,BARCELONA,41.4182528 / 2.1913423,Marquesina,34 35 126 B20 N9 
+1793,Bisbe Català (Pl. Pedralbes),BARCELONA,41.3960540 / 2.1143147,,101 
+1795,Pl. Francesc Macià (Av. Josep Tarradellas),BARCELONA,41.3870484 / 2.1430306,,101 
+1796,Balmes (Rda. Universitat-Pelai),BARCELONA,41.3879170 / 2.1699187,,101 
+1797,Pl. Catalunya ('Fontanella'-Rda. Sant Pere)-,BARCELONA,41.3878185 / 2.1721857,,100 
+1798,Comte d´Urgell - Pl. Francesc Macià,BARCELONA,41.3919315 / 2.1455216,Pal,100 
+1802,Funicular de Vallvidrera-Pl Pep Ventura,BARCELONA,41.4145652 / 2.1053435,Pal,111 
+1803,Funicular de Vallvidrera,BARCELONA,41.4142668 / 2.1058649,Pal,111 
+1804,Camí Vell,BARCELONA,41.4089507 / 2.1016840,Pal,111 
+1810,Cruïlla de Carreteras,BARCELONA,41.4183375 / 2.1165841,Pal,111 
+1811,Ctra de Vallvidrera-Accés Escola Judicial,BARCELONA,41.4167093 / 2.1122975,Pal,111 
+1812,Parc de la Budellera,BARCELONA,41.4159727 / 2.1101497,Pal,111 
+1813,Mont d´Orsà (Alcalde Miralles-Turó),BARCELONA,41.3879170 / 2.1699187,Pal,111 
+1814,Mont d'Orsà-Romanimar,BARCELONA,41.4110756 / 2.1029372,Pal,111 
+1815,Camí Santa Creu d'Olorda,BARCELONA,41.4090617 / 2.1016838,Pal,111 
+1816,Mont d'Orsà,BARCELONA,41.4113315 / 2.1031857,Pal,111 
+1817,Pl de Vallvidrera-Alberes,BARCELONA,41.4130252 / 2.1047005,Pal,111 
+1818,Font del Mont-Parc de la Budellera,BARCELONA,41.4159181 / 2.1102346,,111 
+1819,Accés Escola Judicial,BARCELONA,41.4167342 / 2.1126395,Pal,111 
+1820,Ctra de Vallvidrera-Cruïlla de Carreteres,BARCELONA,41.4178117 / 2.1167357,Pal,111 
+1821,Mentora Alsina,BARCELONA,41.4217743 / 2.1211434,Pal,111 
+1825,Cardenal Tedeschini-Pl del Congrés Eucarístic,BARCELONA,41.4262265 / 2.1815562,Pal,20 
+1826,Pl Dante,BARCELONA,41.3686820 / 2.1652455,Pal,55 
+1827,Costa Pacheco-Av Elies Pagès,BARCELONA,41.4283972 / 2.1324855,Pal,112 
+1828,Av Elies Pagès-Natzaret,BARCELONA,41.4275070 / 2.1348396,Pal,112 
+1832,Tiana-Quito,BARCELONA,41.4472106 / 2.2011202,Pal,11 42 60 
+1833,Felip II-Felip Bertrán i Güell,BARCELONA,41.4245233 / 2.1817245,Pal,20 71 
+1834,Pl Congrés,BARCELONA,41.4258749 / 2.1806180,Pal,20 
+1835,Olesa-Campo Florido,BARCELONA,41.4214861 / 2.1836208,Pal,20 
+1841,Consell de Cent (Bejar-Rector Triadó,BARCELONA,41.37660 / 2.14574,Pal,115 
+1842,Moianès-Creu Coberta,BARCELONA,41.3749583 / 2.1425354,Pal,115 
+1843,Moianès-Ctra de la Bordeta,BARCELONA,41.3732528 / 2.1424639,Pal,115 
+1847,Badal ('Quetzal'-Constitució),BARCELONA,41.3879170 / 2.1699187,Pal,72 
+1848,Constitució-Riera de Tena,BARCELONA,41.3696270 / 2.1348533,Pal,115 
+1849,Olzinelles-Constitució,BARCELONA,41.3703986 / 2.1377444,Pal,115 
+1850,Olzinelles-Noguera Pallaresa,BARCELONA,41.3719787 / 2.1370828,Pal,115 
+1851,Pl Bonet i Muixí,BARCELONA,41.3742698 / 2.1364051,Pal,115 
+1852,Tajo-Ptge Vila i Rosell,BARCELONA,41.4296356 / 2.1603833,Marquesina,39 45 112 185 N4 
+1853,Pl Eivissa,BARCELONA,41.4303083 / 2.1607513,Pal,112 
+1855,Lisboa-Alarcón,BARCELONA,41.4276128 / 2.1538593,Pal,112 185 
+1856,Plàtans-Pl de la Clota,BARCELONA,41.4262955 / 2.1506382,Pal,112 185 
+1857,Granja Vella-Basses d'Horta,BARCELONA,41.4271756 / 2.1449376,Pal,17 112 185 
+1858,Granja Vella (Pg. Vall d´Hebron-Basses d´Horta),BARCELONA,41.4379314 / 2.1570322,Pal,112 
+1859,Coll i Alentorn-Av de Martí i Codolar,BARCELONA,41.4245528 / 2.1478687,Pal,112 185 
+1860,Pantà de Tremp-Pl de la Clota,BARCELONA,41.4257305 / 2.1500302,Pal,112 185 
+1861,Lisboa-Serrallonga,BARCELONA,41.4274980 / 2.1539346,Pal,112 185 
+1862,Av Joan XXIII-Maternitat,BARCELONA,41.3842379 / 2.1228057,,113 
+1863,Sor Eulàlia d'Anzizu-Gran Capità,BARCELONA,41.3881552 / 2.1099826,Pal,54 113 
+1864,Sor Eulàlia d'Anzizu-Dulcet,BARCELONA,41.3899796 / 2.1124697,Pal,54 113 
+1865,Miret i Sans-Av d'Esplugues,BARCELONA,41.3915700 / 2.1108948,,113 
+1868,Joan d'Alos-Av Pearson,BARCELONA,41.3914989 / 2.1038639,,113 
+1869,Torrent de les Roses-Mare de Déu de la Merçé,BARCELONA,41.3892775 / 2.1036016,,113 
+1870,Pl Coll de Finestrelles,BARCELONA,41.3890358 / 2.1042633,,113 
+1872,Josep Serrano-Baró Sant Lluis,BARCELONA,41.4172748 / 2.1626165,Pal,114 
+1873,Josep Serrano-Jaume Puigvert,BARCELONA,41.4167566 / 2.1612266,Pal,114 
+1874,Av Can Baró-Bismarck,BARCELONA,41.4152590 / 2.1611849,Pal,114 
+1879,Av Diagonal-Ciutat de Granada,BARCELONA,41.4042307 / 2.1912949,Pal,07 N7 
+1880,Av Diagonal-Roc Boronat,BARCELONA,41.4046131 / 2.1912600,Pal,07 N7 
+1882,Doctor Ferran-Comas i Solà,BARCELONA,41.3907391 / 2.1235650,Pal,34 
+1883,Manila-Doctor Ferran,BARCELONA,41.3898304 / 2.1256697,Pal,06 34 
+1885,Ronda Guinardó-Sardenya,BARCELONA,41.4122159 / 2.1626921,Pal,114 N0 
+1886,Av Meridiana-Metro Fabra i Puig,BARCELONA,41.4294000 / 2.1839059,Pal,74 
+1887,Ramon Albó-Pg Maragall,BARCELONA,41.4247968 / 2.1774508,Marquesina,31 32 47 50 51 74 N1 N6 
+1889,Av. Diagonal (Fernando Primo de Rivera-'Tinent Coronel Valenzuela'),BARCELONA,41.3879170 / 2.1699187,,101 
+1890,Av Diagonal-Josep Pla,BARCELONA,41.4100449 / 2.2129318,Pal,07 36 141 N6 N7 
+1891,Av Diagonal-Selva de Mar,BARCELONA,41.4092066 / 2.2095776,Pal,07 36 141 N6 N7 
+1892,Av Diagonal-Fluvià,BARCELONA,41.4079504 / 2.2045885,Pal,07 N7 
+1893,Av Diagonal-Parc del Poblenou,BARCELONA,41.4063882 / 2.1983492,Pal,07 N7 
+1894,Av Diagonal-Rambla del Poblenou,BARCELONA,41.4054668 / 2.1947417,Pal,07 N7 
+1896,Av Diagonal-Pere IV,BARCELONA,41.4062835 / 2.1995884,Pal,07 N7 
+1897,Av Diagonal-Bac de Roda,BARCELONA,41.4076334 / 2.2048710,Pal,07 N7 
+1898,Av Diagonal-Metro Selva de Mar,BARCELONA,41.4088787 / 2.2099605,Pal,07 N7 
+1899,Av Diagonal-Agricultura,BARCELONA,41.4096924 / 2.2131302,Pal,07 N7 
+1900,Antonio Machado - Barri Canyelles,BARCELONA,41.4441956 / 2.1700501,Marquesina,71 
+1901,Metro Fabra i Puig,BARCELONA,41.4317190 / 2.1832828,Pal,104 
+1904,Pl d'Eusebi Güell,BARCELONA,41.3900784 / 2.1153813,Pal,54 
+1905,Balmes-Pelai,BARCELONA,41.3861156 / 2.1668002,Pal,14 59 N11 N5 N7 N9 
+1906,Arnau d'Oms-La Jota,BARCELONA,41.4293546 / 2.1774490,Marquesina,31 32 47 50 51 71 132 N1 N6 
+1907,Ramon Albó-Alexandre Galì,BARCELONA,41.4266910 / 2.1773138,Marquesina,31 32 47 50 51 74 122 N1 N6 
+1908,Av Meridiana-Navas de Tolosa,BARCELONA,41.4145101 / 2.1867711,Marquesina,62 N3 
+1909,Av Borbó-Serrano,BARCELONA,41.4287918 / 2.1743830,Pal,74 132 
+1910,Via Favència-Pablo Iglesias,BARCELONA,41.4464049 / 2.1828031,Pal,132 
+1911,Ctra de Vallvidrera al Tibidabo,BARCELONA,41.4219542 / 2.1183448,Pal,111 
+1912,Mare de Déu de Port-Foneria,BARCELONA,41.3606364 / 2.1403642,Pal,13 125 
+1913,Mare de Déu de Port-Alts Forns,BARCELONA,41.3599142 / 2.1416402,Pal,13 125 
+1914,Foc-Mare de Déu de Port,BARCELONA,41.3584595 / 2.1440715,Pal,13 
+1915,Ferrocarrils Catalans-Foc,BARCELONA,41.3595585 / 2.1444575,Pal,13 
+1916,Ferrocarrils Catalans ('Alts Forns'-Foneria),BARCELONA,41.3879170 / 2.1699187,Pal,13 
+1917,Ferrocarrils Catalans-Aviador Duran,BARCELONA,41.3613940 / 2.1413403,Pal,13 125 
+1925,Piferrer-Deià,BARCELONA,41.4321567 / 2.1777767,Pal,36 132 
+1926,Piferrer-Pintor Alsamora,BARCELONA,41.4345223 / 2.1797328,Pal,36 132 
+1927,Av Rio de Janeiro-Cementiri de Sant Andreu,BARCELONA,41.4378350 / 2.1808878,Pal,132 
+1928,Pl Àngel Pestaña,BARCELONA,41.4410515 / 2.1792780,Pal,132 
+1930,Av Rio de Janeiro-Baltasar Gracián,BARCELONA,41.4401398 / 2.1825749,Marquesina,132 
+1931,Pg Andreu Nin-Pg de Valldaura,BARCELONA,41.4392135 / 2.1832063,Pal,132 
+1932,Pg Andreu Nin-Rosselló i Porcel,BARCELONA,41.4366569 / 2.1823192,Pal,36 132 
+1935,Escultor Ordóñez-Pl de Sóller,BARCELONA,41.4336497 / 2.1749652,Pal,132 
+1936,Sor Eulàlia d'Anzizu-Miret i Sans,BARCELONA,41.3899966 / 2.1122996,Pal,54 
+1937,Metro Maragall,BARCELONA,41.4256962 / 2.1762368,Pal,19 45 
+1938,Ronda General Mitre-Doctor Fleming,BARCELONA,41.3948739 / 2.1337429,Marquesina,16 70 72 74 N0 N7 
+1939,Rda. General Mitre (Vila Arrufat-Ganduxer),BARCELONA,41.3987153 / 2.1337478,Pal,16 74 N0 
+1940,Ronda General Mitre-Escoles Pies,BARCELONA,41.3987868 / 2.1334617,Marquesina,14 16 70 72 N7 
+1941,Ronda General Mitre-Doctor Roux,BARCELONA,41.3948235 / 2.1334478,Pal,16 30 70 72 74 N0 N7 
+1943,Virgili-Pl de Montserrat Roca i Baltà,BARCELONA,41.4310999 / 2.1934837,Pal,11 35 40 B20 B22 N9 
+1944,Pl de l'Abat Escarré,BARCELONA,41.4302241 / 2.1907960,Pal,35 40 126 B20 B22 N9 
+1945,Av d'Esplugues-Miret i Sans,BARCELONA,41.3917090 / 2.1116294,Pal,22 63 68 75 78 
+1946,Av d'Esplugues-Santa Caterina de Siena,BARCELONA,41.3911284 / 2.1108082,Pal,22 63 68 75 78 
+1950,La Fosca-Chafarinas,BARCELONA,41.4482030 / 2.1832840,Pal,50 51 80 81 
+1953,Numància-Ronda General Mitre,BARCELONA,41.3914102 / 2.1308502,Pal,30 
+1954,Segura-Anoia,BARCELONA,41.3626028 / 2.1405714,Pal,13 
+1955,Segura-Foneria,BARCELONA,41.3629371 / 2.1418024,Pal,13 125 
+1956,Av Sarrià-Doctor Fleming,BARCELONA,41.3917831 / 2.1359057,Pal,66 N0 
+1957,Costa i Cuxart-Felip II,BARCELONA,41.4280921 / 2.1757490,Pal,11 34 71 132 
+1958,Av Borbó-Costa i Cuxart,BARCELONA,41.4281477 / 2.1746600,Marquesina,31 32 47 50 51 N1 N6 
+1960,Parc del Pla de Fornells,BARCELONA,41.4485445 / 2.1763952,Marquesina,11 32 N6 
+1961,Pg de Fabra i Puig-Riba-roja,BARCELONA,41.4376950 / 2.1652529,Pal,71 122 
+1963,Pg de Fabra i Puig-Vilalba dels Arcs,BARCELONA,41.4376620 / 2.1650566,Pal,71 122 
+1966,Av. Litoral (Passat Marina),BARCELONA,41.3879170 / 2.1699187,,100 
+1970,Brasil (Roger-Miquel Àngel),BARCELONA,41.3879170 / 2.1699187,Pal,70 
+1971,Carrer número 1-Carrer número 62,BARCELONA,41.3456026 / 2.1426129,,37 
+1976,Badal-Av del Carrilet,BARCELONA,41.3665858 / 2.1341425,Pal,72 
+1979,Carrer A (Carrer nº4-Carrer nº 3),BARCELONA,41.3879170 / 2.1699187,Pal,37 
+1981,Aribau-Travessera de Gràcia,BARCELONA,41.3963541 / 2.1490615,Pal,58 64 
+1982,Av Paral-lel,BARCELONA,41.3749663 / 2.1630523,Pal,65 165 
+1983,Carrer A-Carrer número 2,BARCELONA,41.3425990 / 2.1444403,Pal,21 37 
+1985,Sant Salvador-Massens,BARCELONA,41.4084384 / 2.1560003,Pal,116 
+1986,Sant Salvador-Verdi,BARCELONA,41.4070500 / 2.1534467,Pal,116 
+1987,Sargelet-Maignon,BARCELONA,41.4089953 / 2.1508916,Pal,116 
+1988,Valldoreix-Verdi,BARCELONA,41.4101097 / 2.1515278,Pal,116 
+1989,Av del Coll del Portell-Sostres,BARCELONA,41.4107027 / 2.1514413,Pal,116 
+1990,Sostres-Baixada de la Glòria,BARCELONA,41.4122801 / 2.1497716,Pal,116 
+1991,Arnold Schönberg-Av del Coll del Portell,BARCELONA,41.4129712 / 2.1493442,Pal,116 
+1992,Av del Coll del Portell-Baixada de la Glòria,BARCELONA,41.4121407 / 2.1503580,Pal,116 
+1993,Av del Coll del Portell-Rambla de Mercedes,BARCELONA,41.4112242 / 2.1518988,Pal,116 
+1994,Albigesos-Verdi,BARCELONA,41.4105767 / 2.1506291,Pal,116 
+1995,Verdi-Valldoreix,BARCELONA,41.4093096 / 2.1515821,Pal,116 
+1996,Pl Rovira i Trias,BARCELONA,41.4076268 / 2.1588147,Pal,116 
+1997,Torrent de les Flors-Cardener,BARCELONA,41.4097438 / 2.1567120,Pal,116 
+2001,Montserrat de Casanovas (Ptge. Pedrell-'Pg. Font d´en Fargas'),BARCELONA,41.4244320 / 2.1654581,,117 
+2004,Oblit-direcció Font d'en Fargas,BARCELONA,41.4193621 / 2.1776426,,117 
+2005,Rambla Volart-Flors de Maig,BARCELONA,41.4176863 / 2.1743897,,117 
+2006,La Bisbal-Av Mare de Déu de Montserrat,BARCELONA,41.4182951 / 2.1723742,,117 
+2007,Aguilar-Alt de Predell,BARCELONA,41.4255304 / 2.1695156,,117 
+2008,Aguilar-Montserrat de Casanovas,BARCELONA,41.4231335 / 2.1698176,,117 
+2009,Garriga i Roca-Sales Ferrer,BARCELONA,41.4212157 / 2.1699054,,117 
+2010,Garriga i Roca-Ercilla,BARCELONA,41.4198244 / 2.1707159,,117 
+2012,Rambla de la Muntanya-Vinyals,BARCELONA,41.4201772 / 2.1753804,,117 
+2019,General Vives-Via Augusta,BARCELONA,41.4049618 / 2.1176653,Pal,60 
+2020,Torrent de les Flors-Sant Lluís,BARCELONA,41.4061933 / 2.1602357,Pal,116 
+2021,Pl Joanic,BARCELONA,41.4049701 / 2.1625133,Pal,116 
+2022,Granja Vella-Av Martí Codolar,BARCELONA,41.4269004 / 2.1479807,Pal,17 112 185 
+2023,Calderón de la Barca-Ctra del Carmel,BARCELONA,41.4190562 / 2.1573521,Pal,119 86 
+2024,Calderón de la Barca-Alcalde de Zalamea,BARCELONA,41.4206705 / 2.1568739,Pal,119 86 
+2025,Segimón-L'Alguer,BARCELONA,41.4209933 / 2.1551295,,119 
+2026,Fastenrath-L'Hortal,BARCELONA,41.4219621 / 2.1527058,,119 
+2028,Camí dels Àngels,BARCELONA,41.4216280 / 2.1493167,,119 
+2029,Parc de La Creueta del Coll,BARCELONA,41.4194147 / 2.1468661,,119 
+2034,Metro Penitents,BARCELONA,41.4174587 / 2.1409859000000324,,119 
+2036,Sigüenza - Satenrath,BARCELONA,41.3879170 / 2.1699187,Pal,", "
+2037,Sigüenza-La Murtra,BARCELONA,41.4233013 / 2.1526463,Pal,119 
+2038,Sigüenza-Ramon Rocafull,BARCELONA,41.4241641 / 2.1541752,Pal,119 
+2039,Mercat del Carmel,BARCELONA,41.4236125 / 2.1553896,Pal,119 
+2040,Conca de Tremp-Agudells,BARCELONA,41.4228332 / 2.1560374,"Pal, Plataforma",119 86 
+2041,Conca de Tremp-Arbós,BARCELONA,41.4213780 / 2.1572149,"Pal, Plataforma",119 
+2042,Conca de Tremp-Queixans,BARCELONA,41.4200645 / 2.1575436,"Pal, Plataforma",119 86 
+2043,Manso-Comte Borrell,BARCELONA,41.3774422 / 2.1614920,Marquesina,120 
+2044,Riera Alta-Nou de Dulce,BARCELONA,41.3803935 / 2.1639735,Pal,120 
+2045,Riera Alta-Erasme de Janer,BARCELONA,41.3805199 / 2.1664940,Pal,120 
+2046,Rambla del Raval-Aurora,BARCELONA,41.37934790000001 / 2.168258000000037,Pal,120 
+2047,Rambla del Raval-Sant Pau,BARCELONA,41.3776720 / 2.1702514,Marquesina,120 
+2048,Av Drassanes-Arc del Teatre,BARCELONA,41.3766697 / 2.1731153,Pal,120 
+2049,Av Drassanes-Pl Portal de la Pau,BARCELONA,41.3760499 / 2.1767715,Pal,120 
+2051,Metro Drassanes,BARCELONA,41.3769436 / 2.1759983,Pal,120 
+2052,Av Drassanes-Nou de la Rambla,BARCELONA,41.3768707 / 2.1727610,Pal,120 
+2053,Rambla del Raval-Sant Josep Oriol,BARCELONA,41.3780505 / 2.1705601,Pal,120 
+2054,Rambla del Raval-Hospital,BARCELONA,41.3795028 / 2.1688320,Marquesina,120 
+2055,Pl Joan Amades,BARCELONA,41.3814361 / 2.1687577,Pal,120 
+2056,Pl dels Àngels,BARCELONA,41.3832592 / 2.1675084,Pal,120 
+2057,Montalegre-Valdonzella,BARCELONA,41.3840437 / 2.1668170,Pal,120 
+2059,Mercat de Sant Antoni,BARCELONA,41.3773843 / 2.1614159,,121 
+2060,Teodor Bonaplata ('Av. Paral.lel'-Olivera),BARCELONA,41.37432 / 2.15899,Pal,121 
+2061,Mare de Déu del Remei-Grases,BARCELONA,41.3730552 / 2.1569151,Pal,55 121 
+2063,Elkano-Blasco de Garay,BARCELONA,41.3732157 / 2.1629443,Pal,121 
+2064,Elkano-Poeta Cabanyes,BARCELONA,41.3726224 / 2.1648565,Pal,121 
+2066,Vila i Vilà-Lafont,BARCELONA,41.3739393 / 2.1696427,Pal,121 
+2067,Vila i Vilà-Puigxuriguer,BARCELONA,41.3729671 / 2.1729402,Pal,121 
+2069,Nou de la Rambla-Av Paralel,BARCELONA,41.3744613 / 2.1695447,Pal,121 
+2071,Pg de Solé i Pla,BARCELONA,41.4274049 / 2.0894046,Pal,118 
+2072,Pl Major del Rectoret,BARCELONA,41.4271504 / 2.0920929,Pal,128 
+2073,Cí. Pantà (Cí. Ciureny-Cí. Cama-sec),BARCELONA,41.3879170 / 2.1699187,Pal,128 
+2074,Torrent del Rovelló-Camí del Pantá,BARCELONA,41.4194124 / 2.0969422,Pal,118 128 
+2075,Torrent del Rovelló-Camí Baix del Mas Sauró,BARCELONA,41.4182838 / 2.094480200000021,Pal,118 
+2076,Camí Alt del Mas Sauró-Font Mosen Cinto Verdaguer,BARCELONA,41.4178682 / 2.0949256,Pal,118 
+2077,Camí Alt del Mas Sauró-Camí del Ciureny,BARCELONA,41.4179113 / 2.0965278,Pal,118 
+2078,Camí del Mas Sauró,BARCELONA,41.4170450 / 2.0943118,Pal,118 
+2079,Can Sauró,BARCELONA,41.4159479 / 2.0950749,Pal,118 
+2081,Can Sauró direcció Mas Guimbau,BARCELONA,41.4159648 / 2.0952136,Pal,118 
+2083,Camí del Ciureny direcció Mas Guimbau,BARCELONA,41.4179406 / 2.0966092,Pal,118 
+2084,Font Mossen Cinto Verdaguer direcció Mas Guimbau,BARCELONA,41.4179332 / 2.0951786,Pal,118 
+2085,Camí Baix del Mas Sauró direcció Mas Guimbau,BARCELONA,41.4182477 / 2.0945334,Pal,118 
+2086,Torrent del Rovelló direcció Mas Guimbau,BARCELONA,41.4192557 / 2.0968663,Pal,118 
+2087,FGC Les Planes,BARCELONA,41.4272634 / 2.0915106,,118 
+2088,Camí dels Verns-Camí del Mas Guimbau,BARCELONA,41.4261948 / 2.0897993,Pal,118 
+2089,Mas Guimbau,BARCELONA,41.4280118 / 2.0902187,Pal,118 
+2090,Mas Sauró,BARCELONA,41.4156525 / 2.0929321,Pal,118 
+2091,Can Sauró direcció Vallvidrera,BARCELONA,41.4159939 / 2.0952470,Pal,118 
+2092,Camí del Mas Sauró direcció Vallvidrera,BARCELONA,41.4171042 / 2.0964267,Pal,118 
+2093,Camí del Ciureny direcció Vallvidrera,BARCELONA,41.4179567 / 2.0965406,Pal,118 
+2094,Font Mossen Cinto Verdaguer direcció Vallvidrera,BARCELONA,41.4179304 / 2.0951135,Pal,118 
+2095,Camí Baix del Mas Sauró direcció Vallvidrera,BARCELONA,41.4183832 / 2.0946932,Pal,118 
+2096,Torrent del Rovelló direcció Vallvidrera,BARCELONA,41.4192693 / 2.0968871,Pal,118 
+2097,Camí del Pantà,BARCELONA,41.4162167 / 2.0977155,Pal,118 
+2098,FGC Baixador Vallvidrera,BARCELONA,41.4200028 / 2.0969000,Pal,128 
+2099,Camí del Sanatori-Ctra de Vallvidrera,BARCELONA,41.4207827 / 2.0965365,Pal,128 
+2100,Major del Rectoret-Parc Municipal de Vallvidrera,BARCELONA,41.4235233 / 2.0947861,Pal,128 
+2101,Major del Rectoret-Amarant,BARCELONA,41.4245702 / 2.0949814,Pal,128 
+2102,Bohemis-Savina,BARCELONA,41.4253759 / 2.0971683,Pal,128 
+2103,Savina-Pg del Magraner,BARCELONA,41.4241852 / 2.0966418,Pal,128 
+2104,Lilà-Boix,BARCELONA,41.4259567 / 2.0998141,Pal,128 
+2105,Lilà-Presseguer,BARCELONA,41.4282839 / 2.1009541,Pal,128 
+2108,Major del Rectoret-Costa del Bruc,BARCELONA,41.4299362 / 2.0949262,Pal,128 
+2110,Major del Rectoret-Marco Polo,BARCELONA,41.4296841 / 2.0948855,Pal,128 
+2111,Major del Rectoret-Parsifal,BARCELONA,41.4264557 / 2.0938765,Pal,128 
+2112,Margalló-Major del Rectoret,BARCELONA,41.4261709 / 2.0961919,Pal,128 
+2113,Av del Rectoret-Baladre,BARCELONA,41.4259662 / 2.0930736,Pal,128 
+2114,Av del Rectoret-Vesc,BARCELONA,41.4261684 / 2.0928904,Pal,128 
+2115,Major del Rectoret-Margalló,BARCELONA,41.4262073 / 2.0958907,Pal,128 
+2116,Major del Rectoret-Lohengrin,BARCELONA,41.4265815 / 2.0939840,Pal,128 
+2117,Pl Coll de la Creu d'en Blau direcció Vallvidrera,BARCELONA,41.4330839 / 2.0958230,Pal,128 
+2121,Lilà-Geranis,BARCELONA,41.4282015 / 2.1008653,Pal,128 
+2122,Lilà-Poncelles,BARCELONA,41.4256775 / 2.0996938,Pal,128 
+2123,Savina-Poncelles,BARCELONA,41.4242142 / 2.0965322,Pal,128 
+2124,Bohemis-Amarant,BARCELONA,41.4254615 / 2.0973781,Pal,128 
+2125,Major del Rectoret,BARCELONA,41.4246274 / 2.0949383,Pal,128 
+2126,Parc Municipal de Vallvidrera,BARCELONA,41.4233633 / 2.0947889,Pal,128 
+2127,Camí del Sanatori- FGC Baixador de Vallvidrera,BARCELONA,41.4209008 / 2.0965289,Pal,128 
+2128,Capità Arenas-Manuel de Falla,BARCELONA,41.3930685 / 2.1248661,Pal,66 N7 
+2129,Rambla de Guipúscoa-Selva de Mar,BARCELONA,41.4169349 / 2.1975592,Pal,33 43 44 B24 N8 
+2130,Pg Maragall-Petrarca,BARCELONA,41.4284717 / 2.1633656,Marquesina,45 N4 
+2133,ZAL,BARCELONA,41.3224109 / 2.1363704,Pal,110 
+2134,Llull-Espronceda,BARCELONA,41.4037605 / 2.2058585,Marquesina,26 36 71 141 N6 
+2135,Carrer número 3-Carrer D,BARCELONA,41.3310935 / 2.1373802,Pal,110 
+2136,Carrer número 3-Carrer F,BARCELONA,41.3373895 / 2.1272356,Pal,110 
+2138,IES Ferran Tallada,BARCELONA,41.4208521 / 2.1618359,Pal,28 86 
+2139,Garcilaso-Juan de Garay,BARCELONA,41.4229091 / 2.1863784,Pal,96 
+2141,Turó de La Rovira,BARCELONA,41.4197341 / 2.1595571,Pal,28 119 86 N4 N5 
+2142,Gran Vista,BARCELONA,41.4200138 / 2.1599871,Pal,28 119 86 N4 N5 
+2143,Ctra de Vallvidrera-El Castanyer,BARCELONA,41.4254075 / 2.1213818,Pal,111 
+2144,Gran Teatre del Liceu,BARCELONA,41.3803234 / 2.1738366,Pal,14 59 91 N12 N15 N9 
+2149,Pl Tibidabo,BARCELONA,41.4215541 / 2.1188612,Pal,111 
+2152,Pg de Valldaura-Pl dels Avis,BARCELONA,41.4391071 / 2.1809166,Marquesina,73 B16 B19 
+2154,Jericó-Pg de la Vall d'Hebron,BARCELONA,41.4208349 / 2.1395292,,119 
+2155,Jericó-Romeu,BARCELONA,41.4218691 / 2.1390567,,119 
+2156,Ctra de Sant Cugat-Samaria,BARCELONA,41.4219617 / 2.1384096,,119 
+2157,Ctra de Sant Cugat-Navata,BARCELONA,41.4206623 / 2.1385623,,119 
+2158,Ctra de Sant Cugat-Gutemberg,BARCELONA,41.4186447 / 2.1385894,,119 
+2162,Riera d'Horta-Arnau d'Oms,BARCELONA,41.4282175 / 2.1777201,Pal,26 
+2178,Tajo-Santes Creus,BARCELONA,41.4300365 / 2.1624319,Pal,185 
+2179,Ctra del Prat-Radi,BARCELONA,41.3627542 / 2.1359121,Pal,79 
+2194,Francesc Alegre-Av Mare de Déu de Montserrat,BARCELONA,41.4157633 / 2.1671262,Pal,114 
+2195,Budapest-Gènova,BARCELONA,41.4183648 / 2.1681280,Pal,114 
+2196,Telègraf-Doctor Cadevall,BARCELONA,41.4185523 / 2.1691255,Pal,114 
+2197,Francesc Alegre-Budapest,BARCELONA,41.4165913 / 2.1663237,Pal,114 
+2198,França-Polonia,BARCELONA,41.4152828 / 2.1636160,Pal,114 
+2199,Av del Coll del Portell 74,BARCELONA,41.4114762 / 2.1509918,Pal,116 
+2200,Pg Vall d'Hebron-Anna Piferrer,BARCELONA,41.4178719 / 2.1391699,Marquesina,119 123 124 
+2202,Estació del Nord,BARCELONA,41.3940643 / 2.1823029,Pal,54 
+2209,Pl de Vallvidrera,BARCELONA,41.4129606 / 2.1044725,Pal,118 
+2210,Camí Alt del Mas Sauró,BARCELONA,41.4149892 / 2.0946093,Pal,118 
+2211,Cami Alt del Mas Sauró direcció Vallvidrera,BARCELONA,41.4164783 / 2.0964217,Pal,118 
+2212,Camí Alt de Mas Sauró direcció Mas Guimbau,BARCELONA,41.4164590 / 2.0963794,Pal,118 
+2213,Camí del Mas Guimbau-Gatosa,BARCELONA,41.4255703 / 2.0901199,Pal,118 
+2214,Camí del Mas Guimbau-Gespa,BARCELONA,41.4240516 / 2.0906670,Pal,118 
+2215,Gespa-la Gatosa,BARCELONA,41.4246235 / 2.0896617,Pal,118 
+2216,Gespa-Escala de la Gatosa,BARCELONA,41.3879170 / 2.1699187,Pal,118 
+2217,Pg de la Vimetera,BARCELONA,41.4235761 / 2.0892887,Pal,118 
+2218,Pg de la Vimetera-Pg del Pi Forcat,BARCELONA,41.4233216 / 2.0874049,Pal,118 
+2219,Pg del Pi Forcat-Pg d'Anna Rúbies,BARCELONA,41.4226917 / 2.0873995,Pal,118 
+2220,Pg de la Vimetera - Escala de la Gatosa,BARCELONA,41.4235495 / 2.0892744,Pal,118 
+2221,Gespa-Pg de la Vimetera,BARCELONA,41.4239092 / 2.0898694,Pal,118 
+2222,Gespa,BARCELONA,41.4245922 / 2.0897247,Pal,118 
+2223,Camí del Mas Guimbau,BARCELONA,41.4244561 / 2.0907880,Pal,118 
+2224,Camí del Mas Guimbau-Castellví,BARCELONA,41.4256134 / 2.0900974,Pal,118 
+2225,Santuari de la Salut,BARCELONA,41.4261294 / 2.0898416,Pal,118 
+2227,Lisboa-Ptge de Tossa,BARCELONA,41.4290720 / 2.1573093,Pal,39 
+2228,Ciutat d'Asunción-'La Maquinista',BARCELONA,41.4402512 / 2.2001233,Pal,73 
+2231,Pedrell-Rambla del Carmel,BARCELONA,41.4231422 / 2.1586791,Pal,39 
+2232,Pl. Estatut (Av. Estatut de Catalunya),BARCELONA,41.43065 / 2.15596,Pal,39 
+2233,Rambla del Carmel-Llobregós,BARCELONA,41.4257909 / 2.1575957,Pal,39 
+2234,Llobregós-Pg Maragall,BARCELONA,41.4278182 / 2.1633240,Marquesina,19 39 87 
+2235,Llobregós-Torrent del Carmel,BARCELONA,41.4265583 / 2.1603297,Marquesina,19 39 87 
+2239,Pg de Valldaura-Canigó,BARCELONA,41.4375038 / 2.1559920,Marquesina,185 
+2241,Pg de Valldaura-Av Estatut de Catalunya,BARCELONA,41.4365773 / 2.1540362,,185 
+2243,Moll de Barcelona,BARCELONA,41.3719194 / 2.1808200,Pal,20 
+2244,World Trade Center,BARCELONA,41.3713080 / 2.1816980,Pal,20 
+2246,Parc LogÍstic,BARCELONA,41.3409235 / 2.1251462,Pal,23 
+2249,Carrer número 2-Carrer número 62,BARCELONA,41.3439253 / 2.1381093,Pal,23 
+2250,Carrer número 2,BARCELONA,41.3430512 / 2.1402928,Pal,23 
+2251,Parc Logístic anada,BARCELONA,41.3432056 / 2.1315431,Pal,23 
+2252,Parc Logístic tornada,BARCELONA,41.3431448 / 2.1316266,Pal,23 
+2253,Pg del Taulat-Diagonal Mar,BARCELONA,41.4092816 / 2.2175196,Marquesina,41 N7 
+2255,Segura-Escales del Polvorí,BARCELONA,41.3637787 / 2.1406333,Pal,13 
+2256,Segura-Guadalquivir,BARCELONA,41.3638960 / 2.1406323,Pal,13 125 
+2258,Av Diagonal-Rambla de Prim,BARCELONA,41.4108165 / 2.2174073,Pal,07 41 141 N6 N7 
+2259,Av Diagonal-Llull,BARCELONA,41.4106167 / 2.2154939,Pal,07 N6 
+2260,Metro Canyelles,BARCELONA,41.4417677 / 2.1658515,Marquesina,27 31 47 60 71 122 127 185 N4 N6 
+2261,Via Favència-Pl Karl Marx,BARCELONA,41.4408161 / 2.1636897,Pal,27 31 47 60 71 122 127 185 N4 N6 
+2262,Av Diagonal-Tànger,BARCELONA,41.4052274 / 2.1954015,Pal,07 192 N7 
+2263,Josep Ferrater-Pg del Taulat,BARCELONA,41.4033414 / 2.2117689,Pal,41 
+2264,Pg del Taulat-Provençals,BARCELONA,41.4049801 / 2.2124099,Pal,26 41 
+2265,Pg del Taulat-Parc de Diagonal Mar,BARCELONA,41.4070713 / 2.2153603,Pal,41 
+2266,Parc de Diagonal Mar-Pg del Taulat,BARCELONA,41.4070286 / 2.2155135,Pal,41 
+2268,Llull-Diagonal Mar,BARCELONA,41.4091935 / 2.2131473,Marquesina,36 141 N6 
+2269,Via Favència-Barri Canyelles,BARCELONA,41.4430058 / 2.1696306,Marquesina,27 31 47 60 71 127 
+2270,Numància-Pl dels Països Catalans,BARCELONA,41.3812537 / 2.1413773,Marquesina,30 78 115 N0 
+2279,Pg Reina Elisenda-Josep Vicens Foix,BARCELONA,41.3981332 / 2.1181866,Pal,22 64 68 75 N7 
+2280,Av Mare de Déu de Monserrat-Lluis Sagnier,BARCELONA,41.4240577 / 2.1759518,Marquesina,31 32 74 N6 
+2281,Av de Vallbona-CAP Ctat Meridiana,BARCELONA,41.4610451 / 2.1806749,Pal,51 76 80 83 81 
+2282,Av de Vallbona,BARCELONA,41.4581991 / 2.1842537,Marquesina,51 76 
+2283,Parc Esportiu de la Mar Bella,BARCELONA,41.3991803 / 2.2119115,Marquesina,41 
+2284,Bac de Roda-Jardins de Carles Barral,BARCELONA,41.4023589 / 2.2110141,Pal,41 
+2285,Doctor Fleming-Av Sarrià,BARCELONA,41.3919574 / 2.1362334,Pal,30 
+2286,Doctor Fleming-Jacinto Benavente,BARCELONA,41.3951929 / 2.1346895,Pal,30 
+2287,Via Augusta-Doctor Roux,BARCELONA,41.3978803 / 2.1313081,Pal,30 68 
+2288,Via Augusta-Alt de Gironella,BARCELONA,41.3978892 / 2.1341656,Pal,30 68 
+2289,Pujades-Provençals,BARCELONA,41.4081517 / 2.2092207,Marquesina,36 141 
+2293,Sardenya-Llull,BARCELONA,41.3909878 / 2.1897207,Pal,14 41 
+2294,Sardenya-Doctor Trueta,BARCELONA,41.3879170 / 2.1699187,Pal,14 41 
+2295,Parc de Carles I,BARCELONA,41.3884709 / 2.1939582,Pal,14 41 
+2298,Júpiter,BARCELONA,41.4288522 / 2.0988649,Pal,128 
+2299,Pl de la Tulipa-Satèl·lits,BARCELONA,41.4279388 / 2.0965289,Pal,128 
+2300,Orellana-Passatge Ossa Major,BARCELONA,41.4294376 / 2.0961785,Pal,128 
+2301,Orellana direcció El Rectoret,BARCELONA,41.4316699 / 2.0966922,Pal,128 
+2302,Orellana direcció Vallvidrera,BARCELONA,41.4316717 / 2.0965791,Pal,128 
+2303,Orellana,BARCELONA,41.4294291 / 2.0961190,Pal,128 
+2304,Pl de la Tulipa-Traviata,BARCELONA,41.4278419 / 2.0965343,Pal,128 
+2305,Júpiter-Lilà,BARCELONA,41.4288549 / 2.0990023,Pal,128 
+2306,Ramon Trias Fargas-Barceloneta,BARCELONA,41.3858524 / 2.1964908,Pal,10 
+2307,Doctor Font Quer-Taronguers,BARCELONA,41.3671969 / 2.1625324,Pal,193 
+2308,Doctor Font Quer-Can Valero,BARCELONA,41.3653732 / 2.1599472,Pal,193 
+2309,Av Miramar-Pl Dante,BARCELONA,41.3690444 / 2.1658214,Pal,50 193 
+2310,Av Miramar-Pl Carlos Ibañez,BARCELONA,41.3702976 / 2.1689129,Marquesina,50 
+2311,Pg de Santa Madrona-Museu Etnològic,BARCELONA,41.3686452 / 2.1562031,Pal,55 193 
+2313,Museu d'Arqueologia,BARCELONA,41.3703162 / 2.1573519,Pal,193 
+2314,Av Reina Maria Cristina,BARCELONA,41.3739767 / 2.1497311,Pal,193 
+2315,Avinguda del Castell,BARCELONA,41.36509 / 2.16703,Pal,193 
+2316,Mallorca ('Sardenya'-Sicilia),BARCELONA,41.3879170 / 2.1699187,,101 
+2317,Via Sant Jordi,BARCELONA,41.3557795 / 2.1579864,Pal,107 
+2318,Sagrat Cor,BARCELONA,41.4216890 / 2.1188740,Pal,107 
+2319,Via Sant Oleguer,BARCELONA,41.3545080 / 2.1541267,Pal,107 
+2320,Via Santa Eulàlia,BARCELONA,41.3529186 / 2.1527486,Pal,107 
+2321,Metro Torras i Bages,BARCELONA,41.4432471 / 2.1906022,Marquesina,62 96 126 127 B16 B19 N3 
+2322,Gran de Sant Andreu-Palomar,BARCELONA,41.4422807 / 2.1882495,Pal,73 126 B16 B19 
+2323,Pl Miquel Casablancas,BARCELONA,41.4397034 / 2.1864885,Marquesina,73 B16 B19 
+2324,Av de l'Estadi-Vivers,BARCELONA,41.3671411 / 2.1584138,Pal,55 
+2325,Can Valero-Pg del Migdia,BARCELONA,41.3627505 / 2.1612707,Pal,193 
+2326,Pl de la Sardana,BARCELONA,41.3679839 / 2.1685937,Pal,193 
+2327,Torre Baró,BARCELONA,41.4612510 / 2.1805450,Pal,51 
+2328,Av Vallbona-Estació RENFE,BARCELONA,41.4613263 / 2.1804494,Pal,51 83 
+2329,Pl Roja de La Ciutat Meridiana,BARCELONA,41.4616720 / 2.1794554,Pal,51 83 
+2330,Av Rasos de Peguera-Pl Roja,BARCELONA,41.4616128 / 2.1785270,Pal,51 62 76 104 N3 83 
+2331,Av Rasos de Peguera-Costabona,BARCELONA,41.4604724 / 2.1767796,Pal,51 
+2332,Vallcivera-Moixeró,BARCELONA,41.4595786 / 2.1768131,Pal,51 
+2334,Ausias Marc-Marina,BARCELONA,41.3980275 / 2.1844296,Marquesina,10 
+2335,València-Rogent,BARCELONA,41.4093896 / 2.1856356,Pal,33 34 35 43 44 B20 B24 N9 
+2336,Pg. Zona Franca (Mercuri-Foc),BARCELONA,41.3564771 / 2.1414288,Pal,09 37 72 109 N1 
+2337,Riera Blanca-Regent Mendieta,BARCELONA,41.3770250 / 2.1217668,Marquesina,158 L12 
+2340,Travessera de Les Corts-Arístides Maillol,BARCELONA,41.3777112 / 2.1208894,Pal,158 
+2341,MNAC-M. Etnològic,BARCELONA,41.3685846 / 2.1561070,Pal,55 
+2342,Mandri-Artesa de Segre,BARCELONA,41.4030099 / 2.1340592,Pal,58 64 N8 
+2343,Mandri-Bigai,BARCELONA,41.4051577 / 2.1319235,Pal,58 64 N8 
+2345,València-Rocafort,BARCELONA,41.3826883 / 2.1500958,Pal,43 44 
+2347,Pere IV-Rambla del Poblenou,BARCELONA,41.4037757 / 2.1986376,Pal,40 42 B25 N11 N8 
+2348,Llobregós-Pantà de Tremp,BARCELONA,41.4246845 / 2.1566273,Marquesina,19 86 87 N4 
+2349,Dante Alhigieri-Pantà de Tremp,BARCELONA,41.4255774 / 2.1537082,Pal,19 
+2350,Lisboa-Av Estatut de Catalunya,BARCELONA,41.4292847 / 2.1575516,Pal,112 185 
+2351,Tajo-Baixada Mercat,BARCELONA,41.4297531 / 2.1603869,Pal,112 185 
+2352,Lloret de Mar-Campoamor,BARCELONA,41.4344427 / 2.1559778,Pal,185 
+2353,Porrera-Canigó,BARCELONA,41.4368791 / 2.1585892,Pal,185 
+2354,Hedilla-Porrera,BARCELONA,41.4368284 / 2.1596587,Pal,185 
+2355,Pg Universal-Pg de Valldaura,BARCELONA,41.4385630 / 2.1599509,,185 
+2356,Cementiri d'Horta,BARCELONA,41.4407076 / 2.1553011,Pal,185 
+2358,Jaume Brossa-Via Trajana,BARCELONA,41.4286236 / 2.2020386,Pal,33 36 
+2359,Jaume Brossa-Rda St Martí,BARCELONA,41.3879170 / 2.1699187,Pal,36 
+2360,Jaume Brossa-Ptge Via Trajana,BARCELONA,41.4298775 / 2.2019472,Pal,36 
+2361,Santander-Rambla de Prim,BARCELONA,41.4259857 / 2.2009104,Marquesina,33 36 B24 N8 
+2362,Santa Amèlia-Capità Arenas,BARCELONA,41.3942352 / 2.1241072,Marquesina,34 
+2363,Granvia-Escultura,BARCELONA,41.3637040 / 2.1344744,Pal (x2),46 65 L70 L72 L80 L81 L86 L87 L94 L95 N15 N16 N17 
+2367,Ptge Garrofers-Av Mare de Déu de Montserrat,BARCELONA,41.4186134 / 2.1731917,,117 
+2368,Travessera de Les Corts-Arizala,BARCELONA,41.3793904 / 2.1234177,Pal,15 
+2383,Ronda de Dalt-Av J V Foix,BARCELONA,41.4015021 / 2.1142438,Pal,34 
+2384,Jardins de la Vil·la Amèlia,BARCELONA,41.3929627 / 2.1216755,Marquesina,34 
+2385,Av J V Foix-Caponata,BARCELONA,41.3947708 / 2.1206673,Marquesina,34 
+2386,Av J V Foix-Pedró de la Creu,BARCELONA,41.3964943 / 2.1203007,Marquesina,34 
+2387,Av J V Foix-Pg Reina Elisenda de Montcada,BARCELONA,41.3981396 / 2.1192534,Pal,34 130 
+2388,Av J V Foix-Ramon Miquel Planas,BARCELONA,41.3996274 / 2.1167409,Marquesina,34 
+2389,Av J V Foix-Monestir,BARCELONA,41.3991370 / 2.1173455,Pal,34 
+2390,Av J V Foix-Dominguez i Miralles,BARCELONA,41.3980664 / 2.1191226,Marquesina,34 
+2392,Cardenal Reig-Arístides Maillol,BARCELONA,41.3790199 / 2.1187509,Pal,15 54 
+2394,Tiana-Campins,BARCELONA,41.4476653 / 2.200940199999991,Pal,11 42 60 
+2395,Aneto-Montmajor,BARCELONA,41.4328701 / 2.1702764,Pal,122 
+2398,Pg d'Urrutia-Cistellet,BARCELONA,41.4358898 / 2.1657204,Pal,122 
+2400,Pg d'Urrutia-Rocabruna,BARCELONA,41.4352900 / 2.1679851,Pal,122 
+2401,Montsant-Cadí,BARCELONA,41.4335025 / 2.1702968,Marquesina,122 
+2402,Montmajor-Pg de la Peira,BARCELONA,41.4323219 / 2.1705360,Pal,122 
+2404,Cartellà-Pl d'Àlvaro Cunqueiro,BARCELONA,41.4287226 / 2.1685615,Marquesina,122 
+2405,Costa i Cuixart-Amílcar,BARCELONA,41.4277258 / 2.1726923,Marquesina,122 
+2406,Av Meridiana-Pg de Fabra i Puig,BARCELONA,41.4297144 / 2.1837089,Pal,122 
+2415,Garriga i Roca-Av Mare de Déu de Montserrat,BARCELONA,41.4191160 / 2.1719384,,117 
+2416,Pl Karl Marx-Via Favència,BARCELONA,41.4402434 / 2.1638933,Pal,122 185 
+2430,Pg de Sant Gervasi-Jardins de la Tamarita,BARCELONA,41.4103487 / 2.1365975,Pal,123 
+2431,Cister -Melilla,BARCELONA,41.4112683 / 2.1330177,Pal,123 
+2432,Quatre Camins-Teodor Roviralta,BARCELONA,41.4120595 / 2.1331339,Pal,123 
+2433,Esperança-Vilana,BARCELONA,41.4050875 / 2.1285818,Pal,123 
+2434,Esperança-Marquesa de Villalonga,BARCELONA,41.4039967 / 2.1264482,Pal,123 
+2435,Iradier-Planella,BARCELONA,41.4054017 / 2.1246209,Pal,123 
+2436,Planella-Marquesa de Villalonga,BARCELONA,41.4068122 / 2.1262491,Pal,123 
+2437,Bellesguard-Immaculada,BARCELONA,41.4083982 / 2.1280653,Pal,123 
+2438,Bellesguard-Valeta d'Arquer,BARCELONA,41.4091279 / 2.1264642,Pal,123 
+2439,Balsareny-Vista Bella,BARCELONA,41.4116549 / 2.1294389,Pal,123 
+2440,Jesús Maria-Quatre Camins,BARCELONA,41.4105941 / 2.1315957,Pal,123 
+2441,Jesús Maria-Pg de Sant Gervasi,BARCELONA,41.4096971 / 2.1329824,Pal,123 
+2442,Esteve Terrades-Josep Jover,BARCELONA,41.4139357 / 2.1405475,Pal,123 124 
+2443,Esteve Terrades-Pl Alfonso Comín,BARCELONA,41.4150933 / 2.1398420,Pal,123 124 
+2445,Collserola-Carlos Pirozzini,BARCELONA,41.4172428 / 2.1350500,Pal,124 
+2446,Enric Clarassó-Collserola,BARCELONA,41.4182894 / 2.1339429,Pal,124 
+2450,Viver (abans C/ Cànoves),BARCELONA,41.6938443 / 2.3538418,Pal,112 
+2453,Anna Piferrer-Av de Vallcarca,BARCELONA,41.4174443 / 2.1407415,Pal,124 
+2454,Pg Andreu Nin -Parc Esportiu Can Dragó,BARCELONA,41.4342632 / 2.1815051,Marquesina,36 132 
+2455,Pg Ciutat de Mallorca-Piferrer,BARCELONA,41.4329674 / 2.1787053,Pal,132 
+2456,Pintor Alsamora-Piferrer,BARCELONA,41.4351788 / 2.1792430,Pal,132 
+2457,Escultor Ordoñez-Pintor Alsamora,BARCELONA,41.4350752 / 2.1759112,Marquesina,132 
+2458,Pg de Santa Madrona,BARCELONA,41.3688586 / 2.1567210,Pal,55 
+2459,Pg de Santa Madrona-Font del Gat,BARCELONA,41.3684775 / 2.1580758,Pal,55 
+2461,Àvila-Tànger,BARCELONA,41.40092 / 2.19046,Pal,92 
+2463,Ciutat de Granada-Tànger,BARCELONA,41.4028464 / 2.1923774,Pal,92 192 
+2464,Badajoz-Almogàvers,BARCELONA,41.4004725 / 2.1931803,Marquesina,92 192 
+2465,Viver-Av Elies Pagès,BARCELONA,41.4291038 / 2.1320571,Pal,112 
+2466,Viver-Cànoves,BARCELONA,41.4286645 / 2.1308273,Pal,112 
+2467,Cànoves 105,BARCELONA,41.4280219 / 2.1287947,Pal,112 
+2468,Cànoves-Sant Genís,BARCELONA,41.4278118 / 2.1300145,Pal,112 
+2469,Cànoves 49,BARCELONA,41.4275364 / 2.1320329,Pal,112 
+2470,Cànoves-Penitens,BARCELONA,41.4272046 / 2.1339178,Pal,112 
+2471,Cànoves-Natzaret,BARCELONA,41.4268159 / 2.1350043,Pal,112 
+2472,Elies Pagès-Pl Madrona Prat,BARCELONA,41.4276342 / 2.1346884,Pal,112 
+2473,Rambla de Prim-Riera d'Horta,BARCELONA,41.4258902 / 2.1996813,Pal,33 
+2474,Travessera de Gràcia-Pl Gal·la Placídia,BARCELONA,41.3987562 / 2.1537807,Pal,114 
+2475,Trav. de Gràcia (Matilde-Mariana Pineda),BARCELONA,41.3879170 / 2.1699187,Pal,114 
+2476,Travessera de Gràcia-Torrent de l'Olla,BARCELONA,41.4015938 / 2.1582636,Pal,114 
+2477,Travessera de Gràcia-Torrent d'En Vidalet,BARCELONA,41.4032302 / 2.1608559,Pal,114 
+2478,Travessera de Gràcia-Torrent de les Flors,BARCELONA,41.4039661 / 2.1620589,Pal,114 
+2479,Encarnació-Escorial,BARCELONA,41.4075679 / 2.1618092,Pal,114 
+2480,Encarnació-Torrent de les Flors,BARCELONA,41.4062591 / 2.1597402,Pal,114 
+2481,Pl de la Virreina,BARCELONA,41.4047764 / 2.1571967,Pal,114 
+2482,Ros de Olano-Torrent de l'Olla,BARCELONA,41.4021948 / 2.1566711,Pal,114 
+2483,Ros de Olano-Gran de Gràcia,BARCELONA,41.4010890 / 2.1547170,Pal,114 
+2484,Breton de los Herreros-Aulestià i Pijoan,BARCELONA,41.4023889 / 2.1517928,Pal,114 
+2485,Pl Mossèn Clapès-Gran de Sant Andreu,BARCELONA,41.4420008 / 2.1877684,Pal,126 
+2486,Gran de Sant Andreu-Campeny,BARCELONA,41.4391192 / 2.1887275,Pal,126 
+2487,Gran de Sant Andreu-Servet,BARCELONA,41.4371884 / 2.1895386,Pal,126 
+2488,Pl de Can Fabra,BARCELONA,41.4339809 / 2.1918963,Pal,126 
+2489,Gran de Sant Andreu-Ignasi Iglésias,BARCELONA,41.4332626 / 2.1893287,Pal,126 
+2490,Gran de Sant Andreu-Llenguadoc,BARCELONA,41.4313533 / 2.1893928,Pal,126 
+2491,Garcilaso-Av Meridiana,BARCELONA,41.4229292 / 2.1861937,Pal,126 
+2492,Garcilaso-Mossèn-Juliana,BARCELONA,41.4226406 / 2.1891909,Pal,126 
+2493,Mare de Déu de Port-Pl Teresa Claramunt,BARCELONA,41.3622340 / 2.1395330,Pal,125 
+2494,Mare de Déu de Port-Sant Eloi,BARCELONA,41.3575867 / 2.1437367,Pal,125 
+2495,Mare de Déu de Port-Cisell,BARCELONA,41.3559206 / 2.1454689,Pal,125 
+2496,Cisell-Mare de Déu de Port,BARCELONA,41.3547564 / 2.1447599,Pal,125 
+2498,Foc-Cobalt,BARCELONA,41.3555762 / 2.1396937,Pal,72 
+2501,Alumini-Ctra del Prat,BARCELONA,41.3592950 / 2.1329276,Pal,125 
+2502,Mineria-Mare de Déu de Port,BARCELONA,41.3649161 / 2.1383293,Pal,125 
+2503,Mare de Déu de Port-Mineria,BARCELONA,41.3639705 / 2.1392159,Pal,125 
+2504,Foneria-Energia,BARCELONA,41.3595396 / 2.1363127,Pal,125 
+2507,Garigliano-Almansa,BARCELONA,41.4461827 / 2.1740020,,127 
+2510,Llobera-Baixada del Pedregar,BARCELONA,41.4494905 / 2.1752510,,127 
+2511,Escales de Llobera,BARCELONA,41.4499109 / 2.1764632,,127 
+2512,Cantera-Llobera,BARCELONA,41.4492677 / 2.1776181,,127 81 
+2515,Aiguablava-Sa Tuna,BARCELONA,41.4517408 / 2.1863689,Marquesina,127 80 81 
+2527,Ctra del Prat-Pg de la Zona Franca,BARCELONA,41.3630687 / 2.1358265,Marquesina,79 
+2528,Natzaret-Saldes,BARCELONA,41.4279015 / 2.1372670,Pal,19 76 
+2530,Gran Via Carles III-Pl Reina Maria Cristina,BARCELONA,41.3869030 / 2.1269086,Pal,59 
+2532,Gran Via Carles III-Travessera de les Corts,BARCELONA,41.3831981 / 2.1281734,Pal,59 70 72 75 
+2533,Francesc Alegre-Budapest,BARCELONA,41.4165913 / 2.1663237,Pal,114 
+2534,Av. Montanyans (Mirador del Palau),BARCELONA,41.3879170 / 2.1699187,,100 
+2536,Pg de Montjuïc-Nou de La Rambla,BARCELONA,41.3719918 / 2.1672537,Pal,121 
+2537,Constitució-Badal,BARCELONA,41.3692923 / 2.1335475,Pal,115 
+2538,Parcerisa-Quetzal,BARCELONA,41.3683963 / 2.1346843,Pal,115 
+2539,Panorama-Labèrnia,BARCELONA,41.4191082 / 2.1652641,Pal,119 86 
+2541,Av Diagonal -Metro Zona Universitària,BARCELONA,41.3848046 / 2.1130569,Marquesina (x2),60 67 L97 L79 
+2542,Zona Universitària-Escola T S d'Enginyers,BARCELONA,41.3850832 / 2.1156299,Marquesina,07 67 74 75 L14 L97 N12 L79 
+2543,Av Diagonal-Metro Palau Reial,BARCELONA,41.3858913 / 2.1187675,Marquesina,07 33 67 74 75 L14 L97 N12 L79 
+2544,Trav. de Dalt (Clavell-'Larrard'),BARCELONA,41.3879170 / 2.1699187,,101 
+2546,Gran Via-Ctra de Mataró,BARCELONA,41.4218784 / 2.2119126,Pal,42 60 N2 
+2547,Pl Manuel Ainaud,BARCELONA,41.4203217 / 2.2091190,Marquesina,42 56 60 N2 
+2548,Cardenal Reig-Poblet,BARCELONA,41.3776514 / 2.1156545,Pal,54 
+2549,Av. Dr. Marañon - Aristides Maillol,BARCELONA,41.3879170 / 2.1699187,Pal,54 
+2550,Av. Dr. Marañon (Av. Xile-'Aristides Maillol'),BARCELONA,41.3879170 / 2.1699187,Pal,54 
+2551,Cardenal Reig-Pintor Tapiró,BARCELONA,41.3790033 / 2.1180885,Pal,54 
+2558,Pg Joan de Borbó-Moll de Catalunya,BARCELONA,41.3707263 / 2.1876053,Pal,17 39 64 
+2559,Pg Joan de Borbó-Pg de l'Escullera,BARCELONA,41.3707806 / 2.1877513,Pal,17 39 64 
+2563,Ronda Universitat-Balmes,BARCELONA,41.3879170 / 2.1699187,Pal,62 
+2564,Sot del Migdia,BARCELONA,41.3599248 / 2.1506614,Pal,193 
+2565,Pg Olímpic-Palau Sant Jordi,BARCELONA,41.3623610 / 2.1532400,Pal,193 
+2566,Jardí Botànic,BARCELONA,41.3651980 / 2.1472850,Pal,193 
+2567,Av de l'Estadi-Pg Olímpic,BARCELONA,41.3665628 / 2.1574916,Pal,55 193 
+2572,Santander-Via Trajana,BARCELONA,41.4284482 / 2.2026570,Pal,36 B24 N8 
+2573,Ctra de l'Esglèsia-Camí del Faig,BARCELONA,41.4176957 / 2.1071374,,128 
+2574,Ctra de l'Esglèsia,BARCELONA,41.4170721 / 2.1038223,,128 
+2576,Pl de Carlos Ibañez,BARCELONA,41.3706283 / 2.1701686,Marquesina,193 
+2578,Jaume Brossa,BARCELONA,41.4301978 / 2.1994945,Pal,33 36 
+2579,Carrer número 2-Carrer número 61,BARCELONA,41.3428077 / 2.1409124,Pal,109 N1 
+2580,Pg. de Gràcia (Diputació-'Consell de Cent'),BARCELONA,41.3879170 / 2.1699187,,100 101 
+2581,Vivers Tres Pins,BARCELONA,41.3664160 / 2.1587819,Pal,55 61 
+2582,Ctra d'Horta-Cotxeres TB,BARCELONA,41.4399169 / 2.1544986,Pal,45 
+2583,Ferran Junoy - Pl. Havana,BARCELONA,41.4357813 / 2.1946448,Marquesina,11 60 73 B23 
+2584,Pl John F Kennedy,BARCELONA,41.4101558 / 2.1370660,Pal,73 
+2585,Ronda Guineueta Vella-Juan Ramon Jimenez,BARCELONA,41.4428965 / 2.1623380,Pal,27 31 47 71 N6 82 
+2586,Tinent Coronel Valenzuela-Av Diagonal,BARCELONA,41.3863136 / 2.1166147,,60 
+2587,Moll de Barcelona (World Trade Center),BARCELONA,41.3713080 / 2.1816980,,100 
+2588,Ciutat d'Asunción-Pg de l'Havana,BARCELONA,41.4378071 / 2.2005677,Marquesina,11 60 73 B23 
+2589,Sau Paulo - República Dominicana,BARCELONA,41.4387633 / 2.1965454,Pal,11 73 B23 
+2590,Sau Paulo - Ciutat d´Asunción,BARCELONA,41.4390348 / 2.1992049,Marquesina,11 73 B23 
+2591,Ciutat d´Asunción - Costa Daurada,BARCELONA,41.4382023 / 2.2006774,Marquesina,11 60 73 B23 
+2592,Ciutat d'Asunción-Fra Juníper Serra,BARCELONA,41.4352624 / 2.2010014,Marquesina,60 
+2593,Pg. de l´Havana - Ciutat d´Asunción,BARCELONA,41.4387151 / 2.1994369,Pal,11 60 73 B23 
+2594,Pg. de l´Havana - La Barcelonesa,BARCELONA,41.4367727 / 2.1960895,Marquesina,11 60 73 B23 
+2595,Ctra de Ribes-Ronda de Dalt,BARCELONA,41.4461474 / 2.1890973,Pal,60 126 127 
+2598,Ferran Junoy-Sao Paulo,BARCELONA,41.4398223 / 2.1959331,Pal,60 
+2599,Fra Juníper Serra-Formiga,BARCELONA,41.4341557 / 2.2019292,Marquesina,60 
+2600,Fra Juníper Serra,BARCELONA,41.4332788 / 2.2033118,Marquesina,60 
+2601,Fra Juníper Serra-Santander,BARCELONA,41.4327619 / 2.2048871,Pal,60 
+2604,Av Rasos de Peguera-Complex Esportiu Can Cuiàs,BARCELONA,41.4599001 / 2.1685094,Pal,62 76 N3 83 
+2605,Perafita,BARCELONA,41.45945 / 2.16880,Pal,62 76 N3 83 
+2606,Alumini-Alts Forns,BARCELONA,41.3561282 / 2.1352244,Pal,125 
+2608,Pl John F Kennedy-Av Tibidabo,BARCELONA,41.4097538 / 2.1368119,,58 
+2610,Les Agudes 140,BARCELONA,41.4605288 / 2.1720098,Pal,62 76 N3 83 
+2611,Av. Joan XXIII (Davant Martí i Franques),BARCELONA,41.3879170 / 2.1699187,,101 
+2612,Av. Francesc Ferrer i Guàrdia (Mèxic-'Morabos'),BARCELONA,41.3879170 / 2.1699187,,100 
+2613,Pas Sota Muralla (Pg. Colom-'Pl. Pau Vila'),BARCELONA,41.3822064 / 2.1861157,,100 
+2614,Av. Miramar (Abans Pl. Carlos Ibañez),BARCELONA,41.3879170 / 2.1699187,,100 
+2615,Av. Estadi (Pl. Neptú),BARCELONA,41.3979537 / 2.1545371,,100 
+2616,Pg de Fabra i Puig-Das,BARCELONA,41.4304725 / 2.1704545,Marquesina,71 122 
+2617,Les Drassanes,BARCELONA,41.3756984 / 2.1759984,Marquesina,36 57 64 91 157 N0 
+2618,Josep Carner-Pl de Les Drassanes,BARCELONA,41.3748408 / 2.1771767,Pal,36 57 64 157 N0 
+2619,Ctra de Ribes-Via Favència,BARCELONA,41.4479963 / 2.1896602,Pal,11 
+2620,Ctra de Ribes-Tossal,BARCELONA,41.4481607 / 2.1896564,Pal,40 
+2622,Camí de l'Església-Rembrandt,BARCELONA,41.3879170 / 2.1699187,Pal,45 102 
+2625,Ganduxer-Via Augusta,BARCELONA,41.3985076 / 2.1348774,Pal,70 72 N7 
+2626,Pg Joan de Borbó-Barceloneta,BARCELONA,41.3738992 / 2.1881331,Pal,17 39 64 
+2627,Lilà-Júpiter,BARCELONA,41.4294083 / 2.1007226,Pal,128 
+2628,Lilà-Menta,BARCELONA,41.4295196 / 2.1008873,Pal,128 
+2629,Ctra de Vallvidrera-St Cugat,BARCELONA,41.4259084 / 2.1205757,Pal,111 
+2630,Tossal-Torras i Bages,BARCELONA,41.4487685 / 2.1907250,Pal,11 40 
+2633,Pl Mossen Josep Pedragosa,BARCELONA,41.3799084 / 2.1281183,Pal,43 
+2641,Bac de Roda ('Pg. Garcia i Faria'-Pg. Taulat),BARCELONA,41.4055083 / 2.2131941,,99 
+2642,Pg. Taulat (Provençals-'Selva de Mar'),BARCELONA,41.3879170 / 2.1699187,,99 
+2643,Pg. Taulat ('Pl. Llevant'-Josep Pla),BARCELONA,41.3879170 / 2.1699187,,99 
+2644,Selva de Mar ('Pg. Taulat'-Pg. Garcia i Faria),BARCELONA,41.3879170 / 2.1699187,,99 
+2645,Pg. Garcia i Faria ('Bac de Roda'-Espronceda),BARCELONA,41.3879170 / 2.1699187,,99 
+2648,Av Meridiana-Riera d'Horta,BARCELONA,41.4277076 / 2.1846701,Marquesina,62 96 B22 N3 
+2652,Dos de Maig-Còrsega,BARCELONA,41.4106359 / 2.1772828,Pal,35 
+2653,Comte d'Urgell-Buenos Aires,BARCELONA,41.3918221 / 2.1456676,Pal,41 
+2654,Av República Argentina-Agramunt,BARCELONA,41.4100034 / 2.1459193,Marquesina,22 28 92 N4 
+2655,Collserola-Josep Garí,BARCELONA,41.4162896 / 2.1361369,Pal,124 
+2656,Vall Park,BARCELONA,41.4248231 / 2.1351917,,119 
+2657,Parc del Port Olímpic,BARCELONA,41.3887064 / 2.1987435,Marquesina,36 N6 N8 
+2658,Pg Marítim-Ramon Trias Fargas,BARCELONA,41.3851799 / 2.1962166,Pal,71 
+2659,Llull-Bac de Roda,BARCELONA,41.4054282 / 2.2080954,Pal,26 36 141 N6 
+2662,Segura-Jocs del 92,BARCELONA,41.3632409 / 2.1455190,Pal,125 
+2665,Indústria-Freser,BARCELONA,41.4152246 / 2.1818131,Marquesina,117 192 B22 
+2666,Rambla de Prim-Pl de Llevant,BARCELONA,41.4126418 / 2.2180634,Pal,141 
+2668,Sant Antoni Maria Claret-Pg Maragall,BARCELONA,41.4162006 / 2.1808978,Pal,117 192 B22 
+2670,Rambla Volart-Trobador,BARCELONA,41.4160716 / 2.1791200,,117 
+2672,Torrent de Cal Notari,BARCELONA,41.44090 / 2.14919,,185 
+2674,Mestre Dalmau-Feliu i Codina,BARCELONA,41.4338313 / 2.1617270,,185 
+2675,Congrés-Doctor Letamendi,BARCELONA,41.4370040 / 2.1609285,,185 
+2676,Congrés-Pg Fabra i Puig,BARCELONA,41.4356459 / 2.1632845,,185 
+2677,Pg d'Urrutia-Pg de Fabra i Puig,BARCELONA,41.4365287 / 2.1636268,,185 
+2678,Pg Universal-Doctor Letamendi,BARCELONA,41.4376763 / 2.1614850,,185 
+2679,Rbla. de Prim - Pl. Llevant,BARCELONA,41.4120421 / 2.2187723,Pal,43 N6 
+2680,Llull-Rambla de Prim,BARCELONA,41.4130741 / 2.2182783,Pal,43 B23 
+2681,Pg Reina Elisenda-Pere II de Montcada,BARCELONA,41.3982145 / 2.1179451,Pal,22 64 68 75 N7 
+2682,Pujades-Marina,BARCELONA,41.3928363 / 2.1886475,Pal,14 41 
+2683,Rambla de Prim-Metro La Pau,BARCELONA,41.4228285 / 2.2046459,Pal,33 36 B24 N8 
+2684,Pg de Fabra i Puig-Pg d'Urrutia,BARCELONA,41.4355824 / 2.1638688,Pal,71 
+2685,Cardenal Reig (Av. St. Ramon Nonat-Pintor Tapiró),BARCELONA,41.3879170 / 2.1699187,Marquesina,15 
+2686,Reina Elisenda de Montcada (Parròquia-Mimoses),BARCELONA,41.3879170 / 2.1699187,,101 
+2687,Pg. Sant Joan (St. Antoni M. Claret-'Trav. de Gràcia'),BARCELONA,41.4025334 / 2.1597490,,101 
+2688,Josep Pla-Pg del Taulat,BARCELONA,41.4089307 / 2.2159143,Pal,41 
+2689,Pg del Taulat-Pl de Llevant,BARCELONA,41.4103009 / 2.2183129,Marquesina,41 N7 
+2690,Av de Madrid-Lluçà,BARCELONA,41.3807362 / 2.1316184,Pal,54 N3 
+2691,Via Nostra-Sra de la Merçé,BARCELONA,41.3587655 / 2.1549384,Marquesina,107 
+2692,Via Sant Salvador,BARCELONA,41.3587616 / 2.1571047,Pal,107 
+2693,Via Sant Salvador-Via Sant Lluís,BARCELONA,41.3584603 / 2.1551860,Pal,107 
+2694,Via Sant Lluís,BARCELONA,41.3580315 / 2.1536820,Pal,107 
+2695,Enric Bargés-Numància,BARCELONA,41.3816171 / 2.1402406,Pal,115 
+2696,Entença-Gelabert,BARCELONA,41.3874278 / 2.1406975,Marquesina,66 
+2698,Espronceda-Bolivia,BARCELONA,41.4089310 / 2.1998591,Marquesina,40 42 71 N8 
+2699,Espronceda-Pere IV,BARCELONA,41.4066367 / 2.2028746,Marquesina,71 
+2700,Espronceda-Pallars,BARCELONA,41.4055093 / 2.2043731,Marquesina,71 
+2701,Palomar-Gran de Sant Andreu,BARCELONA,41.4420016 / 2.1886243,,127 
+2703,Pg. Marítim Bogatell (Passat Jaume Vicens i Vives),BARCELONA,41.3879170 / 2.1699187,,99 
+2704,Pg de Solé i Pla-Pollancres,BARCELONA,41.4272365 / 2.0888793,Pal,118 
+2707,Santuari-Mare de Déu del Pilar,BARCELONA,41.4211890 / 2.1534008,Marquesina,28 92 N4 N5 
+2710,Foc-Ferro,BARCELONA,41.3546307 / 2.1377816,Marquesina,72 
+2711,Foc-Estany,BARCELONA,41.3553645 / 2.1395792,Marquesina,72 
+2712,Foc-Metal·lúrgia,BARCELONA,41.3533009 / 2.1344586,Marquesina,72 125 
+2716,Av de l'Exércit-Trias i Giró,BARCELONA,41.3856476 / 2.1111882,Pal,60 
+2717,Camp Mnpal de futbol Vallbona,BARCELONA,41.4640368 / 2.1854568,Pal,97 80 83 81 
+2718,Pl Primer de Maig,BARCELONA,41.4661762 / 2.1860346,Marquesina,97 80 81 
+2719,Av Indústria-Walden 7,BARCELONA,41.3802177 / 2.0667622,Pal,97 
+2720,Zona Universitària,BARCELONA,41.3844345 / 2.1116696,,113 
+2721,Àvila-Almogàvers,BARCELONA,41.3985182 / 2.1917991,Pal,92 
+2723,Badajoz-Llull,BARCELONA,41.3976403 / 2.1969078,Pal,92 
+2724,Larrard-Mare de Dèu de la Salut,BARCELONA,41.4109942 / 2.1557106,Pal,116 
+2725,Coll i Alentorn-Basses d'Horta,BARCELONA,41.4244232 / 2.1432946,Pal,17 185 
+2728,Pl Karl Marx-Ronda Guineueta Vella,BARCELONA,41.4405646 / 2.1632590,Pal,27 
+2729,Badajoz-Av Diagonal,BARCELONA,41.3973355 / 2.1971935,Pal,92 
+2730,Àvila-Pujades,BARCELONA,41.3966774 / 2.1957143,Pal,92 
+2731,Àvila-Ramon Turró,BARCELONA,41.3879170 / 2.1699187,Pal,92 
+2732,Av Diagonal-Pl de les Glòries Catalanes,BARCELONA,41.4041404 / 2.1893657,Pal,92 192 
+2733,Hospital de Sant Pau,BARCELONA,41.4120009 / 2.1744849,Pal,192 
+2734,Sant Quintí-Hospital de St Pau,BARCELONA,41.4151827 / 2.1758043,Pal,192 B22 
+2735,Sant Quintí-Sant Antoni Maria Claret,BARCELONA,41.4139341 / 2.1774559,Pal,192 B22 
+2736,Navas de Tolosa-Indústria,BARCELONA,41.4160093 / 2.1858995,Pal,192 B22 
+2737,Navas de Tolosa-Av Meridiana,BARCELONA,41.4147524 / 2.1875749,,192 
+2738,Navas de Tolosa-Clot,BARCELONA,41.4134321 / 2.1893412,,192 
+2740,Bilbao-Pere IV,BARCELONA,41.4052587 / 2.2002310,,192 
+2742,Av Meridiana-Clot,BARCELONA,41.4089890 / 2.1870830,,192 
+2743,Clot-Aragó,BARCELONA,41.4120156 / 2.1899619,,192 
+2744,Muntanya-Mallorca,BARCELONA,41.4118235 / 2.1853957,,192 
+2745,Muntanya-Coll i Vehi,BARCELONA,41.4130350 / 2.1826628,,192 
+2746,Sant Antoni Maria Claret-Dos de Maig,BARCELONA,41.4123733 / 2.1757877,Pal,92 192 B22 
+2747,Fundació Puigvert,BARCELONA,41.4127115 / 2.1724924,Pal,192 
+2748,Mas Casanovas-Cartagena,BARCELONA,41.4137589 / 2.1716218,Pal,192 
+2749,Cementiri de l'Est,BARCELONA,41.3948580 / 2.2011890,Pal,14 
+2750,St Ramon de Penyafort-Av Manuel Fernández Marquez,BARCELONA,41.4150936 / 2.2198230,Marquesina,43 141 
+2751,Bilbao-Av Diagonal,BARCELONA,41.4056687 / 2.1996858,Pal,40 42 B25 N11 N8 
+2752,CEIP Merçé Rodoreda,BARCELONA,41.4459892 / 2.1865054,Pal,132 
+2753,Av Rio de Janeiro-Tissó,BARCELONA,41.4419147 / 2.1846486,Marquesina,132 
+2754,Pg de la Peira-Montmajor,BARCELONA,41.4318523 / 2.1699376,Pal,122 
+2756,Creu Coberta ('Hostafrancs de Sió'-Sant Roc),BARCELONA,41.4354397 / 2.2279728,,100 
+2757,Badajoz ('Carmen Amaya'-Av. Icària),BARCELONA,41.3556474 / 2.1172124,,99 100 
+2758,Ronda Guinardó-Segle XX,BARCELONA,41.4226774 / 2.1774396,,117 
+2759,Oblit-Doctor Valls,BARCELONA,41.4202460 / 2.1788702,,117 
+2760,Oblit-direcció Dos de Maig,BARCELONA,41.4189174 / 2.1770218,,117 
+2772,Bilbao-Pujades,BARCELONA,41.4035766 / 2.2025193,,192 
+2773,Mare de Déu del Coll-Lorda,BARCELONA,41.4210472 / 2.1495591,,119 
+2774,Gran Via-Pl de les Glòries,BARCELONA,41.4055369 / 2.1893903,,192 
+2775,Pl Espanya,BARCELONA,41.3879170 / 2.1699187,Pal,23 
+2776,Trav de Dalt-Riera de Can Toda,BARCELONA,41.4124350 / 2.1592607,Pal,24 31 32 74 N0 
+2777,Trav de Dalt-Larrard,BARCELONA,41.4108575 / 2.1567505,Pal,24 31 32 74 N0 
+2778,Maurici Vilomara-Montserrat Casanovas,BARCELONA,41.4232490 / 2.1628534,,117 
+2779,Maurici Vilomara-Doctor Coll,BARCELONA,41.4228250 / 2.1639145,,117 
+2780,Maurici Vilomara-Penyal,BARCELONA,41.4219982 / 2.1642013,,117 
+2781,Penyal-Pl Font d'en Fargas,BARCELONA,41.4223556 / 2.1636740,,117 
+2782,Penyal-Doctor Bové,BARCELONA,41.4215110 / 2.1636308,,117 
+2783,Penyal-Font de la Mulassa,BARCELONA,41.4217502 / 2.1636254,,117 
+2784,Penyal,BARCELONA,41.4223050 / 2.1635996,,117 
+2785,Pl de la Font d'en Fargas,BARCELONA,41.4244320 / 2.1654581,,117 
+2786,Maurici-Vilomara,BARCELONA,41.4228098 / 2.1641034,,117 
+2787,Pg Font d'en Fargas-Pintor Pradilla,BARCELONA,41.4233781 / 2.1653296,,117 
+2789,Dr Letamendi-Canigó,BARCELONA,41.4354826 / 2.1599459,,185 
+2790,Eduard Todà-Rectoria,BARCELONA,41.4338310 / 2.1599399,,185 
+2791,Concepció Arenal-Olesa,BARCELONA,41.4220376 / 2.1838919,Marquesina,20 
+2792,Mercat Mare de Déu de Montserrat,BARCELONA,41.4462546 / 2.1791026,,127 81 
+2793,Pla de Fornells-Jaume Pinent,BARCELONA,41.4464315 / 2.1767173,,127 81 
+2794,Romaní-Les Torres,BARCELONA,41.4466108 / 2.1751938,,127 
+2798,Rodrigo Caro-Artesania,BARCELONA,41.4471309 / 2.1714859,,127 
+2799,Quarter de Simancas-Almansa,BARCELONA,41.4454224 / 2.1733335,,127 
+2800,Av República Argentina-Viaducte,BARCELONA,41.4114374 / 2.1445563,Marquesina,22 28 92 N4 
+2807,Gran Via-Rambla del Poblenou,BARCELONA,41.4073136 / 2.1924752,Pal,56 60 B21 N2 
+2808,Zona Franca-Carrer número 4,BARCELONA,41.3313308 / 2.1285054,Pal,21 
+2809,Carrer número 4,BARCELONA,41.3327122 / 2.1242975,Pal,21 
+2810,Zona Franca-Mercabarna,BARCELONA,41.3334684 / 2.1224076,Pal,21 
+2811,Carrer número 4-Carrer número 50,BARCELONA,41.3350301 / 2.1179541,Pal,21 
+2812,Carrer K-Carrer número 40,BARCELONA,41.3318571 / 2.1111021,Pal,21 
+2813,Carrer K-Carrer número 6,BARCELONA,41.3288993 / 2.1119528,Pal,21 
+2827,Mercabarna-Entrada 'El Prat',BARCELONA,41.3287200 / 2.1123390,Pal,21 
+2828,Carrer K,BARCELONA,41.3318256 / 2.1112871,Pal,21 
+2829,Av Paral·lel-Fontrodona,BARCELONA,41.3748947 / 2.1690150,Pal,21 
+2831,Concepció Arenal-Juan de Garay,BARCELONA,41.4205985 / 2.1838854,Pal,20 
+2832,Juan de Garay-Navas de Tolosa,BARCELONA,41.4185906 / 2.1818260,Marquesina,20 
+2833,Pg de Gràcia-Ronda de Sant Pere,BARCELONA,41.3888342 / 2.1691588,Marquesina,47 N2 N3 
+2834,Almogàvers-Joan d'Austria,BARCELONA,41.3961818 / 2.1886462,Pal,06 40 42 141 B25 N11 
+2835,Moianés-Cuyàs,BARCELONA,41.3712960 / 2.1423814,,91 115 
+2836,Magoria,BARCELONA,41.3696854 / 2.1417395,Pal,91 115 N13 
+2837,Mossen Amadeu Oller-Gran Via,BARCELONA,41.3683821 / 2.1389230,Pal,91 115 
+2838,Metro Penitens,BARCELONA,41.4175862 / 2.1403874,Pal,123 
+2840,Esteve Terradas-Josep Jover,BARCELONA,41.3879170 / 2.1699187,Pal,129 
+2841,Gustavo Becquer-Av de Vallcarca,BARCELONA,41.4158111 / 2.1426487,Pal,129 
+2842,Baró de la Barre-Gustavo Becquer,BARCELONA,41.4144099 / 2.1444285,Pal,129 
+2843,Tirso-Mora la Nova,BARCELONA,41.4190647 / 2.1509525,"Marquesina, Pal, Pla",129 87 
+2844,Tirso-Pl Laguna Lanau,BARCELONA,41.4180201 / 2.1502063,"Pal, Plataforma",129 87 
+2845,Aldea-Font del Remei,BARCELONA,41.4185605 / 2.1500304,Pal,129 
+2846,Duran i Borrell-Baixada de Sant Marià,BARCELONA,41.4180815 / 2.1493526,Pal,129 
+2847,Torrent del Remei-Riu de la Plata,BARCELONA,41.4159666 / 2.1482969,Pal,129 
+2848,Sant Eudald-Mora d'Ebre,BARCELONA,41.4148383 / 2.1472083,Pal,129 
+2849,Sant Eudald-Pl Mons,BARCELONA,41.4136983 / 2.1453103,Pal,129 
+2850,Cardedeu-Pg Mare de Déu del Coll,BARCELONA,41.4153371 / 2.1452942,Pal,129 
+2851,Montornés-Cardedeu,BARCELONA,41.4167417 / 2.1441163,Pal,129 
+2852,Montornés-Capellades,BARCELONA,41.4179579 / 2.1426477,Pal,129 
+2853,Av. Jordà (Pg. Vall d´Hebron-'Judea'),BARCELONA,41.3879170 / 2.1699187,Pal,19 76 
+2854,Capellades-Montornés,BARCELONA,41.4182707 / 2.1419167,Pal,129 
+2855,Gaspar Cassadó-Can Caralleu,BARCELONA,41.4006486 / 2.1133193,Pal,130 
+2856,Esports-Ronda de Dalt,BARCELONA,41.4008989 / 2.1122130,,130 
+2857,Esports-Major de Can Caralleu,BARCELONA,41.4017664 / 2.1111593,Pal,66 130 
+2858,Major de Can Caralleu-Ptge Blada,BARCELONA,41.4022158 / 2.1103274,Pal,130 
+2859,CEIP Costa i Llobera,BARCELONA,41.4021249 / 2.1086703,,130 
+2861,Pins de Can Caralleu-Lliçà,BARCELONA,41.4031980 / 2.1085142,Pal,130 
+2862,Pins de Can Caralleu,BARCELONA,41.4038874 / 2.1086070,Pal,130 
+2863,Pl de Mossen Miquel Vall i Mundó,BARCELONA,41.4031945 / 2.1098045,Pal,130 
+2864,Torrent de Can Caralleu-Major de Can Caralleu,BARCELONA,41.4020224 / 2.1115299,Pal,130 
+2866,Ramon Miquel Planas-Duquesa d'Orleans,BARCELONA,41.3999169 / 2.1181672,Pal,130 
+2869,Pedró de la Creu-Gresolet,BARCELONA,41.3976519 / 2.1220143,Pal,130 
+2870,Av J V Foix-Mendel,BARCELONA,41.3972197 / 2.1202180,Pal,130 
+2872,Saragossa-Ronda General Mitre,BARCELONA,41.4057219 / 2.1437398,Pal,131 
+2873,Bertran-Pl Figuerola,BARCELONA,41.40485 / 2.14026,Pal,131 
+2874,Bertran-Castanyer,BARCELONA,41.3879170 / 2.1699187,Pal,131 
+2875,Bertran-Solanes,BARCELONA,41.4102119 / 2.1401211,Pal,131 
+2876,Lucà-Craywinkel,BARCELONA,41.4110890 / 2.1389484,Pal,131 
+2877,Pg Sant Gervasi-Lleó XIII,BARCELONA,41.4107970 / 2.1379299,Pal,131 N5 
+2878,Craywinckel-Hurtado,BARCELONA,41.4117889 / 2.1389627,Pal,17 22 123 124 131 N4 N5 
+2879,Hurtado-Espinoi,BARCELONA,41.4106850 / 2.1407501,Pal,131 
+2880,Marmellà-Hurtado,BARCELONA,41.4098907 / 2.1413529,Pal,131 
+2881,Solanes-Bertran,BARCELONA,41.4102119 / 2.1401211,Pal,131 
+2882,Caire-República Argentina,BARCELONA,41.4114872 / 2.1410836,Pal,131 
+2883,Portolà-Ferran Puig,BARCELONA,41.4108146 / 2.1428505,Pal,131 
+2884,Ferran Puig-Turó del Putget,BARCELONA,41.4100940 / 2.1440111,Pal,131 
+2885,Ferran Puig-Agramunt,BARCELONA,41.4089684 / 2.1452022,Pal,131 
+2886,Ballester-Ferran Puig,BARCELONA,41.4075004 / 2.1465171,Pal,131 
+2887,Osona-Homer,BARCELONA,41.4079747 / 2.1447537,Pal,131 
+2888,Putget-Cadis,BARCELONA,41.4064938 / 2.1440081,Marquesina,131 
+2889,Roc Boronat-Ptge Mas de Roda,BARCELONA,41.3979161 / 2.2009724,Pal,06 N6 N8 
+2890,Pg Vall d'Hebron-Trueba,BARCELONA,41.4234555 / 2.1418392,Marquesina,17 
+2891,Av. Martí Codolar ('Av. Coll i Alentorn'-Granja Vella),BARCELONA,41.3879170 / 2.1699187,Pal,17 
+2892,Av Tibidabo-La 'Rotonda',BARCELONA,41.4109708 / 2.1366478,Pal,196 
+2893,Av Tibidabo-Jardins de la Tamarita,BARCELONA,41.4107754 / 2.1365844,Marquesina,196 
+2895,Carles Riba-Josep Maria Lledó,BARCELONA,41.4117008 / 2.1237104,Pal,196 
+2896,Palamós-Garbí,BARCELONA,41.4525684 / 2.1874841,Pal,50 127 80 81 
+2897,Jaume Vicens i Vives - Av Icària,BARCELONA,41.3943522 / 2.2012470,Marquesina,26 
+2898,Llull-Selva de Mar,BARCELONA,41.4083675 / 2.2119732,Marquesina,26 
+2899,Josep Pla-Pallars,BARCELONA,41.4112636 / 2.2127885,Marquesina,26 
+2900,Josep Pla-Venezuela,BARCELONA,41.4133130 / 2.2100733,Marquesina,26 
+2902,Josep Pla-Perú,BARCELONA,41.4163698 / 2.2061118,Marquesina,26 
+2903,Selva de Mar-Bolívia,BARCELONA,41.3879170 / 2.1699187,Pal,26 
+2904,Selva de Mar-Marroc,BARCELONA,41.4119155 / 2.2049628,Marquesina,26 
+2905,Selva de Mar-Venezuela,BARCELONA,41.4097647 / 2.2078134,Pal,26 
+2906,Selva de Mar-Llull,BARCELONA,41.4081690 / 2.2098350,Marquesina,26 
+2907,Pg del Taulat-Bac de Roda,BARCELONA,41.4027853 / 2.2097144,Marquesina,26 
+2908,Taulat-Bilbao,BARCELONA,41.4006832 / 2.2071046,Pal,26 
+2909,Taulat-Rambla del Poblenou,BARCELONA,41.3979088 / 2.2036944,Pal,26 
+2910,Taulat-Ciutat de Granada,BARCELONA,41.3962525 / 2.2017179,Pal,26 
+2912,Judea-Av Jordà,BARCELONA,41.4250798 / 2.1408347,Pal,112 
+2913,Av Rio de Janeiro-Pintor Alsamora,BARCELONA,41.4355715 / 2.1801060,Marquesina,36 
+2914,Pg Andreu Nin-Av Rio de Janeiro,BARCELONA,41.4325412 / 2.1809296,Marquesina,36 132 
+2915,Vèlia-Pg de Fabra i Puig,BARCELONA,41.4299251 / 2.1807460,Marquesina,26 36 
+2916,Rambla de Badal-Constitució,BARCELONA,41.3682899 / 2.1330118,Marquesina,115 
+2917,Cantàbria-Andrade,BARCELONA,41.4174375 / 2.2044147,Pal,26 40 
+2918,Herois del Bruc-Ardena,BARCELONA,41.3888445 / 2.1054171,,113 
+2919,Ardena-Eduard Toldrà,BARCELONA,41.3891577 / 2.1059442,,113 
+2920,Francesc Cambó-Gral Alvarez de Castro,BARCELONA,41.3863949 / 2.1779290,Pal,120 
+2921,St Pere Més baix-Jaume Giralt,BARCELONA,41.3877838 / 2.1780799,Pal,120 
+2922,Pl de St Pere,BARCELONA,41.3890286 / 2.1794688,Pal,120 
+2923,Placeta del Comerç,BARCELONA,41.3898306 / 2.1809543,Pal,120 
+2924,Comerç-Pg Pujades,BARCELONA,41.3885666 / 2.1814129,Pal,120 
+2925,Pl Pons Clerch,BARCELONA,41.3865378 / 2.1818912,Pal,120 
+2926,Princesa-Montcada,BARCELONA,41.3853004 / 2.1803279,Pal,120 
+2927,Ample-Fusteria,BARCELONA,41.3812971 / 2.1806034,Pal,120 
+2928,Pl de la Merçé,BARCELONA,41.3790507 / 2.1791481,Pal,120 
+2929,Pl del Duc de Medinaceli,BARCELONA,41.3784942 / 2.1790879,Pal,120 
+2930,Torres i Amat-Ptge St Bernat,BARCELONA,41.3844588 / 2.1647071,Pal,120 
+2933,Ronda de Dalt-Cister,BARCELONA,41.4132623 / 2.1304991,Pal,60 196 
+2946,Espronceda-Rambla de Guipuscoa,BARCELONA,41.4141910 / 2.1928695,Marquesina,71 
+2947,Espronceda-Concili de Trento,BARCELONA,41.4124639 / 2.1950441,Marquesina,71 
+2948,Espronceda-Gran Via,BARCELONA,41.4104049 / 2.1977793,Pal,40 42 71 N8 
+2949,Gran Via núm 1092,BARCELONA,41.4157837 / 2.2041983,,40 42 56 60 B21 N2 
+2950,Beret-Teide,BARCELONA,41.4321823 / 2.1677032,Pal,122 
+2951,Cadí-Teide,BARCELONA,41.4312989 / 2.1686271,Pal,122 
+2952,Constitució-Jocs Florals,BARCELONA,41.3699113 / 2.1366601,Pal,115 
+2953,Capella de Can Caralleu-Saüc,BARCELONA,41.4023647 / 2.1074041,Pal,130 
+2954,Camí de Lliçà,BARCELONA,41.4024042 / 2.1067188,Pal,130 
+2973,Pl del Doctor Andreu,BARCELONA,41.4161394 / 2.1313736,Pal,196 
+2974,Tanatori de la Vall d'Hebron,BARCELONA,41.4405187 / 2.1548372,Pal,45 102 
+2976,Fastenrath-Arenys,BARCELONA,41.4219116 / 2.1429318,,119 
+2977,Llobera,BARCELONA,41.44991 / 2.17646,Pal,127 
+2978,Rodrigo Caro-Llobera,BARCELONA,41.4491930 / 2.1745632,,127 
+2979,Rodrigo Caro-Fornells,BARCELONA,41.4485299 / 2.1737988,,127 
+2980,Rodrigo Caro-Ojeda,BARCELONA,41.4477739 / 2.1732110,,127 
+2981,Garrotxa-Teodor Llorente,BARCELONA,41.4193858 / 2.1799507,,117 
+2982,Collblanc (Ptge. Xile-Cardenal Reig),BARCELONA,41.3879170 / 2.1699187,Pal,57 157 158 
+2983,Bac de Roda-Pere IV,BARCELONA,41.4091974 / 2.2019813,Marquesina,40 42 N8 
+2984,Cardenal Reig-Pisuerga,BARCELONA,41.3768871 / 2.1142720,Pal,57 157 158 
+2985,Aiguablava-Tamariu,BARCELONA,41.4501792 / 2.1842083,Pal,50 51 76 127 80 81 
+2986,Pere IV-Av Diagonal,BARCELONA,41.4059980 / 2.2003965,Marquesina,40 42 B25 N11 N8 
+2987,Fastenrath-Llobregós,BARCELONA,41.4216776 / 2.1515332,,119 
+2988,Mare de Déu de Port-Rda Litoral,BARCELONA,41.3518192 / 2.1557085,Pal,21 
+2989,Mare de Déu de Port-Cantunis,BARCELONA,41.3518730 / 2.1558666,,21 107 
+2992,Pl Pius XII-Av Pedralbes,BARCELONA,41.3878374 / 2.1225546,,113 
+2993,Av Diagonal-Roger de Flor,BARCELONA,41.3993578 / 2.1710158,Marquesina,33 34 
+2999,Foc-Sot del Migdia,BARCELONA,41.3600116 / 2.1504590,,125 
+3000,Palau Sant Jordi,BARCELONA,41.3623610 / 2.1532400,,125 
+3002,Pedrera del Mussol-Marbre,BARCELONA,41.3615496 / 2.1478445,,13 125 
+3003,Pl del Mig de Can Clos,BARCELONA,41.3615409 / 2.1466167,,125 
+3004,Pg del Pi Forcat-Pg del Grèvol,BARCELONA,41.4226310 / 2.0872895,,118 
+3005,Pg del Grèvol,BARCELONA,41.4214355 / 2.0860791,,118 
+3006,Pg del Grèvol-Camí de Can Castellví,BARCELONA,41.4201390 / 2.0849908,,118 
+3007,Pg del Grèvol-Pg del Pi Forcat,BARCELONA,41.4217677 / 2.0869833,,118 
+3008,CAP Les Hortes,BARCELONA,41.3718261 / 2.1668236,Marquesina,121 
+3009,CAP Vallvidrera,BARCELONA,41.4140337 / 2.1039478,,128 
+3010,Centre Cívic Vallvidrera,BARCELONA,41.4152593 / 2.1026637,,128 
+3011,CEIP Naví,BARCELONA,41.4168300 / 2.1012713,,128 
+3012,Reis Católics-Llicorella,BARCELONA,41.4150477 / 2.1028123,,128 
+3013,Mercat de Vallvidrera,BARCELONA,41.4141123 / 2.1037307,,128 
+3015,Pg de Torras i Bages-Tossal,BARCELONA,41.4483978 / 2.1905042,Pal,126 
+3016,Peníscola-Pare Manjón,BARCELONA,41.4532188 / 2.1899716,Pal,126 
+3017,Turó de La Trinitat-Ausona,BARCELONA,41.4529247 / 2.1914477,Pal,126 127 
+3018,Turó de La Trinitat-Foradada,BARCELONA,41.4511687 / 2.1907310,Pal,126 
+3019,Turó de La Trinitat-Madriguera,BARCELONA,41.4499518 / 2.1901904,Pal,126 127 
+3020,Montagut-Vila seca,BARCELONA,41.4341044 / 2.1682820,,122 
+3021,Espinagua-Darnius,BARCELONA,41.4351957 / 2.1662849,,122 
+3023,Ciutat de la Justícia,BARCELONA,41.3638514 / 2.1338717,Marquesina,46 65 L70 L72 L80 L81 L86 L87 L94 L95 N15 N16 N17 
+3025,Mireia-Finestrelles,BARCELONA,41.4511797 / 2.1894290,,127 
+3026,Mireia-Ausona,BARCELONA,41.4523762 / 2.1895828,,127 
+3027,Comissaria Mossos d'Esquadra,BARCELONA,41.4012787 / 2.1890540,Marquesina,B16 B19 B20 
+3029,Pg de l'Escullera-Moll de Llevant,BARCELONA,41.3683579 / 2.1878235,,17 
+3030,Pg de l'Escullera,BARCELONA,41.3691902 / 2.1879791,,39 
+3031,Pg de l'Escullera-Pg Joan de Borbó,BARCELONA,41.3691647 / 2.1875772,,64 
+3032,Ronda St Pere-Pg de Gràcia,BARCELONA,41.3884249 / 2.1709621,,66 
+3046,Anna Piferrer - Betània,BARCELONA,41.4173818 / 2.1408971,Pal,129 
+3049,Pl de les Glòries Catalanes-Av Diagonal,BARCELONA,41.4028956 / 2.1877830,,07 56 92 B21 
+3050,Indústria-Guinardó,BARCELONA,41.4154576 / 2.1821310,,192 
+3051,La Murtra-Sta Albina,BARCELONA,41.4241610 / 2.1507706,,119 
+3052,Castellbisbal-Sta Rosalía,BARCELONA,41.4214084 / 2.1443092,,119 
+3053,Av. Escolapi Càncer (Metro Torre Baró Vallbona),BARCELONA,41.4589730 / 2.1804970,,80 83 81 
+3054,Av. Escolapi Càncer (Passat Pl. Eucalíptus),BARCELONA,41.3879170 / 2.1699187,,80 83 81 
+3055,Av. Escolapi Càncer (Passat Metro Torre Baró),BARCELONA,41.4612510 / 2.1805450,,83 
+3056,Av. Escolapi Càncer (Abans Masquefa),BARCELONA,41.3879170 / 2.1699187,,83 
+3057,Av. Escolapi Càncer (Passat Sant Quirze de Safaja),BARCELONA,41.3879170 / 2.1699187,,83 
+3058,Av. Escolapi Càncer (Passat Castellfollit),BARCELONA,41.3879170 / 2.1699187,,83 
+3059,Av. Escolapi Càncer (Abans Bellprat),BARCELONA,41.3879170 / 2.1699187,,83 
+3060,Bellprat (Abans Sant Feliu de Codines),BARCELONA,41.3879170 / 2.1699187,,83 
+3061,Sant Feliu de Codines (Passat Bellprat),BARCELONA,41.3879170 / 2.1699187,,83 
+3062,Sant Feliu de Codines (Passat Trav. Castellfollit),BARCELONA,41.4557001 / 2.1754317,,83 
+3063,Sant Feliu de Codines (Abans Vilatorta),BARCELONA,41.3879170 / 2.1699187,,83 
+3064,Sant Feliu de Codines (Vilatorta-Pau Sabater),BARCELONA,41.3879170 / 2.1699187,,83 
+3065,Sant Feliu de Codines ('Pau Sabater'-Pl. Eucalíptus),BARCELONA,41.3879170 / 2.1699187,,83 
+3066,Av. Vallbona (Pl. Eucalíptus),BARCELONA,41.3879170 / 2.1699187,,80 83 81 
+3067,Pl. Primer de Maig (Abans Oristà),BARCELONA,41.3879170 / 2.1699187,,83 
+3068,Av. Puig de Jorba (Passat Artés),BARCELONA,41.3879170 / 2.1699187,,83 
+3069,Av. Puig de Jorba (Abans Pg. de la Pineda),BARCELONA,41.4662976 / 2.1828524,,83 
+3070,Pg. de la Pineda (Passat Av. Puig de Jorba),BARCELONA,41.4656251 / 2.1804302,,83 
+3071,Pg. de la Pineda (Urbanització Vallbona),BARCELONA,41.4663520 / 2.1849621,,83 
+3072,Pg. de la Pineda (Abans Oristà),BARCELONA,41.3879170 / 2.1699187,,83 
+3073,Oristà (Passat Pg. de la Pineda),BARCELONA,41.4662976 / 2.1828524,,83 
+3074,Oristà (Abans Pg.Cimal),BARCELONA,41.4678399 / 2.1815995,,83 
+3075,Artés (Passat Av. Puig de Jorba),BARCELONA,41.4656251 / 2.1804302,,83 
+3076,Av. Vallcivera (Abans Moixeró),BARCELONA,41.3879170 / 2.1699187,,83 
+3077,Pl. Llucmajor,BARCELONA,41.4393237 / 2.1755470,Pal,80 81 
+3078,Aiguablava (Davant Vallbona),BARCELONA,41.4661236 / 2.1830122,,80 81 
+3079,Aiguablava (Passat Av. Vallbona),BARCELONA,41.4581991 / 2.1842537,,80 81 
+3080,Aiguablava Davant Ripoll Martorelles,BARCELONA,41.3879170 / 2.1699187,,80 81 
+3081,Aiguablava (Abans Ripoll),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3082,Llerona (Abans Balenyà),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3083,Llerona (Passat Balanyà),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3084,Llerona (Passat Avinyonet),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3085,Llerona (Abans Avinyonet),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3086,Llerona (Passat Torrelles),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3087,Llerona (Prop del nº 50),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3088,Llerona (Abans Ripoll),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3089,Llerona-Ripollet,BARCELONA,41.45632 / 2.18219,,80 81 
+3090,Llerona (Davant Martorelles),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3091,Llerona (Passat Martorelles),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3093,Cantera (Llobera-Escales de Llobera),BARCELONA,41.4499109 / 2.1764632,,81 
+3094,Pl. Roja Ciutat Meridiana (Passat Av. Rasos de Peguera),BARCELONA,41.4606809 / 2.1741972,,80 81 
+3096,Baixada Pedregar ('Briquets'-Pla de Fornells),BARCELONA,41.3879170 / 2.1699187,,81 
+3097,Oristà (Castelladral-Torre Vela),BARCELONA,41.3879170 / 2.1699187,,80 81 
+3098,Av. Alzinar (Orpí-'Torrent de Tapioles'),BARCELONA,41.4639034 / 2.1815606,,80 81 
+3099,Artesania (Alcàntara-Rodrigo Caro),BARCELONA,41.3879170 / 2.1699187,,81 
+3100,Artesania (Via Favència-'Marín'),BARCELONA,41.3879170 / 2.1699187,,81 
+3101,Artesania ('Alonso Cano'-Ponce de Leon),BARCELONA,41.3879170 / 2.1699187,,81 
+3102,Pl. Virrei Amat (Dr. Pi i Molist-St. Iscle),BARCELONA,41.3879170 / 2.1699187,,82 
+3103,Rda. Guineueta Vella (Passat Juan Ramón Jimenez),BARCELONA,41.3879170 / 2.1699187,,82 
+3104,Rda. Guineueta Vella (Passat Cª. Alta de les Roquetes),BARCELONA,41.4471850 / 2.1747511,,82 
+3105,Cª. Alta de les Roquetes (Esc. Can Ensenya) dir Virrei Amat,BARCELONA,41.3879170 / 2.1699187,,82 
+3106,Cª. Alta de les Roquetes (Escola Can Ensenya),BARCELONA,41.3879170 / 2.1699187,,82 
+3107,Alta de les Roquetes (Font Canyelles),BARCELONA,41.44959 / 2.16831,,82 
+3108,Cª. Alta de les Roquetes (Davant Font Canyelles),BARCELONA,41.44959 / 2.16831,,82 
+3109,Ctra. Alta de Roquetes -  'Dipòsit',BARCELONA,41.4504837 / 2.1742565,Pal,82 
+3110,Cª. Alta de les Roquetes (Runes de la Torre Baró),BARCELONA,41.4612510 / 2.1805450,,82 
+3111,Cª. Alta de les Roquetes (Turó de les Roquetes dir. Virrei),BARCELONA,41.3879170 / 2.1699187,,82 
+3112,Cª. Alta de les Roquetes (Turó de les Roquetes),BARCELONA,41.4471850 / 2.1747511,,82 
+3113,Castellví - 'Torre Baró',BARCELONA,41.4542994 / 2.1727268,,82 
+3125,Tarragona-Aragó,BARCELONA,41.37851 / 2.14529,,109 
+3126,Pl dels Països Catalans-Estació de Sants,BARCELONA,41.3799002 / 2.1410400,,30 44 109 N0 
+3127,Estació de Sants,BARCELONA,41.3793719 / 2.1404799,,109 
+3128,Artesania ('Pla de Fornells'-Alcàntara),BARCELONA,41.3879170 / 2.1699187,,81 
+3129,Estació de Sants-Viriat,BARCELONA,41.3797239 / 2.1391580,,44 
+3133,Sta Amèlia-Eduard Conde,BARCELONA,41.3928648 / 2.1217261,,130 
+3134,Sta Amèlia-Or,BARCELONA,41.3938435 / 2.1235973,,130 
+3139,Viriat (Estació Autobusos),BARCELONA,41.3879170 / 2.1699187,,100 
+3158,Pg d'Urrutia-Dr Pi i Molist,BARCELONA,41.4348066 / 2.1709056,Pal,122 
+3159,Nil-Dr Pi i Molist,BARCELONA,41.4342109 / 2.1717397,Pal,122 
+3160,St Iscle-Travau,BARCELONA,41.4342925 / 2.1703144,Pal,122 
+3162,Praga-Rda Guinardó,BARCELONA,41.4124082 / 2.1642957,Pal,55 114 
+3163,Via Favència-Pg de Valldaura,BARCELONA,41.4402917 / 2.1640171,Pal,127 
+3166,Pl de Joan Peiró,BARCELONA,41.3787729 / 2.1395530,,30 115 
+3167,Pl dels Països Catalans-St Antoni,BARCELONA,41.3795097 / 2.1414703,,32 
+3168,Pl dels Països Catalans,BARCELONA,41.3796055 / 2.1413655,,78 
+3169,Rda de St Martí,BARCELONA,41.5360294 / 2.1802860,,36 
+3170,Rda de St Martí-Riera d'Horta,BARCELONA,41.4278705 / 2.1939557,,36 
+3171,Rda de St Martí-Rbla de Prim,BARCELONA,41.4273714 / 2.1977199,,36 
+3172,Rda de St Martí-Pont del Treball,BARCELONA,41.42324 / 2.19183,,36 
+3174,Av Diagonal-Complex Esportiu Universitari,BARCELONA,41.3833098 / 2.1079083,,54 113 
+3175,CAP Bonaplata,BARCELONA,41.3960815 / 2.1241917,,130 
+3176,Fontcoberta-Pedró de la Creu,BARCELONA,41.3972366 / 2.1220816,,130 
+3177,Ramon Miquel Planas-Major de Sarrià,BARCELONA,41.4009747 / 2.1202681,,130 
+3178,Clos de St Francesc-Pg Reina Elisenda de Montcada,BARCELONA,41.3993677 / 2.1206023,,130 
+3180,Teide-Pg de Fabra i Puig,BARCELONA,41.4302250 / 2.1691473,,122 
+3181,Via Favència-Rda de Dalt,BARCELONA,41.4469732 / 2.1852920,,127 
+3183,Pg de St Gervasi-Ptge Maluquer,BARCELONA,41.4099869 / 2.1362299,,123 
+3184,Carles Riba-Bellesguard,BARCELONA,41.4144036 / 2.1300665,Pal,196 
+3185,Teodor Roviralta-Manuel Ramon,BARCELONA,41.4123779 / 2.1260027,,196 
+3186,Comte d'Urgell-Pl Francesc Macià,BARCELONA,41.3919315 / 2.1455216,,41 
+3188,Jardins de Pedro Muñoz Seca,BARCELONA,41.4305221 / 2.1447052,,10 
+3189,Ronda de Dalt-Pl de la Central,BARCELONA,41.4144266 / 2.1335857,,196 
+3190,Pujades-Roc Boronat,BARCELONA,41.4003972 / 2.1988899,Marquesina,36 71 192 N6 
+3191,Josep Maria Lledó-Bellesguard,BARCELONA,41.4108310 / 2.1248628,,196 
+3203,Renaixença-Vinya,BARCELONA,41.4181540 / 2.1771980,,117 
+3204,Villar-Xiprer,BARCELONA,41.4170269 / 2.1780643,,117 
+3205,Xiprer-Vinya,BARCELONA,41.4180196 / 2.1790371,,117 
+3206,Benet i Mateu-Pl Artós,BARCELONA,41.3955135 / 2.1255312,,66 
+3207,Peñíscola (Passat Ausona),BARCELONA,41.3879170 / 2.1699187,,127 
+3208,Pg. Maragall - Santa Joaquima de Vedruna,BARCELONA,41.4211689 / 2.1799707,,19 45 47 50 51 117 N1 N4 
+3209,Pg. Maragall - Puerto Príncipe,BARCELONA,41.4209250 / 2.1804452,Pal,19 45 47 50 51 N1 N4 
+3210,Pl. Nou - Estany,BARCELONA,41.3534609 / 2.1415851,,125 
+3211,Plom - Ferro,BARCELONA,41.3527183 / 2.1393630,,125 
+3212,Acer - Plom,BARCELONA,41.3879170 / 2.1699187,,125 
+3213,Acer - Arnes,BARCELONA,41.3503822 / 2.1381570,,125 
+3214,Metal.lúrgia - Motors,BARCELONA,41.3493918 / 2.1373671,,125 
+3215,Marina - Trav. de Gràcia,BARCELONA,41.4070347 / 2.1711068,,92 
+3216,Alcalde de Móstoles - Rda. Guinardó,BARCELONA,41.4107958 / 2.1662051,Pal,92 
+3217,Joan d'Alòs - Miret i Sans,BARCELONA,41.3932629 / 2.1090027,,113 
+3218,Abadessa Olzet - Montevideo,BARCELONA,41.3949226 / 2.1087759,,113 
+3219,Panamà - Abadessa Olzet,BARCELONA,41.3955893 / 2.1073986,,113 
+3220,Av. Pearson - Ptge. Ametllers,BARCELONA,41.3932156 / 2.1044004,,113 
+3221,Pg. Vall d'Hebron (Abans Granja Vella),BARCELONA,41.42789 / 2.14343,,27 60 73 76 B16 B19 N4 
+3230,Rda. General Mitre (Torras i Pujalt-Ganduxer),BARCELONA,41.3998617 / 2.1345288,,74 N0 
+3235,Sardenya (Passat Camèlies),BARCELONA,41.3879170 / 2.1699187,,39 55 
+3236,Centre Comercial 'Las Arenas',BARCELONA,41.3757134 / 2.1496321,Marquesina,09 56 N1 N13 N14 N15 N16 N17 N2 
+3237,Tarragona - Centre Comercial 'Las Arenas',BARCELONA,41.3760295 / 2.1488115,,109 
+3238,Ferran Junoy (Sao Paolo-'Pg. Potosí'),BARCELONA,41.4431411 / 2.2027573,,60 
+8258,Carles Pirozzini (Collserola-Pl. Comte de Sert),BARCELONA,41.4166811 / 2.1341676,Pal,124 
+8259,L´Enginyeria (Carles Pirozzini-August Font),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8260,L´Enginyeria (Carles Pirozzini-'August Font'),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8261,August Font ('L´Enginyeria'-Collserola),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8262,August Font (L´Enginyeria-'Collserola'),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8263,Salvador Alarma (Josep Mª Sert-Gual),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8264,Josep M Jujol (August Font-Vallpar),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8265,Vallpar (Josep M Jujol-Corça),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8266,Vallpar (Corça-Penitents),BARCELONA,41.3879170 / 2.1699187,Pal,124 
+8267,Ticià-Penitents,BARCELONA,41.41836 / 2.13668,Pal,124 
+8268,Ticià (Palma de Sant Genís-Pg. vall d´Hebron),BARCELONA,41.4293211 / 2.1447530,Pal,124 
+100060,Aldea - Font del Remei,BARCELONA,41.4185605 / 2.1500304,Pal,87 
+100143,Aragó - Av. Meridiana,BARCELONA,41.4092496 / 2.1873866,Marquesina,B24 
+100165,Arístides Maillol (Davant Taquilles Barça),BARCELONA,41.3783885 / 2.1211499,,L12 
+100185,Ausias Marc - Bailen,BARCELONA,41.3920570 / 2.1765509,Pal,N9 
+100186,Ausiàs Marc - Roger de Flor,BARCELONA,41.3937320 / 2.1787037,Pal,N9 
+100189,Ausiàs Marc - Sardenya,BARCELONA,41.3879170 / 2.1699187,,N9 
+101341,Baixada de la Plana - Tajo,BARCELONA,41.4295481 / 2.1592142,Pal,87 
+101423,Calderón de la Barca - Llobregós,BARCELONA,41.4232397 / 2.1548256,Pal,86 
+101486,Carrer A - Carrer 1,BARCELONA,41.3445918 / 2.1461830,Marquesina,N1 
+101487,Carrer A -  'Guardia Urbana ',BARCELONA,41.3425338 / 2.1449223,Marquesina,N1 
+101576,Casp  - Girona,BARCELONA,41.3924747 / 2.1749198,Marquesina,B25 
+101853,Comte d´Urgell  - Rosselló,BARCELONA,41.3888524 / 2.1498848,Pal,N12 
+101861,Conca de Tremp ('Arbós'-Queixans),BARCELONA,41.3879170 / 2.1699187,,86 
+101876,Constitució - Badal,BARCELONA,41.3692923 / 2.1335475,Marquesina,N13 
+101952,Ctra. de la Bordeta - Hostafrancs,BARCELONA,41.3733528 / 2.1444637,Pal,N13 
+102139,Duran i Borrell - Baixada Sant Marià,BARCELONA,41.4179543 / 2.1492590,Pal,87 
+102188,Estació de Sants - Pl. Països Catalans,BARCELONA,41.37990 / 2.14104,Marquesina (x2),CJ 
+102226,Farigola - Mare de Déu del Coll,BARCELONA,41.4137617 / 2.1470222,Pal,87 
+102227,Farigola - Callendau,BARCELONA,41.4120930 / 2.1463722,Pal,87 
+102228,Farigola - Móra d´Ebre,BARCELONA,41.4143884 / 2.1474890,Marquesina,87 
+102722,Llobregós - Murtra,BARCELONA,41.4224425 / 2.1526277,Marquesina,87 N4 
+102723,Llobregós - Pantà de Tremp,BARCELONA,41.4246845 / 2.1566273,Marquesina,86 87 N4 
+102823,Mare de Déu del Coll - de les Medes,BARCELONA,41.4114878 / 2.1470506,Pal,87 
+102824,Mare de Déu del Coll - Maignon,BARCELONA,41.4085125 / 2.1499836,Pal,87 
+102825,Mare de Déu del Coll - Baixada de la Glòria,BARCELONA,41.4104115 / 2.1480632,Pal,87 
+102854,Marina - Av. Diagonal,BARCELONA,41.4017519 / 2.1781267,Marquesina,N0 N7 N9 
+102952,Móra d'Ebre - Sant Eudald,BARCELONA,41.4153077 / 2.1476877,Pal,87 
+102953,Móra d´Ebre - Solanell,BARCELONA,41.4171330 / 2.1484938,Pal,87 
+102954,Móra d´Ebre - Baixada de Sant Marià,BARCELONA,41.4181624 / 2.1490652,Ressort,87 
+102955, Font del Coll - Móra d´Ebre,BARCELONA,41.4196335 / 2.1500795,Pal,87 
+103114,Pere IV - Provençals,BARCELONA,41.4110915 / 2.2040355,Marquesina,B25 N11 
+103115,Pere IV  - Agricultura,BARCELONA,41.4139298 / 2.2060204,Marquesina,B25 N11 
+103116,Pere IV  - Pge. Monyarc,BARCELONA,41.4092508 / 2.2026408,Marquesina,B25 N11 
+103128,Pere IV  - Maresme,BARCELONA,41.4168776 / 2.2084142,Marquesina,B25 N11 
+103132,Pere IV - Josep Pla,BARCELONA,41.4159232 / 2.2079408,Marquesina,B25 N11 
+103133,Pere IV  - Selva de Mar,BARCELONA,41.4113198 / 2.2039390,Pal,B25 N11 
+103134,Pere IV  - Treball,BARCELONA,41.4139097 / 2.2062470,Pal,B25 N11 
+103603,Pl. Catalunya - (Corte Inglés),BARCELONA,41.3877216 / 2.1705491,,N4 N5 N6 N7 
+103630,Pl. Espanya - Creu Coberta,BARCELONA,41.3747199 / 2.1484583,Marquesina,A1 A2 
+103646,Pl. de les Glòries (Dos de Maig-Av. Diagonal),BARCELONA,41.3879170 / 2.1699187,,N0 N2 N7 
+104048,Pl. Urquinaona,BARCELONA,41.3889539 / 2.1733879,Marquesina,B20 B21 
+104085,Riera Blanca - Constitució,BARCELONA,41.3689500 / 2.1311877,Pal,LH2 
+104086,Riera Blanca - Sant Frederic,BARCELONA,41.3726869 / 2.1259673,"Marquesina, Platafor",LH2 
+104087,Riera Blanca - Antoni de Capmany,BARCELONA,41.3706496 / 2.1294598,Marquesina,LH2 
+104091,Riera Blanca - Puig i Valls,BARCELONA,41.3735416 / 2.1244978,Marquesina,LH2 
+104258,Santander - Caresmar,BARCELONA,41.4337857 / 2.2074246,Marquesina,B22 B24 
+104259,Santander - Via Trajana,BARCELONA,41.4284482 / 2.2026570,Marquesina,B24 N8 
+104263,Santander - Caresmar,BARCELONA,41.4337857 / 2.2074246,Marquesina,B24 
+104264,Santander - Terç de la M. de Déu de Montserrat,BARCELONA,41.4312738 / 2.2053364,Pal,B23 B24 N8 
+104270,Santander - Terç de la M. de Déu de Montserrat,BARCELONA,41.4312738 / 2.2053364,Marquesina,B23 B24 N8 
+104298,Pg. Mare de Déu del  Coll - Santuari,BARCELONA,41.4201899 / 2.1491496,Pal,87 
+104308,Sardenya - Gran Via,BARCELONA,41.3987734 / 2.1791978,Marquesina,N9 
+104310,Sardenya - Mallorca,BARCELONA,41.4023645 / 2.1746546,Marquesina,N9 
+104375,St. Antoni M. Claret - Av. Meridiana,BARCELONA,41.4213640 / 2.1871187,Marquesina,B22 
+104490,Torrent del Remei - Riu de la Plata,BARCELONA,41.4159666 / 2.1482969,,87 
+104540,Trav. de Gràcia - Pl. Gal.la Placídia,BARCELONA,41.3989102 / 2.1540571,Marquesina,87 
+104675,Via Trajana - Binèfar,BARCELONA,41.4269531 / 2.2062416,Pal,B23 
+104676, Via Trajana - Santander,BARCELONA,41.4280763 / 2.2038518,Pal,B23 
+104994,Pl. Catalunya - Fontanella,BARCELONA,41.3873732 / 2.1708285,Marquesina,A2 
+105118,Av. Paral.lel - Pl. Espanya,BARCELONA,41.3748743 / 2.1522630,Marquesina (x2),L80 L81 
+105121,Av. Paral.lel - Pl. Espanya,BARCELONA,41.3748743 / 2.1522630,Marquesina (x2),L70 L72 L86 L87 
+105349,Av. Diagonal -'Zona Universitaria',BARCELONA,41.3860227 / 2.1177491,Marquesina,L97 N12 
+105416,Pl. Goya,BARCELONA,41.4894145 / 2.1479047,"Pal, Prohibició",L94 L95 
+105439,Roquetes - Aiguablava,BARCELONA,41.45174 / 2.18637,,N1 
+105446,Av. Estatut de Catalunya - Can Marcet,BARCELONA,41.4340902 / 2.1525613,Pal,N4 
+105536,Aiguablava (Pedrosa-'Tamariu'),BARCELONA,41.4500573 / 2.1844627,,N1 
+105766,Av. Paral.lel - Pl. Espanya,BARCELONA,41.3748743 / 2.1522630,Marquesina (x2),L70 
+105823,Padilla - Av. Meridiana,BARCELONA,41.3990067 / 2.1862513,Pal,N7 
+105825,Av. Meridiana - ' Teatre Nacional de Catalunya ',BARCELONA,41.3879170 / 2.1699187,Pal,N0 
+105827,Av. Diagonal - Padilla,BARCELONA,41.4021602 / 2.1810354,Pal,N0 N7 
+105831,Castillejos - Av. Meridiana,BARCELONA,41.40052559999999 / 2.1861665999999786,Pal,N7 
+105906,Pg. Sant Joan - Auxiàs Marc,BARCELONA,41.3923838 / 2.1786256,Marquesina,B25 N11 N4 
+105911,Av. Diagonal - Pl. Reina Maria Cristina,BARCELONA,41.3884859 / 2.1274197,Marquesina,L97 
+105956,Caracas - Maracaibo,BARCELONA,41.4425254 / 2.2030875,,N8 
+106013,Aragó - Espronceda,BARCELONA,41.3879170 / 2.1699187,"Marquesina, Platafor",B24 
+106155,Entença - (Av. Roma),BARCELONA,41.3820116 / 2.1476166,Pal,N0 
+106156,Entença - Josep Tarradellas,BARCELONA,41.3861870 / 2.1421006,Marquesina,N0 
+106157,Av. Meridiana - Marina,BARCELONA,41.3957462 / 2.1868054,Pal,N0 
+106158,Av. Meridiana - Marina,BARCELONA,41.3957462 / 2.1868054,Marquesina,N0 
+106159,Av. Meridiana - ' Teatre Nacional de Catalunya ',BARCELONA,41.3879170 / 2.1699187,,N0 
+106160,Rosselló - Lepant,BARCELONA,41.4067313 / 2.1752546,Marquesina,N0 
+106161,Cartagena - Indústria,BARCELONA,41.4099408 / 2.176017199999933,Pal,N0 
+106162,Cartagena - '  Hospital de Sant Pau ',BARCELONA,41.4115645 / 2.1740171,Pal,B22 N0 
+106163,Cartagena - Rda. Guinardo,BARCELONA,41.4134985 / 2.1714738,Pal,B22 N0 
+106164,Pg. de Colom -Pl. Portal de la Pau,BARCELONA,41.3756956 / 2.1781173,Pal,N0 
+106166,Pg. de Gràcia  - Gran Via Corts Catalanes,BARCELONA,41.3885334 / 2.1691051,Marquesina,N4 N6 
+106167,Llobregós - Fastenrath,BARCELONA,41.4217079 / 2.1513060,Pal,87 N4 
+106168,Cristòfol de Moura -  Rda. Sant R. de Penyafort,BARCELONA,41.4178125 / 2.2156524,Marquesina,N6 
+106170,Pl. de les Glories - G. V. de les Corts Catalanes,BARCELONA,41.3916986 / 2.1712069,Pal,N0 
+106175,Pl. Francesc Macià,BARCELONA,41.3921150 / 2.1451780,Marquesina,N12 
+106189,Ramon Rocafull - Moratin,BARCELONA,41.4243949 / 2.1523762,Pal,86 
+106465,Bruc - Rda. Sant Pere,BARCELONA,41.3900778 / 2.1750194,Marquesina,B24 
+106483,Taulat (Selva de Mar-Josep Pla),BARCELONA,41.40893 / 2.21591,Pal,41 
+106838,Av. Albert Bastardas - General Batet,BARCELONA,41.3811277 / 2.1077724,Pal,L14 
+106839,Flos i Calcat - Numància,BARCELONA,41.3906337 / 2.1314252,Marquesina,L79 
+106855,Gran Via de les Corts Catalanes - Pge. Marçal,BARCELONA,41.3666006 / 2.1371818,Pal,L16 
+106856,Mineria - 'Zona Franca',BARCELONA,41.3652708 / 2.1384718,Marquesina,L16 
+106857,Ctra. antiga del Prat - Pg. de la Zona Franca,BARCELONA,41.3632908 / 2.1359387,Pal,L16 
+106858,del Radi - Ctra. del Prat,BARCELONA,41.3627243 / 2.1350173,Pal,L16 
+106944,Sant Antoni M. Claret - Concepció Arenal,BARCELONA,41.3879170 / 2.1699187,Pal,B22 
+107037,Av. Diagonal - Torre Melina,BARCELONA,41.3841196 / 2.1117459,Pal,L14 
+107097,Torre Melina - Av. Diagonal,BARCELONA,41.3814819 / 2.1079668,"Pal, Prohibició",L14 
+107146,Calderón de la Barca - Agudella,BARCELONA,41.4216152 / 2.1555065,Pal,86 
+107150,Mare de Déu del Coll - Farigola,BARCELONA,41.4131804 / 2.1468661999999767,Pal,87 
+107208,Pg. Zona Franca ('Mineria'-Gv. Corts Catalanes),BARCELONA,41.3879170 / 2.1699187,Pal,09 
+107228,Av. Paral.lel - Pl. Espanya,BARCELONA,41.3748743 / 2.1522630,Marquesina,L72 
+107229,Pg. Maragall - Tajo,BARCELONA,41.4294247 / 2.1620831,"Marquesina, Prohibic",87 
+107428,Av. d'Esplugues - Eduard Toldrà,BARCELONA,41.3879470 / 2.1065960,Pal,EP1 JM 
+107440,Av. Diagonal - Padilla,BARCELONA,41.4021602 / 2.1810354,Marquesina,N0 N7 
+107456,Av. Joan XXIII - ' La Masía ',BARCELONA,41.3830264 / 2.1228115,Pal,L12 
+107511,Lisboa - Sta. Joana d´Arc,BARCELONA,41.4294579 / 2.1580946,Marquesina,86 
+107721,Transversal 12 - 'Mercabarna',BARCELONA,41.3303810 / 2.1144676,Pal,PR4 
+107722,carrer número  6 - carrer F,BARCELONA,41.3250329 / 2.1181582,Pal,PR4 
+107730,Av. Ports d'Europa - 'Service Center',BARCELONA,41.3225614 / 2.1364221,Marquesina,PR4 
+107731,Av. dels Ports d´Europa - Atlàntic,BARCELONA,41.32176339999999 / 2.140513599999963,Pal,PR4 
+107733,Índic - Av. dels Ports d´Europa,BARCELONA,41.3231018 / 2.1432865,Pal,PR4 
+107734,Mar Roja - Índic,BARCELONA,41.3223819 / 2.1455299,Pal,PR4 
+107735,Av. Ports d'Europa 'ZAL',BARCELONA,41.3217038 / 2.1480701,Marquesina,PR4 
+107736,Mar Roja - Antàrtic,BARCELONA,41.3225705 / 2.1456984,Marquesina,PR4 
+107737,Índic - Mar Roja,BARCELONA,41.3231583 / 2.1430137,Pal,PR4 
+107738,Av. dels Ports d´Europa - Índic,BARCELONA,41.3221299 / 2.1405161,Marquesina,PR4 
+107739,Av. Ports d'Europa - 'Service Center',BARCELONA,41.3225614 / 2.1364221,Marquesina,PR4 
+107740,Carrer nº 5* -'Zona Franca Duanera',BARCELONA,41.3248405 / 2.1284710,Pal,PR4 
+107748,Transversal 12 - 'Mercabarna',BARCELONA,41.3303810 / 2.1144676,Pal,PR4 
+108014,Caracas - Maracaibo,BARCELONA,41.4425254 / 2.2030875,Pal,N8 
+108719,Pl. Reina M. Cristina,BARCELONA,41.3879116 / 2.1267235,Marquesina,L14 L97 L79 
+108786,Pg. Josep Carner (Pl. de les Drassanes),BARCELONA,41.3747435 / 2.177089799999976,,N6 
+108884,Moianes - Ctra. de la Bordeta,BARCELONA,41.3732528 / 2.1424639,Pal,N13 
+108886,Mossèn Amadeu Oller - Gran Via Corts Catalanes,BARCELONA,41.3683038 / 2.1389869,Pal,N13 
+108891,Av. Diagonal - González Tablas,BARCELONA,41.3844324 / 2.1102776,,L14 
+108894,Espronceda (Concili de Trento-'Andrade'),BARCELONA,41.3879170 / 2.1699187,,N8 
+108897,Rda. de Dalt - Av. Josep Vicent Foix,BARCELONA,41.4014967 / 2.1147831,Pal,N8 
+108923,Dante Alighieri - Pantà de Tremp,BARCELONA,41.4261086 / 2.1546253,Pal,86 
+108932,Casp - Pau Claris,BARCELONA,41.3899540 / 2.1716076,Pal,B20 B24 
+108935,Rda. Universitat - 'Pl. Catalunya',BARCELONA,41.3869226 / 2.1669843,Marquesina,L94 L95 N14 N16 
+108941,Rda. Sant Pau - Lleialtat,BARCELONA,41.3770652 / 2.1654841,,N6 
+108958,Comte d´Urgell - Londres,BARCELONA,41.3879170 / 2.1699187,Marquesina,", "
+108967,Pg. Josep Carner (Abans Av. Paral.lel),BARCELONA,41.3748677 / 2.1768205,,N6 
+108981,Numància- Rda. Gral. Mitre,BARCELONA,41.3914102 / 2.1308502,Pal,N0 
+108984,Pg. Mare de Déu del Coll - Lorda,BARCELONA,41.4205494 / 2.1492648,,87 N4 
+109001,Guipúscoa - Verneda,BARCELONA,41.4248197 / 2.2080694,Pal,B21 
+109031,Av. Manuel Azaña - Av. de Xile,BARCELONA,41.3774285 / 2.1109240,"Pal, Prohibició",L14 
+109046,Sepúlveda - Comte d´Urgell,BARCELONA,41.3809105 / 2.1593745,Marquesina,L94 L95 
+109047,Marroc - Pere IV,BARCELONA,41.4096358 / 2.2020956,Marquesina,B25 N11 
+109058,Via Favència - 'Metro Canyelles',BARCELONA,41.4430019 / 2.1696362,Pal,N4 N6 
+109059,Pl. de l'Havana - 'La Maquinista',BARCELONA,41.4355963 / 2.1956590,Pal,B23 
+109083,Dante Alighieri - Baixada Can Mateu,BARCELONA,41.4287852 / 2.1609815,Pal,86 
+109084,Tajo - Baixada del Mercat,BARCELONA,41.4297628 / 2.1604064,Pal,86 
+109187,Pl. Catalunya - (FNAC),BARCELONA,41.3868370 / 2.1692312,Pal,N13 
+109205,Pl. Catalunya,BARCELONA,41.3871280 / 2.1685650,Marquesina,A1 
+109206,Sepúlveda - Comte Borrell,BARCELONA,41.3807672 / 2.1591368,,A1 A2 
+109208,Gran Via C. C. - Comte Urgell,BARCELONA,41.3816348 / 2.1580358,Pal,A1 
+109220,Pg. Mare de Déu del Coll - Ourense,BARCELONA,41.4228519 / 2.1511008,,87 
+109230,Mas Casanovas - ' Hospital Santa Creu i Sant Pau ',BARCELONA,41.4120009 / 2.1744849,Pal,B22 
+109242,Judea - Jordà,BARCELONA,41.4249333 / 2.1411133,Pal,B16 B19 
+109267,Cristóbal de Moura (Passat Alfons el Magnànim),BARCELONA,41.3879170 / 2.1699187,,N6 
+109271,Via Trajana - Bloc B-9,BARCELONA,41.4273241 / 2.2056797,Pal,B23 
+109272,Via Trajana - Bloc B17,BARCELONA,41.4281729 / 2.2039041,Pal,B23 
+109299,Flos i Calcat - Sarasate,BARCELONA,41.3903062 / 2.1301487,Pal,L14 
+109302,Rbla. Prim ('Lull'-Av. Diagonal),BARCELONA,41.4122019 / 2.2177631,Pal,N6 
+109310,Pl. Lesseps - Av. Príncep d'Asturies,BARCELONA,41.4063358 / 2.1494740,Pal,N0 
+109318,General Batet - Av. Manuel Azaña,BARCELONA,41.3776217 / 2.1095574,Pal,L14 

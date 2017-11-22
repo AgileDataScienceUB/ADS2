@@ -1,0 +1,74 @@
+district,id,value
+01,01,el Raval
+01,02,el Barri Gòtic
+01,03,la Barceloneta
+01,04,Sant Pere I Santa Caterina i la Ribera
+02,05,el Fort Pienc
+02,06,la Sagrada Família
+02,07,la Dreta de l'Eixample
+02,08,l'Antiga Esquerra de l'Eixample
+02,09,la Nova Esquerra de l'Eixample
+02,10,Sant Antoni
+03,11,el Poble Sec - AEI Parc Montjuïc
+03,12,la Marina del Prat Vermelll - AEI Zona Franca
+03,13,la Marina de Port
+03,14,la Font de la Guatlla
+03,15,Hostafrancs
+03,16,la Bordeta
+03,17,Sants - Badal
+03,18,Sants
+04,19,les Corts
+04,20,la Maternitat i Sant Ramon
+04,21,Pedralbes
+05,22,Vallvidrera el Tibidabo i les Planes
+05,23,Sarrià
+05,24,les Tres Torres
+05,25,Sant Gervasi - la Bonanova
+05,26,Sant Gervasi - Galvany
+05,27,el Putxet i el Farró
+06,28,Vallcarca i els Penitents
+06,29,el Coll
+06,30,la Salut
+06,31,la Vila de Gràcia
+06,32,el Camp d'en Grassot i Gràcia Nova
+07,33,el Baix Guinardó
+07,34,Can Baró
+07,35,el Guinardó
+07,36,la Font d'en Fargues
+07,37,el Carmel
+07,38,la Teixonera
+07,39,Sant Genís dels Agudells
+07,40,Montbau
+07,41,la Vall d'Hebron
+07,42,la Clota
+07,43,Horta
+08,44,Vilapicina i la Torre Llobeta
+08,45,Porta
+08,46,el Turó de la Peira
+08,47,Can Peguera
+08,48,la Guineueta
+08,49,Canyelles
+08,50,les Roquetes
+08,51,Verdun
+08,52,la Prosperitat
+08,53,la Trinitat Nova
+08,54,Torre Baró
+08,55,Ciutat Meridiana
+08,56,Vallbona
+09,57,la Trinitat Vella
+09,58,Baró de Viver
+09,59,el Bon Pastor
+09,60,Sant Andreu
+09,61,la Sagrera
+09,62,el Congrés i els Indians
+09,63,Navas
+10,64,el Camp de l'Arpa del Clot
+10,65,el Clot
+10,66,el Parc i la Llacuna del Poblenou
+10,67,la Vila Olímpica del Poblenou
+10,68,el Poblenou
+10,69,Diagonal Mar i el Front Marítim del Poblenou
+10,70,el Besòs i el Maresme
+10,71,Provençals del Poblenou
+10,72,Sant Martí de Provençals
+10,73,la Verneda i la Pau

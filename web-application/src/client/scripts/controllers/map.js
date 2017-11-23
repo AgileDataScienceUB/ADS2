@@ -135,7 +135,6 @@ angular.module('ADS_Group2_Application')
                     .enter()
                     .append("path")
                     .attr("id", function (d) {
-
                         return "District_" + d.properties["C_Distri"];
                     })
                     .attr("class", "polygon")
@@ -148,8 +147,6 @@ angular.module('ADS_Group2_Application')
 
                 feature.on('mouseover', function(d){
                     tip.show(d);
-
-                    // console.log("d: ", d);
                     d3.select("#District_" + d.properties["C_Distri"]).style('opacity', 0);
                 });
                 feature.on('mouseout', function(d){
@@ -196,8 +193,6 @@ angular.module('ADS_Group2_Application')
                     .enter()
                     .append("path")
                     .attr("id", function (d) {
-
-                        // console.log("NaMe: ", d.properties['N_Barri'], "id: ", d.properties["C_Barri"])
                         return "Barri_" + d.properties["C_Barri"];
                     })
                     .attr("class", "polygon")
@@ -737,8 +732,8 @@ angular.module('ADS_Group2_Application')
         $scope.showRecomendation = function(){
             if($scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
 
-                clearPaintedPaths();
-                paintDistrictsOverMap();
+                //clearPaintedPaths();
+                //paintDistrictsOverMap();
 
                 districtPolygons.each(function(d, i) {
 
@@ -755,8 +750,8 @@ angular.module('ADS_Group2_Application')
                 });
             }else{
 
-                clearPaintedPaths();
-                paintNeighborhoodOverMap();
+                //clearPaintedPaths();
+                //paintNeighborhoodOverMap();
 
                 neighborhoodPolygons.each(function(d, i) {
 

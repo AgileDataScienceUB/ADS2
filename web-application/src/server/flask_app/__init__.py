@@ -2,7 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from .config import CONFIG, setup_logger
 from .models import District, Neighborhood
-from .routes import polygons, incomes, flats_rental, transport, twitter, test
+from .routes import polygons, incomes, flats_rental, transport, twitter, recommendation, test
 import os
 
 
@@ -11,7 +11,7 @@ import os
 
 __version__ = '0.0.1'
 
-BLUEPRINTS = (polygons, incomes, flats_rental, transport, twitter, test)
+BLUEPRINTS = (polygons, incomes, flats_rental, transport, twitter, recommendation, test)
 
 def create_app():
     """Create app and configure Flask-security, databases, loggers."""

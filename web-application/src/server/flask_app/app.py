@@ -27,7 +27,7 @@ def handle_my_custom_event(json):
 """
 
 
-
+#Create model instances array
 
 
 def run():

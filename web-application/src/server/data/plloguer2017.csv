@@ -1,74 +1,74 @@
-pandas_id,district,id,neighborhood,neighborhood_id,price
-0,01,1, el Raval,01,735.0
-1,01,2, el Barri Gtic,02,905.3
-2,01,3, la Barceloneta,03,722.8
-3,01,4," Sant Pere, Santa Caterina i la Ribera",04,895.3
-4,02,5, el Fort Pienc,05,871.1
-5,02,6, la Sagrada Famlia,06,847.0
-6,02,7, la Dreta de l'Eixample,07,1151.1
-7,02,8, l'Antiga Esquerra de l'Eixample,08,1001.5
-8,02,9, la Nova Esquerra de l'Eixample,09,909.1
-9,02,10, Sant Antoni,10,877.0
-10,03,11, el Poble Sec - AEI Parc Montjuc,11,715.7
-11,03,12, la Marina del Prat Vermell - AEI Zona Franca,12,685.4
-12,03,13, la Marina de Port,13,689.2
-13,03,14, la Font de la Guatlla,14,806.3
-14,03,15, Hostafrancs,15,680.2
-15,03,16, la Bordeta,16,739.3
-16,03,17, Sants - Badal,17,697.6
-17,03,18, Sants,18,737.3
-18,04,19, les Corts,19,936.3
-19,04,20, la Maternitat i Sant Ramon,20,896.4
-20,04,21, Pedralbes,21,1856.6
-21,05,22," Vallvidrera, el Tibidabo i les Planes",22,1248.0
-22,05,23, Sarri,23,1291.5
-23,05,24, les Tres Torres,24,1516.5
-24,05,25, Sant Gervasi - la Bonanova,25,1182.1
-25,05,26, Sant Gervasi - Galvany,26,1268.6
-26,05,27, el Putxet i el Farr,27,913.5
-27,06,28, Vallcarca i els Penitents,28,946.6
-28,06,29, el Coll,29,687.4
-29,06,30, la Salut,30,841.4
-30,06,31, la Vila de Grcia,31,837.1
-31,06,32, el Camp d'en Grassot i Grcia Nova,32,839.3
-32,07,33, el Baix Guinard,33,743.9
-33,07,34, Can Bar,34,637.3
-34,07,35, el Guinard,35,722.7
-35,07,36, la Font d'en Fargues,36,812.9
-36,07,37, el Carmel,37,597.1
-37,07,38, la Teixonera,38,663.9
-38,07,39, Sant Gens dels Agudells,39,622.3
-39,07,40, Montbau,40,716.4
-40,07,41, la Vall d'Hebron,41,816.1
-41,07,42, la Clota,42,685.4
-42,07,43, Horta,43,669.9
-43,08,44, Vilapicina i la Torre Llobeta,44,687.4
-44,08,45, Porta,45,654.6
-45,08,46, el Tur de la Peira,46,587.0
-46,08,47, Can Peguera,47,685.4
-47,08,48, la Guineueta,48,634.5
-48,08,49, Canyelles,49,689.6
-49,08,50, les Roquetes,50,504.3
-50,08,51, Verdun,51,595.5
-51,08,52, la Prosperitat,52,624.6
-52,08,53, la Trinitat Nova,53,540.7
-53,08,54, Torre Bar,54,418.1
-54,08,55, Ciutat Meridiana,55,459.2
-55,08,56, Vallbona,56,685.4
-56,09,57, la Trinitat Vella,57,497.8
-57,09,58, Bar de Viver,58,685.4
-58,09,59, el Bon Pastor,59,622.8
-59,09,60, Sant Andreu,60,708.6
-60,09,61, la Sagrera,61,575.2
-61,09,62, el Congrs i els Indians,62,696.0
-62,09,63, Navas,63,716.8
-63,10,64, el Camp de l'Arpa del Clot,64,756.6
-64,10,65, el Clot,65,775.0
-65,10,66, el Parc i la Llacuna del Poblenou,66,850.7
-66,10,67, la Vila Olmpica del Poblenou,67,1108.4
-67,10,68, el Poblenou,68,868.9
-68,10,69, Diagonal Mar i el Front Martim del Poblenou,69,1148.2
-69,10,70, el Bess i el Maresme,70,588.9
-70,10,71, Provenals del Poblenou,71,999.6
-71,10,72, Sant Mart de Provenals,72,742.1
-72,10,73, la Verneda i la Pau,73,677.9
+district,id,value
+01,01,735.0
+01,02,905.3
+01,03,722.8
+01,04,895.3
+02,05,871.1
+02,06,847.0
+02,07,1151.1
+02,08,1001.5
+02,09,909.1
+02,10,877.0
+03,11,715.7
+03,12,723.2
+03,13,689.2
+03,14,806.3
+03,15,680.2
+03,16,739.3
+03,17,697.6
+03,18,737.3
+04,19,936.3
+04,20,896.4
+04,21,1856.6
+05,22,1248.0
+05,23,1291.5
+05,24,1516.5
+05,25,1182.1
+05,26,1268.6
+05,27,913.5
+06,28,946.6
+06,29,687.4
+06,30,841.4
+06,31,837.1
+06,32,839.3
+07,33,743.9
+07,34,637.3
+07,35,722.7
+07,36,812.9
+07,37,597.1
+07,38,663.9
+07,39,622.3
+07,40,716.4
+07,41,816.1
+07,42,700.2
+07,43,669.9
+08,44,687.4
+08,45,654.6
+08,46,587.0
+08,47,581.4
+08,48,634.5
+08,49,689.6
+08,50,504.3
+08,51,595.5
+08,52,624.6
+08,53,540.7
+08,54,418.1
+08,55,459.2
+08,56,581.4
+09,57,497.8
+09,58,636.2
+09,59,622.8
+09,60,708.6
+09,61,575.2
+09,62,696.0
+09,63,716.8
+10,64,756.6
+10,65,775.0
+10,66,850.7
+10,67,1108.4
+10,68,868.9
+10,69,1148.2
+10,70,588.9
+10,71,999.6
+10,72,742.1
+10,73,677.9

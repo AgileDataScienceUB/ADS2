@@ -119,4 +119,3 @@ def setup_logger():
 
     print('Logging into directory {}\n'.format(generated_files))
     """
-

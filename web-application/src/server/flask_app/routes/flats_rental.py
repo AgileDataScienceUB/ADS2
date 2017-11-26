@@ -6,18 +6,8 @@ import csv as csv
 
 flats_rental = Blueprint('flats_rental', __name__, url_prefix='/api')
 
-@flats_rental.route('/flats_rental/districts', methods=['GET'])
-def get_district_polygons_data():
-    """Get dummy data returned from the server."""
-    data = {'Rental': ['District1', 'District2', 'District3']}
-
-    json_response = json.dumps(data)
-    return Response(json_response,
-                    status=html_codes.HTTP_OK_BASIC,
-                    mimetype='application/json')
-
-@flats_rental.route('/flats_rental/neighborhoods', methods=['GET'])
-def get_neeighborhood_polygons_data():
+@flats_rental.route('/flats_rental/', methods=['GET'])
+def get_flats_rental_data():
 
 
     resources_folder = "./data/"
@@ -39,7 +29,7 @@ def get_neeighborhood_polygons_data():
 
         csv_lines = list(reader)
 
-        print("CSV LINES: ", csv_lines)
+        #print("CSV LINES: ", csv_lines)
 
         json_object = []
 
@@ -48,6 +38,7 @@ def get_neeighborhood_polygons_data():
         for row in csv_lines:
             if(c == 0):
                 header = row
+                print("Header: ", header)
                 c=1
             else:
                 tmp = {}
@@ -55,7 +46,12 @@ def get_neeighborhood_polygons_data():
 
                     if(item_idx < len(header)):
                         tmp[header[item_idx]] = item
-                json_object.append(tmp)
+                try:
+                    tmp['value'] =  float(tmp['price'])
+                    json_object.append(tmp)
+                except:
+                    print("Failed for: ", row)
+                    pass
                 #data = json.dumps( [ row for row in csv_lines ] )
 
                 #print("DATA: {}".join(data))

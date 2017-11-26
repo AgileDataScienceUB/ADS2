@@ -125,6 +125,10 @@ class listener(StreamListener):
     
 #------------------------------------------------------------------------------------------------------
 
+def get_all_tweet_data():
+    connect_to_mlab()
+    return collection
+
 def connect_to_mlab():
     try:
         with open("credentials/mlab/credentials", 'r', encoding='utf-8') as f:

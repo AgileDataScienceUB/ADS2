@@ -2,6 +2,7 @@ from flask import Blueprint, Response, request
 from flask_security import auth_token_required
 from ..app_utils import html_codes, token_login
 import json
+import csv as csv
 import pymongo
 import tweepy
 from tweepy import Stream,StreamListener
@@ -15,7 +16,16 @@ storing_tweets_array = False
 
 @twitter.route('/twitter/tweets/get', methods=['GET'])
 def get_gathered_tweets():
-    data = {'tweets': tweets_array}
+    #data = {'tweets': tweets_array}
+
+    #mock block to read non dynamic data yet
+    data = {'tweets':{'_id': '59fb4c6bec130e310c4bdf55','coordinates': [41.38567462, 2.19740259],
+    'text': '@popthatpartybcn PRES: \nEste Miércoles 8 de noviembre - @Asap__tyy -\nShow en directo en… https://t.co/uJF7HLKv6c',
+    'created': 'Thu Nov 02 16:48:41 +0000 2017'}}
+
+    #resources_folder = "./data/"
+    #tweets = json.load(open(resources_folder+'tweets_2017.json'))
+    #data={'tweets':tweets}
 
     print("Starting twitter data gathering")
     json_response = json.dumps(data)
@@ -124,6 +134,10 @@ class listener(StreamListener):
         print(status)				
     
 #------------------------------------------------------------------------------------------------------
+
+def get_all_tweet_data():
+    connect_to_mlab()
+    return collection
 
 def connect_to_mlab():
     try:

@@ -1,19 +1,18 @@
-#
-# from ..extensions import db
-#class Base(db.Model):
-#
-class Base():
+import datetime
+
+class Base(object):
     """Base class for all the tables.
 
-    Consists of two default columns `created_at` and `modified_at` .
+    Default columns:
+        `created_at`: creation time of this record
+         `modified_at`: modification time of this record
+         `id`: unique identifier of the record, allowing the table to be indexed by this field
+         `value`: column of interest for the recommender algorithm
     """
 
     __abstract__ = True
-    """
-        id = db.Column(db.Integer, primary_key=True)
-        created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
-        modified_at = db.Column(db.DateTime,
-                                default=db.func.current_timestamp(),
-                                onupdate=db.func.current_timestamp())
-
-    """
+    def __init__(self):
+        self.id = None
+        self.value = None
+        self.created_at = datetime.datetime.now()
+        self.modified_at = self.created_at

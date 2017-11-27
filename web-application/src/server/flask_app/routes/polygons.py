@@ -11,8 +11,8 @@ polygons = Blueprint('polygons', __name__, url_prefix='/api')
 
 @polygons.route('/polygons/districts', methods=['GET'])
 def get_district_polygons_data():
-    """Get dummy data returned from the server."""
-    data = {'Polygons': ['District1', 'District2', 'District3']}
+    json_data=open('./data/polygons_districts_geo.json').read()
+    data = json.loads(json_data)
 
     json_response = json.dumps(data)
     return Response(json_response,
@@ -20,10 +20,9 @@ def get_district_polygons_data():
                     mimetype='application/json')
 
 @polygons.route('/polygons/neighborhoods', methods=['GET'])
-def get_neeighborhood_polygons_data():
-    print("Getting neighborhoods")
-
-    data = {'Polygons': ['Neighborhood1', 'Neighborhood2', 'Neighborhood3']}
+def get_neighborhood_polygons_data():
+    json_data = open('./data/polygons_neighborhoods_geo.json').read()
+    data = json.loads(json_data)
 
     json_response = json.dumps(data)
     return Response(json_response, status=html_codes.HTTP_OK_BASIC, mimetype='application/json')

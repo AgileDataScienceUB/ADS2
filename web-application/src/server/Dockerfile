@@ -1,6 +1,7 @@
 FROM gliderlabs/alpine:latest
 
 COPY requirements.txt manage.py /server/
+COPY data /server/data/
 
 RUN apk --no-cache add \
     python \
@@ -14,6 +15,7 @@ RUN apk --no-cache add \
 
 COPY flask_app /server/flask_app/
 
+
 VOLUME /tmp
 
 RUN chown -R app:app /server
@@ -22,6 +24,6 @@ WORKDIR /server
 
 USER app
 
-EXPOSE 8081
+EXPOSE 80
 
 CMD ["python", "manage.py", "runserver"]

@@ -1,0 +1,128 @@
+nodo1,nodo2,line,weight,color
+Hospital de Bellvitge,Bellvitge,L1,0.92,red
+Bellvitge,Av.Carrilet,L1,0.92,red
+Av.Carrilet,Rbla. Just Oliveres,L1,0.92,red
+Rbla. Just Oliveres,Can Serra,L1,0.92,red
+Can Serra,Florida,L1,0.92,red
+Florida,Torrassa,L1,0.92,red
+Torrassa,Santa Eulàlia,L1,0.92,red
+Santa Eulàlia,Mercat Nou,L1,0.92,red
+Mercat Nou,Plaça de Sants,L1,0.92,red
+Plaça de Sants,Hostafrancs,L1,0.92,red
+Hostafrancs,Espanya,L1,0.92,red
+Espanya,Rocafort,L1,0.92,red
+Rocafort,Urgell,L1,0.92,red
+Urgell,Universitat,L1,0.92,red
+Universitat,Catalunya,L1,0.92,red
+Catalunya,Urquinaona,L1,0.92,red
+Urquinaona,Arc de Triomf,L1,0.92,red
+Arc de Triomf,Marina,L1,0.92,red
+Marina,Glòries,L1,0.92,red
+Glòries,Clot,L1,0.92,red
+Clot,Navas,L1,0.92,red
+Navas,La Sagrera,L1,0.92,red
+La Sagrera,Fabra i Puig,L1,0.92,red
+Fabra i Puig,Sant Andreu,L1,0.92,red
+Sant Andreu,Torres i Bages,L1,0.92,red
+Torres i Bages,Trinitat Vella,L1,0.92,red
+Trinitat Vella,Baró de Viver,L1,0.92,red
+Baró de Viver,Santa Coloma,L1,0.92,red
+Santa Coloma,Fondo,L1,0.92,red
+Paral.lel,Sant Antoni,L2,0.76,purple
+Sant Antoni,Universitat,L2,0.76,purple
+Universitat,Passeig de Gràcia,L2,0.76,purple
+Passeig de Gràcia,Tetuan,L2,0.76,purple
+Tetuan,Monumental,L2,0.76,purple
+Monumental,Sagrada Família,L2,0.76,purple
+Sagrada Família,Encants,L2,0.76,purple
+Encants,Clot,L2,0.76,purple
+Clot,Bac de Roda,L2,0.76,purple
+Bac de Roda,Sant Martí,L2,0.76,purple
+Sant Martí,La Pau,L2,0.76,purple
+La Pau,Verneda,L2,0.76,purple
+Verneda,Artigues Sant Adrià,L2,0.76,purple
+Artigues Sant Adrià,Sant Roc,L2,0.76,purple
+Sant Roc,Gorg,L2,0.76,purple
+Gorg,Pep Ventura,L2,0.76,purple
+Pep Ventura,Badalona Pompeu Fabra,L2,0.76,purple
+Zona Universitària,Palau Reial,L3,0.71,green
+Palau Reial,Maria Cristina,L3,0.71,green
+Maria Cristina,Les Corts,L3,0.71,green
+Les Corts,Plaça del Centre,L3,0.71,green
+Plaça del Centre,Sants Estació,L3,0.71,green
+Sants Estació,Tarragona,L3,0.71,green
+Tarragona,Espanya,L3,0.71,green
+Espanya,Poble Sec,L3,0.71,green
+Poble Sec,Paral.lel,L3,0.71,green
+Paral.lel,Drassanes,L3,0.71,green
+Drassanes,Liceu,L3,0.71,green
+Liceu,Catalunya,L3,0.71,green
+Catalunya,Passeig de Gràcia,L3,0.71,green
+Passeig de Gràcia,Diagonal,L3,0.71,green
+Diagonal,Fontana,L3,0.71,green
+Fontana,Lesseps,L3,0.71,green
+Lesseps,Vallcarca,L3,0.71,green
+Vallcarca,Penitents,L3,0.71,green
+Penitents,Vall d'Hebrón,L3,0.71,green
+Vall d'Hebrón,Montbau,L3,0.71,green
+Montbau,Mundet,L3,0.71,green
+Mundet,Valldaura,L3,0.71,green
+Valldaura,Canyelles,L3,0.71,green
+Canyelles,Roquetes,L3,0.71,green
+Roquetes,Trinitat Nova,L3,0.71,green
+La Pau,Besòs,L4,0.79,yellow
+Besòs,Besòs Mar,L4,0.79,yellow
+Besòs Mar,El Maresme | Fórum,L4,0.79,yellow
+El Maresme | Fórum,Selva de Mar,L4,0.79,yellow
+Selva de Mar,Poblenou,L4,0.79,yellow
+Poblenou,Llacuna,L4,0.79,yellow
+Llacuna,Bogatell,L4,0.79,yellow
+Bogatell,Ciutadella Vila Olímpica,L4,0.79,yellow
+Ciutadella Vila Olímpica,Barceloneta,L4,0.79,yellow
+Barceloneta,Jaume I,L4,0.79,yellow
+Jaume I,Urquinaona,L4,0.79,yellow
+Urquinaona,Passeig de Gràcia,L4,0.79,yellow
+Passeig de Gràcia,Girona,L4,0.79,yellow
+Girona,Verdaguer,L4,0.79,yellow
+Verdaguer,Joanic,L4,0.79,yellow
+Joanic,Alfons X,L4,0.79,yellow
+Alfons X,Guinardó | Hospital de Sant Pau,L4,0.79,yellow
+Guinardó | Hospital de Sant Pau,Maragall,L4,0.79,yellow
+Maragall,Llucmajor,L4,0.79,yellow
+Llucmajor,Via Júlia,L4,0.79,yellow
+Via Júlia,Trinitat Nova,L4,0.79,yellow
+Cornellà Centre,Gavarra,L5,0.74,dark blue
+Gavarra,Sant Ildefons,L5,0.74,dark blue
+Sant Ildefons,Can Boixeres,L5,0.74,dark blue
+Can Boixeres,Can Vidalet,L5,0.74,dark blue
+Can Vidalet,Pubilla Cases,L5,0.74,dark blue
+Pubilla Cases,Collblanc,L5,0.74,dark blue
+Collblanc,Badal,L5,0.74,dark blue
+Badal,Plaça de Sants,L5,0.74,dark blue
+Plaça de Sants,Sants Estació,L5,0.74,dark blue
+Sants Estació,Entença,L5,0.74,dark blue
+Entença,Hospital Clínic,L5,0.74,dark blue
+Hospital Clínic,Vall d'Hebrón,L5,0.74,dark blue
+Vall d'Hebrón,El Coll | La Teixonera,L5,0.74,dark blue
+El Coll | La Teixonera,El Carmel,L5,0.74,dark blue
+El Carmel,Diagonal,L5,0.74,dark blue
+Diagonal,Verdaguer,L5,0.74,dark blue
+Verdaguer,Sagrada Família,L5,0.74,dark blue
+Sagrada Família,Sant Pau | Dos de Maig,L5,0.74,dark blue
+Sant Pau | Dos de Maig,Horta,L5,0.74,dark blue
+Horta,Vilapicina,L5,0.74,dark blue
+Vilapicina,Maragall,L5,0.74,dark blue
+Maragall,Virrei Amat,L5,0.74,dark blue
+Virrei Amat,Camp de L'Arpa,L5,0.74,dark blue
+Camp de L'Arpa,Congrés,L5,0.74,dark blue
+Congrés,La Sagrera,L5,0.74,dark blue
+Can Zam,Singuerlín,L9,1.21,orange
+Singuerlín,Església Major,L9,1.21,orange
+Església Major,Fondo,L9,1.21,orange
+Fondo,Can Peixauet,L9,1.21,orange
+Llefià,La Salut,L10,0.92,dark blue
+La Salut,Gorg,L10,0.92,dark blue
+Trinitat Nova,Casa de L'Aigua,L11,0.42,green
+Casa de L'Aigua,Torre Baró | Vallbona,L11,0.42,green
+Torre Baró | Vallbona,Ciutat Meridiana,L11,0.42,green
+Ciutat Meridiana,Can Cuiàs,L11,0.42,green

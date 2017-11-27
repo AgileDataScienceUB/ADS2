@@ -9,7 +9,7 @@ flats_rental = Blueprint('flats_rental', __name__, url_prefix='/api')
 @flats_rental.route('/flats_rental/', methods=['GET'])
 def get_flats_rental_data():
     resources_folder = "./data/"
-    with open(resources_folder+'plloguer_Idealista.csv', 'r') as f:
+    with open(resources_folder+'palquiler.csv', 'r') as f:
         reader = csv.reader(f, delimiter=',')
         csv_lines = list(reader)
         header = csv_lines[0]

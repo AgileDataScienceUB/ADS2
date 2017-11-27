@@ -13,21 +13,25 @@ twitter = Blueprint('twitter', __name__, url_prefix='/api')
 #Add tweets to this array to make them automatically sent to the client when '/twitter/tweets/get' is called.
 tweets_array = []
 storing_tweets_array = False
+auth = None
+conn = None
+db = None
 
 @twitter.route('/twitter/tweets/get', methods=['GET'])
 def get_gathered_tweets():
     #data = {'tweets': tweets_array}
 
-    #mock block to read non dynamic data yet
-    data = {'tweets':{'_id': '59fb4c6bec130e310c4bdf55','coordinates': [41.38567462, 2.19740259],
-    'text': '@popthatpartybcn PRES: \nEste Miércoles 8 de noviembre - @Asap__tyy -\nShow en directo en… https://t.co/uJF7HLKv6c',
-    'created': 'Thu Nov 02 16:48:41 +0000 2017'}}
+    ##mock block to read non dynamic data yet
+    #data = {'tweets':{'_id': '59fb4c6bec130e310c4bdf55','coordinates': [41.38567462, 2.19740259],
+    #'text': '@popthatpartybcn PRES: \nEste Miércoles 8 de noviembre - @Asap__tyy -\nShow en directo en… https://t.co/uJF7HLKv6c',
+    #'created': 'Thu Nov 02 16:48:41 +0000 2017'}}
 
     #resources_folder = "./data/"
     #tweets = json.load(open(resources_folder+'tweets_2017.json'))
     #data={'tweets':tweets}
 
-    print("Starting twitter data gathering")
+    data = get_all_tweet_data()
+
     json_response = json.dumps(data)
     tweets_array = []
     return Response(json_response,
@@ -119,7 +123,8 @@ class listener(StreamListener):
         if self.num_tweets < 1e4:
             jdata = json.loads(status)
             if geo_check(jdata) is True:
-                document={'id':jdata['id'],'coordinates':jdata['coordinates'][coordinates],'text':jdata["text"], 'created':jdata["created_at"]}
+                document = {'id': jdata['id'], 'geo': jdata['geo'], 'coordinates': jdata['coordinates'],
+                            'text': jdata["text"], 'created': jdata["created_at"]}
                 if storing_tweets_array:
                     tweets_array.append(document)
                 if key_word_check(jdata):
@@ -136,38 +141,48 @@ class listener(StreamListener):
 #------------------------------------------------------------------------------------------------------
 
 def get_all_tweet_data():
-    connect_to_mlab()
-    return collection
+    collection = connect_to_mlab()
+    tweets = []
+    attributes = ['id','geo','text','created']
+    for tweet in collection.find()[:]:
+        new_tweet = {}
+        for attribute in attributes:
+            try:
+                new_tweet[attribute] = tweet[attribute]
+            except:
+                print('missing attribute ' + attribute)
+        tweets.append(new_tweet)
+    return tweets
 
 def connect_to_mlab():
     try:
-        with open("credentials/mlab/credentials", 'r', encoding='utf-8') as f:
+        with open("./data/credentials/mlab/credentials", 'r', encoding='utf-8') as f:
             [name,password,url,dbname]=f.read().splitlines()
         conn=pymongo.MongoClient("mongodb://{}:{}@{}/{}".format(name,password,url,dbname))
         print ("Connected successfully!!!")
         print([name,password,url,dbname])
     except pymongo.errors.ConnectionFailure as e:
-        print ("Could not connect to MongoDB: %s" % e) 
-    print(conn)
+        print ("Could not connect to MongoDB: %s" % e)
     
     db = conn[dbname]
     print (db)
     collection = db.tweets
+    return  collection
 
 def twitter_auth():	
-    with open('credentials/twitter/consumer_key', 'r') as f:
+    with open('./data/credentials/twitter/consumer_key', 'r') as f:
         consumer_key =  f.read()
     f.closed
-    with open('credentials/twitter/consumer_secret', 'r') as f:
+    with open('./data/credentials/twitter/consumer_secret', 'r') as f:
         consumer_secret = f.read()
     f.closed
-    with open('credentials/twitter/access_key', 'r') as f:
+    with open('./data/credentials/twitter/access_key', 'r') as f:
         access_key = f.read()
     f.closed
-    with open('credentials/twitter/access_secret', 'r') as f:
+    with open('./data/credentials/twitter/access_secret', 'r') as f:
         access_secret = f.read()
     f.closed
-    with open('credentials/twitter/user_name', 'r') as f:
+    with open('./data/credentials/twitter/user_name', 'r') as f:
         USER_NAME = f.read()
     f.closed
     

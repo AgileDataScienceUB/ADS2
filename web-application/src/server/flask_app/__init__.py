@@ -35,6 +35,7 @@ def create_app():
     configure_blueprints(app, BLUEPRINTS)
 
     #transport_graph = TransportGraph().construct_graph()
+    #Instantiate root class to have the neighborhood instances array
 
     # set up cross origin handling
     CORS(app, headers=['Content-Type'])

@@ -15,12 +15,6 @@ twitter = Blueprint('twitter', __name__, url_prefix='/api')
 #Add tweets to this array to make them automatically sent to the client when '/twitter/tweets/get' is called.
 global var
 var = {'storing_tweets_array' : False, 'tweets_array' : [], 'twitterStream' : 0, 'auth' : 0}
-auth = None
-conn = None
-db = None
-
-
-
 
 @twitter.route('/twitter/tweets/get', methods=['GET'])
 def get_gathered_tweets():
@@ -41,6 +35,9 @@ def get_gathered_tweets():
         tweet['sentiment'] = get_tweet_sentiment(tweet['text'])
 
     json_response = json.dumps(var['tweets_array'])
+
+    var['tweets_array'] = []
+
     return Response(json_response,
                     status=html_codes.HTTP_OK_BASIC,
                     mimetype='application/json')
@@ -53,8 +50,8 @@ def start_twitter_gathering():
 
     var['storing_tweets_array'] = True
     #print(storing_tweets_array)
-    twitterStream = Stream(var['auth'], listener()) 
-    twitterStream.filter(locations=[2.0504377635,41.2787636541,2.3045074059,41.4725622346])	
+    var['twitterStream'] = Stream(var['auth'], listener()) 
+    var['twitterStream'].filter(locations=[2.0504377635,41.2787636541,2.3045074059,41.4725622346], languages = ["en"])
     
     #print("Starting twitter data gathering")
     #data = {'storing_tweets_array':storing_tweets_array, 'auth' : auth}
@@ -133,14 +130,11 @@ class listener(StreamListener):
         #self.collection = self.db.tweets
     
     def on_data(self, status):
-        if self.num_tweets < 1e4:
+        if len(var['tweets_array']) < 500:
             jdata = json.loads(status)
             if geo_check(jdata) is True:
-                document = {'id': jdata['id'], 'geo': jdata['geo'], 'coordinates': jdata['coordinates'],
-                            'text': jdata["text"], 'created': jdata["created_at"]}
-                #print(key_word_check(jdata['text']) and jdata['lang'] == 'en')
-                #if key_word_check(jdata['text']) and jdata['lang'] == 'en':
-                if(var['storing_tweets_array']):
+                document = {'coordinates': jdata['coordinates'], 'text': jdata["text"]}
+                if(var['storing_tweets_array']): # and key_word_check(jdata['text'])
                     #document['sentiment'] = get_tweet_sentiment(jdata["text"])
                     var['tweets_array'].append(document)
                     print(var['tweets_array'])
@@ -149,6 +143,7 @@ class listener(StreamListener):
                 self.num_tweets += 1
             return True
         else:
+
             return False
     
     def on_error(self, status):
@@ -230,4 +225,4 @@ def twitter_auth():
     #Authentication
     var['auth'] = tweepy.OAuthHandler(consumer_key, consumer_secret)
     var['auth'].set_access_token(access_key, access_secret)
-    api = tweepy.API(auth)
+    api = tweepy.API(var['auth'])

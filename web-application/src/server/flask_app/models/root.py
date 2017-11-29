@@ -38,7 +38,7 @@ class Root:
         #falta fer
         self.fill_district_safety_statistics()
         self.fill_district_geometry()
-        self.fill_neighborhood_age_distr()
+
 
     def initialise_districts(self):
         df = pd.read_csv('./data/'+'district_neighborhood.csv')
@@ -159,7 +159,13 @@ class Root:
 
 
     def fill_neighborhood_age_distr(self):
-        pass
+        df = pd.read_csv('./data/' + 'pllogues_Idealista.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.age_child = row['nens']
+            neighborhood.age_young = row['joves']
+            neighborhood.age_adult = row['adult']
+            neighborhood.age_old = row['avis']
     #...do the same for all neighborhood statistics
 
     def fill_neighborhood_geometry(self):

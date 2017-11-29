@@ -20,3 +20,8 @@ def calculate_recommendation():
     return Response(json_response,
                     status=html_codes.HTTP_OK_BASIC,
                     mimetype='application/json')
+
+
+def get_form_data(lat, lng, max_rental_price, min_rental_price, max_transport_time, tipo_transporte, night_live):
+	pass
+

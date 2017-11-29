@@ -59,6 +59,8 @@ def near(f,i):
     source=Lnodelist.loc[idxini,'name']
     target=Lnodelist.loc[idxfin,'name']
     t,ruta=shortpath(source,target)
-    return(t,ruta)
+    v=4#km/h
+    tfin=((idxini/v)+(idxfin/v))+t
+    return(tfin,ruta)
     
 near(f,i)

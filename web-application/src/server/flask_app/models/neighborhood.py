@@ -20,3 +20,6 @@ class Neighborhood(Base):
         self.flat_nationals_only = None
         self.flats_foreigners_only = None
         self.flats_mixed = None
+        #these load from polygons json's
+        self.women = None
+        self.men = None

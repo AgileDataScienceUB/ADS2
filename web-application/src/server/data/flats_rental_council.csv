@@ -1,4 +1,4 @@
-district,id,value
+district_id,neighborhood_id,value
 01,01,735.0
 01,02,905.3
 01,03,722.8

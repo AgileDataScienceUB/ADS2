@@ -1,4 +1,4 @@
-district,id,value
+district_id,neighborhood_id,neighborhood_name
 01,01,el Raval
 01,02,el Barri Gòtic
 01,03,la Barceloneta

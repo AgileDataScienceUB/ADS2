@@ -65,15 +65,15 @@ def filter_neighbourhood():
 				if((value.store_bar <= 1.479290) and (value.store_disco <= 0.000000)):
 					include = True
 			elif(data_form['night_live'] == 1):
-				if((value.store_bar <= 2.391592) and (value.store_bar > 1.479290)):
+				if((value.store_bar <= 3.317221) and (value.store_bar > 1.479290)):
 					include = True
-				elif((value.store_disco <= 0.026244) and (value.store_disco <= 0.000000)):
+				elif((value.store_disco <= 0.113033) and (value.store_disco <= 0.000000)):
 					include = True
 
 			elif(data_form['night_live'] == 2):
-				if((value.store_bar <= 3.317221) and (value.store_bar > 2.391592)):
+				if((value.store_bar > 3.317221)):
 					include = True
-				elif((value.store_disco <= 0.113033) and (value.store_disco <= 0.026244)):
+				elif((value.store_disco > 0.113033)):
 					include = True
 
 

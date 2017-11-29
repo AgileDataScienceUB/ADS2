@@ -195,4 +195,23 @@ class Root:
 
     def fill_district_geometry(self):
         #imitate code of neighborhoods polygon
-        pass
+        import json
+        json_data = open('./data/polygons_districts_geo.json').read()
+        data = json.loads(json_data)
+        for item in data['features']:
+            #print(item['properties'])
+            properties = item['properties']
+            district_id = int(properties['C_Distri'])
+            assert district_id in self.districts.keys()
+            district = self.districts[district_id]
+            district.men = int(properties['Homes'])
+            district.women = int(properties['Dones'])
+            district.geometry = Geometry()
+            district.geometry.area = properties['Area']
+            district.geometry.perimiter = properties['Perim']
+            coords = item['geometry']['coordinates'][0]
+            district.geometry.polygon = []
+            for coord in coords:
+                point = Point(coord[0],coord[1])
+                #print(point.x,point.y)
+                district.geometry.polygon.append(point)

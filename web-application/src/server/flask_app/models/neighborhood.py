@@ -17,7 +17,7 @@ class Neighborhood(Base):
         self.secondary_studies_fraction = None
         self.age_distr = {}
         self.flats_count = None
-        self.flat_nationals_only = None
+        self.flats_nationals_only = None
         self.flats_foreigners_only = None
         self.flats_mixed = None
         #stores
@@ -26,7 +26,7 @@ class Neighborhood(Base):
         self.store_disco = None
         self.store_sport = None
         self.store_drugstore = None
-        self.store_restaurant = None 
+        self.store_restaurant = None
         self.store_clothes = None
         #these load from polygons json's
         self.women = None

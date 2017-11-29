@@ -16,15 +16,29 @@ class Root:
         """Initializes and fills instances of District objects."""
         self.initialise_districts()
         self.fill_district_neighborhoods()
-        self.fill_district_safety_statistics()
+
         self.fill_neighborhood_rental_stats()
-        self.fill_neighborhood_income()
         self.fill_neighborhood_secondary_studies_fraction()
         #...
+        self.fill_store_grocery()
+        self.fill_store_bar()
+        self.fill_store_disco()
+        self.fill_store_sport()
+        self.fill_store_drugstore()
+        self.fill_store_restaurant()
+        self.fill_store_clothes()
+
+        self.fill_flats()
+        self.fill_neighborhood_rental_web
+
         self.fill_neighborhood_age_distr()
 
         self.fill_neighborhood_geometry()
+
+        #falta fer
+        self.fill_district_safety_statistics()
         self.fill_district_geometry()
+        self.fill_neighborhood_age_distr()
 
     def initialise_districts(self):
         df = pd.read_csv('./data/'+'district_neighborhood.csv')
@@ -123,6 +137,27 @@ class Root:
             neighborhood = self.neighborhoods[row['id']]
             neighborhood.store_clothes = row['#roba']
 #fi comerços
+#domicilis
+    def fill_flats(self):
+        df = pd.read_csv('./data/' + 'domicilis_nacionalitat.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.flats_count = row['TOTAL']
+            neighborhood.flats_nationals_only = row['TOTS ESPANYOLS']
+            neighborhood.flats_foreigners_only = row['TOTS EXTRANGERS']
+            neighborhood.flats_mixed = row['DOMICILIS MIXTOS']
+
+#web flat price
+    def fill_neighborhood_rental_web(self):
+        df = pd.read_csv('./data/' + 'pllogues_Idealista.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.avg_flat_rental_from_web = row['value']
+            neighborhood.avg_flat_size = row['mean-size(m^2)']
+            neighborhood.avg_flat_meter_rental = row['mean-price-size(€/m^2)']
+            neighborhood.flats_mixed = row['DOMICILIS MIXTOS']
+
+
     def fill_neighborhood_age_distr(self):
         pass
     #...do the same for all neighborhood statistics

@@ -29,7 +29,7 @@ class Root:
         self.fill_store_clothes()
 
         self.fill_flats()
-        self.fill_neighborhood_rental_web
+        self.fill_neighborhood_rental_web()
 
         self.fill_neighborhood_age_distr()
 
@@ -145,27 +145,25 @@ class Root:
             neighborhood.flats_count = row['TOTAL']
             neighborhood.flats_nationals_only = row['TOTS ESPANYOLS']
             neighborhood.flats_foreigners_only = row['TOTS EXTRANGERS']
-            neighborhood.flats_mixed = row['DOMICILIS MIXTOS']
+            neighborhood.flats_mixed = row['DOMICILIS_MIXTOS']
 
 #web flat price
     def fill_neighborhood_rental_web(self):
-        df = pd.read_csv('./data/' + 'pllogues_Idealista.csv')
+        df = pd.read_csv('./data/' + 'plloguer_Idealista.csv')
         for index, row in df.iterrows():
             neighborhood = self.neighborhoods[row['id']]
             neighborhood.avg_flat_rental_from_web = row['value']
             neighborhood.avg_flat_size = row['mean-size(m^2)']
             neighborhood.avg_flat_meter_rental = row['mean-price-size(€/m^2)']
-            neighborhood.flats_mixed = row['DOMICILIS MIXTOS']
-
 
     def fill_neighborhood_age_distr(self):
-        df = pd.read_csv('./data/' + 'pllogues_Idealista.csv')
+        df = pd.read_csv('./data/' + 'poblacio_anys_homo.csv')
         for index, row in df.iterrows():
             neighborhood = self.neighborhoods[row['id']]
             neighborhood.age_child = row['nens']
             neighborhood.age_young = row['joves']
-            neighborhood.age_adult = row['adult']
-            neighborhood.age_old = row['avis']
+            neighborhood.age_adult = row['adults']
+            neighborhood.age_old   = row['avis']
     #...do the same for all neighborhood statistics
 
     def fill_neighborhood_geometry(self):

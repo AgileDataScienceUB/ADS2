@@ -76,8 +76,53 @@ class Root:
             neighborhood.avg_income = row['value']
 
     def fill_neighborhood_secondary_studies_fraction(self):
-        pass
+        df = pd.read_csv('./data/' + 'estudis.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.secondary_studies_fraction = row['value']
+#comerços
+    def fill_store_grocery(self):
+        df = pd.read_csv('./data/' + 'alimentacio.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_grocery = row['#alimentacio']
 
+    def fill_store_bar(self):
+        df = pd.read_csv('./data/' + 'bars.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_bar = row['#bars']
+
+    def fill_store_disco(self):
+        df = pd.read_csv('./data/' + 'discos.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_disco = row['#discos']
+
+    def fill_store_sport(self):
+        df = pd.read_csv('./data/' + 'esport.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_sport = row['#esport']
+
+    def fill_store_drugstore(self):
+        df = pd.read_csv('./data/' + 'farmacies.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_drugstore = row['#farmacies']
+
+    def fill_store_restaurant(self):
+        df = pd.read_csv('./data/' + 'restaurants.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_restaurant = row['#restaurants']
+
+    def fill_store_clothes(self):
+        df = pd.read_csv('./data/' + 'roba.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.store_clothes = row['#roba']
+#fi comerços
     def fill_neighborhood_age_distr(self):
         pass
     #...do the same for all neighborhood statistics

@@ -44,7 +44,17 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
         });
     };
 
+    /*
+    Form data related
+     */
 
+    dataExtractionService.setFormData = function() {
+
+        return $http.post(API_BASE_URL+'recommendation/submit_form/').then(function (d) {
+            return d;
+        });
+    };
+    
 
     return dataExtractionService;
 });

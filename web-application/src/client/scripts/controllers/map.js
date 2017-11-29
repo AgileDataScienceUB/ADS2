@@ -730,6 +730,14 @@ angular.module('ADS_Group2_Application')
 
 
         $scope.showRecomendation = function(){
+
+            //Send data to sever
+            /*DataExtractorService.setFormData().then(function(d){
+                console.log('HOLA');
+            });*/
+
+
+
             if($scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
 
                 //clearPaintedPaths();

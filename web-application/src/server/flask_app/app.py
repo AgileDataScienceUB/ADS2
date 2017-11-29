@@ -33,13 +33,7 @@ def handle_my_custom_event(json):
 def run():
     """Isolated entry point of the app, if not using manage.py"""
     try:
-        app.run('0.0.0.0', 8081)
-
-
-        #socketio.start_background_task(socketio.run(app,port=8081,host='0.0.0.0',debug=True))
-        #socketio.run(app,port=8081,host='0.0.0.0',debug=True)
-
-
+        app.run('0.0.0.0', 5000)
 
     except Exception as exc:
         logger.error(exc.message)

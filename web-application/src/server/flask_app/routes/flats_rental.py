@@ -9,7 +9,7 @@ flats_rental = Blueprint('flats_rental', __name__, url_prefix='/api')
 @flats_rental.route('/flats_rental/', methods=['GET'])
 def get_flats_rental_data():
     resources_folder = "./data/"
-    with open(resources_folder+'palquiler.csv', 'r') as f:
+    with open(resources_folder+'flats_rental_council.csv', 'r') as f:
         json_response = csv_to_json(f)
         return Response(json_response,
                         status=html_codes.HTTP_OK_BASIC,

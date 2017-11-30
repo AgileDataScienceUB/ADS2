@@ -91,37 +91,37 @@ Guinardó | Hospital de Sant Pau,Maragall,L4,0.79,yellow
 Maragall,Llucmajor,L4,0.79,yellow
 Llucmajor,Via Júlia,L4,0.79,yellow
 Via Júlia,Trinitat Nova,L4,0.79,yellow
-Cornellà Centre,Gavarra,L5,0.74,dark blue
-Gavarra,Sant Ildefons,L5,0.74,dark blue
-Sant Ildefons,Can Boixeres,L5,0.74,dark blue
-Can Boixeres,Can Vidalet,L5,0.74,dark blue
-Can Vidalet,Pubilla Cases,L5,0.74,dark blue
-Pubilla Cases,Collblanc,L5,0.74,dark blue
-Collblanc,Badal,L5,0.74,dark blue
-Badal,Plaça de Sants,L5,0.74,dark blue
-Plaça de Sants,Sants Estació,L5,0.74,dark blue
-Sants Estació,Entença,L5,0.74,dark blue
-Entença,Hospital Clínic,L5,0.74,dark blue
-Hospital Clínic,Vall d'Hebrón,L5,0.74,dark blue
-Vall d'Hebrón,El Coll | La Teixonera,L5,0.74,dark blue
-El Coll | La Teixonera,El Carmel,L5,0.74,dark blue
-El Carmel,Diagonal,L5,0.74,dark blue
-Diagonal,Verdaguer,L5,0.74,dark blue
-Verdaguer,Sagrada Família,L5,0.74,dark blue
-Sagrada Família,Sant Pau | Dos de Maig,L5,0.74,dark blue
-Sant Pau | Dos de Maig,Horta,L5,0.74,dark blue
-Horta,Vilapicina,L5,0.74,dark blue
-Vilapicina,Maragall,L5,0.74,dark blue
-Maragall,Virrei Amat,L5,0.74,dark blue
-Virrei Amat,Camp de L'Arpa,L5,0.74,dark blue
-Camp de L'Arpa,Congrés,L5,0.74,dark blue
-Congrés,La Sagrera,L5,0.74,dark blue
+Cornellà Centre,Gavarra,L5,0.74,#0B05B9
+Gavarra,Sant Ildefons,L5,0.74,#0B05B9
+Sant Ildefons,Can Boixeres,L5,0.74,#0B05B9
+Can Boixeres,Can Vidalet,L5,0.74,#0B05B9
+Can Vidalet,Pubilla Cases,L5,0.74,#0B05B9
+Pubilla Cases,Collblanc,L5,0.74,#0B05B9
+Collblanc,Badal,L5,0.74,#0B05B9
+Badal,Plaça de Sants,L5,0.74,#0B05B9
+Plaça de Sants,Sants Estació,L5,0.74,#0B05B9
+Sants Estació,Entença,L5,0.74,#0B05B9
+Entença,Hospital Clínic,L5,0.74,#0B05B9
+Hospital Clínic,Diagonal,L5,0.74,#0B05B9
+Diagonal,Verdaguer,L5,0.74,#0B05B9
+Verdaguer,Sagrada Família,L5,0.74,#0B05B9
+Sagrada Família,Sant Pau | Dos de Maig,L5,0.74,#0B05B9
+Sant Pau | Dos de Maig,Camp de L'Arpa,L5,0.74,#0B05B9
+Camp de L'Arpa,La Sagrera,L5,0.74,#0B05B9
+La Sagrera,Congrés,L5,0.74,#0B05B9
+Congrés,Maragall,L5,0.74,#0B05B9
+Maragall,Virrei Amat,L5,0.74,#0B05B9
+Virrei Amat,Vilapicina,L5,0.74,#0B05B9
+Vilapicina,Horta,L5,0.74,#0B05B9
+Horta,El Carmel,L5,0.74,#0B05B9
+El Carmel,El Coll | La Teixonera,L5,0.74,#0B05B9
+El Coll | La Teixonera,Vall d'Hebrón,L5,0.74,#0B05B9
 Can Zam,Singuerlín,L9,1.21,orange
 Singuerlín,Església Major,L9,1.21,orange
 Església Major,Fondo,L9,1.21,orange
 Fondo,Can Peixauet,L9,1.21,orange
-Llefià,La Salut,L10,0.92,dark blue
-La Salut,Gorg,L10,0.92,dark blue
+Llefià,La Salut,L10,0.92,#66FFFF
+La Salut,Gorg,L10,0.92,#66FFFF
 Trinitat Nova,Casa de L'Aigua,L11,0.42,green
 Casa de L'Aigua,Torre Baró | Vallbona,L11,0.42,green
 Torre Baró | Vallbona,Ciutat Meridiana,L11,0.42,green

@@ -98,7 +98,7 @@ class Root:
         for index, row in df.iterrows():
             neighborhood = self.neighborhoods[row['id']]
             neighborhood.secondary_studies_fraction = row['value']
-#comerços
+    #comercos
     def fill_store_grocery(self):
         df = pd.read_csv('./data/' + 'alimentacio.csv')
         for index, row in df.iterrows():
@@ -140,7 +140,7 @@ class Root:
         for index, row in df.iterrows():
             neighborhood = self.neighborhoods[row['id']]
             neighborhood.store_clothes = row['#roba']
-#fi comerços
+#fi comercos
 #domicilis
     def fill_flats(self):
         df = pd.read_csv('./data/' + 'domicilis_nacionalitat.csv')

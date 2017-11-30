@@ -60,6 +60,8 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
         body.min_rental_price=min_rental_price;
         body.night_live=night_live;
 
+        console.log("Executing recommendation for: ", body);
+
         return $http.post(API_BASE_URL+'recommendation/scores', body).then(function (d) {
             console.log("Obtained recommendation: ", d);
             return d;

@@ -8,12 +8,28 @@ recommendation = Blueprint('recommendation', __name__, url_prefix='/api')
 
 r = Root()
 
-@recommendation.route('/recommendation/scores', methods=['GET'])
+@recommendation.route('/recommendation/scores', methods=['POST'])
 def calculate_recommendation():
     """Get dummy data returned from the server."""
 
     # Access body parameters like: max_rental_price, max_tranport_time...
     # Variables para calcular tiempo transport
+	if not request.json:
+		return Response(json.dumps({"Message":"Error getting body from request"}),
+						status=html_codes.HTTP_OK_BASIC,
+						mimetype='application/json')
+	body = request.data
+
+	lat  = body.lat
+	lng = body.lng
+	metro = body.metro
+	bus = body.bus
+	max_transport_time = body.max_transport_time
+	min_transport_time = body.min_transport_time
+	max_rental_price = body.max_rental_price
+	min_rental_price = body.min_rental_price
+	night_live = body.night_live
+
     lat = 1
     lng = 2
     metro = 1	#int(0 no, 1 si)

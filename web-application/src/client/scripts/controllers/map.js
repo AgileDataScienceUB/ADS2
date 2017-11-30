@@ -15,6 +15,8 @@ angular.module('ADS_Group2_Application')
             'Karma'
         ];
 
+
+        $scope.clickedPoint = "";
         var transport_stations = []
 
 
@@ -39,14 +41,14 @@ angular.module('ADS_Group2_Application')
 
         var tweetsGatheringInterval;
 
-        var map, svg, g, tip;
+        var map, svg, g, tip, feature;
         var districtPolygons, choosenPolygon, colorToAssign, neighborhoodPolygons;
         var data;
 
-        const USE_DISTRICTS_GRANULARITY = 0;
+        const USE_DISTRITCS_GRANULARITY = 0;
         const USE_NEIGHBORHOODS_GRANULARITY = 1;
 
-        $scope.polygons1 = USE_DISTRICTS_GRANULARITY;
+        $scope.polygons1 = USE_DISTRITCS_GRANULARITY;
         $scope.polygons2 = USE_NEIGHBORHOODS_GRANULARITY;
 
         $scope.granularitySelected = $scope.polygons2;
@@ -72,7 +74,7 @@ angular.module('ADS_Group2_Application')
 
         var changePolygonColors = function(assigned_colors){
 
-            if($scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+            if($scope.granularitySelected == $scope.polygons1){
                 districtPolygons.each(function(d, i) {
                     // console.log("Polygon: ", d, i);
                     choosenPolygon = d3.select("#District_" + d.properties["C_Distri"]);
@@ -151,7 +153,7 @@ angular.module('ADS_Group2_Application')
                 var transform = d3.geo.transform({point: projectPoint}),
                     path = d3.geo.path().projection(transform);
 
-                var feature = g.selectAll("path")
+                feature = g.selectAll("path")
                     .data(geojson.features)
                     .enter()
                     .append("path")
@@ -209,7 +211,7 @@ angular.module('ADS_Group2_Application')
                 var transform = d3.geo.transform({point: projectPoint}),
                     path = d3.geo.path().projection(transform);
 
-                var feature = g.selectAll("path")
+                feature = g.selectAll("path")
                     .data(geojson.features)
                     .enter()
                     .append("path")
@@ -341,7 +343,7 @@ angular.module('ADS_Group2_Application')
 
 
 
-            if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+            if( $scope.granularitySelected == $scope.polygons1){
                 paintDistrictsOverMap();
             }else{
                 paintNeighborhoodOverMap();
@@ -349,6 +351,16 @@ angular.module('ADS_Group2_Application')
 
 
             // d3.polygonContains(polygon, point)
+
+            map.on("click", function(d){
+                $scope.clickedPoint = [d.latlng.lat.toFixed(5), d.latlng.lng.toFixed(5)];
+
+                console.log("Clicked: ", d);
+                if(!$scope.$$phase) {
+                    //$digest or $apply
+                    $scope.$apply()
+                }
+            })
         };
 
         function calculateAndPaintPointsOnMap (){
@@ -400,17 +412,17 @@ angular.module('ADS_Group2_Application')
                 clearPaintedPaths();
                 paintDistrictsOverMap();
 
-                $scope.granularitySelected = USE_DISTRICTS_GRANULARITY;
+                $scope.granularitySelected = $scope.polygons1;
             }else{
                 clearPaintedPaths();
                 paintNeighborhoodOverMap();
 
-                $scope.granularitySelected = USE_NEIGHBORHOODS_GRANULARITY;
+                $scope.granularitySelected = $scope.polygons2;
 
             }
         };
 
-        $scope.changeShownPolygons(0);
+        $scope.changeShownPolygons($scope.granularitySelected);
 
 
         /* Set the width of the side navigation to 250px */
@@ -429,8 +441,22 @@ angular.module('ADS_Group2_Application')
 
             var mapBounds = map.getBounds();
 
+            var color = 'grey';
+            if(tweet.sentiment == "postive"){
+                color='green';
+            }else if(tweet.sentiment == 'negative'){
+                color='red';
+            }
             //var marker1 = L.circle([tweet.coordinates[0]+0.15, tweet.coordinates[1]], 50);//[41.387034, 2.170020]);
-            var marker1 = L.marker([tweet.coordinates[0],tweet.coordinates[1]]);//[41.387034, 2.170020]);
+            var marker1 = L.circleMarker(
+                [tweet.coordinates[0],tweet.coordinates[1]], {
+                radius: 3,
+                fillColor: color,
+                color: color,
+                weight:1,
+                fillOpacity:1
+            }
+            );//[41.387034, 2.170020]);
 
             marker1.addTo(map);
 
@@ -485,7 +511,7 @@ angular.module('ADS_Group2_Application')
                 }
                 removeLayers();
                 clearPaintedPaths();
-                if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                if( $scope.granularitySelected == $scope.polygons1){
                     paintDistrictsOverMap();
                 }else{
                     paintNeighborhoodOverMap();
@@ -511,7 +537,7 @@ angular.module('ADS_Group2_Application')
 
                     // console.log("Max categories_range: ", categories_range);
 
-                    if($scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                    if($scope.granularitySelected == $scope.polygons1){
 
                         var DISTRICTS_IDs = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
 
@@ -577,7 +603,7 @@ angular.module('ADS_Group2_Application')
             }else if(newValue == 2){  // Tweets
                 gatheringTweetsOn = true;
                 clearPaintedPaths();
-                if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                if( $scope.granularitySelected == $scope.polygons1){
                     paintDistrictsOverMap();
                 }else{
                     paintNeighborhoodOverMap();
@@ -605,13 +631,15 @@ angular.module('ADS_Group2_Application')
                         var genatedTweets = [];
                         var lat, lng;
 
+                        var sentiments = ['positive', 'negative', 'neutral'];
+
                         for (var i = 0; i < numTweetsToGenerate; i++) {
 
 
                             lng = Math.random() * (maxLng - minLng) + minLng;
                             lat = Math.random() * (maxLat - minLat) + minLat;
                             if ((lng - 2) / (lat - 41) < 0.56) { // Filter tweets not on water
-                                genatedTweets.push({"coordinates": [lat, lng]})
+                                genatedTweets.push({"coordinates": [lat, lng], "sentiments":sentiments[Math.floor(Math.random() * sentiments.length)]})
                             }
 
                         }
@@ -641,7 +669,7 @@ angular.module('ADS_Group2_Application')
                 }
 
                 clearPaintedPaths();
-                if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                if( $scope.granularitySelected == $scope.polygons1){
                     paintDistrictsOverMap();
                 }else{
                     paintNeighborhoodOverMap();
@@ -654,7 +682,7 @@ angular.module('ADS_Group2_Application')
                 }
                 removeLayers();
                 clearPaintedPaths();
-                if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                if( $scope.granularitySelected == $scope.polygons1){
                     paintDistrictsOverMap();
                 }else{
                     paintNeighborhoodOverMap();
@@ -668,7 +696,7 @@ angular.module('ADS_Group2_Application')
                 }
                 removeLayers();
                 clearPaintedPaths();
-                if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                if( $scope.granularitySelected == $scope.polygons1){
                     paintDistrictsOverMap();
                 }else{
                     paintNeighborhoodOverMap();
@@ -683,7 +711,7 @@ angular.module('ADS_Group2_Application')
 
                 removeLayers();
                 clearPaintedPaths();
-                if( $scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+                if( $scope.granularitySelected == $scope.polygons1){
                     paintDistrictsOverMap();
                 }else{
                     paintNeighborhoodOverMap();
@@ -764,11 +792,11 @@ angular.module('ADS_Group2_Application')
         };
 
 
-        $scope.showRecommendation = function(){
+        $scope.calculateRecommendation = function(){
 
             console.log("Getting recomendation for: ");
             console.log("transport_type: ", $scope.transportOption);
-            if($scope.granularitySelected == USE_DISTRICTS_GRANULARITY){
+            if($scope.granularitySelected == $scope.polygons1){
 
                 //clearPaintedPaths();
                 //paintDistrictsOverMap();
@@ -792,8 +820,8 @@ angular.module('ADS_Group2_Application')
                 // favourite_point,max_transport_time,min_transport_time, max_rental_price, min_rental_price, night_live
                 DataExtractorService.getRecommendation([41.387034, 2.170020],99999, 9999999, 1, 1, 1);
 
-                clearPaintedPaths();
-                paintNeighborhoodOverMap();
+                // clearPaintedPaths();
+                // paintNeighborhoodOverMap();
 
                 neighborhoodPolygons.each(function(d, i) {
 

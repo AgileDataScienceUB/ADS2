@@ -4,7 +4,7 @@ import json
 import logging
 from . import create_app
 #from flask_socketio import SocketIO
-
+from .models import Root
 
 logger = logging.getLogger(__name__)
 
@@ -27,13 +27,12 @@ def handle_my_custom_event(json):
 """
 
 
-#Create model instances array
-
 
 def run():
     """Isolated entry point of the app, if not using manage.py"""
     try:
         app.run('0.0.0.0', 5000)
+        r = Root()
 
     except Exception as exc:
         logger.error(exc.message)

@@ -1,4 +1,4 @@
-district,id,value,mean-price(€),mean-size(m^2),mean-price-size(€/m^2)
+district,id,value,mean-price(e),mean-size(m^2),mean-price-size(e/m^2)
 01,01,1283.7,1283.7,69.637,19.614
 01,02,1816.102,1816.102,89.355,21.05
 01,03,1181.4560000000001,1181.4560000000001,50.228,24.215

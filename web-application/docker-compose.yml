@@ -2,18 +2,18 @@ version: '2'
 services:
   server:
     build: ./src/server
-    image: ADS-Flask-backend
+    image: flask-angularjs-backend
     ports:
       - "5000:5000"
     volumes:
       - ./src/server/flask_app:/server/flask_app/
     environment:
       - FLASK_CONFIGURATION
-    container_name: Flask-backend
+    container_name: flask-backend
   client:
     build: ./src/client
-    image: ADS-Frontend
-    container_name: Web-frontend
+    image: ads-angularjs-frontend
+    container_name: web-frontend
     ports:
       - "80:3000"
     links:

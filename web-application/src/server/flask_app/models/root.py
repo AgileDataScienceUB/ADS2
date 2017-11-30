@@ -2,6 +2,7 @@ import pandas as pd
 from .neighborhood import Neighborhood
 from .district import District
 from .geometry import Geometry, Point
+import networkx as nx
 
 class Root:
     """Class containing a dictionaries of District and Neighborhood type objects and methods to fill them.
@@ -38,6 +39,9 @@ class Root:
         #falta fer
         self.fill_district_safety_statistics()
         self.fill_district_geometry()
+
+        #Grapho transport
+        self.fill_grapho_metro()
 
 
     def initialise_districts(self):
@@ -215,3 +219,14 @@ class Root:
                 point = Point(coord[0],coord[1])
                 #print(point.x,point.y)
                 district.geometry.polygon.append(point)
+
+
+    def fill_grapho_metro(self):
+        Ledgelist=pd.read_csv('./data/' +'Ledgelist.csv', header=0)#edge list
+        Lnodelist=pd.read_csv('./data/' +'Lnodelist.csv', header=0)#node list
+        #This should build the networkx instances
+        g=nx.Graph()
+        for i, node in Lnodelist.iterrows():
+            g.add_node(node['name'], node[1:].to_dict())
+        for i, elrow in Ledgelist.iterrows():
+            g.add_edge(elrow[0], elrow[1], attr_dict=elrow[2:].to_dict())

@@ -41,7 +41,7 @@ class Root:
         self.fill_district_geometry()
 
         #Grapho transport
-        #self.fill_grapho_metro()
+        self.fill_grapho_metro()
 
 
     def initialise_districts(self):
@@ -221,12 +221,12 @@ class Root:
                 district.geometry.polygon.append(point)
 
 
-    """def fill_grapho_metro(self):
-                            Ledgelist=pd.read_csv('./data/' +'Ledgelist.csv', header=0)#edge list
-                            Lnodelist=pd.read_csv('./data/' +'Lnodelist.csv', header=0)#node list
-                            #This should build the networkx instances
-                            g=nx.Graph()
-                            for i, node in Lnodelist.iterrows():
-                                g.add_node(node['name'], node[1:].to_dict())
-                            for i, elrow in Ledgelist.iterrows():
-                                g.add_edge(elrow[0], elrow[1], attr_dict=elrow[2:].to_dict())"""		
+    def fill_grapho_metro(self):
+        Ledgelist=pd.read_csv('./data/' +'Ledgelist.csv', header=0)#edge list
+        Lnodelist=pd.read_csv('./data/' +'Lnodelist.csv', header=0)#node list
+        #This should build the networkx instances
+        g=nx.Graph()
+        for i, node in Lnodelist.iterrows():
+            g.add_node(node['name'], node[1:].to_dict())
+        for i, elrow in Ledgelist.iterrows():
+            g.add_edge(elrow[0], elrow[1], attr_dict=elrow[2:].to_dict())

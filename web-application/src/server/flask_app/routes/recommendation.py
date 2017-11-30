@@ -7,7 +7,8 @@ import json
 recommendation = Blueprint('recommendation', __name__, url_prefix='/api')
 
 r = Root()
-transport_graph = TransportGraph().constructGraph()
+transport_graph = TransportGraph()
+transport_graph.constructGraph()
 
 @recommendation.route('/recommendation/scores', methods=['POST'])
 def calculate_recommendation():
@@ -22,15 +23,15 @@ def calculate_recommendation():
 	body = request.json
 	print("Body: ", body)
 
-	lat  = body['lat']
-	lng = body['lng']
-	metro = body['metro']
-	bus = body['bus']
-	max_transport_time = body['max_transport_time']
+	lat  = float(body['lat'])
+	lng = float(body['lng'])
+	metro = int(body['metro'])
+	bus = int(body['bus'])
+	max_transport_time = int(body['max_transport_time'])
 
-	max_rental_price = body['max_rental_price']
-	min_rental_price = body['min_rental_price']
-	night_live = body['night_live']
+	max_rental_price = int(body['max_rental_price'])
+	min_rental_price = int(body['min_rental_price'])
+	night_live = int(body['night_live'])
 
 	"""lat = 1
                 lng = 2
@@ -94,8 +95,8 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 
 		"""if include:
-                                    if (transport_graph.shortpath([value.lat, value.lng],[lat, lng])[0] <= max_transport_time):
-                                        array_possible_neighbourhoods.append(key)"""
+			if (transport_graph.shortpath([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):
+				array_possible_neighbourhoods.append(key)"""
 		if include: array_possible_neighbourhoods.append(key)
 
 	return {'recommendation': array_possible_neighbourhoods}

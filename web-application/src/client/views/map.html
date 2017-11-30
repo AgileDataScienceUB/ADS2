@@ -18,10 +18,10 @@
                 Neighborhood
             </label>
             <br>
-            <label>
-                <input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">
-                Districts
-            </label>
+            <!--<label>-->
+                <!--<input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">-->
+                <!--Districts-->
+            <!--</label>-->
 
 
         </div>
@@ -143,8 +143,8 @@
                             <label class="col-form-label" for="inputDefault"> <h6>Frequently visited place </h6><p>(you can click the point on the map)</p></label>
                             <input type="text" class="form-control" id="inputDefault" ng-model="clickedPoint">
 
-                            <label class="col-form-label" for="maxTravellingTime"><h6>Maximum travelling time</h6></label>
-                            <select class="form-control"  id="maxTravellingTime" ng-model="maxTimeTravelling">
+                            <label class="col-form-label"><h6>Maximum travelling time</h6></label>
+                            <select class="form-control"  id="maxTravellingTimeSelect" ng-model="preferences.maxTimeTravelling">
                                 <option value="5">5 min</option>
                                 <option value="10">10 min</option>
                                 <option value="20">20 min</option>
@@ -168,8 +168,8 @@
                         <br>
                         <h5>Rental price</h5>
                         <div class="col-lg-6">
-                            <label class="col-form-label" for="minRentalPrice"><h6>Minimum</h6></label>
-                            <select class="form-control"  id="minRentalPrice" ng-value="minRentalPrice">
+                            <label class="col-form-label"><h6>Minimum</h6></label>
+                            <select class="form-control"  id="minRentalPriceSelect" ng-model="preferences.minRentalPrice">
                                 <option value="400">400 €</option>
                                 <option value="500">500 €</option>
                                 <option value="600">600 €</option>
@@ -186,8 +186,8 @@
                             </select>
                         </div>
                         <div class="col-lg-6">
-                            <label class="col-form-label" for="maxRentalPrice"><h6>Maximum</h6></label>
-                            <select class="form-control"  id="maxRentalPrice" ng-value="maxRentalPrice">
+                            <label class="col-form-label" ><h6>Maximum</h6></label>
+                            <select class="form-control"  id="maxRentalPriceSelect" ng-model="preferences.maxRentalPrice">
                                 <option value="400">400 €</option>
                                 <option value="500">500 €</option>
                                 <option value="600">600 €</option>
@@ -215,13 +215,13 @@
                         <div class="col-lg-12">
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op1" ng-model="nightLiveOption"> Low
+                                    <input type="radio" name="nightLive" id="nightLive-Op1" ng-click="preferences.nightLive=0"> Low</input>
                                 </label>
                                 <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op2" ng-model="nightLiveOption"> Medium
+                                    <input type="radio" name="nightLive" id="nightLive-Op2" ng-click="preferences.nightLive=1"> Medium</input>
                                 </label>
                                 <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op3" ng-model="nightLiveOption"> High
+                                    <input type="radio" name="nightLive" id="nightLive-Op3" ng-click="preferences.nightLive=2"> High</input>
                                 </label>
                             </div>
                         </div>

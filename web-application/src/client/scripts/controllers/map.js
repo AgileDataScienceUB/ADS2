@@ -19,12 +19,17 @@ angular.module('ADS_Group2_Application')
         $scope.clickedPoint = "";
         var transport_stations = [];
 
-        $scope.maxRentalPrice = 40000;
-        $scope.minRentalPrice = 400;
-        $scope.maxTimeTravelling = 60;
+
+        $scope.preferences = {};
+        $scope.clickedPoint = [41.387034, 2.170020];
+        $scope.preferences.maxRentalPrice =  "3500";
+        $scope.preferences.minRentalPrice =  "400";
+        $scope.preferences.maxTimeTravelling =  "60";
+        $scope.preferences.nightLive = 0;
 
 
-        $scope.tab = 0
+
+        $scope.tab = 0;
 
         $scope.currentDate = -1;
 
@@ -456,12 +461,12 @@ angular.module('ADS_Group2_Application')
             //var marker1 = L.circle([tweet.coordinates[0]+0.15, tweet.coordinates[1]], 50);//[41.387034, 2.170020]);
             var marker1 = L.circleMarker(
                 [tweet.coordinates[0],tweet.coordinates[1]], {
-                radius: 3,
-                fillColor: tweet_color,
-                color: tweet_color,
-                weight:1,
-                fillOpacity:0
-            }
+                    radius: 3,
+                    fillColor: tweet_color,
+                    color: tweet_color,
+                    weight:1,
+                    fillOpacity:0
+                }
             );//[41.387034, 2.170020]);
 
             marker1.addTo(map);
@@ -824,23 +829,36 @@ angular.module('ADS_Group2_Application')
 
 
                 // favourite_point,max_transport_time, max_rental_price, min_rental_price, night_live
-                DataExtractorService.getRecommendation($scope.clickedPoint, $scope.maxTimeTravelling, $scope.maxRentalPrice, $scope.minRentalPrice, 1);
+                DataExtractorService.getRecommendation($scope.clickedPoint, $scope.preferences.maxTimeTravelling, $scope.preferences.maxRentalPrice, $scope.preferences.minRentalPrice, $scope.preferences.nightLive).then(function(data){
+                    // clearPaintedPaths();
+                    // paintNeighborhoodOverMap();
 
-                // clearPaintedPaths();
-                // paintNeighborhoodOverMap();
+                    console.log("Recomendation: ", data.data.recommendation);
+                    neighborhoodPolygons.each(function(d, i) {
+                        choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
+                        console.log("d: ")
 
-                neighborhoodPolygons.each(function(d, i) {
+                        if(data.data.recommendation.indexOf(parseInt(d.properties["C_Barri"]))>= 0){
+                            colorToAssign = "green";
 
-                    choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
+                            choosenPolygon
+                                .style("opacity", 1)
+                                //.style("stroke", "white")
+                                //.style("stroke-width", "2")
+                                .style("fill", colorToAssign)
+                        }else{
+                            choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
+                            choosenPolygon
+                                .style("opacity", 0)
+                                //.style("stroke", "white")
+                                //.style("stroke-width", "2")
+                                .style("fill", colorToAssign)
+                        }
 
-                    colorToAssign = heat_map_colors[Math.floor(Math.random() * (heat_map_colors.length ))]
 
-                    choosenPolygon
-                        .style("opacity", 1)
-                        //.style("stroke", "white")
-                        //.style("stroke-width", "2")
-                        .style("fill", colorToAssign)
 
+
+                    });
                 });
             }
         }

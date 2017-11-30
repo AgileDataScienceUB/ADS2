@@ -6,4 +6,5 @@ Flask-SQLAlchemy==2.1
 Flask-Script
 pymongo==3.5.1
 tweepy==3.5.0
-
+geopy==1.11.0
+networkx==2.0

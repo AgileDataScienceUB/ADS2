@@ -4,6 +4,10 @@ from flask_app.app import app
 print('Initializing Manager...')
 manager = Manager(app)
 
+import sys
+
+print("Python version: ", sys.version)
+
 @manager.command
 def runserver():
     """Run the flask app in development mode"""

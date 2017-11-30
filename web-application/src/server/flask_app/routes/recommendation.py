@@ -14,11 +14,13 @@ def calculate_recommendation():
 
     # Access body parameters like: max_rental_price, max_tranport_time...
     # Variables para calcular tiempo transport
-	if not request.json:
+	body = request.data
+
+	if not body:
 		return Response(json.dumps({"Message":"Error getting body from request"}),
 						status=html_codes.HTTP_OK_BASIC,
 						mimetype='application/json')
-	body = request.data
+
 
 	lat  = body.lat
 	lng = body.lng
@@ -29,8 +31,7 @@ def calculate_recommendation():
 	max_rental_price = body.max_rental_price
 	min_rental_price = body.min_rental_price
 	night_live = body.night_live
-
-    lat = 1
+	lat = 1
     lng = 2
     metro = 1	#int(0 no, 1 si)
     bus = 0		#int (0 no, 1 si)

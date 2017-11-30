@@ -29,14 +29,16 @@ def get_gathered_tweets():
     #tweets = json.load(open(resources_folder+'tweets_2017.json'))
     #data={'tweets':tweets}
 
-    #data = get_all_tweet_data()
-
-    for tweet in var['tweets_array']:
+    data = get_all_tweet_data()
+    for tweet in data:
         tweet['sentiment'] = get_tweet_sentiment(tweet['text'])
+    json_response = json.dumps(data)
 
-    json_response = json.dumps(var['tweets_array'])
 
-    var['tweets_array'] = []
+    #for tweet in var['tweets_array']:
+    #    tweet['sentiment'] = get_tweet_sentiment(tweet['text'])
+    #json_response = json.dumps(var['tweets_array'])
+    #var['tweets_array'] = []
 
     return Response(json_response,
                     status=html_codes.HTTP_OK_BASIC,
@@ -133,13 +135,19 @@ class listener(StreamListener):
         if len(var['tweets_array']) < 500:
             jdata = json.loads(status)
             if geo_check(jdata) is True:
-                document = {'coordinates': jdata['coordinates'], 'text': jdata["text"]}
-                if(var['storing_tweets_array']): # and key_word_check(jdata['text'])
-                    #document['sentiment'] = get_tweet_sentiment(jdata["text"])
-                    var['tweets_array'].append(document)
-                    print(var['tweets_array'])
+                #document = {'coordinates': jdata['coordinates'], 'text': jdata["text"]}
+                #if(var['storing_tweets_array']): # and key_word_check(jdata['text'])
+                #    #document['sentiment'] = get_tweet_sentiment(jdata["text"])
+                #    var['tweets_array'].append(document)
+                #    print(var['tweets_array'])
                 #if key_word_check(jdata):
                     #self.collection.insert_one(document) 
+                document = {'id': jdata['id'], 'geo': jdata['geo'], 'coordinates': jdata['coordinates'],
+                            'text': jdata["text"], 'created': jdata["created_at"]}
+                if key_word_check(jdata):
+                    self.collection.insert_one(document) 
+                print (jdata['geo'],jdata["text"])
+                self.num_tweets += 1
                 self.num_tweets += 1
             return True
         else:
@@ -179,7 +187,7 @@ def get_tweet_sentiment(tweet):
 def get_all_tweet_data():
     collection = connect_to_mlab()
     tweets = []
-    attributes = ['id','geo','text','created']
+    attributes = ['geo','text','created']
     for tweet in collection.find()[:]:
         new_tweet = {}
         for attribute in attributes:

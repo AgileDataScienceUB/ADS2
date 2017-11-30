@@ -1,7 +1,7 @@
 import pandas as pd
 from .neighborhood import Neighborhood
 from .district import District
-from .geometry import Geometry, Point
+from .geometry import Geometry, Polygon, Point
 import networkx as nx
 
 class Root:
@@ -190,12 +190,20 @@ class Root:
             neighborhood.geometry.area = properties['Area']
             neighborhood.geometry.perimiter = properties['Perim']
 
-            coords = item['geometry']['coordinates'][0]
-            neighborhood.geometry.polygon = []
-            for coord in coords:
-                point = Point(coord[0],coord[1])
-                #print(point.x,point.y)
-                neighborhood.geometry.polygon.append(point)
+            neighborhood.geometry.polygons = []
+            for polygon_ in item['geometry']['coordinates']:
+                polygon = Polygon()
+                polygon.points = []
+                list = None
+                if item['geometry']['type'] == "Polygon":
+                    list_ = polygon_
+                elif item['geometry']['type'] == "MultiPolygon":
+                    list_ = polygon_[0]
+                for coord in list_:
+                    point = Point(coord[0], coord[1])
+                    polygon.points.append(point)
+                neighborhood.geometry.polygons.append(polygon)
+            neighborhood.geometry.compute()
 
     def fill_district_geometry(self):
         #imitate code of neighborhoods polygon

@@ -6,7 +6,7 @@
 
 
         <div id="map" class="col-md-12"/>
-        <div class="row col-md-1" style="position:absolute;top: 0%;">
+        <div class="row col-md-1" style="position:absolute;top: 0%; z-index: 9999;">
             <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             </div>
@@ -16,7 +16,7 @@
 
 
 
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav" style="z-index: 9999;">
     <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
     <!--<a href="#">About</a>
     <a href="#">Services</a>
@@ -30,7 +30,7 @@
                 <a class="nav-link active " data-toggle="tab"  ng-click="tab=0" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
             </li>
             <li class="nav-item " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">
-                <a class="nav-link" data-toggle="tab" ng-click="tab=1" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
+                <a class="nav-link" data-toggle="tab" ng-click="tab=1; " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
             </li>
             <li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">
                 <a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>
@@ -89,6 +89,13 @@
                                 Income Index
                             </label>
                         </div>
+
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="displayInformation" id="displayInformation8" ng-value="7"  ng-model="displayInformation" ng-change="displayInformationChanged(7)">
+                                Transport graph
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
             </form>
@@ -106,16 +113,16 @@
                             <h6>Type</h6>
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-primary btn-sm"  >
-                                    <input type="checkbox" ng-model="metroOption"> Metro
+                                    <input type="checkbox" ng-model="transportOption" ng-value="0"> Metro
                                 </label>
                                 <label class="btn btn-primary btn-sm">
-                                    <input type="checkbox" ng-model="busOption"> Bus
+                                    <input type="checkbox" ng-model="transportOption" ng-value="1"> Bus
                                 </label>
                                 <label class="btn btn-primary btn-sm">
-                                    <input type="checkbox" ng-model="tramOption"> Tram
+                                    <input type="checkbox" ng-model="transportOption" ng-value="2"> Tram
                                 </label>
                                 <label class="btn btn-primary btn-sm">
-                                    <input type="checkbox" ng-model="trainOption"> Train
+                                    <input type="checkbox" ng-model="transportOption" ng-value="3"> Train
                                 </label>
                             </div>
                             <br>
@@ -206,20 +213,20 @@
                         </div>
                         <br>
                         <br>
-                        <h5>Type of housing</h5>
-                        <div class="col-lg-12">
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Familiar
-                                </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Shariny
-                                </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Individual
-                                </label>
-                            </div>
-                        </div>
+                        <!--<h5>Type of housing</h5>-->
+                        <!--<div class="col-lg-12">-->
+                            <!--<div class="btn-group" data-toggle="buttons">-->
+                                <!--<label class="btn btn-primary btn-sm">-->
+                                    <!--<input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Familiar-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-primary btn-sm">-->
+                                    <!--<input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Shariny-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-primary btn-sm">-->
+                                    <!--<input type="radio" name="typeOfHousing" id="typeOfHousing-Op1" ng-model="typeOfHousing"> Individual-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
 
                         <br>
                         <br>

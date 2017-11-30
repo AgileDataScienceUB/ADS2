@@ -158,7 +158,7 @@ class Root:
             neighborhood = self.neighborhoods[row['id']]
             neighborhood.avg_flat_rental_from_web = row['value']
             neighborhood.avg_flat_size = row['mean-size(m^2)']
-            neighborhood.avg_flat_meter_rental = row['mean-price-size(€/m^2)']
+            neighborhood.avg_flat_meter_rental = row['mean-price-size(e/m^2)']
 
     def fill_neighborhood_age_distr(self):
         df = pd.read_csv('./data/' + 'poblacio_anys_homo.csv')

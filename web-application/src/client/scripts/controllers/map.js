@@ -157,7 +157,7 @@ angular.module('ADS_Group2_Application')
                 var transform = d3.geo.transform({point: projectPoint}),
                     path = d3.geo.path().projection(transform);
 
-                feature = g.selectAll("path")
+                var feature = g.selectAll("path")
                     .data(geojson.features)
                     .enter()
                     .append("path")
@@ -215,7 +215,7 @@ angular.module('ADS_Group2_Application')
                 var transform = d3.geo.transform({point: projectPoint}),
                     path = d3.geo.path().projection(transform);
 
-                feature = g.selectAll("path")
+                var feature = g.selectAll("path")
                     .data(geojson.features)
                     .enter()
                     .append("path")
@@ -445,20 +445,22 @@ angular.module('ADS_Group2_Application')
 
             var mapBounds = map.getBounds();
 
-            var color = 'grey';
-            if(tweet.sentiment == "postive"){
-                color='green';
+
+            console.log("Tweet: ", tweet)
+            var tweet_color = 'grey';
+            if(tweet.sentiment == "positive"){
+                tweet_color='green';
             }else if(tweet.sentiment == 'negative'){
-                color='red';
+                tweet_color='red';
             }
             //var marker1 = L.circle([tweet.coordinates[0]+0.15, tweet.coordinates[1]], 50);//[41.387034, 2.170020]);
             var marker1 = L.circleMarker(
                 [tweet.coordinates[0],tweet.coordinates[1]], {
                 radius: 3,
-                fillColor: color,
-                color: color,
+                fillColor: tweet_color,
+                color: tweet_color,
                 weight:1,
-                fillOpacity:1
+                fillOpacity:0
             }
             );//[41.387034, 2.170020]);
 
@@ -627,7 +629,7 @@ angular.module('ADS_Group2_Application')
                         var minLat = 41.3507835316;
                         var maxLat = 41.4496747477;
 
-                        var maxTweets = 20;
+                        var maxTweets = 15;
                         var minTweets = 2;
 
                         var numTweetsToGenerate = Math.floor(Math.random() * (maxTweets - minTweets)) + minTweets;
@@ -642,8 +644,8 @@ angular.module('ADS_Group2_Application')
 
                             lng = Math.random() * (maxLng - minLng) + minLng;
                             lat = Math.random() * (maxLat - minLat) + minLat;
-                            if ((lng - 2) / (lat - 41) < 0.56) { // Filter tweets not on water
-                                genatedTweets.push({"coordinates": [lat, lng], "sentiments":sentiments[Math.floor(Math.random() * sentiments.length)]})
+                            if ((lng - 2) / (lat - 41) < 0.5) { // Filter tweets not on water
+                                genatedTweets.push({"coordinates": [lat, lng], "sentiment":sentiments[Math.floor(Math.random() * sentiments.length)]})
                             }
 
                         }
@@ -656,7 +658,7 @@ angular.module('ADS_Group2_Application')
 
                     generatedTweets.forEach(function (d) {
                         console.log("D: ", d);
-                        paintTweet({"coordinates": d.coordinates});
+                        paintTweet({"coordinates": d.coordinates, "sentiment":d.sentiment});
 
                         // /paintTweet({"coordinates":[41.387034, 2.170020]})
                     })

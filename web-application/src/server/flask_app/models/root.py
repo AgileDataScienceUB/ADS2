@@ -172,7 +172,7 @@ class Root:
 
     def fill_neighborhood_geometry(self):
         import json
-        json_data = open('./data/polygons_neighborhoods_geo.json').read()
+        json_data = open('./data/polygons_neighborhoods_geo.json',encoding='latin1').read()
         data = json.loads(json_data)
         for item in data['features']:
             #print(item['properties'])
@@ -208,7 +208,7 @@ class Root:
     def fill_district_geometry(self):
         #imitate code of neighborhoods polygon
         import json
-        json_data = open('./data/polygons_districts_geo.json').read()
+        json_data = open('./data/polygons_districts_geo.json',encoding='latin1').read()
         data = json.loads(json_data)
         for item in data['features']:
             #print(item['properties'])

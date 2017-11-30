@@ -47,7 +47,7 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
     /*
     Recomendation
      */
-    dataExtractionService.getRecommendation = function(favourite_point,max_transport_time,min_transport_time, max_rental_price, min_rental_price, night_live) {
+    dataExtractionService.getRecommendation = function(favourite_point,max_transport_time, max_rental_price, min_rental_price, night_live) {
 
         var body = {};
         body.lat = favourite_point[0];
@@ -55,7 +55,6 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
         body.metro=1;
         body.bus=0;
         body.max_transport_time=max_transport_time;
-        body.min_transport_time=min_transport_time;
         body.max_rental_price=max_rental_price;
         body.min_rental_price=min_rental_price;
         body.night_live=night_live;

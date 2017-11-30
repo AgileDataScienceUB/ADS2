@@ -17,7 +17,11 @@ angular.module('ADS_Group2_Application')
 
 
         $scope.clickedPoint = "";
-        var transport_stations = []
+        var transport_stations = [];
+
+        $scope.maxRentalPrice = 40000;
+        $scope.minRentalPrice = 400;
+        $scope.maxTimeTravelling = 60;
 
 
         $scope.tab = 0
@@ -817,8 +821,8 @@ angular.module('ADS_Group2_Application')
             }else{
 
 
-                // favourite_point,max_transport_time,min_transport_time, max_rental_price, min_rental_price, night_live
-                DataExtractorService.getRecommendation([41.387034, 2.170020],99999, 9999999, 1, 1, 1);
+                // favourite_point,max_transport_time, max_rental_price, min_rental_price, night_live
+                DataExtractorService.getRecommendation($scope.clickedPoint, $scope.maxTimeTravelling, $scope.maxRentalPrice, $scope.minRentalPrice, 1);
 
                 // clearPaintedPaths();
                 // paintNeighborhoodOverMap();

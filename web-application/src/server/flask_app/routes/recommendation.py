@@ -94,9 +94,9 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 
 
-		"""if include:
+		if include:
 			if (transport_graph.shortpath([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):
-				array_possible_neighbourhoods.append(key)"""
-		if include: array_possible_neighbourhoods.append(key)
+				array_possible_neighbourhoods.append(key)
+		#if include: array_possible_neighbourhoods.append(key)
 
 	return {'recommendation': array_possible_neighbourhoods}

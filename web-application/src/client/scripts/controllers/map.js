@@ -16,8 +16,15 @@ angular.module('ADS_Group2_Application')
         ];
 
 
+        var paintedPolygons = -1;
+
         $scope.clickedPoint = "";
         var transport_stations = [];
+
+        var recommendationShown=false;
+        $scope.showReport = false;
+
+        var barris;
 
 
         $scope.preferences = {};
@@ -74,11 +81,18 @@ angular.module('ADS_Group2_Application')
 
         }
 
-
-
-
         var clearPaintedPaths = function(){
             d3.selectAll(".polygon").remove();
+
+            map.eachLayer(function(layer) {
+                if(layer.hasOwnProperty("feature")){
+                    map.removeLayer(layer);
+                }
+
+            });
+
+
+
         };
 
         var changePolygonColors = function(assigned_colors){
@@ -173,7 +187,11 @@ angular.module('ADS_Group2_Application')
                     .style("stroke", "black")
                     .style("stroke-width", "2")
                     .style("fill", function(d,i) { return "green"; } )
-                    .style("opacity", 1);
+                    .style("opacity", 1)
+                    .style("z-index", 9999)
+                    .attr("z-index", 9999);
+
+                d3.selection.moveToFront(feature);
 
                 feature.call(tip);
 
@@ -190,8 +208,7 @@ angular.module('ADS_Group2_Application')
                 districtPolygons = feature;
                 //ASDF
 
-                map.on("viewreset", reset);
-                reset();
+
 
                 // Reposition the SVG to cover the features.
                 function reset() {
@@ -208,6 +225,9 @@ angular.module('ADS_Group2_Application')
 
                     g.selectAll("path").attr("d", path);
                 }
+
+                map.on("viewreset", reset);
+                reset();
 
             });
         }
@@ -216,58 +236,62 @@ angular.module('ADS_Group2_Application')
             d3.json("data/divisiones_administrativas/barris/barris_geo.json", function (error, geojson) {
 
 
-                // console.log("Extracted data: ", geojson);
-                var transform = d3.geo.transform({point: projectPoint}),
-                    path = d3.geo.path().projection(transform);
+                barris = L.geoJSON(geojson, {
+                    radius: 3,
+                    fillColor: 'yellow',
+                    color: 'black',
+                    weight:1,
+                    fillOpacity:0}
+                ).addTo(map);
 
-                var feature = g.selectAll("path")
-                    .data(geojson.features)
-                    .enter()
-                    .append("path")
-                    .attr("id", function (d) {
-                        return "Barri_" + d.properties["C_Barri"];
-                    })
-                    .attr("class", "polygon")
-                    .style("stroke", "black")
-                    .style("stroke-width", "1")
-                    .style("fill", function(d,i) { return "yellow"; } )
-                    .style("opacity", 1);
+                barris.bindPopup(function(d) {
+                    var result = "";
 
-                feature.call(tip);
+                    console.log("POPUP: ", d)
+                    d = d.feature;
+
+                    if(d.hasOwnProperty("properties")) {
+                        console.log("D: ", d)
+
+                        if (d.properties.hasOwnProperty("N_Barri")) {
+                            result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
+                        }
+
+                        if (d.properties.hasOwnProperty("N_Distri")) {
+                            //console.log("D: ", d);
+                            result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
+                        }
+                        if (d.properties.hasOwnProperty("Area")) {
+                            //console.log("D: ", d);
+                            result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
+                        }
+
+                        if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
+                            //console.log("D: ", d);
+                            result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
+                        }
+
+                        if (d.properties.hasOwnProperty("WEB_1")) {
+                            //console.log("D: ", d);
+                            result += "<p><strong>Links: </strong> </p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_1']+"'>" + d.properties['WEB_1']+"</a></p>"
+                            for(var i = 2; i< 10; i++){
+                                if(d.properties.hasOwnProperty("WEB_"+i)){
+                                    result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_'+i]+"'>" + d.properties['WEB_'+i]+"</a></p>"
+                                }
+                            }
+                        }
 
 
-                feature.on('mouseover', function(d){
-                    tip.show(d);
-                    // console.log("d: ", d);
-                    d3.select("#Barri_" + d.properties["C_Barri"]).style('opacity', 0);
+                    }
+
+
+                    // $('.leaflet-popup-content').css({"width":"100%"});
+                    return result;
+                },{
+                    maxWidth : 560
                 });
-                feature.on('mouseout', function(d){
-                    tip.hide(d);
-                    // console.log("d: ", d);
-                    d3.select("#Barri_" + d.properties["C_Barri"]).style('opacity', 1);
-                });
 
-                neighborhoodPolygons = feature;
-
-
-                map.on("viewreset", reset);
-                reset();
-
-                // Reposition the SVG to cover the features.
-                function reset() {
-                    var bounds = path.bounds(geojson),
-                        topLeft = bounds[0],
-                        bottomRight = bounds[1];
-
-                    svg.attr("width", bottomRight[0] - topLeft[0])
-                        .attr("height", bottomRight[1] - topLeft[1])
-                        .style("left", topLeft[0] + "px")
-                        .style("top", (topLeft[1]) + "px");
-
-                    g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
-
-                    g.selectAll("path").attr("d", path);
-                }
 
             });
         };
@@ -290,8 +314,8 @@ angular.module('ADS_Group2_Application')
 
             map = new L.Map("map", {center: [41.387034, 2.170020], zoom: 12, zoomControl: false});
 
-            // map.addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
-            //L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+            // L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            // L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
             L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
                 maxZoom: 18, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
             }).addTo(map);
@@ -350,17 +374,6 @@ angular.module('ADS_Group2_Application')
                 });
 
 
-
-
-            if( $scope.granularitySelected == $scope.polygons1){
-                paintDistrictsOverMap();
-            }else{
-                paintNeighborhoodOverMap();
-            }
-
-
-            // d3.polygonContains(polygon, point)
-
             map.on("click", function(d){
                 $scope.clickedPoint = [d.latlng.lat.toFixed(5), d.latlng.lng.toFixed(5)];
 
@@ -371,46 +384,6 @@ angular.module('ADS_Group2_Application')
                 }
             })
         };
-
-        function calculateAndPaintPointsOnMap (){
-            var mapBounds = leafletMap.getBounds();
-
-            var tmpGeoData= {
-                features : geoData.features.filter(function(airbnb_listing){
-                    return true; //It will return everything
-
-                    //return ((new Date(airbnb_listing.airbnb_data.host_until).getTime() >= $scope.currentDate.getTime()) && (new Date(airbnb_listing.airbnb_data.first_review).getTime() <= $scope.currentDate.getTime()))
-                })
-            };
-
-            $scope.totalListings = tmpGeoData.features.length;
-            if (!$scope.$$phase) $scope.$apply();
-
-            console.log("Filtered data: ", tmpGeoData.features.length);
-
-            qtree = d3.geom.quadtree(tmpGeoData.features.map(function (data, i) {
-                    return {
-                        x: data.geometry.coordinates[0],
-                        y: data.geometry.coordinates[1],
-                        all: data
-                    };
-                }
-                )
-            );
-
-            var subset = search(qtree, mapBounds.getWest(), mapBounds.getSouth(), mapBounds.getEast(), mapBounds.getNorth());
-            console.log("subset: " + subset.length);
-
-            redrawSubset(subset);
-        }
-
-        function mapmove(e) {
-            calculateAndPaintPointsOnMap();
-
-        }
-
-
-
 
         createMap();
 
@@ -509,7 +482,7 @@ angular.module('ADS_Group2_Application')
          */
 
 
-        //$scope.$watch("displayInformation", function(newValue, oldValue){
+//$scope.$watch("displayInformation", function(newValue, oldValue){
         $scope.displayInformationChanged = function(newValue){
             //newValue = $scope.displayInformation;
             console.log("Display information has changed: ", newValue);
@@ -614,11 +587,11 @@ angular.module('ADS_Group2_Application')
             }else if(newValue == 2){  // Tweets
                 gatheringTweetsOn = true;
                 clearPaintedPaths();
-                if( $scope.granularitySelected == $scope.polygons1){
-                    paintDistrictsOverMap();
-                }else{
-                    paintNeighborhoodOverMap();
-                }
+                // if( $scope.granularitySelected == $scope.polygons1){
+                //     paintDistrictsOverMap();
+                // }else{
+                //     paintNeighborhoodOverMap();
+                // }
 
                 removeLayers();
                 tweetsGatheringInterval = setInterval(function () {
@@ -642,7 +615,7 @@ angular.module('ADS_Group2_Application')
                         var genatedTweets = [];
                         var lat, lng;
 
-                        var sentiments = ['positive', 'negative', 'neutral'];
+                        var sentiments = ['positive', 'negative', 'neutral', 'neutral', 'neutral'];
 
                         for (var i = 0; i < numTweetsToGenerate; i++) {
 
@@ -762,7 +735,7 @@ angular.module('ADS_Group2_Application')
                         var minLat = 41.3507835316;
                         var maxLat = 41.4496747477;
 
-                        var maxTweets = 20;
+                        var maxTweets = 10;
                         var minTweets = 2;
 
                         var numTweetsToGenerate = Math.floor(Math.random() * (maxTweets - minTweets)) + minTweets;
@@ -797,7 +770,7 @@ angular.module('ADS_Group2_Application')
                     //paintTweet({"coordinates":[41.2787636541, 2.0504377635]});
 
 
-                }, 750);
+                }, 250);
             }
 
         };
@@ -807,6 +780,16 @@ angular.module('ADS_Group2_Application')
 
             console.log("Getting recomendation for: ");
             console.log("transport_type: ", $scope.transportOption);
+
+            removeLayers();
+            clearPaintedPaths();
+            if( $scope.granularitySelected == $scope.polygons1){
+                paintDistrictsOverMap();
+            }else{
+                paintNeighborhoodOverMap();
+            }
+
+
             if($scope.granularitySelected == $scope.polygons1){
 
                 //clearPaintedPaths();
@@ -827,39 +810,71 @@ angular.module('ADS_Group2_Application')
                 });
             }else{
 
+                setTimeout(function(){
+                    // favourite_point,max_transport_time, max_rental_price, min_rental_price, night_live
+                    DataExtractorService.getRecommendation($scope.clickedPoint, $scope.preferences.maxTimeTravelling, $scope.preferences.maxRentalPrice, $scope.preferences.minRentalPrice, $scope.preferences.nightLive).then(function(data){
+                        // clearPaintedPaths();
+                        // paintNeighborhoodOverMap();
+                        recommendationShown = true;
 
-                // favourite_point,max_transport_time, max_rental_price, min_rental_price, night_live
-                DataExtractorService.getRecommendation($scope.clickedPoint, $scope.preferences.maxTimeTravelling, $scope.preferences.maxRentalPrice, $scope.preferences.minRentalPrice, $scope.preferences.nightLive).then(function(data){
-                    // clearPaintedPaths();
-                    // paintNeighborhoodOverMap();
-
-                    console.log("Recomendation: ", data.data.recommendation);
-                    neighborhoodPolygons.each(function(d, i) {
-                        choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
-                        console.log("d: ")
-
-                        if(data.data.recommendation.indexOf(parseInt(d.properties["C_Barri"]))>= 0){
-                            colorToAssign = "green";
-
-                            choosenPolygon
-                                .style("opacity", 1)
-                                //.style("stroke", "white")
-                                //.style("stroke-width", "2")
-                                .style("fill", colorToAssign)
-                        }else{
-                            choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
-                            choosenPolygon
-                                .style("opacity", 0)
-                                //.style("stroke", "white")
-                                //.style("stroke-width", "2")
-                                .style("fill", colorToAssign)
-                        }
+                        console.log("Recomendation: ", data.data.recommendation);
+                        // if(barris !== undefined){
+                        //     console.log("BARRIS: ", barris)
+                        //     //polygon.setStyle({fillColor: '#0000FF'});
+                        // };
 
 
+                        // console.log("rental_data: ", rental_data);
+                        map.eachLayer(function(layer) {
+                            if(layer.hasOwnProperty("feature")){
+                                // map.removeLayer(layer);
+                                if(data.data.recommendation.indexOf(parseInt(layer.feature.properties["C_Barri"]))>= 0) {
+
+
+                                    layer.setStyle({fillColor: 'green', fillOpacity: 1});
+                                }else{
+                                    map.removeLayer(layer);
+                                }
+                            }
+
+
+
+                            /*
+                             neighborhoodPolygons.each(function(d, i) {
+
+
+                             choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
+                             console.log("d: ")
+
+                             if(data.data.recommendation.indexOf(parseInt(d.properties["C_Barri"]))>= 0){
+                             colorToAssign = "green";
+
+                             choosenPolygon
+                             .style("opacity", 1)
+                             //.style("stroke", "white")
+                             //.style("stroke-width", "2")
+                             .style("fill", colorToAssign)
+                             }else{
+                             choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
+                             choosenPolygon
+                             .style("opacity", 0)
+                             //.style("stroke", "white")
+                             //.style("stroke-width", "2")
+                             .style("fill", colorToAssign)
+                             }
+
+
+
+
+                             });
+                             */
+                        })
 
 
                     });
-                });
+                }, 50)
+
+
             }
         }
 
@@ -924,10 +939,11 @@ angular.module('ADS_Group2_Application')
 
                 });
 
-                d3.csv("data/transport/Ledgelist.csv", function (error, data) {
 
-                    console.log("Edges data: ", data);
-                    data.forEach(function(edge) {
+                d3.csv("data/transport/Ledgelist.csv", function (error, edges_data) {
+
+                    console.log("Edges data: ", edges_data);
+                    edges_data.forEach(function(edge) {
 
                         //console.log("Transport stations: ", transport_stations);
                         var origin = transport_stations.filter(function(station){
@@ -944,10 +960,36 @@ angular.module('ADS_Group2_Application')
 
 
                     });
+                    data.forEach(function(d) {
+                        paintPointOnMap(d.Lat, d.Lon, "white", d.name);
+
+                    });
+
 
 
                 });
             });
+        }
+
+
+        $scope.tabChanged = function(){
+            if (gatheringTweetsOn) { //Its on, should turn gathering off
+                gatheringTweetsOn = false;
+                clearInterval(tweetsGatheringInterval);
+            }
+            removeLayers();
+            clearPaintedPaths();
+
+            if($scope.tab != 1){
+                if( $scope.granularitySelected == $scope.polygons1){
+                    paintDistrictsOverMap();
+                }else{
+                    paintNeighborhoodOverMap();
+                }
+            }
+
+            recommendationShown = false;
+
         }
 
 

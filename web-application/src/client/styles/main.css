@@ -635,3 +635,7 @@ body{
 }
 
 .nav-tabs li a {font-size:18px;}
+
+.leaflet-popup-content{
+  width: fit-content;
+}

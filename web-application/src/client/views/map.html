@@ -9,6 +9,10 @@
             </div>
         </div>
 
+        <div id="report" class="col-md-4" ng-if="showReport" style="position: absolute;bottom: 200px; right: 30px;z-index: 9999;background-color: #0a6ebd">
+            <h1>Report</h1>
+        </div>
+
         <div id="layercontrol" style="position: absolute;bottom: 100px; right: 30px;z-index: 9999;" class="text-left">
             <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
 
@@ -22,7 +26,6 @@
                 <!--<input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">-->
                 <!--Districts-->
             <!--</label>-->
-
 
         </div>
     </div>
@@ -41,10 +44,10 @@
 
         <ul class="nav nav-tabs row ">
             <li class="nav-item " ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">
-                <a class="nav-link active " data-toggle="tab"  ng-click="tab=0" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
+                <a class="nav-link active " data-toggle="tab"  ng-click="tab=0; tabChanged()" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
             </li>
             <li class="nav-item " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">
-                <a class="nav-link" data-toggle="tab" ng-click="tab=1; " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
+                <a class="nav-link" data-toggle="tab" ng-click="tab=1; tabChanged()" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
             </li>
             <!--<li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">-->
                 <!--<a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>-->
@@ -247,7 +250,7 @@
                         <br>
                         <br>
                         <div class="col-md-12 row text-right">
-                            <div class="btn btn-success" ng-click="calculateRecommendation()">Search</div>
+                            <div class="btn btn-success" ng-click="calculateRecommendation();closeNav()">Search</div>
                         </div>
                     </div>
                 </fieldset>

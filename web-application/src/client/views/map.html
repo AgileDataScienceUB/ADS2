@@ -214,17 +214,17 @@
                         <br>
                         <br>
                         <br>
-                        <h5>Night live</h5>
+                        <h5>Quiet area</h5>
                         <div class="col-lg-12">
                             <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op1" ng-click="preferences.nightLive=0"> Low</input>
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(0)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op1" > High</input>
                                 </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op2" ng-click="preferences.nightLive=1"> Medium</input>
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(1)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op2" > Medium</input>
                                 </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op3" ng-click="preferences.nightLive=2"> High</input>
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(2)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op3" > Low</input>
                                 </label>
                             </div>
                         </div>

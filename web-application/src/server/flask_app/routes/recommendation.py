@@ -3,6 +3,8 @@ from flask_security import auth_token_required
 from ..app_utils import html_codes, token_login
 from ..models import Root, TransportGraph
 import json
+import numpy as np
+
 
 recommendation = Blueprint('recommendation', __name__, url_prefix='/api')
 
@@ -56,6 +58,30 @@ def calculate_recommendation():
 					mimetype='application/json')
 
 
+@recommendation.route('/recommendation/test', methods=['GET'])
+def calculate_recommendation_test():
+	"""Get dummy data returned from the server."""
+
+	lat = 41.38570
+	lng = 2.16383
+	metro = 1    #int(0 no, 1 si)
+	bus = 0        #int (0 no, 1 si)
+	max_transport_time = 30 #int
+	min_rental_price = 500 #int
+	max_rental_price = 1000 #int
+	night_live = 2 #int 0->low, 1->middium, 2->High"""
+
+
+	# Access model instances array.
+	data = filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live,lat,lng)
+
+	#data = {'Recommendation': 'Should return an array of results for each neighborhood/district id!'}
+
+	json_response = json.dumps(data)
+	return Response(json_response,
+					status=html_codes.HTTP_OK_BASIC,
+					mimetype='application/json')
+
 
 def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live, lat, lng):
 
@@ -93,9 +119,9 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 					include = True
 
 
-
+		print(transport_graph.shortpath([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0])
 		if include:
-			if (transport_graph.shortpath([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):
+			if (transport_graph.shortpath(np.array([value.geometry.centroid.x, value.geometry.centroid.y]),np.array([lat, lng]))[0] <= max_transport_time):
 				array_possible_neighbourhoods.append(key)
 		#if include: array_possible_neighbourhoods.append(key)
 

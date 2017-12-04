@@ -31,6 +31,7 @@ class Root:
 
         self.fill_flats()
         self.fill_neighborhood_rental_web()
+        self.fill_idealista_url()
 
         self.fill_neighborhood_age_distr()
 
@@ -159,6 +160,12 @@ class Root:
             neighborhood.avg_flat_rental_from_web = row['value']
             neighborhood.avg_flat_size = row['mean-size(m^2)']
             neighborhood.avg_flat_meter_rental = row['mean-price-size(e/m^2)']
+
+    def fill_idealista_url(self):
+        df = pd.read_csv('./data/' + 'url-neighborhood.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.idealista_url = 'https://www.idealista.com/alquiler-viviendas/barcelona/'+str(row['Idealista-path'])
 
     def fill_neighborhood_age_distr(self):
         df = pd.read_csv('./data/' + 'poblacio_anys_homo.csv')

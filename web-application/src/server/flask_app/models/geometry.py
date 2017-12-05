@@ -6,19 +6,19 @@ class Geometry:
         self.centroid = None
 
     def compute(self):
-        self.area = 0
+        area = 0#don't modify self.area, which is read in m^2. This is angle area, computed in deg^2
         self.centroid = Point(0,0)
         for polygon in self.polygons:
             polygon.compute()
             self.perimiter += polygon.perimiter
-            self.area += polygon.area
+            area += polygon.area
             weighted_point = Point(polygon.centroid.x*polygon.area,polygon.centroid.y*polygon.area)
             self.centroid.add(weighted_point)
-        self.centroid.mult(1/self.area)
+        self.centroid.mult(1/area)
 
 class Polygon:
     def __init__(self):
-        self.area = None
+        self.area = None#[deg^2]
         self.perimiter = None
         self.centroid = None
         self.points = None

@@ -51,7 +51,7 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
 
         var body = {};
         body.lat = favourite_point[0];
-        body.lng = favourite_point[0];
+        body.lng = favourite_point[1];
         body.metro=1;
         body.bus=0;
         body.max_transport_time=max_transport_time;

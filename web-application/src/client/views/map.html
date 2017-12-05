@@ -9,6 +9,10 @@
             </div>
         </div>
 
+        <div id="report" class="col-md-4" ng-if="showReport" style="position: absolute;bottom: 200px; right: 30px;z-index: 9999;background-color: #0a6ebd">
+            <h1>Report</h1>
+        </div>
+
         <div id="layercontrol" style="position: absolute;bottom: 100px; right: 30px;z-index: 9999;" class="text-left">
             <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
 
@@ -18,11 +22,10 @@
                 Neighborhood
             </label>
             <br>
-            <label>
-                <input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">
-                Districts
-            </label>
-
+            <!--<label>-->
+                <!--<input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">-->
+                <!--Districts-->
+            <!--</label>-->
 
         </div>
     </div>
@@ -41,10 +44,10 @@
 
         <ul class="nav nav-tabs row ">
             <li class="nav-item " ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">
-                <a class="nav-link active " data-toggle="tab"  ng-click="tab=0" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
+                <a class="nav-link active " data-toggle="tab"  ng-click="tab=0; tabChanged()" ng-style="tab==0 ? { color: '272b30' } : { color: 'white' }">Explore</a>
             </li>
             <li class="nav-item " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">
-                <a class="nav-link" data-toggle="tab" ng-click="tab=1; " ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
+                <a class="nav-link" data-toggle="tab" ng-click="tab=1; tabChanged()" ng-style="tab==1 ? { color: '272b30' } : { color: 'white' }">Find</a>
             </li>
             <!--<li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">-->
                 <!--<a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>-->
@@ -143,8 +146,8 @@
                             <label class="col-form-label" for="inputDefault"> <h6>Frequently visited place </h6><p>(you can click the point on the map)</p></label>
                             <input type="text" class="form-control" id="inputDefault" ng-model="clickedPoint">
 
-                            <label class="col-form-label" for="maxTravellingTime"><h6>Maximum travelling time</h6></label>
-                            <select class="form-control"  id="maxTravellingTime" ng-model="maxTimeTravelling">
+                            <label class="col-form-label"><h6>Maximum travelling time</h6></label>
+                            <select class="form-control"  id="maxTravellingTimeSelect" ng-model="preferences.maxTimeTravelling">
                                 <option value="5">5 min</option>
                                 <option value="10">10 min</option>
                                 <option value="20">20 min</option>
@@ -168,8 +171,8 @@
                         <br>
                         <h5>Rental price</h5>
                         <div class="col-lg-6">
-                            <label class="col-form-label" for="minRentalPrice"><h6>Minimum</h6></label>
-                            <select class="form-control"  id="minRentalPrice" ng-value="minRentalPrice">
+                            <label class="col-form-label"><h6>Minimum</h6></label>
+                            <select class="form-control"  id="minRentalPriceSelect" ng-model="preferences.minRentalPrice">
                                 <option value="400">400 €</option>
                                 <option value="500">500 €</option>
                                 <option value="600">600 €</option>
@@ -186,8 +189,8 @@
                             </select>
                         </div>
                         <div class="col-lg-6">
-                            <label class="col-form-label" for="maxRentalPrice"><h6>Maximum</h6></label>
-                            <select class="form-control"  id="maxRentalPrice" ng-value="maxRentalPrice">
+                            <label class="col-form-label" ><h6>Maximum</h6></label>
+                            <select class="form-control"  id="maxRentalPriceSelect" ng-model="preferences.maxRentalPrice">
                                 <option value="400">400 €</option>
                                 <option value="500">500 €</option>
                                 <option value="600">600 €</option>
@@ -211,17 +214,17 @@
                         <br>
                         <br>
                         <br>
-                        <h5>Night live</h5>
+                        <h5>Quiet area</h5>
                         <div class="col-lg-12">
                             <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op1" ng-model="nightLiveOption"> Low
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(0)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op1" > High</input>
                                 </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op2" ng-model="nightLiveOption"> Medium
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(1)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op2" > Medium</input>
                                 </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="radio" name="nightLive" id="nightLive-Op3" ng-model="nightLiveOption"> High
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(2)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op3" > Low</input>
                                 </label>
                             </div>
                         </div>
@@ -247,7 +250,7 @@
                         <br>
                         <br>
                         <div class="col-md-12 row text-right">
-                            <div class="btn btn-success" ng-click="calculateRecommendation()">Search</div>
+                            <div class="btn btn-success" ng-click="calculateRecommendation();closeNav()">Search</div>
                         </div>
                     </div>
                 </fieldset>

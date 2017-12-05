@@ -31,6 +31,7 @@ class Root:
 
         self.fill_flats()
         self.fill_neighborhood_rental_web()
+        self.fill_idealista_url()
 
         self.fill_neighborhood_age_distr()
 
@@ -160,6 +161,12 @@ class Root:
             neighborhood.avg_flat_size = row['mean-size(m^2)']
             neighborhood.avg_flat_meter_rental = row['mean-price-size(e/m^2)']
 
+    def fill_idealista_url(self):
+        df = pd.read_csv('./data/' + 'url-neighborhood.csv')
+        for index, row in df.iterrows():
+            neighborhood = self.neighborhoods[row['id']]
+            neighborhood.idealista_url = 'https://www.idealista.com/alquiler-viviendas/barcelona/'+str(row['Idealista-path'])
+
     def fill_neighborhood_age_distr(self):
         df = pd.read_csv('./data/' + 'poblacio_anys_homo.csv')
         for index, row in df.iterrows():
@@ -172,7 +179,7 @@ class Root:
 
     def fill_neighborhood_geometry(self):
         import json
-        json_data = open('./data/polygons_neighborhoods_geo.json').read()
+        json_data = open('./data/polygons_neighborhoods_geo.json',encoding='latin1').read()
         data = json.loads(json_data)
         for item in data['features']:
             #print(item['properties'])
@@ -208,7 +215,7 @@ class Root:
     def fill_district_geometry(self):
         #imitate code of neighborhoods polygon
         import json
-        json_data = open('./data/polygons_districts_geo.json').read()
+        json_data = open('./data/polygons_districts_geo.json',encoding='latin1').read()
         data = json.loads(json_data)
         for item in data['features']:
             #print(item['properties'])

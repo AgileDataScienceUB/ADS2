@@ -5,7 +5,7 @@ import networkx as nx
 import pandas as pd
 class TransportGraph(Base):
     def __init__(self):
-        pass
+        self.g = None
 
     def constructGraph(self):
         Ledgelist=pd.read_csv('./data/' +'Ledgelist.csv', header=0)#edge list
@@ -16,11 +16,12 @@ class TransportGraph(Base):
             g.add_node(node['name'], node[1:].to_dict())
         for i, elrow in Ledgelist.iterrows():
             g.add_edge(elrow[0], elrow[1], attr_dict=elrow[2:].to_dict())
+        self.g = g
         return g
 
     def shortpath(self, source,target):
-        ruta=nx.shortest_path(g, source, target, weight="weight")
-        l=nx.shortest_path_length(g, source, target, weight="weight")
+        ruta=nx.shortest_path(self.g, source, target, weight="weight")
+        l=nx.shortest_path_length(self.g, source, target, weight="weight")
         v=26.0#km/h
         t = (l/v)*60.0+1.2*len(ruta)#Sumo 1.2 minutos de espera por cada parada 
         return [t, ruta]
@@ -37,7 +38,7 @@ class TransportGraph(Base):
 
         source=Lnodelist.loc[idxini,'name']
         target=Lnodelist.loc[idxfin,'name']
-        t,ruta=shortpath(source,target)
+        t,ruta=self.shortpath(source,target)
         v=4#km/h
         tfin=((idxini/v)+(idxfin/v))+t  
 

@@ -12,7 +12,7 @@ class Geometry:
             polygon.compute()
             self.perimiter += polygon.perimiter
             self.area += polygon.area
-            weighted_point = Point(polygon.centroid.x/polygon.area,polygon.centroid.y/polygon.area)
+            weighted_point = Point(polygon.centroid.x*polygon.area,polygon.centroid.y*polygon.area)
             self.centroid.add(weighted_point)
         self.centroid.mult(1/self.area)
 
@@ -29,7 +29,7 @@ class Polygon:
         import numpy as np
         x,y,a,perim = 0,0,0,0
         n = len(self.points)
-        for i in range(n):
+        for i in range(n-1):
             p = self.points[i]
             q = self.points[(i + 1) % n]
             #print('p.x',p.x)
@@ -39,7 +39,7 @@ class Polygon:
             a += c_i
             perim += np.sqrt((p.x-q.x)*(p.x-q.x)+(p.y-q.y)*(p.y-q.y))
         a /=2
-        self.area = a
+        self.area = abs(a)
         self.perimiter = perim
         self.centroid = Point(x/(6*a),y/(6*a))
 

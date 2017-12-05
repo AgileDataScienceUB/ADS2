@@ -4,13 +4,13 @@ from ..app_utils import html_codes, token_login
 from ..models import Root, TransportGraph
 import json
 import numpy as np
+from random import randint
 
 
 recommendation = Blueprint('recommendation', __name__, url_prefix='/api')
 
 r = Root()
 transport_graph = TransportGraph()
-transport_graph.constructGraph()
 
 @recommendation.route('/recommendation/scores', methods=['POST'])
 def calculate_recommendation():
@@ -23,7 +23,7 @@ def calculate_recommendation():
 						status=html_codes.HTTP_OK_BASIC,
 						mimetype='application/json')
 	body = request.json
-	print("Body: ", body)
+	#print("Body: ", body)
 
 	lat  = float(body['lat'])
 	lng = float(body['lng'])
@@ -66,15 +66,16 @@ def calculate_recommendation_test():
 	lng = 2.16383
 	metro = 1    #int(0 no, 1 si)
 	bus = 0        #int (0 no, 1 si)
-	max_transport_time = 30 #int
-	min_rental_price = 500 #int
-	max_rental_price = 1000 #int
+	max_transport_time = 100 #int
+	min_rental_price = 100 #int
+	max_rental_price = 2000 #int
 	night_live = 2 #int 0->low, 1->middium, 2->High"""
 
 
 	# Access model instances array.
 	data = filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live,lat,lng)
 
+	#print(transport_graph.calculateRouteBetween([40.38570, 1.16383],[lat, lng]))
 	#data = {'Recommendation': 'Should return an array of results for each neighborhood/district id!'}
 
 	json_response = json.dumps(data)
@@ -85,8 +86,6 @@ def calculate_recommendation_test():
 
 def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live, lat, lng):
 
-	print( min_rental_price, max_rental_price)
-	print(night_live)
 	array_possible_neighbourhoods = []
 
 	#r.neighborhoods = {'id' : Neighbourhood()}
@@ -100,9 +99,11 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	for key, value in r.neighborhoods.items():
 
-
+		#print(key,value.geometry.centroid.x, value.geometry.centroid.y)
+		#print(transport_graph.calculateRouteBetween([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng]))
+		#print()
 		include = False
-		if ((value.avg_flat_rental_from_council < max_rental_price) and (value.avg_flat_rental_from_council > min_rental_price)) or ((value.avg_flat_rental_from_web < max_rental_price) and (value.avg_flat_rental_from_web > min_rental_price)):
+		if ((value.avg_flat_rental_from_council <= max_rental_price) and (value.avg_flat_rental_from_council >= min_rental_price)) or ((value.avg_flat_rental_from_web <= max_rental_price) and (value.avg_flat_rental_from_web >= min_rental_price)):
 
 			if (night_live == 0):
 				if((value.store_bar <= 17.000000) and (value.store_disco <= 0.000000)):
@@ -119,10 +120,12 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 					include = True
 
 
-		print(transport_graph.shortpath([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0])
+		
 		if include:
-			if (transport_graph.shortpath(np.array([value.geometry.centroid.x, value.geometry.centroid.y]),np.array([lat, lng]))[0] <= max_transport_time):
-				array_possible_neighbourhoods.append(key)
-		#if include: array_possible_neighbourhoods.append(key)
+			if (transport_graph.calculateRouteBetween([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):			
+				weight = randint(0, 9) #weight = compute_weight(value)
+				array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': weight})
 
+	#{'recommendation': [1,3,5,6]}
+	#{'recommendation': [{id:01, value:1}, {id:02, value:2}]}}
 	return {'recommendation': array_possible_neighbourhoods}

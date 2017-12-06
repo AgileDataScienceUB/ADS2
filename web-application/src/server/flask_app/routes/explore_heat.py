@@ -15,4 +15,3 @@ r = Root()
 
 def calculate_score():
     return 'hola'
-    

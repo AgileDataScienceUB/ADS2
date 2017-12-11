@@ -48,6 +48,6 @@ def calculate_score():
             while item>i*fact:
                 i+1
             rank.append(i)
-        final_rank[key]=rank
+        final_rank[key]=rank*ordre
 
-    return final_rank*ordre
+    return final_rank

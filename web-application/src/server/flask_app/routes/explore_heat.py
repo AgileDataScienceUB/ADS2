@@ -2,8 +2,9 @@ from flask import Blueprint, Response, request
 from flask_security import auth_token_required
 from ..app_utils import html_codes, token_login
 from ..models import Root
+import json
 
-from numpy import np
+import numpy as np
 
 explore_heat = Blueprint('explore_heat', __name__, url_prefix='/api')
 
@@ -46,8 +47,11 @@ def calculate_score():
         for item , fact in zip(llista,interval):
             i=1
             while item>i*fact:
-                i+1
+                i=i+1
             rank.append(i)
-        final_rank[key]=rank*ordre
+        final_rank[key]=list(rank*ordre)
 
-    return final_rank
+    json_response = json.dumps(final_rank)
+    return Response(json_response,
+                    status=html_codes.HTTP_OK_BASIC,
+                    mimetype='application/json')

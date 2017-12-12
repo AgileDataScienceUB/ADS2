@@ -28,6 +28,12 @@
       //   controllerAs: 'main'
       // })
 
+        .when('/welcome', {
+            templateUrl: 'views/welcome.html',
+            controller: 'WelcomeCtrl',
+            controllerAs: 'welcome'
+        })
+
       .when('/map', {
         templateUrl: 'views/map.html',
         controller: 'MapCtrl',
@@ -42,6 +48,6 @@
 
 
       .otherwise({
-        redirectTo: '/map'
+        redirectTo: '/welcome'
       });
   });

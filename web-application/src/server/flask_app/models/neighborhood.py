@@ -13,13 +13,14 @@ class Neighborhood(Base):
         self.avg_flat_size = None
         self.avg_flat_meter_rental = None
         self.avg_income = None
+        self.idealista_url = None
         #demographics
         self.secondary_studies_fraction = None
         self.age_distr = {}
         self.age_child = None
         self.age_young = None
         self.age_adult = None
-        self.age_old = None 
+        self.age_old = None
         self.flats_count = None
         self.flats_nationals_only = None
         self.flats_foreigners_only = None

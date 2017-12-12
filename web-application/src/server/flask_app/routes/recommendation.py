@@ -101,8 +101,8 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 		#print([value.geometry.centroid.x, value.geometry.centroid.y])
 		#print([lat, lng])
-		print(transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng]))
-		print()
+		#print(transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng]))
+		#print()
 		#print(key,value.geometry.centroid.x, value.geometry.centroid.y)
 		#print(transport_graph.calculateRouteBetween([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng]))
 		#print()
@@ -126,7 +126,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 		
 		if include:
-			if (transport_graph.calculateRouteBetween([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):			
+			if (transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng])[0] <= max_transport_time):			
 				weight = randint(0, 9) #weight = compute_weight(value)
 				array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': weight})
 

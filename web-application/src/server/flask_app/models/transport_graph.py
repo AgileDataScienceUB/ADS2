@@ -24,7 +24,8 @@ class TransportGraph(Base):
     def shortpath(self, source,target):
         ruta=nx.shortest_path(self.g, source, target, weight="weight")
         l=nx.shortest_path_length(self.g, source, target, weight="weight")
-        v=32.0#km/h
+        print(l)
+        v=80.0#km/h
         t = (l/v)*60.0+1.2*len(ruta)#Sumo 1.2 minutos de espera por cada parada 
         return [t, ruta]
 

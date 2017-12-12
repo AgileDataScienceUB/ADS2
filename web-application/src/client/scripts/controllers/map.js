@@ -14,6 +14,28 @@ angular.module('ADS_Group2_Application')
             'AngularJS',
             'Karma'
         ];
+        $scope.options = {
+            "chart": {
+                "type": "pieChart",
+                "height": 500,
+                "showLabels": true,
+                "duration": 500,
+                "labelThreshold": 0.01,
+                "labelSunbeamLayout": true,
+                "legend": {
+                    "margin": {
+                        "top": 5,
+                        "right": 35,
+                        "bottom": 5,
+                        "left": 0
+                    }
+                }
+            }
+        }
+
+        $scope.data = {
+
+        }
 
 
         var paintedPolygons = -1;
@@ -33,6 +55,11 @@ angular.module('ADS_Group2_Application')
         $scope.preferences.minRentalPrice =  "400";
         $scope.preferences.maxTimeTravelling =  "60";
         $scope.preferences.nightLive = 0;
+
+        $scope.changeNightLive = function(value){
+            console.log("Changing night live value: ", value);
+            $scope.preferences.nightLive = value;
+        };
 
 
 
@@ -269,6 +296,27 @@ angular.module('ADS_Group2_Application')
                         if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
                             //console.log("D: ", d);
                             result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
+                            // result += '<nvd3 options="options" data="data"></nvd3>';
+
+                            // $scope.data = [
+                            //     {
+                            //         key: "Men",
+                            //         y: d.properties['Homes']
+                            //     },
+                            //     {
+                            //         key: "Women",
+                            //         y: d.properties['Dones']
+                            //     }
+                            //
+                            // ]
+
+
+                            if(!$scope.$$phase) {
+                                //$digest or $apply
+                                $scope.$apply()
+                            }
+
+
                         }
 
                         if (d.properties.hasOwnProperty("WEB_1")) {
@@ -281,6 +329,7 @@ angular.module('ADS_Group2_Application')
                                 }
                             }
                         }
+
 
 
                     }
@@ -615,7 +664,7 @@ angular.module('ADS_Group2_Application')
                         var genatedTweets = [];
                         var lat, lng;
 
-                        var sentiments = ['positive', 'negative', 'neutral', 'neutral', 'neutral'];
+                        var sentiments = ['positive', 'negative', 'neutral', 'neutral', 'neutral',  'neutral'];
 
                         for (var i = 0; i < numTweetsToGenerate; i++) {
 

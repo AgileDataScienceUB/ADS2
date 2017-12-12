@@ -120,12 +120,62 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 					include = True
 
 
-		
+
 		if include:
-			if (transport_graph.calculateRouteBetween([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):			
+			if (transport_graph.calculateRouteBetween([value.geometry.centroid.x, value.geometry.centroid.y],[lat, lng])[0] <= max_transport_time):
 				weight = randint(0, 9) #weight = compute_weight(value)
 				array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': weight})
 
 	#{'recommendation': [1,3,5,6]}
 	#{'recommendation': [{id:01, value:1}, {id:02, value:2}]}}
-	return {'recommendation': array_possible_neighbourhoods}
+
+	#'recommendation': array_possible_neighbourhoods és un diccionari amb id dels barris que compleixen i el temps de transport_cost
+	###################################
+	ordre=np.array([-1,-1,night_live-1,1,1,-1])
+	ordre
+	dics={}
+	for element in array_possible_neighbourhoods:
+		dics[element['id']]=element['value']
+
+	score={}
+    maxim=np.zeros(7)
+    minim=1e6*np.ones(7)
+    for key, value in r.neighborhoods.items():
+
+		if key in dics:
+
+	        rental_web = value.avg_flat_rental_from_web
+	        mean_size_price = value.avg_flat_meter_rental
+	        night = value.store_bar + 3*value.store_disco
+	        restaurants = value.store_restaurant
+	        clothes_stores = value.store_clothes
+			aliment_stores = value.strore_grocery
+			temps_trans=dics[key]
+
+	        llista=np.array([rental_web,mean_size_price,night,restaurants,clothes_stores,aliment_stores,temps_trans])
+	        score[key]=llista
+
+	        maxim[llista>maxim]=llista[llista>maxim]
+	        minim[llista<minim]=llista[llista<minim]
+
+	    interval = (maxim-minim)/5. +minim
+
+	    final_rank={}
+	    for key in score:
+	        llista = score[key]
+	        rank = []
+	        for item , fact in zip(llista,interval):
+	            i=1
+	            while item>i*fact:
+	                i=i+1
+	            rank.append(i)
+	        final_rank[key]=list(rank*ordre)
+
+	rank_ordre={}
+	for barri in final_rank:
+		rank_ordre[barri]=np.sum(final_rank[barri])
+
+	###################################
+
+	# return {'recommendation': array_possible_neighbourhoods}
+	return rank_ordre

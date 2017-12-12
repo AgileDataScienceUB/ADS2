@@ -36,15 +36,15 @@ def calculate_recommendation():
 	night_live = int(body['night_live'])
 
 	"""lat = 1
-                lng = 2
-                metro = 1    #int(0 no, 1 si)
-                bus = 0        #int (0 no, 1 si)
-                transport_cost = {} #Obtain transport cost from each neighborhood to [lat,lng] {id : cost, id : cost,..}
+				lng = 2
+				metro = 1	#int(0 no, 1 si)
+				bus = 0		#int (0 no, 1 si)
+				transport_cost = {} #Obtain transport cost from each neighborhood to [lat,lng] {id : cost, id : cost,..}
 
-                max_transport_time = 30 #int
-                min_rental_price = 500 #int
-                max_rental_price = 1000 #int
-                night_live = 2 #int 0->low, 1->middium, 2->High"""
+				max_transport_time = 30 #int
+				min_rental_price = 500 #int
+				max_rental_price = 1000 #int
+				night_live = 2 #int 0->low, 1->middium, 2->High"""
 
 
 	# Access model instances array.
@@ -64,8 +64,8 @@ def calculate_recommendation_test():
 
 	lat = 41.38570
 	lng = 2.16383
-	metro = 1    #int(0 no, 1 si)
-	bus = 0        #int (0 no, 1 si)
+	metro = 1	#int(0 no, 1 si)
+	bus = 0		#int (0 no, 1 si)
 	max_transport_time = 100 #int
 	min_rental_price = 100 #int
 	max_rental_price = 2000 #int
@@ -138,38 +138,38 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		dics[element['id']]=element['value']
 
 	score={}
-    maxim=np.zeros(7)
-    minim=1e6*np.ones(7)
-    for key, value in r.neighborhoods.items():
+	maxim=np.zeros(7)
+	minim=1e6*np.ones(7)
+	for key, value in r.neighborhoods.items():
 
 		if key in dics:
 
-	        rental_web = value.avg_flat_rental_from_web
-	        mean_size_price = value.avg_flat_meter_rental
-	        night = value.store_bar + 3*value.store_disco
-	        restaurants = value.store_restaurant
-	        clothes_stores = value.store_clothes
+			rental_web = value.avg_flat_rental_from_web
+			mean_size_price = value.avg_flat_meter_rental
+			night = value.store_bar + 3*value.store_disco
+			restaurants = value.store_restaurant
+			clothes_stores = value.store_clothes
 			aliment_stores = value.strore_grocery
 			temps_trans=dics[key]
 
-	        llista=np.array([rental_web,mean_size_price,night,restaurants,clothes_stores,aliment_stores,temps_trans])
-	        score[key]=llista
+			llista=np.array([rental_web,mean_size_price,night,restaurants,clothes_stores,aliment_stores,temps_trans])
+			score[key]=llista
 
-	        maxim[llista>maxim]=llista[llista>maxim]
-	        minim[llista<minim]=llista[llista<minim]
+			maxim[llista>maxim]=llista[llista>maxim]
+			minim[llista<minim]=llista[llista<minim]
 
-	    interval = (maxim-minim)/5. +minim
+		interval = (maxim-minim)/5. +minim
 
-	    final_rank={}
-	    for key in score:
-	        llista = score[key]
-	        rank = []
-	        for item , fact in zip(llista,interval):
-	            i=1
-	            while item>i*fact:
-	                i=i+1
-	            rank.append(i)
-	        final_rank[key]=list(rank*ordre)
+		final_rank={}
+		for key in score:
+			llista = score[key]
+			rank = []
+			for item , fact in zip(llista,interval):
+				i=1
+				while item>i*fact:
+					i=i+1
+				rank.append(i)
+			final_rank[key]=list(rank*ordre)
 
 	rank_ordre={}
 	for barri in final_rank:

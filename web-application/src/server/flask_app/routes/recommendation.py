@@ -126,7 +126,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 
 		if include:
-			if (transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng])[0] <= max_transport_time):			
+			if (transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng])[0] <= max_transport_time):
 				weight = randint(0, 9) #weight = compute_weight(value)
 				array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': weight})
 
@@ -178,7 +178,14 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 	for barri in final_rank:
 		rank_ordre[barri]=int(np.sum(final_rank[barri]))
 
+	sort=(sorted(rank_ordre.items(), key=lambda x: x[1]))[::-1]
+	final=[]
+	i=1
+	for item in sort:
+		final.append((item[0],i))
+		i=i+1 if i<6 else 5
+
+	print(final)
 	###################################
-	print(rank_ordre)
 	# return {'recommendation': array_possible_neighbourhoods}
-	return rank_ordre
+	return final

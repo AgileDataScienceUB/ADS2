@@ -135,11 +135,11 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	#'recommendation': array_possible_neighbourhoods és un diccionari amb id dels barris que compleixen i el temps de transport_cost
 	###################################
-	ordre=np.array([-1,-1,night_live-1,1,1,-1])
+	ordre=np.array([-1,-1,night_live-1,1,1,1,-1])
 	ordre
 	dics={}
 	for element in array_possible_neighbourhoods:
-		dics[element['id']]=element['value']
+		dics[int(element['id'])]=element['value']
 
 	score={}
 	maxim=np.zeros(7)
@@ -147,13 +147,12 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 	for key, value in r.neighborhoods.items():
 
 		if key in dics:
-
 			rental_web = value.avg_flat_rental_from_web
 			mean_size_price = value.avg_flat_meter_rental
 			night = value.store_bar + 3*value.store_disco
 			restaurants = value.store_restaurant
 			clothes_stores = value.store_clothes
-			aliment_stores = value.strore_grocery
+			aliment_stores = value.store_grocery
 			temps_trans=dics[key]
 
 			llista=np.array([rental_web,mean_size_price,night,restaurants,clothes_stores,aliment_stores,temps_trans])
@@ -177,9 +176,9 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	rank_ordre={}
 	for barri in final_rank:
-		rank_ordre[barri]=np.sum(final_rank[barri])
+		rank_ordre[barri]=int(np.sum(final_rank[barri]))
 
 	###################################
-
+	print(rank_ordre)
 	# return {'recommendation': array_possible_neighbourhoods}
 	return rank_ordre

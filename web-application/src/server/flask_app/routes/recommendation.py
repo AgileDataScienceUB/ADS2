@@ -221,11 +221,12 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	#print(interval)
 	#print(score)
-	final_rank={}
+	final_rank_feature={}
+	rank_ordre={}
+
 	for key in score:
 		llista = score[key]
 		rank = []
-		print(key, llista)
 		for item , fact in zip(llista,interval):
 			#----------------------------------
 			#Que fa exactament???
@@ -237,28 +238,18 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 		hola=rank*ordre
 		hola[hola<0]+=6
-		final_rank[key]=list(hola)
+		final_rank_feature[key]=list(hola)
+		rank_ordre[key]=int(np.sum(final_rank_feature[key]))
 
-	print(final_rank)
 
-	rank_ordre={}
-	for barri in final_rank:
-		rank_ordre[barri]=int(np.sum(final_rank[barri]))
 
-	#print(rank_ordre)
+	max_score=rank_ordre[max(rank_ordre, key=rank_ordre.get)]
+	min_score=rank_ordre[min(rank_ordre, key=rank_ordre.get)]
 
-	sort=(sorted(rank_ordre.items(), key=lambda x: x[1]))[::-1]
 
-	i=1
-	for item in sort:
-		array_possible_neighbourhoods.append({'id':'%02d' % item[0], 'value': i} )
-		i=i+1 if i<5 else 5
+	for key in rank_ordre:
+		valor=-1*(-6+1+round(4*(rank_ordre[key]-min_score)/(max_score-min_score)))
+		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor} )
 
 
 	return {'recommendation': array_possible_neighbourhoods}
-
-	#{'recommendation': [1,3,5,6]}
-	#{'recommendation': [{id:01, value:1}, {id:02, value:2}]}}
-
-	#'recommendation': array_possible_neighbourhoods és un diccionari amb id dels barris que compleixen i el temps de transport_cost
-	###################################

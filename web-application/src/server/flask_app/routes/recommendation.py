@@ -165,6 +165,10 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	array_possible_neighbourhoods = []
 
+	nameFeatures = {'0' : 'small rental price ', '1' : 'small m2 price ', '2' : 'expected night life ', 
+					'3' : 'restaurants density ', '4' : 'clothes stores density ',  '5' : 'supermarket density ',
+					'6' : 'transportation time cost '}
+
 	ordre =np.array([-1,-1,night_live-1,1,1,1,-1])
 	addend = np.array([6,6,night_live-1,0,0,0,6])
 	dics={}
@@ -219,8 +223,6 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 	# return(len(score))
 	interval = (maxim-minim)/5. +minim
 
-	#print(interval)
-	#print(score)
 	final_rank_feature={}
 	rank_ordre={}
 
@@ -228,12 +230,9 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		llista = score[key]
 		rank = []
 		for item , fact in zip(llista,interval):
-			#----------------------------------
-			#Que fa exactament???
 			i=1
 			while item>i*fact:
 				i=i+1
-			#----------------------------------
 			rank.append(i)
 
 		hola=rank*ordre
@@ -249,7 +248,14 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	for key in rank_ordre:
 		valor=-1*(-6+1+round(4*(rank_ordre[key]-min_score)/(max_score-min_score)))
-		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor} )
+		listFeatures = final_rank_feature[key]
+		
+		text = 'The strengths are: ' 
+		for i in np.where(listFeatures == max(listFeatures))[0]:
+			print(nameFeatures[str(i)])
+			text = text + nameFeatures[str(i)]
+		print(text)
+		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor, 'text' : text} )
 
 
 	return {'recommendation': array_possible_neighbourhoods}

@@ -112,13 +112,13 @@ def calculate_recommendation_generate():
 						lng = float(lng)
 						# Access model instances array.
 						data = filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live,lat,lng)
-						
+
 						data['input'] = [name, lat, lng, max_transport_time, min_rental_price, max_rental_price, night_live]
 						print (data['input'] )
 						print (data['recommendation'])
 						finaldata.append(data)
 
-	
+
 	finaldataToSend = {'data' : finaldata}
 	json_response = json.dumps(finaldataToSend)
 	return Response(json_response,
@@ -146,7 +146,7 @@ def calculate_recommendation_generate2():
 						print([name, lat, lng, max_transport_time, min_rental_price, max_rental_price, night_live])
 						# Access model instances array.
 						data = filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live,lat,lng)
-						
+
 						res.loc[res.shape[0]] = np.array([name, lat, lng, max_transport_time, min_rental_price, max_rental_price, night_live, data])
 
 	res.to_csv('restult.csv')
@@ -172,7 +172,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 	maxim=np.zeros(7)
 	minim=1e6*np.ones(7)
 
-	
+
 
 	#Bar values --> 25% - 17.000000 50% - 50.000000 75% - 94.000000
 	#Disco values --> 25% - 0.000000 50% - 1.000000 75% - 3.000000
@@ -201,13 +201,14 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		if include:
 			tTransport = transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng])[0]
 			if (tTransport <= max_transport_time):
+				poblacio = value.men +value.women
 				rental_web = value.avg_flat_rental_from_web
 				mean_size_price = value.avg_flat_meter_rental
 				night = value.store_bar + 3*value.store_disco
-				restaurants = value.store_restaurant
-				clothes_stores = value.store_clothes
-				aliment_stores = value.store_grocery
-				temps_trans= tTransport 
+				restaurants = value.store_restaurant /float(poblacio)
+				clothes_stores = value.store_clothes /float(poblacio)
+				aliment_stores = value.store_grocery /float(poblacio)
+				temps_trans= tTransport
 
 				llista=np.array([rental_web,mean_size_price,night,restaurants,clothes_stores,aliment_stores,temps_trans])
 				score[key]=llista
@@ -215,7 +216,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 				maxim[llista>maxim]=llista[llista>maxim]
 				minim[llista<minim]=llista[llista<minim]
 
-	return(len(score))
+	# return(len(score))
 	interval = (maxim-minim)/5. +minim
 
 	#print(interval)
@@ -234,11 +235,11 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 			#----------------------------------
 			rank.append(i)
 
-		#hola=rank*ordre
-		#hola[hola<0]+=6
-		final_rank[key]=list(rank*ordre)
+		hola=rank*ordre
+		hola[hola<0]+=6
+		final_rank[key]=list(hola)
 
-	#print(final_rank)
+	print(final_rank)
 
 	rank_ordre={}
 	for barri in final_rank:
@@ -253,7 +254,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		array_possible_neighbourhoods.append({'id':'%02d' % item[0], 'value': i} )
 		i=i+1 if i<5 else 5
 
-	
+
 	return {'recommendation': array_possible_neighbourhoods}
 
 	#{'recommendation': [1,3,5,6]}

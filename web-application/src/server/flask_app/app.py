@@ -32,9 +32,11 @@ def handle_my_custom_event(json):
 def run():
     """Isolated entry point of the app, if not using manage.py"""
     try:
+
         # app.run('0.0.0.0', 33507)
         port = int(os.environ.get('PORT', 5000))
         app.run(host='0.0.0.0', port=port)
+
 
         r = Root()
 

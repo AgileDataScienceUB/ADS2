@@ -87,22 +87,22 @@
                     <div class="form-group">
                         <h5>Transport</h5>
                         <div class="col-lg-12">
-                            <h6>Type</h6>
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary btn-sm"  >
-                                    <input type="checkbox" ng-model="transportOption" ng-value="0"> Metro
-                                </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="checkbox" ng-model="transportOption" ng-value="1"> Bus
-                                </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="checkbox" ng-model="transportOption" ng-value="2"> Tram
-                                </label>
-                                <label class="btn btn-primary btn-sm">
-                                    <input type="checkbox" ng-model="transportOption" ng-value="3"> Train
-                                </label>
-                            </div>
-                            <br>
+                            <!--<h6>Type</h6>-->
+                            <!--<div class="btn-group" data-toggle="buttons">-->
+                                <!--<label class="btn btn-primary btn-sm"  >-->
+                                    <!--<input type="checkbox" ng-model="transportOption" ng-value="0"> Metro-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-primary btn-sm">-->
+                                    <!--<input type="checkbox" ng-model="transportOption" ng-value="1"> Bus-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-primary btn-sm">-->
+                                    <!--<input type="checkbox" ng-model="transportOption" ng-value="2"> Tram-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-primary btn-sm">-->
+                                    <!--<input type="checkbox" ng-model="transportOption" ng-value="3"> Train-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <!--<br>-->
                             <label class="col-form-label" for="inputDefault"> <h6>Frequently visited place </h6><p>(you can click the point on the map)</p></label>
                             <input type="text" class="form-control" id="inputDefault" ng-model="clickedPoint">
 
@@ -176,13 +176,13 @@
                         <div class="col-lg-12">
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-primary btn-sm" ng-click="changeNightLive(0)">
-                                    <input type="radio" name="nightLive" id="nightLive-Op1" > High</input>
+                                    <input type="radio" name="nightLive" id="nightLive-Op1" > YES</input>
                                 </label>
                                 <label class="btn btn-primary btn-sm" ng-click="changeNightLive(1)">
-                                    <input type="radio" name="nightLive" id="nightLive-Op2" > Medium</input>
+                                    <input type="radio" name="nightLive" id="nightLive-Op2" > I don't care</input>
                                 </label>
                                 <label class="btn btn-primary btn-sm" ng-click="changeNightLive(2)">
-                                    <input type="radio" name="nightLive" id="nightLive-Op3" > Low</input>
+                                    <input type="radio" name="nightLive" id="nightLive-Op3" > NO</input>
                                 </label>
                             </div>
                         </div>

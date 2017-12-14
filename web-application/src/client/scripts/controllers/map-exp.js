@@ -129,7 +129,42 @@ angular.module('ADS_Group2_Application')
             // }
 
             DataExtractorService.getHeatMapData($scope.formOptions).then(function(response){
-                console.log("Response: ", response);
+                // console.log("Response: ", response.data);
+
+                setTimeout(function(d){
+                    response.data.forEach(function(neig){
+                        var sum = 0;
+
+                        for( var i = 0; i < neig.value.length; i++ ){
+                            sum += parseInt( neig.value[i], 10 ); //don't forget to add the base
+                        }
+
+                        var avg = 0;
+                        if(sum >0){
+                            avg = sum/neig.value.length;
+                        }
+                        console.log("avg: ", avg);
+
+                        // console.log("NEIGH ", neig.id);
+                         console.log("MEAN ", Math.floor(avg));
+
+                        map.eachLayer(function(layer) {
+                            if(layer.hasOwnProperty("feature")){
+                                // map.removeLayer(layer);
+                                if(neig.id == layer.feature.properties["C_Barri"]) {
+                                    if(avg == 0){
+                                        layer.setStyle({fillColor: $scope.heat_map_colors[2], fillOpacity: 1});
+                                    }else{
+                                        layer.setStyle({fillColor: $scope.heat_map_colors.slice().reverse()[Math.floor(avg)-1], fillOpacity: 1});
+                                    }
+
+                                }
+                            }
+                        })
+
+                    });
+                }, 50);
+
             })
 
         }

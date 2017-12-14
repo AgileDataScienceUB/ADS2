@@ -78,5 +78,14 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
     };
 
 
+    dataExtractionService.getReportForNeigh = function(n_id) {
+
+        return $http.get(API_BASE_URL+'report/?n_id='+n_id).then(function (d) {
+            console.log("Neigh report: ", d);
+            return d;
+        });
+    };
+
+
     return dataExtractionService;
 });

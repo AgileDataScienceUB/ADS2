@@ -15,7 +15,7 @@ angular.module('ADS_Group2_Application')
             'Karma'
         ];
 
-        $scope.hideWelcome = true;
+        $scope.hideWelcome = false;
 
         $scope.heat_map_colors = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641'];
 
@@ -282,62 +282,77 @@ angular.module('ADS_Group2_Application')
                     console.log("POPUP: ", d)
                     d = d.feature;
 
-                    if(d.hasOwnProperty("properties")) {
-                        console.log("D: ", d)
 
-                        if (d.properties.hasOwnProperty("N_Barri")) {
-                            result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
-                        }
-
-                        if (d.properties.hasOwnProperty("N_Distri")) {
-                            //console.log("D: ", d);
-                            result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
-                        }
-                        if (d.properties.hasOwnProperty("Area")) {
-                            //console.log("D: ", d);
-                            result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
-                        }
-
-                        if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
-                            //console.log("D: ", d);
-                            result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
-                            // result += '<nvd3 options="options" data="data"></nvd3>';
-
-                            // $scope.data = [
-                            //     {
-                            //         key: "Men",
-                            //         y: d.properties['Homes']
-                            //     },
-                            //     {
-                            //         key: "Women",
-                            //         y: d.properties['Dones']
-                            //     }
-                            //
-                            // ]
+                    DataExtractorService.getReportForNeigh(d.properties['C_Barri']).then(function(report){
+                        console.log("Report: ", report.data);
 
 
-                            if(!$scope.$$phase) {
-                                //$digest or $apply
-                                $scope.$apply()
+
+                        if(d.hasOwnProperty("properties")) {
+                            console.log("D: ", d)
+
+                            if (d.properties.hasOwnProperty("N_Barri")) {
+                                result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
                             }
 
+                            if (d.properties.hasOwnProperty("N_Distri")) {
+                                //console.log("D: ", d);
+                                result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
+                            }
+                            if (d.properties.hasOwnProperty("Area")) {
+                                //console.log("D: ", d);
+                                result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
+                            }
 
-                        }
+                            if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
+                                //console.log("D: ", d);
+                                result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
+                                // result += '<nvd3 options="options" data="data"></nvd3>';
 
-                        if (d.properties.hasOwnProperty("WEB_1")) {
-                            //console.log("D: ", d);
-                            result += "<p><strong>Links: </strong> </p>"
-                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_1']+"'>" + d.properties['WEB_1']+"</a></p>"
-                            for(var i = 2; i< 10; i++){
-                                if(d.properties.hasOwnProperty("WEB_"+i)){
-                                    result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_'+i]+"'>" + d.properties['WEB_'+i]+"</a></p>"
+                                // $scope.data = [
+                                //     {
+                                //         key: "Men",
+                                //         y: d.properties['Homes']
+                                //     },
+                                //     {
+                                //         key: "Women",
+                                //         y: d.properties['Dones']
+                                //     }
+                                //
+                                // ]
+
+
+                                if(!$scope.$$phase) {
+                                    //$digest or $apply
+                                    $scope.$apply()
+                                }
+
+
+                            }
+
+                            if (d.properties.hasOwnProperty("WEB_1")) {
+                                //console.log("D: ", d);
+                                result += "<p><strong>Links: </strong> </p>"
+                                result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_1']+"'>" + d.properties['WEB_1']+"</a></p>"
+                                for(var i = 2; i< 10; i++){
+                                    if(d.properties.hasOwnProperty("WEB_"+i)){
+                                        result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_'+i]+"'>" + d.properties['WEB_'+i]+"</a></p>"
+                                    }
                                 }
                             }
+                            return result
+
+
+
                         }
 
+                        console.log("Clicked: ", d);
+                        if(!$scope.$$phase) {
+                            //$digest or $apply
+                            $scope.$apply()
+                        }
 
-
-                    }
+                    });
 
 
                     // $('.leaflet-popup-content').css({"width":"100%"});
@@ -430,13 +445,16 @@ angular.module('ADS_Group2_Application')
 
             map.on("click", function(d){
 
-                $scope.clickedPoint = [d.latlng.lat.toFixed(5), d.latlng.lng.toFixed(5)];
 
-                console.log("Clicked: ", d);
+                $scope.clickedPoint = [d.latlng.lat.toFixed(5), d.latlng.lng.toFixed(5)];
                 if(!$scope.$$phase) {
                     //$digest or $apply
                     $scope.$apply()
                 }
+
+
+
+
             })
         };
 
@@ -872,59 +890,24 @@ angular.module('ADS_Group2_Application')
                         // paintNeighborhoodOverMap();
                         recommendationShown = true;
 
-                        console.log("Recomendation: ", data.data.recommendation);
-                        // if(barris !== undefined){
-                        //     console.log("BARRIS: ", barris)
-                        //     //polygon.setStyle({fillColor: '#0000FF'});
-                        // };
+                        data.data.recommendation.forEach(function(rec){
+                            console.log("REC: ", rec)
+                            map.eachLayer(function(layer) {
+                                if(layer.hasOwnProperty("feature")){
+                                    // map.removeLayer(layer);
+                                    if(rec.value == 0){
+                                        layer.setStyle({fillOpacity: 0});
+                                    }else{
+                                        if(rec.id == layer.feature.properties["C_Barri"]){
 
+                                            layer.setStyle({fillColor: $scope.heat_map_colors[rec.value-1], fillOpacity: 1});
+                                        }
+                                    }
 
-                        // console.log("rental_data: ", rental_data);
-                        map.eachLayer(function(layer) {
-                            if(layer.hasOwnProperty("feature")){
-                                // map.removeLayer(layer);
-                                if(data.data.recommendation.indexOf(parseInt(layer.feature.properties["C_Barri"]))>= 0) {
-
-
-                                    layer.setStyle({fillColor: 'green', fillOpacity: 1});
-                                }else{
-                                    map.removeLayer(layer);
                                 }
-                            }
 
-
-
-                            /*
-                             neighborhoodPolygons.each(function(d, i) {
-
-
-                             choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
-                             console.log("d: ")
-
-                             if(data.data.recommendation.indexOf(parseInt(d.properties["C_Barri"]))>= 0){
-                             colorToAssign = "green";
-
-                             choosenPolygon
-                             .style("opacity", 1)
-                             //.style("stroke", "white")
-                             //.style("stroke-width", "2")
-                             .style("fill", colorToAssign)
-                             }else{
-                             choosenPolygon = d3.select("#Barri_" + d.properties["C_Barri"]);
-                             choosenPolygon
-                             .style("opacity", 0)
-                             //.style("stroke", "white")
-                             //.style("stroke-width", "2")
-                             .style("fill", colorToAssign)
-                             }
-
-
-
-
-                             });
-                             */
-                        })
-
+                            })
+                        });
 
                     });
                 }, 50)

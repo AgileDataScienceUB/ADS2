@@ -34,11 +34,17 @@
             controllerAs: 'welcome'
         })
 
-      .when('/map', {
-        templateUrl: 'views/map.html',
-        controller: 'MapCtrl',
+      .when('/map-explore', {
+        templateUrl: 'views/map-explore.html',
+        controller: 'MapCtrl-Exp',
         controllerAs: 'map'
       })
+
+        .when('/map-recommend', {
+            templateUrl: 'views/map-recommend.html',
+            controller: 'MapCtrl-Rec',
+            controllerAs: 'map'
+        })
 
       .when('/about', {
         templateUrl: 'views/about.html',

@@ -1,0 +1,181 @@
+<div class="row col-md-12">
+
+    <div class="row" >
+
+        <div id="map" class="col-md-12"/>
+
+
+
+        <div id="layercontrol" style="position: absolute;bottom: 100px; right: 30px;z-index: 9999;" class="text-left">
+            <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
+
+            <h5>Selected granularity</h5>
+            <label>
+                <input type="radio" name="granularityRadio" id="granularityRadio2" ng-value="polygons2" ng-model="granularitySelected" ng-change="changeShownPolygons(1)">
+                Neighborhood
+            </label>
+            <br>
+
+        </div>
+
+        <div class="row col-md-12 text-center align-bottom" style="position:absolute;bottom: 0%; z-index: 9999;">
+            <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()" style="right:85%">
+                <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="mySidenav" class="sidenav" style="z-index: 9999;">
+    <!--<a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>-->
+
+    <div class="btn btn-default btn-sm pull-right align-top" ng-click="closeNav()" style="right:45%;top:-50px">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    </div>
+
+    <!--<a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>-->
+    <div class="row col-md-10 col-md-offset-1">
+
+
+        <ul class="nav nav-tabs row ">
+            <li class="nav-item " ng-style="color: #2196f3">
+                <a class="nav-link" data-toggle="tab" style=" color: #2196f3">Advanced search</a>
+            </li>
+            <!--<li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">-->
+                <!--<a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>-->
+            <!--</li>-->
+        </ul>
+
+        <div >
+
+            <form class="form-horizontal row">
+                <fieldset>
+                    <div class="form-group">
+                        <h5>Transport</h5>
+                        <div class="col-lg-12">
+                            <h6>Type</h6>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm"  >
+                                    <input type="checkbox" ng-model="transportOption" ng-value="0"> Metro
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="checkbox" ng-model="transportOption" ng-value="1"> Bus
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="checkbox" ng-model="transportOption" ng-value="2"> Tram
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="checkbox" ng-model="transportOption" ng-value="3"> Train
+                                </label>
+                            </div>
+                            <br>
+                            <label class="col-form-label" for="inputDefault"> <h6>Frequently visited place </h6><p>(you can click the point on the map)</p></label>
+                            <input type="text" class="form-control" id="inputDefault" ng-model="clickedPoint">
+
+                            <label class="col-form-label"><h6>Maximum travelling time</h6></label>
+                            <select class="form-control"  id="maxTravellingTimeSelect" ng-model="preferences.maxTimeTravelling">
+                                <option value="5">5 min</option>
+                                <option value="10">10 min</option>
+                                <option value="20">20 min</option>
+                                <option value="30">30 min</option>
+                                <option value="40">40 min</option>
+                                <option value="50">50 min</option>
+                                <option value="60">1 h</option>
+                                <option value="90">1:30 h</option>
+                                <option value="120">2 h</option>
+                            </select>
+
+
+                            <!--<div id="slidecontainer">
+
+                              <input type="range" id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+
+                              <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>
+                            </div>-->
+
+                        </div>
+                        <br>
+                        <h5>Rental price</h5>
+                        <div class="col-lg-6">
+                            <label class="col-form-label"><h6>Minimum</h6></label>
+                            <select class="form-control"  id="minRentalPriceSelect" ng-model="preferences.minRentalPrice">
+                                <option value="400">400 €</option>
+                                <option value="500">500 €</option>
+                                <option value="600">600 €</option>
+                                <option value="700">700 €</option>
+                                <option value="800">800 €</option>
+                                <option value="900">900 €</option>
+                                <option value="1000">1000 €</option>
+                                <option value="1500">1500 €</option>
+                                <option value="2000">2000 €</option>
+                                <option value="2500">2500 €</option>
+                                <option value="3000">3000 €</option>
+                                <option value="3500">3500 €</option>
+                                <option value="4000">4000 €</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="col-form-label" ><h6>Maximum</h6></label>
+                            <select class="form-control"  id="maxRentalPriceSelect" ng-model="preferences.maxRentalPrice">
+                                <option value="400">400 €</option>
+                                <option value="500">500 €</option>
+                                <option value="600">600 €</option>
+                                <option value="700">700 €</option>
+                                <option value="800">800 €</option>
+                                <option value="900">900 €</option>
+                                <option value="1000">1000 €</option>
+                                <option value="1500">1500 €</option>
+                                <option value="2000">2000 €</option>
+                                <option value="2500">2500 €</option>
+                                <option value="3000">3000 €</option>
+                                <option value="3500">3500 €</option>
+                                <option value="4000">4000 €</option>
+                            </select>
+                        </div>
+                        <!--<input type="range" id="ex6" min="-10" max="10", value ="0">
+                        <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/&t
+                        <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span>-->
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h5>Quiet area</h5>
+                        <div class="col-lg-12">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(0)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op1" > High</input>
+                                </label>
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(1)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op2" > Medium</input>
+                                </label>
+                                <label class="btn btn-primary btn-sm" ng-click="changeNightLive(2)">
+                                    <input type="radio" name="nightLive" id="nightLive-Op3" > Low</input>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+
+                        <br>
+                        <br>
+                        <div class="col-md-12 row text-right">
+                            <div class="btn btn-success" ng-click="calculateRecommendation();">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+
+    </div>
+
+</div>
+

@@ -11,6 +11,7 @@ explore_heat = Blueprint('explore_heat', __name__, url_prefix='/api')
 r = Root()
 
 ordre=np.ones(8) #array que indica l'ordre d'ordenació, ara mateix tot seria de menor a major
+inclos=np.zeros(8)#array que indica si incloem la característica
 
 #donada una llista de +1 (ordenat ascendent) o -1 (ordenat descendent)
 #retorna un diccionari on per cada id (barri) hi ha una llista amb l'score (1-5)
@@ -26,6 +27,7 @@ def calculate_score():
     properties = ['rental_council','rental_web','mean_size_price','night','population','young','restaurants','clothes_stores']
     for property_name in properties:
         ordre[properties.index(property_name)]=body[property_name+'_direction']
+        inclos[properties.index(property_name)] = (body[property_name]=='true')
 
     # la llista es rental_price, rental_price_web,mean_size_price, night_live, population, young_percent, num_restaurants, num_clothes_store
     score={}
@@ -59,7 +61,8 @@ def calculate_score():
             while item>i*fact:
                 i=i+1
             rank.append(i)
-        final_rank[key]=list(rank*ordre)
+        final_rank[key]=rank*ordre
+        final_rank = final_rank[inclos]
 
     json_response = json.dumps(final_rank)
     return Response(json_response,

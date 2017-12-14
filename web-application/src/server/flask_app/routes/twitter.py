@@ -6,16 +6,15 @@ import csv as csv
 import pymongo
 import tweepy
 from tweepy import Stream,StreamListener
+import re
+from textblob import TextBlob
 
 twitter = Blueprint('twitter', __name__, url_prefix='/api')
 
 
 #Add tweets to this array to make them automatically sent to the client when '/twitter/tweets/get' is called.
-tweets_array = []
-storing_tweets_array = False
-auth = None
-conn = None
-db = None
+global var
+var = {'storing_tweets_array' : False, 'tweets_array' : [], 'twitterStream' : 0, 'auth' : 0}
 
 @twitter.route('/twitter/tweets/get', methods=['GET'])
 def get_gathered_tweets():
@@ -31,9 +30,17 @@ def get_gathered_tweets():
     #data={'tweets':tweets}
 
     data = get_all_tweet_data()
-
+    for tweet in data:
+        tweet['sentiment'] = get_tweet_sentiment(tweet['text'])
     json_response = json.dumps(data)
-    tweets_array = []
+
+
+    #for tweet in var['tweets_array']:
+    #    tweet['sentiment'] = get_tweet_sentiment(tweet['text'])
+    #print('get ->', var['tweets_array'])
+    #json_response = json.dumps(var['tweets_array'])
+    #var['tweets_array'] = []
+
     return Response(json_response,
                     status=html_codes.HTTP_OK_BASIC,
                     mimetype='application/json')
@@ -41,12 +48,15 @@ def get_gathered_tweets():
 @twitter.route('/twitter/gather/start/', methods=['GET'])
 def start_twitter_gathering():
     data = {'Twitter': 'Gathering started'}
+    twitter_auth()
+    connect_to_mlab()
+
+    var['storing_tweets_array'] = True
+    var['twitterStream'] = Stream(var['auth'], listener()) 
+    var['twitterStream'].filter(locations=[2.0504377635,41.2787636541,2.3045074059,41.4725622346])
     
-    storing_tweets_array = True
-    twitterStream = Stream(auth, listener()) 
-    twitterStream.filter(locations=[2.0504377635,41.2787636541,2.3045074059,41.4725622346])	
-    
-    print("Starting twitter data gathering")
+    #print("Starting twitter data gathering")
+    #data = {'storing_tweets_array':storing_tweets_array, 'auth' : auth}
     json_response = json.dumps(data)
     
     return Response(json_response,
@@ -57,9 +67,12 @@ def start_twitter_gathering():
 def stop_twitter_gathering():
     data = {'Twitter': 'Gathering stopped'}
     
-    conn.close()
-    twitterStream = None
-    storing_tweets_array = False
+    #conn.close()
+    
+    #if(var['twitterStream']):
+    #    var['twitterStream'].num_tweets = 0
+    #    var['twitterStream'].disconnect()
+    var['storing_tweets_array'] = False
     
     json_response = json.dumps(data)
     return Response(json_response,
@@ -116,41 +129,64 @@ class listener(StreamListener):
     def __init__(self):
         super(StreamListener, self).__init__()
         self.num_tweets = 0
-        self.db = db
-        self.collection = self.db.tweets
+        self.collection = connect_to_mlab()
+       
     
     def on_data(self, status):
-        if self.num_tweets < 1e4:
-            jdata = json.loads(status)
-            if geo_check(jdata) is True:
-                document = {'id': jdata['id'], 'geo': jdata['geo'], 'coordinates': jdata['coordinates'],
-                            'text': jdata["text"], 'created': jdata["created_at"]}
-                if storing_tweets_array:
-                    tweets_array.append(document)
-                if key_word_check(jdata):
-                    self.collection.insert_one(document) 
-                print (jdata['geo'],jdata["text"])
-                self.num_tweets += 1
+
+        if self.num_tweets < 500:
+            jdata=json.loads(status)
+            document = {'coordinates': jdata['coordinates'], 'text': jdata["text"], 'created' : jdata["created_at"]}
+            if(var['storing_tweets_array']): 
+                self.collection.insert_one(document)                    
+            self.num_tweets += 1
             return True
         else:
+            print('stop')
             return False
-    
     def on_error(self, status):
-        print(status)				
+        print('status', status) 
+
+
+#------------------------------------------------------------------------------------------------------
+
+def clean_tweet(tweet):
+        '''
+        Utility function to clean tweet text by removing links, special characters
+        using simple regex statements.
+        '''
+        return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
+ 
+def get_tweet_sentiment(tweet):
+    '''
+    Utility function to classify sentiment of passed tweet
+    using textblob's sentiment method
+    '''
+    # create TextBlob object of passed tweet text
+    analysis = TextBlob(clean_tweet(tweet))
+    # set sentiment
+    if analysis.sentiment.polarity > 0:
+        return 'positive'
+    elif analysis.sentiment.polarity == 0:
+        return 'neutral'
+    else:
+        return 'negative'
     
 #------------------------------------------------------------------------------------------------------
 
 def get_all_tweet_data():
     collection = connect_to_mlab()
     tweets = []
-    attributes = ['id','geo','text','created']
-    for tweet in collection.find()[:]:
+    attributes = ['coordinates','text','created']
+    for tweet in collection.find()[:30]:
+
         new_tweet = {}
         for attribute in attributes:
             try:
                 new_tweet[attribute] = tweet[attribute]
             except:
                 print('missing attribute ' + attribute)
+        collection.delete_one({'created': new_tweet['created']})
         tweets.append(new_tweet)
     return tweets
 
@@ -166,10 +202,10 @@ def connect_to_mlab():
     
     db = conn[dbname]
     print (db)
-    collection = db.tweets
+    collection = db.real_time_tweets
     return  collection
 
-def twitter_auth():	
+def twitter_auth(): 
     with open('./data/credentials/twitter/consumer_key', 'r') as f:
         consumer_key =  f.read()
     f.closed
@@ -187,6 +223,6 @@ def twitter_auth():
     f.closed
     
     #Authentication
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_key, access_secret)
-    api = tweepy.API(auth)
+    var['auth'] = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    var['auth'].set_access_token(access_key, access_secret)
+    api = tweepy.API(var['auth'])

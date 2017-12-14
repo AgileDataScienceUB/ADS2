@@ -18,6 +18,35 @@
 
         </div>
 
+        <div id="layercontrol3" style="position: absolute;bottom: 50px; right: 100px;z-index: 9999;" class="text-left">
+            <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
+            <div class="col-md-10 text-center">
+                <h5>Legend</h5>
+            </div>
+
+            <div class="row col-md-12">
+                <div class="row col-md-10 col-md-offset-1">
+                    <div class="col-md-6">
+                        <p>Highly recommended</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Poorly recommended</p>
+                    </div>
+                </div>
+
+                <div class="row col-md-8 col-md-offset-3">
+                    <div class=" col-md-2" ng-repeat="custom_color in heat_map_colors.slice().reverse()" style="background-color: {{custom_color}};height: 30px; width:40px;opacity:0.6">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
         <div class="row col-md-12 text-center align-bottom" style="position:absolute;bottom: 0%; z-index: 9999;">
             <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()" style="right:85%">
                 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
@@ -79,8 +108,6 @@
 
                             <label class="col-form-label"><h6>Maximum travelling time</h6></label>
                             <select class="form-control"  id="maxTravellingTimeSelect" ng-model="preferences.maxTimeTravelling">
-                                <option value="5">5 min</option>
-                                <option value="10">10 min</option>
                                 <option value="20">20 min</option>
                                 <option value="30">30 min</option>
                                 <option value="40">40 min</option>

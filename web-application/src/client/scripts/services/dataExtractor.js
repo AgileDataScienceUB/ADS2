@@ -67,6 +67,16 @@ angular.module('ADS_Group2_Application').factory('DataExtractorService', functio
         });
     };
 
+    dataExtractionService.getHeatMapData = function(body) {
+
+        console.log("Executing heatmap for: ", body);
+
+        return $http.post(API_BASE_URL+'explore_heat/', body).then(function (d) {
+            console.log("Obtained heatmap: ", d);
+            return d;
+        });
+    };
+
 
     return dataExtractionService;
 });

@@ -8,7 +8,7 @@
  * Controller of the ADS_Group2_Application
  */
 angular.module('ADS_Group2_Application')
-  .controller('MainCtrl', function () {
+  .controller('WelcomeCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

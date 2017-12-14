@@ -15,118 +15,112 @@
 
                         <div class="form-check col-md-8 text-left">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.rental_council" checked="">
                                 Official rental price
                             </label>
                         </div>
                         <div class="col-md-4 text-right">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1 clickable" aria-hidden="true" ng-click="formOptions.rental_council_direction = 1" ng-style="formOptions.rental_council_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1 clickable" aria-hidden="true" ng-click="formOptions.rental_council_direction = -1" ng-style="formOptions.rental_council_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.rental_web" value="" checked="">
                                 Calculated rental price
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.rental_web_direction = 1" ng-style="formOptions.rental_web_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.rental_web_direction = -1" ng-style="formOptions.rental_web_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.mean_size_price" value="" checked="">
                                 €/m^2
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.mean_size_price_direction = 1" ng-style="formOptions.mean_size_price_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.mean_size_price_direction = -1" ng-style="formOptions.mean_size_price_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.night" value="" checked="">
                                 Night activity
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.night_direction = 1" ng-style="formOptions.night_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.night_direction = -1" ng-style="formOptions.night_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.population" value="" checked="">
                                 Total population
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.population_direction = 1" ng-style="formOptions.population_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.population_direction = -1" ng-style="formOptions.population_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.young" value="" checked="">
                                 Population age
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.young_direction = 1" ng-style="formOptions.young_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.young_direction = -1" ng-style="formOptions.young_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.restaurants" value="" checked="">
                                 Restaurants
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.restaurants_direction = 1" ng-style="formOptions.restaurants_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.restaurants_direction = -1" ng-style="formOptions.restaurants_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.clothes_stores" value="" checked="">
                                 Shopping
                             </label>
                         </div>
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true" ng-click="formOptions.clothes_stores_direction = 1" ng-style="formOptions.clothes_stores_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true" ng-click="formOptions.clothes_stores_direction = -1" ng-style="formOptions.clothes_stores_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
                         </div>
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.show_tweets" value="" checked="">
                                 Real time tweets
                             </label>
                         </div>
-                        <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
-                        </div>
+
 
                         <div class="form-check col-md-8">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                <input class="form-check-input" type="checkbox" ng-model="formOptions.show_graph" value="" checked="">
                                 Transport graph
                             </label>
                         </div>
-                        <div class="col-md-4">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
-                        </div>
+
 
                         <br style="margin-top:50px">
                         <div class="row col-md-12 text-right">
-                            <div class="btn btn-success">
+                            <div class="btn btn-success" ng-click="getHeatMapData()">
                                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
                             </div>
                         </div>
@@ -138,7 +132,7 @@
         </div>
 
 
-        <div id="layercontrol2" style="position: absolute;bottom: 100px; right: 30px;z-index: 9999;" class="text-left">
+        <div id="layercontrol2" style="position: absolute;bottom: 20px; right: 30px;z-index: 9999;" class="text-left">
             <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
 
             <h5>Selected granularity</h5>
@@ -152,7 +146,37 @@
             <!--Districts-->
             <!--</label>-->
 
+
+
         </div>
+
+        <div id="layercontrol3" style="position: absolute;bottom: 50px; right: 100px;z-index: 9999;" class="text-left">
+            <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
+            <div class="col-md-10 text-center">
+                <h5>Legend</h5>
+            </div>
+
+            <div class="row col-md-12">
+                <div class="row col-md-10 col-md-offset-1">
+                    <div class="col-md-6">
+                        <p>Highly recommended</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Poorly recommended</p>
+                    </div>
+                </div>
+
+                <div class="row col-md-8 col-md-offset-3">
+                    <div class=" col-md-2" ng-repeat="custom_color in heat_map_colors.slice().reverse()" style="background-color: {{custom_color}};height: 30px; width:40px;opacity:0.6">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 </div>
 

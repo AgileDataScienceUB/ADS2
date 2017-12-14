@@ -14,6 +14,11 @@ angular.module('ADS_Group2_Application')
             'AngularJS',
             'Karma'
         ];
+
+        $scope.hideWelcome = true;
+
+        $scope.heat_map_colors = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641'];
+
         $scope.options = {
             "chart": {
                 "type": "pieChart",
@@ -265,7 +270,7 @@ angular.module('ADS_Group2_Application')
 
                 barris = L.geoJSON(geojson, {
                     radius: 3,
-                    fillColor: 'yellow',
+                    fillColor: heat_map_colors[2],
                     color: 'black',
                     weight:1,
                     fillOpacity:0}
@@ -424,6 +429,7 @@ angular.module('ADS_Group2_Application')
 
 
             map.on("click", function(d){
+
                 $scope.clickedPoint = [d.latlng.lat.toFixed(5), d.latlng.lng.toFixed(5)];
 
                 console.log("Clicked: ", d);

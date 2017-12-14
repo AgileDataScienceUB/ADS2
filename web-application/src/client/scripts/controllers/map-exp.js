@@ -14,6 +14,124 @@ angular.module('ADS_Group2_Application')
             'AngularJS',
             'Karma'
         ];
+
+        $scope.hideWelcome = false;
+
+
+        $scope.heat_map_colors = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641'];
+
+        $scope.formOptions = {
+            rental_council : false,
+            rental_council_direction : 1,
+            rental_web : false,
+            rental_web_direction : 1,
+            mean_size_price : false,
+            mean_size_price_direction : 1,
+            night : false,
+            night_direction : 1,
+            population : false,
+            population_direction : 1,
+            young : false,
+            young_direction : 1,
+            restaurants : false,
+            restaurants_direction : 1,
+            clothes_stores : false,
+            clothes_stores_direction : 1,
+            show_tweets :false,
+            show_graph:false
+        };
+
+
+        $scope.getHeatMapData = function(){
+            console.log("Getting heatmap data for; ", $scope.formOptions)
+
+            if($scope.formOptions.show_tweets){
+                // clearPaintedPaths();
+                // if( $scope.granularitySelected == $scope.polygons1){
+                //     paintDistrictsOverMap();
+                // }else{
+                //     paintNeighborhoodOverMap();
+                // }
+
+                removeLayers();
+
+                gatheringTweetsOn = true;
+                tweetsGatheringInterval = setInterval(function () {
+
+
+                    var generateRandomTweets = function () {
+                        //[[[2.0966720581,41.3507835316],[2.2281646729,41.3507835316],[2.2281646729,41.4496747477],[2.0966720581,41.4496747477],[2.0966720581,41.3507835316]]]
+                        var bbox = [2.0504377635, 41.2787636541, 2.3045074059, 41.4725622346];
+
+                        var minLng = 2.0966720581;
+                        var maxLng = 2.2281646729;
+
+                        var minLat = 41.3507835316;
+                        var maxLat = 41.4496747477;
+
+                        var maxTweets = 15;
+                        var minTweets = 2;
+
+                        var numTweetsToGenerate = Math.floor(Math.random() * (maxTweets - minTweets)) + minTweets;
+
+                        var genatedTweets = [];
+                        var lat, lng;
+
+                        var sentiments = ['positive', 'negative', 'neutral', 'neutral', 'neutral',  'neutral'];
+
+                        for (var i = 0; i < numTweetsToGenerate; i++) {
+
+
+                            lng = Math.random() * (maxLng - minLng) + minLng;
+                            lat = Math.random() * (maxLat - minLat) + minLat;
+                            if ((lng - 2) / (lat - 41) < 0.5) { // Filter tweets not on water
+                                genatedTweets.push({"coordinates": [lat, lng], "sentiment":sentiments[Math.floor(Math.random() * sentiments.length)]})
+                            }
+
+                        }
+
+                        return genatedTweets;
+                    };
+
+
+                    var generatedTweets = generateRandomTweets();
+
+                    generatedTweets.forEach(function (d) {
+                        console.log("D: ", d);
+                        paintTweet({"coordinates": d.coordinates, "sentiment":d.sentiment});
+
+                        // /paintTweet({"coordinates":[41.387034, 2.170020]})
+                    });
+
+                    //paintTweet({"coordinates":[41.2787636541, 2.0504377635]});
+
+
+                }, 750);
+            }else{
+                if (gatheringTweetsOn) { //Its on, should turn gathering off
+                    gatheringTweetsOn = false;
+                    clearInterval(tweetsGatheringInterval);
+                }
+            }
+
+
+            if($scope.formOptions.show_graph){
+                $scope.showTransportGraph();
+            }else{
+                removeLayers();
+            }
+
+            // if( $scope.granularitySelected == $scope.polygons1){
+            //     paintDistrictsOverMap();
+            // }else{
+            //     paintNeighborhoodOverMap();
+            // }
+
+            DataExtractorService.getHeatMapData().then(function(response){
+                console.log("Response: ", response);
+            })
+
+        }
         $scope.options = {
             "chart": {
                 "type": "pieChart",
@@ -265,7 +383,7 @@ angular.module('ADS_Group2_Application')
 
                 barris = L.geoJSON(geojson, {
                     radius: 3,
-                    fillColor: 'yellow',
+                    fillColor: $scope.heat_map_colors[2],
                     color: 'black',
                     weight:1,
                     fillOpacity:0}

@@ -165,9 +165,9 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 	array_possible_neighbourhoods = []
 
-	nameFeatures = {'0' : 'small rental price ', '1' : 'small m2 price ', '2' : 'expected night life ', 
-					'3' : 'restaurants density ', '4' : 'clothes stores density ',  '5' : 'supermarket density ',
-					'6' : 'transportation time cost '}
+	nameFeatures = {'0' : 'small rental price', '1' : 'small m2 price', '2' : 'expected night life', 
+					'3' : 'restaurants density', '4' : 'clothes stores density',  '5' : 'supermarket density',
+					'6' : 'transportation time cost'}
 
 	ordre =np.array([-1,-1,night_live-1,1,1,1,-1])
 	addend = np.array([6,6,night_live-1,0,0,0,6])
@@ -186,7 +186,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		include = False
 		if ((value.avg_flat_rental_from_council <= max_rental_price) and (value.avg_flat_rental_from_council >= min_rental_price)) or ((value.avg_flat_rental_from_web <= max_rental_price) and (value.avg_flat_rental_from_web >= min_rental_price)):
 
-			if (night_live == 0):
+			"""if (night_live == 0):
 				if((value.store_bar <= 17.000000) and (value.store_disco <= 0.000000)):
 					include = True
 
@@ -198,9 +198,18 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 
 			elif(night_live == 2):
 				if((value.store_bar > 94.000000) or (value.store_disco > 3.000000)):
+					include = True"""
+
+			if (night_live == 0):
+				if((value.store_bar < 50.000000) and (value.store_disco < 1.000000)):
 					include = True
 
-
+			elif(night_live == 1):
+				include = True
+				
+			elif(night_live == 2):
+				if((value.store_bar >= 50.000000) or (value.store_disco >= 1.000000)):
+					include = True
 
 		if include:
 			tTransport = transport_graph.calculateRouteBetween([value.geometry.centroid.y, value.geometry.centroid.x],[lat, lng])[0]
@@ -252,10 +261,18 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		
 		text = 'The strengths are: ' 
 		for i in np.where(listFeatures == max(listFeatures))[0]:
-			print(nameFeatures[str(i)])
+			#print(nameFeatures[str(i)])
 			text = text + nameFeatures[str(i)]
-		print(text)
-		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor, 'text' : text} )
 
+		arrayFeatures = {}
+		#print(len(listFeatures))
+		for i, valueFeature in enumerate(listFeatures):
+			#print(nameFeatures[str(i)], valueFeature)
+			#arrayFeatures.append({nameFeatures[str(i)] : i})
+			arrayFeatures[nameFeatures[str(i)]] = str(valueFeature)
+		print(arrayFeatures)
+		#print(text)
+		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor, 'text' : text, 'ratings' : arrayFeatures} ) #
 
+	#print(array_possible_neighbourhoods)
 	return {'recommendation': array_possible_neighbourhoods}

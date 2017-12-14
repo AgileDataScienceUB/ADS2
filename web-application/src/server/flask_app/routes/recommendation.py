@@ -164,7 +164,7 @@ def calculate_recommendation_generate2():
 def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price, night_live, lat, lng):
 
 	array_possible_neighbourhoods = []
-
+	array_not = []
 	nameFeatures = {'0' : 'small rental price', '1' : 'small m2 price', '2' : 'expected night life', 
 					'3' : 'restaurants density', '4' : 'clothes stores density',  '5' : 'supermarket density',
 					'6' : 'transportation time cost'}
@@ -229,6 +229,10 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 				maxim[llista>maxim]=llista[llista>maxim]
 				minim[llista<minim]=llista[llista<minim]
 
+			else:
+				array_not.append(key)
+		else:
+			array_not.append(key)
 	# return(len(score))
 	interval = (maxim-minim)/5. +minim
 
@@ -273,6 +277,9 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 		#print(arrayFeatures)
 		#print(text)
 		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor, 'text' : text, 'ratings' : arrayFeatures} ) #
+
+	for key in array_not:
+		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': 0})
 
 	#print(array_possible_neighbourhoods)
 	return {'recommendation': array_possible_neighbourhoods}

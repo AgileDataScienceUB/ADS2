@@ -17,6 +17,7 @@ angular.module('ADS_Group2_Application')
 
         $scope.hideWelcome = false;
 
+        var tweetsGatheringInterval;
 
         $scope.heat_map_colors = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641'];
 
@@ -108,10 +109,10 @@ angular.module('ADS_Group2_Application')
 
                 }, 750);
             }else{
-                if (gatheringTweetsOn) { //Its on, should turn gathering off
-                    gatheringTweetsOn = false;
-                    clearInterval(tweetsGatheringInterval);
-                }
+
+                gatheringTweetsOn = false;
+                clearInterval(tweetsGatheringInterval);
+
             }
 
 
@@ -127,7 +128,7 @@ angular.module('ADS_Group2_Application')
             //     paintNeighborhoodOverMap();
             // }
 
-            DataExtractorService.getHeatMapData().then(function(response){
+            DataExtractorService.getHeatMapData($scope.formOptions).then(function(response){
                 console.log("Response: ", response);
             })
 

@@ -6,3 +6,4 @@ from .transport import transport
 from .twitter import twitter
 from .recommendation import recommendation
 from .explore_heat import explore_heat
+from .reports import report

@@ -127,7 +127,7 @@ angular.module('ADS_Group2_Application')
             //     paintNeighborhoodOverMap();
             // }
 
-            DataExtractorService.getHeatMapData().then(function(response){
+            DataExtractorService.getHeatMapData($scope.formOptions).then(function(response){
                 console.log("Response: ", response);
             })
 

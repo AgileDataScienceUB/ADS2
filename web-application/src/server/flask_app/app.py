@@ -31,7 +31,7 @@ def handle_my_custom_event(json):
 def run():
     """Isolated entry point of the app, if not using manage.py"""
     try:
-        app.run('0.0.0.0', 80)
+        app.run('0.0.0.0', 5000)
         r = Root()
 
     except Exception as exc:

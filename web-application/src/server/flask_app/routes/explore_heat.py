@@ -15,8 +15,14 @@ ordre=np.ones(8) #array que indica l'ordre d'ordenació, ara mateix tot seria de
 #donada una llista de +1 (ordenat ascendent) o -1 (ordenat descendent)
 #retorna un diccionari on per cada id (barri) hi ha una llista amb l'score (1-5)
 
-@explore_heat.route('/explore_heat/', methods=['GET'])
+@explore_heat.route('/explore_heat/', methods=['POST'])
 def calculate_score():
+    if not request.json:
+        return Response(json.dumps({"Message": "Error getting body from request"}),
+                        status=html_codes.HTTP_OK_BASIC,
+                        mimetype='application/json')
+    body = request.json
+
     # la llista es rental_price, rental_price_web,mean_size_price, night_live, population, young_percent, num_restaurants, num_clothes_store
     score={}
     maxim=np.zeros(8)
@@ -55,3 +61,10 @@ def calculate_score():
     return Response(json_response,
                     status=html_codes.HTTP_OK_BASIC,
                     mimetype='application/json')
+
+    def normalize_to_ab(X,x,a=0,b=1):
+        """Convert an element x from a set X to the corresponding point between a and b"""
+        min_X = min(X)
+        max_X = max(X)
+        y = (x - min_X) / (max_X - min_X)#from 0 to 1
+        return a + y*(b-a)

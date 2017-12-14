@@ -23,6 +23,10 @@ def calculate_score():
                         mimetype='application/json')
     body = request.json
 
+    properties = ['rental_council','rental_web','mean_size_price','night','population','young','restaurants','clothes_stores']
+    for property_name in properties:
+        ordre[properties.index(property_name)]=body[property_name+'_direction']
+
     # la llista es rental_price, rental_price_web,mean_size_price, night_live, population, young_percent, num_restaurants, num_clothes_store
     score={}
     maxim=np.zeros(8)

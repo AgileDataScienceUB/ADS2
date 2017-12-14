@@ -22,7 +22,10 @@
 
     <link rel="stylesheet" href="vendor/leaflet.control.coordinates.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
+
+    <!--<link rel="stylesheet" href="views/style.css">-->
     <link rel="stylesheet" href="styles/main.css">
+
     <!-- endbuild -->
 </head>
 <body ng-app="ADS_Group2_Application">
@@ -31,11 +34,13 @@
     <![endif]-->
 
 <div class="row">
-    <div class="row col-md-6 text-right">
-    </div>
-    <div class="row col-md-12 text-right">
+    <div class="row col-md-6 text-left">
         <br>
-        <p><span class="glyphicon glyphicon-heart"></span> from the <a href="#/about">Group 2</a> team</p>
+        <p><span class="glyphicon glyphicon-star"></span> <a href="#/welcome">Welcome page </a></p>
+    </div>
+    <div class="row col-md-6 text-right">
+        <br>
+        <p>With<span class="glyphicon glyphicon-heart"></span> from the <a href="#/about">Group 2</a> team</p>
     </div>
     <div ng-view=""></div>
 </div>
@@ -84,6 +89,8 @@
 
 
 <script src="scripts/controllers/map.js"></script>
+<script src="scripts/controllers/map-rec.js"></script>
+<script src="scripts/controllers/map-exp.js"></script>
 <script src="scripts/controllers/about.js"></script>
 
 

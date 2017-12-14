@@ -1,0 +1,160 @@
+<div class="row col-md-12">
+
+    <div class="row" >
+
+        <div id="map" class="col-md-12"/>
+
+
+        <div id="layercontrol1" style="position: absolute;top: 100px; right: 30px;z-index: 9999;" class="row col-md-2">
+            <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
+            <form style="background-color: #ffffff; border-radius: 25px;" class="row">
+                <fieldset class="row text-left col-md-11 col-md-offset-1">
+                    <legend >Options</legend>
+
+                    <div class="form-group row">
+
+                        <div class="form-check col-md-8 text-left">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Official rental price
+                            </label>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Calculated rental price
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                €/m^2
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Night activity
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Total population
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Population age
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Restaurants
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Shopping
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Real time tweets
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-check col-md-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Transport graph
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-triangle-top col-md-1" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1" aria-hidden="true"></span>
+                        </div>
+
+                        <br style="margin-top:50px">
+                        <div class="row col-md-12 text-right">
+                            <div class="btn btn-success">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+
+        <div id="layercontrol2" style="position: absolute;bottom: 100px; right: 30px;z-index: 9999;" class="text-left">
+            <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
+
+            <h5>Selected granularity</h5>
+            <label>
+                <input type="radio" name="granularityRadio" id="granularityRadio2" ng-value="polygons2" ng-model="granularitySelected" ng-change="changeShownPolygons(1)">
+                Neighborhood
+            </label>
+            <br>
+            <!--<label>-->
+            <!--<input type="radio" name="granularityRadio" id="granularityRadio1" ng-value="polygons1" ng-model="granularitySelected" ng-change="changeShownPolygons(0)">-->
+            <!--Districts-->
+            <!--</label>-->
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -20,6 +20,7 @@ class Root:
 
         self.fill_neighborhood_rental_stats()
         self.fill_neighborhood_secondary_studies_fraction()
+        self.fill_neighborhood_income()
         #...
         self.fill_store_grocery()
         self.fill_store_bar()

@@ -270,7 +270,7 @@ def filter_neighbourhood(max_transport_time, min_rental_price, max_rental_price,
 			#print(nameFeatures[str(i)], valueFeature)
 			#arrayFeatures.append({nameFeatures[str(i)] : i})
 			arrayFeatures[nameFeatures[str(i)]] = str(valueFeature)
-		print(arrayFeatures)
+		#print(arrayFeatures)
 		#print(text)
 		array_possible_neighbourhoods.append({'id':'%02d' % key, 'value': valor, 'text' : text, 'ratings' : arrayFeatures} ) #
 

@@ -45,7 +45,7 @@ To have the app accessible in your browser at: http://localhost:8081/
 
 
 ### DEMO
-To access the demo, you can go here: https://dashboard.heroku.com/apps/frontend-whereshouldilive
+To access the demo, you can go here: https://frontend-whereshouldilive.herokuapp.com/
 
 
 

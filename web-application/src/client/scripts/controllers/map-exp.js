@@ -159,7 +159,12 @@ angular.module('ADS_Group2_Application')
                                     if(avg == 0){
                                         layer.setStyle({fillColor: $scope.heat_map_colors[2], fillOpacity: 1});
                                     }else{
-                                        layer.setStyle({fillColor: $scope.heat_map_colors.slice().reverse()[Math.floor(avg)-1], fillOpacity: 1});
+                                        if( Math.floor(avg) == 0){
+                                            layer.setStyle({fillColor: $scope.heat_map_colors.slice().reverse()[0], fillOpacity: 1});
+                                        }else{
+                                            layer.setStyle({fillColor: $scope.heat_map_colors.slice().reverse()[Math.floor(avg)-1], fillOpacity: 1});
+                                        }
+
                                     }
 
                                 }
@@ -848,7 +853,7 @@ angular.module('ADS_Group2_Application')
                         var minLat = 41.3507835316;
                         var maxLat = 41.4496747477;
 
-                        var maxTweets = 15;
+                        var maxTweets = 5;
                         var minTweets = 2;
 
                         var numTweetsToGenerate = Math.floor(Math.random() * (maxTweets - minTweets)) + minTweets;
@@ -885,7 +890,7 @@ angular.module('ADS_Group2_Application')
                     //paintTweet({"coordinates":[41.2787636541, 2.0504377635]});
 
 
-                }, 750);
+                }, 1000);
 
             }else if(newValue == 3){  // Night live
                 if (gatheringTweetsOn) { //Its on, should turn gathering off

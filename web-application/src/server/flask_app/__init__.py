@@ -16,6 +16,7 @@ BLUEPRINTS = (polygons, incomes, flats_rental, transport, twitter, recommendatio
 def create_app():
     """Create app and configure Flask-security, databases, loggers."""
     app = Flask(__name__)
+    CORS(app)
 
 
     config_name = os.getenv('FLASK_CONFIGURATION', 'default')

@@ -19,6 +19,10 @@ angular.module('ADS_Group2_Application')
 
         var tweetsGatheringInterval;
 
+        $scope.showTutorial = function(){
+            introJs().start();
+        };
+
         $scope.heat_map_colors = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641'];
 
         $scope.formOptions = {
@@ -425,68 +429,102 @@ angular.module('ADS_Group2_Application')
                     fillOpacity:0}
                 ).addTo(map);
 
-                barris.bindPopup(function(d) {
-                    var result = "";
+                barris.bindPopup("Loading...")
 
-                    console.log("POPUP: ", d)
-                    d = d.feature;
+                barris.on('click', function(d) {
+                    console.log("Clicked: ", d);
 
-                    if(d.hasOwnProperty("properties")) {
-                        console.log("D: ", d)
-
-                        if (d.properties.hasOwnProperty("N_Barri")) {
-                            result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
-                        }
-
-                        if (d.properties.hasOwnProperty("N_Distri")) {
-                            //console.log("D: ", d);
-                            result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
-                        }
-                        if (d.properties.hasOwnProperty("Area")) {
-                            //console.log("D: ", d);
-                            result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
-                        }
-
-                        if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
-                            //console.log("D: ", d);
-                            result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
-                            // result += '<nvd3 options="options" data="data"></nvd3>';
-
-                            // $scope.data = [
-                            //     {
-                            //         key: "Men",
-                            //         y: d.properties['Homes']
-                            //     },
-                            //     {
-                            //         key: "Women",
-                            //         y: d.properties['Dones']
-                            //     }
-                            //
-                            // ]
+                    DataExtractorService.getReportForNeigh(d.layer.feature.properties['C_Barri']).then(function(report){
+                        console.log("Report: ", report.data);
+                        var popup = d.target.getPopup();
 
 
-                            if(!$scope.$$phase) {
-                                //$digest or $apply
-                                $scope.$apply()
+                        var result = "";
+
+                        console.log("POPUP: ", d)
+                        d = d.layer.feature;
+
+
+
+
+                        if(d.hasOwnProperty("properties")) {
+                            console.log("D: ", d)
+
+                            if (d.properties.hasOwnProperty("N_Barri")) {
+                                result += "<p></p><strong>Neighborhood: </strong>" + d.properties['N_Barri'] + "</p>";
                             }
 
+                            if (d.properties.hasOwnProperty("N_Distri")) {
+                                //console.log("D: ", d);
+                                result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
+                            }
+                            // if (d.properties.hasOwnProperty("Area")) {
+                            //     //console.log("D: ", d);
+                            //     result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
+                            // }
 
-                        }
+                            if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
+                                //console.log("D: ", d);
+                                result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
+                                // result += '<nvd3 options="options" data="data"></nvd3>';
 
-                        if (d.properties.hasOwnProperty("WEB_1")) {
-                            //console.log("D: ", d);
-                            result += "<p><strong>Links: </strong> </p>"
-                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_1']+"'>" + d.properties['WEB_1']+"</a></p>"
-                            for(var i = 2; i< 10; i++){
-                                if(d.properties.hasOwnProperty("WEB_"+i)){
-                                    result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_'+i]+"'>" + d.properties['WEB_'+i]+"</a></p>"
+                                // $scope.data = [
+                                //     {
+                                //         key: "Men",
+                                //         y: d.properties['Homes']
+                                //     },
+                                //     {
+                                //         key: "Women",
+                                //         y: d.properties['Dones']
+                                //     }
+                                //
+                                // ]
+
+
+                                if(!$scope.$$phase) {
+                                    //$digest or $apply
+                                    $scope.$apply()
+                                }
+
+
+                            }
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Children:&nbsp;" + report.data[0]['child'].toFixed(2) + "%</p>";
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Young:&nbsp;" + report.data[0]['young'].toFixed(2) + "%</p>";
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adult:&nbsp;" + report.data[0]['adult'].toFixed(2) + "%</p>";
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old:&nbsp;" + report.data[0]['old'].toFixed(2) + "%</p>";
+
+                            result += "<p><strong>Other info: </strong> </p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean income:&nbsp;" + report.data[0]['income'].toFixed(2) +"</a></p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price squared meter:&nbsp;" + report.data[0]['price_square_meter'].toFixed(2) +"€</a></p>"
+
+                            if (d.properties.hasOwnProperty("WEB_1")) {
+                                //console.log("D: ", d);
+                                result += "<p><strong>More info: </strong> </p>"
+                                result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_1']+"'>" + d.properties['WEB_1']+"</a></p>"
+                                for(var i = 2; i< 2; i++){
+                                    if(d.properties.hasOwnProperty("WEB_"+i)){
+                                        result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_'+i]+"'>" + d.properties['WEB_'+i]+"</a></p>"
+                                    }
                                 }
                             }
+
+                            result += "<p><strong>Available flats: </strong> </p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+report.data[0]['link_idealista']+"'>" + report.data[0]['link_idealista']+"</a></p>"
+
+                            popup.setContent(result);
+                            popup.update();
+
+
+
                         }
 
+                        console.log("Clicked: ", d);
+                        if(!$scope.$$phase) {
+                            //$digest or $apply
+                            $scope.$apply()
+                        }
 
-
-                    }
+                    });
 
 
                     // $('.leaflet-popup-content').css({"width":"100%"});

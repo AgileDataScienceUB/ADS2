@@ -10,3 +10,4 @@ geopy==1.11.0
 networkx==1.11
 numpy==1.12.1
 pandas
+textblob

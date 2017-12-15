@@ -9,7 +9,12 @@
             <!--<label><input type="checkbox" data-layer="cities">Cities</label>-->
             <form style="background-color: #ffffff; border-radius: 25px;" class="row">
                 <fieldset class="row text-left col-md-11 col-md-offset-1">
-                    <legend >Options</legend>
+                    <legend >Options <i class="glyphicon glyphicon-info-sign clickable" style="color:dodgerblue" ng-click="showTutorial();" data-step="1"   data-intro="Enable the features by which you want to distinguish
+the neigbourhoods. You can also indicate if you want
+the features to order the neighbourhoods in increasing
+or decreasing order with the right hand arrows. Moreover,
+non discriminative features such as the
+location of real time tweets can be added to the map." data-position="left"></i></legend>
 
                     <div class="form-group row">
 
@@ -20,8 +25,8 @@
                             </label>
                         </div>
                         <div class="col-md-4 text-right">
-                            <span class="glyphicon glyphicon-triangle-top col-md-1 clickable" aria-hidden="true" ng-click="formOptions.rental_council_direction = 1" ng-style="formOptions.rental_council_direction == 1? { color: 'black' } : { color: 'grey' }"></span>
-                            <span class="glyphicon glyphicon-triangle-bottom col-md-1 clickable" aria-hidden="true" ng-click="formOptions.rental_council_direction = -1" ng-style="formOptions.rental_council_direction == -1? { color: 'black' } : { color: 'grey' }"></span>
+                            <span class="glyphicon glyphicon-triangle-top col-md-1 clickable" aria-hidden="true" ng-click="formOptions.rental_council_direction = 1" ng-style="formOptions.rental_council_direction == 1? { color: 'black' } : { color: 'grey' }" data-step="3"   data-intro="You can use this arrows to select if a zone with a bigger value of this feature should be painted in green color." data-position="left"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom col-md-1 clickable" aria-hidden="true" ng-click="formOptions.rental_council_direction = -1" ng-style="formOptions.rental_council_direction == -1? { color: 'black' } : { color: 'grey' }"  data-step="4"   data-intro="Or you can select this if you want the zone to get more red when the value of this characteristic is bigger" data-position="left"></span>
                         </div>
 
 
@@ -120,8 +125,8 @@
 
                         <br style="margin-top:50px">
                         <div class="row col-md-12 text-right">
-                            <div class="btn btn-success" ng-click="getHeatMapData()">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                            <div class="btn btn-success" ng-click="getHeatMapData()" data-step="5"   data-intro="Once you are done with the selection, click the button and let the application paint the results. You can click any neigbourhood to get more information about it." data-position="left">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true" ></span> Search
                             </div>
                         </div>
 

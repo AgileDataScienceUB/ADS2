@@ -1,74 +1,96 @@
 <div class="row text-center col-md-12" style="height:100vh;">
 
+
+
+
   <!-- JUAN, EDITA ESTO-->
 
   <div class="jumbotron row" style="height:100vh;background-image: url('images/barce3.png'); background-repeat:no-repeat; background-size:cover;  background-repeat:   no-repeat;background-position: center center;">
-    <h1 class="display-3 row" style="z-index:9999">
+    <h1 class="display-3 row" style="z-index:9999" >
       <span style="color:white" class="top fittexted col-md-12 text-center" style="font-size: 61.4136px;"><b class=" top-decoration">Barcelona:</b></span>
       <span style="color:white" class="bottom fittexted col-md-12 text-center" style="font-size: 131.798px;">Where should I live?</span>
 
     </h1>
+
     <hr class="my-4">
     <p style="color:white;background-color: #141414; opacity: .8; " class="lead col-md-8 col-md-offset-2">Have you ever arrived to a city and did not know where to live? Did not
       know anything about rental prices or even transportation? Did you
-      thought about night live? With <a style="font-weight: bold">Barcelona: Where should I live? </a>you have
+      thought about night live? With <a style="font-weight: bold" data-step="4"  data-intro="Let's find together your recommended place to live in Barcelona!" data-position="center">Barcelona: Where should I live? </a>you have
       all these problems solved. Choose your neighbourhood according to your real
       preferences and save thousands of hours of looking at wrong places.
-    <br>
+      <br>
       <br>
       And it's completely FREE!
     </p>
 
 
     <!--<p class="lead">-->
-      <!--<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
+    <!--<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
 
     <div style="height: 20vh"/>
-    <div class="col-md-5 col-md-offset-1 text-right">
-      <a class="btn btn-success" href="#/map-explore"   style="color:white">
+    <div class="col-md-5 col-md-offset-1 text-right" >
+      <a class="btn btn-success" href="#/map-explore"   style="color:white" data-step="1"   data-intro="Each neighbourhood is unique in its own
+way. With this funcionality you can explore
+the differences between them in terms
+of rental price, night life, population,
+and other characteristics." data-position="left">
         Explore the data
       </a>
     </div>
-    <div class="col-md-5 text-left">
-      <a class="btn btn-success" href="#/map-recommend"  style="color:white">
+    <div class="col-md-5 text-left" >
+      <a class="btn btn-success" href="#/map-recommend"  style="color:white" data-step="2"  data-intro="Using Advanced Search functionality you can find
+the right and proper neighbourhood for your needs
+regarding three features: rental price, transport
+and degree of night life." data-position="right">
         Advanced search
       </a>
 
     </div>
 
     </p>
+
+    <div class="row col-md-12 text-right">
+      <div class="btn btn-default btn-small " ng-click="showTutorial();">
+        <span class="glyphicon glyphicon-info-sign clickable" aria-hidden="true"></span> How does it work?
+      </div>
+    </div>
+
   </div>
+
+
+
+
   <div style="height: 3vh"/>
   <div style="height: 75px"/>
 
 
   <div class="row text-center col-md-12">
 
-        <div class="copy headline align-left row col-md-4">
-          <p class="col-md-10 col-md-offset-1">
-            <span class="glyphicon glyphicon-plane" aria-hidden="true" style="font-size: 50px;"></span>
-            <strong style="font-size: 40px;">Transportation</strong>
-            <br>
-            How much time will I have to spent from this place to my job If I choose to live here? Will I have to take several transfers?
-          </p>
-        </div>
-        <div class="copy headline align-left row col-md-4">
-          <p class="col-md-10 col-md-offset-1">
-            <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true" style="font-size: 50px;"></span>
-            <strong style="font-size: 40px;">Rental prices</strong>
-            <br>
-            Which neighbourhoods are the most expensive? and the cheapest? What neighbourhoods are left if I do not want to pay more than, for
-            example, 800 euros.
-          </p>
-        </div>
-        <div class="copy headline align-left row col-md-4">
-          <p class="col-md-10 col-md-offset-1">
-            <span class="glyphicon glyphicon-cd" aria-hidden="true" style="font-size: 50px;"></span>
-            <strong style="font-size: 40px;">Night Life</strong>
-            <br>
-            Do you want to live in a quiet and restful place? Or maybe you prefer a street where life explodes in nights of extasy and color?
-          </p>
-        </div>
+    <div class="copy headline align-left row col-md-4">
+      <p class="col-md-10 col-md-offset-1">
+        <span class="glyphicon glyphicon-plane" aria-hidden="true" style="font-size: 50px;"></span>
+        <strong style="font-size: 40px;">Transportation</strong>
+        <br>
+        How much time will I have to spent from this place to my job If I choose to live here? Will I have to take several transfers?
+      </p>
+    </div>
+    <div class="copy headline align-left row col-md-4">
+      <p class="col-md-10 col-md-offset-1">
+        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true" style="font-size: 50px;"></span>
+        <strong style="font-size: 40px;">Rental prices</strong>
+        <br>
+        Which neighbourhoods are the most expensive? and the cheapest? What neighbourhoods are left if I do not want to pay more than, for
+        example, 800 euros.
+      </p>
+    </div>
+    <div class="copy headline align-left row col-md-4">
+      <p class="col-md-10 col-md-offset-1">
+        <span class="glyphicon glyphicon-cd" aria-hidden="true" style="font-size: 50px;"></span>
+        <strong style="font-size: 40px;">Night Life</strong>
+        <br>
+        Do you want to live in a quiet and restful place? Or maybe you prefer a street where life explodes in nights of extasy and color?
+      </p>
+    </div>
 
     <!-- nueva sección-->
 
@@ -84,7 +106,7 @@
 
       <div class="container">
         <p>
-          <small class="copyright"> © 2017 BWSIL | Authors: Solans, D.; Sarlé, E.; Espanyol, F.; Zambrana, C.; Ferrer, A.; Borrego, J. </small>
+          <small class="copyright" data-step="3"  data-intro="This project has been developed in the subject of Agile Data Science of the University of Barcelona by this authors (More info above, clicking the group2 link)." data-position="right"> © 2017 BWSIL | Authors: Solans, D.; Sarlé, E.; Espanyol, F.; Zambrana, C.; Ferrer, A.; Borrego, J. </small>
           <small class="credit"> Warm thanks: Thankful LLC</small>
         </p>
       </div>

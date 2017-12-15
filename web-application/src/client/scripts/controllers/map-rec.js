@@ -17,6 +17,11 @@ angular.module('ADS_Group2_Application')
 
         $scope.hideWelcome = false;
 
+        $scope.showTutorial = function(){
+            introJs().start();
+        };
+
+
         $scope.heat_map_colors = ['#d7191c','#fdae61','#ffffbf','#a6d96a','#1a9641'];
 
         $scope.options = {
@@ -127,6 +132,8 @@ angular.module('ADS_Group2_Application')
 
         };
 
+        $scope.clearPaintedPaths = clearPaintedPaths;
+
         var changePolygonColors = function(assigned_colors){
 
             if($scope.granularitySelected == $scope.polygons1){
@@ -197,6 +204,8 @@ angular.module('ADS_Group2_Application')
             map_added_elements = [];
 
         };
+
+        $scope.removeLayers = removeLayers
 
 
         var paintDistrictsOverMap = function(){
@@ -276,15 +285,22 @@ angular.module('ADS_Group2_Application')
                     fillOpacity:0}
                 ).addTo(map);
 
-                barris.bindPopup(function(d) {
-                    var result = "";
 
-                    console.log("POPUP: ", d)
-                    d = d.feature;
+                barris.bindPopup("Loading...")
 
+                barris.on('click', function(d) {
+                    console.log("Clicked: ", d);
 
-                    DataExtractorService.getReportForNeigh(d.properties['C_Barri']).then(function(report){
+                    DataExtractorService.getReportForNeigh(d.layer.feature.properties['C_Barri']).then(function(report){
                         console.log("Report: ", report.data);
+                        var popup = d.target.getPopup();
+
+
+                        var result = "";
+
+                        console.log("POPUP: ", d)
+                        d = d.layer.feature;
+
 
 
 
@@ -299,14 +315,14 @@ angular.module('ADS_Group2_Application')
                                 //console.log("D: ", d);
                                 result += "<p><strong>District: </strong>" + d.properties['N_Distri'] + "</p>";
                             }
-                            if (d.properties.hasOwnProperty("Area")) {
-                                //console.log("D: ", d);
-                                result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
-                            }
+                            // if (d.properties.hasOwnProperty("Area")) {
+                            //     //console.log("D: ", d);
+                            //     result += "<p></p><strong>Area: </strong>" + d.properties['Area'] + "</p>";
+                            // }
 
                             if (d.properties.hasOwnProperty("Homes") && d.properties.hasOwnProperty("Dones")) {
                                 //console.log("D: ", d);
-                                result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
+                                result += "<p><strong>Population: </strong> </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men:&nbsp;" + d.properties['Homes'] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women:&nbsp;" + d.properties['Dones'] + "</p>";
                                 // result += '<nvd3 options="options" data="data"></nvd3>';
 
                                 // $scope.data = [
@@ -329,18 +345,31 @@ angular.module('ADS_Group2_Application')
 
 
                             }
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Children:&nbsp;" + report.data[0]['child'].toFixed(2) + "%</p>";
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Young:&nbsp;" + report.data[0]['young'].toFixed(2) + "%</p>";
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adult:&nbsp;" + report.data[0]['adult'].toFixed(2) + "%</p>";
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old:&nbsp;" + report.data[0]['old'].toFixed(2) + "%</p>";
+
+                            result += "<p><strong>Other info: </strong> </p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean income:&nbsp;" + report.data[0]['income'].toFixed(2) +"</a></p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price squared meter:&nbsp;" + report.data[0]['price_square_meter'].toFixed(2) +"€</a></p>"
 
                             if (d.properties.hasOwnProperty("WEB_1")) {
                                 //console.log("D: ", d);
-                                result += "<p><strong>Links: </strong> </p>"
+                                result += "<p><strong>More info: </strong> </p>"
                                 result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_1']+"'>" + d.properties['WEB_1']+"</a></p>"
-                                for(var i = 2; i< 10; i++){
+                                for(var i = 2; i< 2; i++){
                                     if(d.properties.hasOwnProperty("WEB_"+i)){
                                         result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+d.properties['WEB_'+i]+"'>" + d.properties['WEB_'+i]+"</a></p>"
                                     }
                                 }
                             }
-                            return result
+
+                            result += "<p><strong>Available flats: </strong> </p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href='"+report.data[0]['link_idealista']+"'>" + report.data[0]['link_idealista']+"</a></p>"
+
+                            popup.setContent(result);
+                            popup.update();
 
 
 
@@ -477,7 +506,7 @@ angular.module('ADS_Group2_Application')
             }
         };
 
-        $scope.changeShownPolygons($scope.granularitySelected);
+        // $scope.changeShownPolygons($scope.granularitySelected);
 
 
         /* Set the width of the side navigation to 250px */
@@ -856,6 +885,7 @@ angular.module('ADS_Group2_Application')
 
             removeLayers();
             clearPaintedPaths();
+
             if( $scope.granularitySelected == $scope.polygons1){
                 paintDistrictsOverMap();
             }else{
@@ -884,6 +914,8 @@ angular.module('ADS_Group2_Application')
             }else{
 
                 setTimeout(function(){
+                    document.getElementById("mySidenav").style.height = "0";
+
                     // favourite_point,max_transport_time, max_rental_price, min_rental_price, night_live
                     DataExtractorService.getRecommendation($scope.clickedPoint, $scope.preferences.maxTimeTravelling, $scope.preferences.maxRentalPrice, $scope.preferences.minRentalPrice, $scope.preferences.nightLive).then(function(data){
                         // clearPaintedPaths();
@@ -891,14 +923,20 @@ angular.module('ADS_Group2_Application')
                         recommendationShown = true;
 
                         data.data.recommendation.forEach(function(rec){
-                            console.log("REC: ", rec)
+                            // console.log("REC: ", rec);
                             map.eachLayer(function(layer) {
                                 if(layer.hasOwnProperty("feature")){
                                     // map.removeLayer(layer);
-                                    if(rec.value == 0){
-                                        layer.setStyle({fillOpacity: 0});
-                                    }else{
-                                        if(rec.id == layer.feature.properties["C_Barri"]){
+
+
+
+                                    if(parseInt(rec.id) == parseInt(layer.feature.properties["C_Barri"])){
+                                        console.log("REC_id: ", rec.id)
+                                        console.log("Layer: ", layer.feature.properties["C_Barri"])
+                                        if(rec.value == 0){
+                                            console.log("zero")
+                                            layer.setStyle({fillColor:"#000000",fillOpacity: 0});
+                                        }else{
 
                                             layer.setStyle({fillColor: $scope.heat_map_colors[rec.value-1], fillOpacity: 1});
                                         }
@@ -908,6 +946,10 @@ angular.module('ADS_Group2_Application')
 
                             })
                         });
+
+
+
+
 
                     });
                 }, 50)

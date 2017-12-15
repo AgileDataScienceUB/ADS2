@@ -48,7 +48,7 @@
 
 
         <div class="row col-md-12 text-center align-bottom" style="position:absolute;bottom: 0%; z-index: 9999;">
-            <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav()" style="right:85%">
+            <div id="open-side-nav-btn" class="btn btn-default btn-sm pull-right" ng-click="openNav();clearPaintedPaths(); removeLayers();" style="right:85%">
                 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
             </div>
         </div>
@@ -60,7 +60,7 @@
 <div id="mySidenav" class="sidenav" style="z-index: 9999;">
     <!--<a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>-->
 
-    <div class="btn btn-default btn-sm pull-right align-top" ng-click="closeNav()" style="right:45%;top:-50px">
+    <div class="btn btn-default btn-sm pull-right align-top" ng-click="closeNav(); " style="right:45%;top:-50px">
         <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
     </div>
 
@@ -73,7 +73,8 @@
 
         <ul class="nav nav-tabs row ">
             <li class="nav-item " ng-style="color: #2196f3">
-                <a class="nav-link" data-toggle="tab" style=" color: #2196f3">Advanced search</a>
+                <a class="nav-link" data-toggle="tab" style=" color: #2196f3" data-step="1"   data-intro="By filtering by this three charcteristics, neighbours will
+    be selected according to the values entered." data-position="right">Advanced search <i class="glyphicon glyphicon-info-sign clickable" style="color:dodgerblue" ng-click="showTutorial();"></i></a>
             </li>
             <!--<li class="nav-item " ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">-->
                 <!--<a class="nav-link" data-toggle="tab" ng-click="tab=2" ng-style="tab==2 ? { color: '272b30' } : { color: 'white' }">Options</a>-->
@@ -85,7 +86,10 @@
             <form class="form-horizontal row">
                 <fieldset>
                     <div class="form-group">
-                        <h5>Transport</h5>
+                        <h5 data-step="2"   data-intro="First, select the transport that you want to use. After
+    that click on the map to select the point for which near
+    stations will be searched. And lastly, enter the maximum
+    time that you want to travel." data-position="right">Transport</h5>
                         <div class="col-lg-12">
                             <!--<h6>Type</h6>-->
                             <!--<div class="btn-group" data-toggle="buttons">-->
@@ -127,7 +131,8 @@
 
                         </div>
                         <br>
-                        <h5>Rental price</h5>
+                        <h5 data-step="3"   data-intro="Only the neighbourhoods between the minimum and maximum
+    rental prices will be selected." data-position="right">Rental price</h5>
                         <div class="col-lg-6">
                             <label class="col-form-label"><h6>Minimum</h6></label>
                             <select class="form-control"  id="minRentalPriceSelect" ng-model="preferences.minRentalPrice">
@@ -172,7 +177,10 @@
                         <br>
                         <br>
                         <br>
-                        <h5>Quiet area</h5>
+                        <h5 data-step="4"   data-intro="Neighbouhoods will be filtered by the degree of
+    night life chosen.
+    There is no need to filter by all the three features
+    at the same time." data-position="right">Quiet area</h5>
                         <div class="col-lg-12">
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-primary btn-sm" ng-click="changeNightLive(0)">

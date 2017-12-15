@@ -140,6 +140,9 @@ angular.module('ADS_Group2_Application')
                         var sum = 0;
 
                         for( var i = 0; i < neig.value.length; i++ ){
+                            if(neig.value[i]<0){
+                                neig.value[i] = neig.value[i]+6
+                            }
                             sum += parseInt( neig.value[i], 10 ); //don't forget to add the base
                         }
 
@@ -499,7 +502,7 @@ angular.module('ADS_Group2_Application')
                             result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old:&nbsp;" + report.data[0]['old'].toFixed(2) + "%</p>";
 
                             result += "<p><strong>Other info: </strong> </p>"
-                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean income:&nbsp;" + report.data[0]['income'].toFixed(2) +"</a></p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean income index:&nbsp;" + report.data[0]['income'].toFixed(2) +"</a></p>"
                             result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price squared meter:&nbsp;" + report.data[0]['price_square_meter'].toFixed(2) +"€</a></p>"
 
                             if (d.properties.hasOwnProperty("WEB_1")) {

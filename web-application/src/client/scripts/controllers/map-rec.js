@@ -351,7 +351,7 @@ angular.module('ADS_Group2_Application')
                             result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old:&nbsp;" + report.data[0]['old'].toFixed(2) + "%</p>";
 
                             result += "<p><strong>Other info: </strong> </p>"
-                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean income:&nbsp;" + report.data[0]['income'].toFixed(2) +"</a></p>"
+                            result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean income index:&nbsp;" + report.data[0]['income'].toFixed(2) +"</a></p>"
                             result += "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price squared meter:&nbsp;" + report.data[0]['price_square_meter'].toFixed(2) +"€</a></p>"
 
                             if (d.properties.hasOwnProperty("WEB_1")) {
@@ -927,8 +927,6 @@ angular.module('ADS_Group2_Application')
                             map.eachLayer(function(layer) {
                                 if(layer.hasOwnProperty("feature")){
                                     // map.removeLayer(layer);
-
-
 
                                     if(parseInt(rec.id) == parseInt(layer.feature.properties["C_Barri"])){
                                         console.log("REC_id: ", rec.id)
